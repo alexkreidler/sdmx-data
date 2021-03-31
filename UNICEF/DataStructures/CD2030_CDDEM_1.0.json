@@ -1,306 +1,281 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "-xml": "http://www.w3.org/XML/1998/namespace",
-    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "Header": {
-      "ID": "IREF690807",
-      "Prepared": "2021-03-31T05:38:03Z",
-      "Receiver": {
-        "-id": "not_supplied"
-      },
-      "Sender": {
-        "-id": "UNICEF"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "CD2030",
-          "-id": "CDDEM",
-          "-isExternalReference": "false",
-          "-isFinal": "false",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=CD2030:CDDEM(1.0)",
-          "-version": "1.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=CD2030:CDDEM(1.0).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "CDDATASOURCE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDDEM(1.0).CDDATASOURCE",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "CDDATASOURCE",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-isSequence": "false",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "TIME_FORMAT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDDEM(1.0).TIME_FORMAT",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "TIME_FORMAT",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "CD2030",
-                        "-class": "Codelist",
-                        "-id": "CL_CD2030_TIME_FORMAT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=CD2030:CDDEM(1.0).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "CDDDEMINDICS",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDDDEMINDICS",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "CDDDEMINDICS",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "CD2030",
-                        "-class": "Codelist",
-                        "-id": "CL_CD2030_DEM_INDICATORS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CDUNIT",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDUNIT",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "CDUNIT",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "CD2030",
-                        "-class": "Codelist",
-                        "-id": "CL_CD2030_UNITS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CDAREAS",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDAREAS",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "CDAREAS",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "CD2030",
-                        "-class": "Codelist",
-                        "-id": "CL_CD2030_AREAS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CDGENDER",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDGENDER",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "CDGENDER",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "CD2030",
-                        "-class": "Codelist",
-                        "-id": "CL_CD2030_GENDER",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CDAGE",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDAGE",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "CDAGE",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "CD2030",
-                        "-class": "Codelist",
-                        "-id": "CL_CD2030_AGE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CDDEMOSTRATIFIERS",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDDEMOSTRATIFIERS",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "CD2030",
-                      "-class": "Concept",
-                      "-id": "CDDEMOSTRATIFIERS",
-                      "-maintainableParentID": "CD2030_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "CD2030",
-                        "-class": "Codelist",
-                        "-id": "CL_CD2030_CDDEMOTRAT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "7",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=CD2030:CDDEM(1.0).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "UNICEF",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CS_SDG",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=CD2030:CDDEM(1.0).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=CD2030:CDDEM(1.0).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "UNICEF",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "UNICEF_CONCEPTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                }
+  "agencyID"": "CD2030",
+  "id"": "CDDEM",
+  "isExternalReference"": "false",
+  "isFinal"": "false",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=CD2030:CDDEM(1.0)",
+  "version"": "1.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=CD2030:CDDEM(1.0).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "CDDATASOURCE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDDEM(1.0).CDDATASOURCE",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": {
-            "#text": "Countdown - demographic indicators",
-            "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "CDDATASOURCE",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "isSequence"": "false",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "TIME_FORMAT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDDEM(1.0).TIME_FORMAT",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "TIME_FORMAT",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "CD2030",
+                "class"": "Codelist",
+                "id"": "CL_CD2030_TIME_FORMAT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=CD2030:CDDEM(1.0).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "CDDDEMINDICS",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDDDEMINDICS",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "CDDDEMINDICS",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "CD2030",
+                "class"": "Codelist",
+                "id"": "CL_CD2030_DEM_INDICATORS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CDUNIT",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDUNIT",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "CDUNIT",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "CD2030",
+                "class"": "Codelist",
+                "id"": "CL_CD2030_UNITS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CDAREAS",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDAREAS",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "CDAREAS",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "CD2030",
+                "class"": "Codelist",
+                "id"": "CL_CD2030_AREAS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CDGENDER",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDGENDER",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "CDGENDER",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "CD2030",
+                "class"": "Codelist",
+                "id"": "CL_CD2030_GENDER",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CDAGE",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDAGE",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "CDAGE",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "CD2030",
+                "class"": "Codelist",
+                "id"": "CL_CD2030_AGE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CDDEMOSTRATIFIERS",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDDEM(1.0).CDDEMOSTRATIFIERS",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "CD2030",
+              "class"": "Concept",
+              "id"": "CDDEMOSTRATIFIERS",
+              "maintainableParentID"": "CD2030_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "CD2030",
+                "class"": "Codelist",
+                "id"": "CL_CD2030_CDDEMOTRAT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "7",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=CD2030:CDDEM(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "UNICEF",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CS_SDG",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=CD2030:CDDEM(1.0).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=CD2030:CDDEM(1.0).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "UNICEF",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "UNICEF_CONCEPTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
           }
         }
       }
     }
+  },
+  "Name": {
+    "#text": "Countdown  demographic indicators"",
+    "lang"": "en"
   }
 }

@@ -1,310 +1,288 @@
 {
-  "Structure": {
-    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "IDREF50498",
-      "Prepared": "2021-03-31T16:21:32.9697009+11:00",
-      "Receiver": {
-        "-id": "Unknown"
-      },
-      "Sender": {
-        "-id": "Unknown"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "ABS",
-          "-id": "ABS_CENSUS2011_B38_SA1_SA",
-          "-isFinal": "true",
-          "-version": "1.0.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MEASURE",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEASURE",
-                      "-maintainableParentID": "CS_ATTRIBUTE",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "CS_ATTRIBUTE",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_STATUS",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_COMMENT",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "OBS_COMMENT",
-                      "-maintainableParentID": "CS_ATTRIBUTE",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "MEASURE",
-                  "-position": "1",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "SEXP",
-                      "-maintainableParentID": "CS_C16_PERSON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_C16_SEX",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "UAI1P",
-                  "-position": "2",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "PUR1P",
-                      "-maintainableParentID": "CS_C16_PERSON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_C11_PUR1P",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "STATE",
-                  "-position": "3",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "STATE",
-                      "-maintainableParentID": "CS_C16_COMMON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_C16_STATE",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REGIONTYPE",
-                  "-position": "4",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "REGION_TYPE",
-                      "-maintainableParentID": "CS_C16_COMMON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_C16_REGION_TYPE",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REGION",
-                  "-position": "5",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "REGION_SA1",
-                      "-maintainableParentID": "CS_C16_COMMON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_C11_ASGS_SA",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "FREQUENCY",
-                  "-position": "6",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CS_C16_COMMON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "7",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "ABS",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CS_C16_COMMON",
-                    "-maintainableParentVersion": "1.0.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
+  "agencyID"": "ABS",
+  "id"": "ABS_CENSUS2011_B38_SA1_SA",
+  "isFinal"": "true",
+  "version"": "1.0.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MEASURE",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "UNIT_MEASURE",
+              "maintainableParentID"": "CS_ATTRIBUTE",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.0.0"
               }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "ABS",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CS_C16_COMMON",
-                    "-maintainableParentVersion": "1.0.0",
-                    "-package": "conceptscheme"
-                  }
-                }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": {
-            "#text": "B38 Place of Usual Residence 1 Year Ago by Sex(SA1 SA)",
-            "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "CS_ATTRIBUTE",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_OBS_STATUS",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_COMMENT",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "OBS_COMMENT",
+              "maintainableParentID"": "CS_ATTRIBUTE",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "MEASURE",
+          "position"": "1",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "SEXP",
+              "maintainableParentID"": "CS_C16_PERSON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_C16_SEX",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "UAI1P",
+          "position"": "2",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "PUR1P",
+              "maintainableParentID"": "CS_C16_PERSON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_C11_PUR1P",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "STATE",
+          "position"": "3",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "STATE",
+              "maintainableParentID"": "CS_C16_COMMON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_C16_STATE",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REGIONTYPE",
+          "position"": "4",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "REGION_TYPE",
+              "maintainableParentID"": "CS_C16_COMMON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_C16_REGION_TYPE",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REGION",
+          "position"": "5",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "REGION_SA1",
+              "maintainableParentID"": "CS_C16_COMMON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_C11_ASGS_SA",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "FREQUENCY",
+          "position"": "6",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CS_C16_COMMON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "7",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "ABS",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CS_C16_COMMON",
+            "maintainableParentVersion"": "1.0.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "ABS",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CS_C16_COMMON",
+            "maintainableParentVersion"": "1.0.0",
+            "package"": "conceptscheme"
           }
         }
       }
     }
+  },
+  "Name": {
+    "#text": "B38 Place of Usual Residence 1 Year Ago by Sex(SA1 SA)",
+    "lang"": "en"
   }
 }

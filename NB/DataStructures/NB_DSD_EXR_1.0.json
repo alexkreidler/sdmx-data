@@ -1,372 +1,347 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "-xml": "http://www.w3.org/XML/1998/namespace",
-    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "Header": {
-      "ID": "IREF689349",
-      "Prepared": "2021-03-31T05:35:38Z",
-      "Receiver": {
-        "-id": "not_supplied"
-      },
-      "Sender": {
-        "-id": "NB"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "NB",
-          "-id": "DSD_EXR",
-          "-isExternalReference": "false",
-          "-isFinal": "false",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_EXR(1.0)",
-          "-version": "1.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=NB:DSD_EXR(1.0).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "DECIMALS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).DECIMALS",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "BASE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "QUOTE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TENOR"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "DECIMALS",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-isSequence": "false",
-                      "-textType": "Integer"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "CALCULATED",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).CALCULATED",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "BASE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "QUOTE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TENOR"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "CALCULATED",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "Boolean"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "BASE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "QUOTE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TENOR"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "COLLECTION",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).COLLECTION",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "BASE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "QUOTE_CUR"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TENOR"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "COLLECTION",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_COLLECTION",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+  "agencyID"": "NB",
+  "id"": "DSD_EXR",
+  "isExternalReference"": "false",
+  "isFinal"": "false",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_EXR(1.0)",
+  "version"": "1.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=NB:DSD_EXR(1.0).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "DECIMALS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).DECIMALS",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "BASE_CUR"
                 }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_EXR(1.0).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "BASE_CUR",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).BASE_CUR",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "BASE_CUR",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_CURRENCY",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "QUOTE_CUR",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).QUOTE_CUR",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "QUOTE_CUR",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_CURRENCY",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TENOR",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).TENOR",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "TENOR",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_TENOR",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+              },
+              {
+                "Ref": {
+                  "id"": "QUOTE_CUR"
                 }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "5",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_EXR(1.0).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "NB",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CS_NB",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": ""
+              },
+              {
+                "Ref": {
+                  "id"": "TENOR"
                 }
               }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_EXR(1.0).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_EXR(1.0).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "NB",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CS_NB",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-isSequence": "false",
-                    "-textType": "Double"
-                  }
-                }
-              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "DECIMALS",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
             }
           },
-          "Name": [
-            {
-              "#text": "Exchange rates",
-              "-lang": "en"
-            },
-            {
-              "#text": "Valutakurser",
-              "-lang": "no"
+          "LocalRepresentation": {
+            "TextFormat": {
+              "isSequence"": "false",
+              "textType"": "Integer"
             }
-          ]
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "CALCULATED",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).CALCULATED",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "BASE_CUR"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "QUOTE_CUR"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "TENOR"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "CALCULATED",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "Boolean"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).UNIT_MULT",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "BASE_CUR"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "QUOTE_CUR"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "TENOR"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "UNIT_MULT",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "COLLECTION",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_EXR(1.0).COLLECTION",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "BASE_CUR"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "QUOTE_CUR"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "TENOR"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "COLLECTION",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_COLLECTION",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_EXR(1.0).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).FREQ",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "BASE_CUR",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).BASE_CUR",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "BASE_CUR",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_CURRENCY",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "QUOTE_CUR",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).QUOTE_CUR",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "QUOTE_CUR",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_CURRENCY",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TENOR",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_EXR(1.0).TENOR",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "TENOR",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_TENOR",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "5",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_EXR(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "NB",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CS_NB",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_EXR(1.0).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_EXR(1.0).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "NB",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CS_NB",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence"": "false",
+            "textType"": "Double"
+          }
         }
       }
     }
-  }
+  },
+  "Name": [
+    {
+      "#text": "Exchange rates",
+      "lang"": "en"
+    },
+    {
+      "#text": "Valutakurser",
+      "lang"": "no"
+    }
+  ]
 }

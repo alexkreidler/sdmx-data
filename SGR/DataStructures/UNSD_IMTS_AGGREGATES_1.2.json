@@ -1,404 +1,379 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "-xml": "http://www.w3.org/XML/1998/namespace",
-    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "Header": {
-      "ID": "IREF689935",
-      "Prepared": "2021-03-31T05:36:39Z",
-      "Receiver": {
-        "-id": "not_supplied"
-      },
-      "Sender": {
-        "-id": "SDMX"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "UNSD",
-          "-id": "IMTS_AGGREGATES",
-          "-isExternalReference": "false",
-          "-isFinal": "true",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:IMTS_AGGREGATES(1.2)",
-          "-version": "1.2",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:IMTS_AGGREGATES(1.2).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "SDMX",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MEASURE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).UNIT_MEASURE",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEASURE",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "COMMENT_OBS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).COMMENT_OBS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "COMMENT",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "TRADE_SYSTEM",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).TRADE_SYSTEM",
-                  "AttributeRelationship": {
-                    "Dimension": {
-                      "Ref": {
-                        "-id": "REF_AREA"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "TRADE_SYSTEM",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_TRADE_SYSTEM",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "OBS_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "SDMX",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_STATUS",
-                        "-package": "codelist",
-                        "-version": "2.1"
-                      }
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:IMTS_AGGREGATES(1.2).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "SDMX",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "2.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REF_AREA",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).REF_AREA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "REF_AREA",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_AREA",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TRADE_FLOW",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).TRADE_FLOW",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "TRADE_FLOW",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_TRADE_FLOW",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COMMODITY_1",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).COMMODITY_1",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "COMMODITY_1",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_COMMODITY",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TRANSFORMATION",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).TRANSFORMATION",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "TRANSFORMATION",
-                      "-maintainableParentID": "CS_IMTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ESTAT",
-                        "-class": "Codelist",
-                        "-id": "CL_TRANSFORMATION",
-                        "-package": "codelist",
-                        "-version": "1.2"
-                      }
-                    }
-                  }
-                }
-              ],
-              "MeasureDimension": {
-                "-id": "MEASURE",
-                "-position": "6",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDimension=UNSD:IMTS_AGGREGATES(1.2).MEASURE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "UNSD",
-                    "-class": "Concept",
-                    "-id": "MEASURE",
-                    "-maintainableParentID": "CS_IMTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "Enumeration": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "ConceptScheme",
-                      "-id": "CS_MEASURE",
-                      "-package": "conceptscheme",
-                      "-version": "1.0"
-                    }
-                  }
-                }
-              },
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "7",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:IMTS_AGGREGATES(1.2).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "UNSD",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CS_IMTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:IMTS_AGGREGATES(1.2).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:IMTS_AGGREGATES(1.2).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "UNSD",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CS_IMTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                }
+  "agencyID"": "UNSD",
+  "id"": "IMTS_AGGREGATES",
+  "isExternalReference"": "false",
+  "isFinal"": "true",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:IMTS_AGGREGATES(1.2)",
+  "version"": "1.2",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:IMTS_AGGREGATES(1.2).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).UNIT_MULT",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": {
-            "#text": "International Merchandise Trade Statistics",
-            "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "UNIT_MULT",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "SDMX",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MEASURE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).UNIT_MEASURE",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "UNIT_MEASURE",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "COMMENT_OBS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).COMMENT_OBS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "COMMENT",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "TRADE_SYSTEM",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).TRADE_SYSTEM",
+          "AttributeRelationship": {
+            "Dimension": {
+              "Ref": {
+                "id"": "REF_AREA"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "TRADE_SYSTEM",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_TRADE_SYSTEM",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "OBS_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).OBS_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "SDMX",
+                "class"": "Codelist",
+                "id"": "CL_OBS_STATUS",
+                "package"": "codelist",
+                "version"": "2.1"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:IMTS_AGGREGATES(1.2).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).FREQ",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "SDMX",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "2.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REF_AREA",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).REF_AREA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "REF_AREA",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_AREA",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TRADE_FLOW",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).TRADE_FLOW",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "TRADE_FLOW",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_TRADE_FLOW",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COMMODITY_1",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).COMMODITY_1",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "COMMODITY_1",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_COMMODITY",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TRANSFORMATION",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).TRANSFORMATION",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "TRANSFORMATION",
+              "maintainableParentID"": "CS_IMTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ESTAT",
+                "class"": "Codelist",
+                "id"": "CL_TRANSFORMATION",
+                "package"": "codelist",
+                "version"": "1.2"
+              }
+            }
+          }
+        }
+      ],
+      "MeasureDimension": {
+        "id"": "MEASURE",
+        "position"": "6",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDimension=UNSD:IMTS_AGGREGATES(1.2).MEASURE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "UNSD",
+            "class"": "Concept",
+            "id"": "MEASURE",
+            "maintainableParentID"": "CS_IMTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "Enumeration": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "ConceptScheme",
+              "id"": "CS_MEASURE",
+              "package"": "conceptscheme",
+              "version"": "1.0"
+            }
+          }
+        }
+      },
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "7",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:IMTS_AGGREGATES(1.2).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "UNSD",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CS_IMTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:IMTS_AGGREGATES(1.2).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:IMTS_AGGREGATES(1.2).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "UNSD",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CS_IMTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
           }
         }
       }
     }
+  },
+  "Name": {
+    "#text": "International Merchandise Trade Statistics",
+    "lang"": "en"
   }
 }

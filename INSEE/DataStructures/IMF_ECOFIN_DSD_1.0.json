@@ -1,336 +1,306 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "datastructure_ECOFIN_DSD_1617168632968",
-      "Prepared": "2021-03-31T07:30:32.968+02:00",
-      "Receiver": {
-        "-id": "unknown"
-      },
-      "Sender": {
-        "-id": "FR1",
-        "Name": {
-          "#text": "Institut national de la statistique et des études économiques",
-          "-lang": "fr"
-        }
-      },
-      "Source": {
-        "#text": "Banque de données macro-économiques",
-        "-lang": "fr"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "IMF",
-          "-id": "ECOFIN_DSD",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:ECOFIN_DSD(1.0)",
-          "-version": "1.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:ECOFIN_DSD(1.0).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "BASE_PER6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ECOFIN_DSD(1.0).BASE_PER6",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "DATA_DOMAIN6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INDICATOR6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_AREA6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "FREQ6"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "BASE_PER6",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_BASE_PER6",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MULT6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ECOFIN_DSD(1.0).UNIT_MULT6",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "DATA_DOMAIN6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INDICATOR6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_AREA6"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "FREQ6"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT6",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT6",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+  "agencyID"": "IMF",
+  "id"": "ECOFIN_DSD",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:ECOFIN_DSD(1.0)",
+  "version"": "1.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:ECOFIN_DSD(1.0).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "BASE_PER6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ECOFIN_DSD(1.0).BASE_PER6",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "DATA_DOMAIN6"
                 }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:ECOFIN_DSD(1.0).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "DATA_DOMAIN6",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).DATA_DOMAIN6",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "DATA_DOMAIN6",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_DATA_DOMAIN6",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REF_AREA6",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).REF_AREA6",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "REF_AREA6",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_REF_AREA6",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "INDICATOR6",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).INDICATOR6",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "INDICATOR6",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_INDICATOR6",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COUNTERPART_AREA6",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).COUNTERPART_AREA6",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "COUNTERPART_AREA6",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_COUNTERPART_AREA6",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "FREQ6",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).FREQ6",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "FREQ6",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ6",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA6"
                 }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "1",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:ECOFIN_DSD(1.0).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "FR1",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CONCEPTS_INSEE",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": ""
+              },
+              {
+                "Ref": {
+                  "id"": "INDICATOR6"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_AREA6"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "FREQ6"
                 }
               }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:ECOFIN_DSD(1.0).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:ECOFIN_DSD(1.0).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "FR1",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CONCEPTS_INSEE",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                }
-              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "BASE_PER6",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
             }
           },
-          "Name": [
-            {
-              "#text": "IMF",
-              "-lang": "fr"
-            },
-            {
-              "#text": "IMF",
-              "-lang": "en"
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_BASE_PER6",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
             }
-          ]
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MULT6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ECOFIN_DSD(1.0).UNIT_MULT6",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "DATA_DOMAIN6"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA6"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INDICATOR6"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_AREA6"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "FREQ6"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "UNIT_MULT6",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT6",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:ECOFIN_DSD(1.0).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "DATA_DOMAIN6",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).DATA_DOMAIN6",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "DATA_DOMAIN6",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_DATA_DOMAIN6",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REF_AREA6",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).REF_AREA6",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "REF_AREA6",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_REF_AREA6",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "INDICATOR6",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).INDICATOR6",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "INDICATOR6",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_INDICATOR6",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COUNTERPART_AREA6",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).COUNTERPART_AREA6",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "COUNTERPART_AREA6",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_COUNTERPART_AREA6",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "FREQ6",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ECOFIN_DSD(1.0).FREQ6",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "FREQ6",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_FREQ6",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "1",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:ECOFIN_DSD(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "FR1",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CONCEPTS_INSEE",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:ECOFIN_DSD(1.0).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:ECOFIN_DSD(1.0).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "FR1",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CONCEPTS_INSEE",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
         }
       }
     }
-  }
+  },
+  "Name": [
+    {
+      "#text": "IMF",
+      "lang"": "fr"
+    },
+    {
+      "#text": "IMF",
+      "lang"": "en"
+    }
+  ]
 }

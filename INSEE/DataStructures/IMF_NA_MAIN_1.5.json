@@ -1,860 +1,830 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "datastructure_NA_MAIN_1617168629658",
-      "Prepared": "2021-03-31T07:30:29.658+02:00",
-      "Receiver": {
-        "-id": "unknown"
-      },
-      "Sender": {
-        "-id": "FR1",
-        "Name": {
-          "#text": "Institut national de la statistique et des études économiques",
-          "-lang": "fr"
-        }
-      },
-      "Source": {
-        "#text": "Banque de données macro-économiques",
-        "-lang": "fr"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "IMF",
-          "-id": "NA_MAIN",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:NA_MAIN(1.5)",
-          "-version": "1.5",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:NA_MAIN(1.5).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "TIME_FORMAT7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).TIME_FORMAT7",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACCOUNTING_ENTRY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "STO7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INSTR_ASSET7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EXPENDITURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "UNIT_MEASURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRICES7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TRANSFORMATION7"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "TIME_FORMAT7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_TIME_FORMAT7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "DECIMALS7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).DECIMALS7",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACCOUNTING_ENTRY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "STO7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INSTR_ASSET7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EXPENDITURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "UNIT_MEASURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRICES7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TRANSFORMATION7"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "DECIMALS7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_DECIMALS7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MULT7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).UNIT_MULT7",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACCOUNTING_ENTRY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "STO7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INSTR_ASSET7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EXPENDITURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "UNIT_MEASURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRICES7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TRANSFORMATION7"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "CURRENCY7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).CURRENCY7",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_AREA7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNTERPART_SECTOR7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACCOUNTING_ENTRY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "STO7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INSTR_ASSET7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EXPENDITURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "UNIT_MEASURE7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRICES7"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "TRANSFORMATION7"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "CURRENCY7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_CURRENCY7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+  "agencyID"": "IMF",
+  "id"": "NA_MAIN",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:NA_MAIN(1.5)",
+  "version"": "1.5",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:NA_MAIN(1.5).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "TIME_FORMAT7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).TIME_FORMAT7",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ7"
                 }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:NA_MAIN(1.5).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ7",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).FREQ7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "FREQ7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ADJUSTMENT7",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).ADJUSTMENT7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "ADJUSTMENT7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_ADJUSTMENT7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REF_AREA7",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).REF_AREA7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "REF_AREA7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_REF_AREA7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COUNTERPART_AREA7",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).COUNTERPART_AREA7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "COUNTERPART_AREA7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_COUNTERPART_AREA7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REF_SECTOR7",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).REF_SECTOR7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "REF_SECTOR7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_REF_SECTOR7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COUNTERPART_SECTOR7",
-                  "-position": "7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).COUNTERPART_SECTOR7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "COUNTERPART_SECTOR7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_COUNTERPART_SECTOR7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ACCOUNTING_ENTRY7",
-                  "-position": "8",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).ACCOUNTING_ENTRY7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "ACCOUNTING_ENTRY7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_ACCOUNTING_ENTRY7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "STO7",
-                  "-position": "9",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).STO7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "STO7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_STO7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "INSTR_ASSET7",
-                  "-position": "10",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).INSTR_ASSET7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "INSTR_ASSET7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_INSTR_ASSET7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ACTIVITY7",
-                  "-position": "11",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).ACTIVITY7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "ACTIVITY7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_ACTIVITY7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "EXPENDITURE7",
-                  "-position": "12",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).EXPENDITURE7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "EXPENDITURE7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_EXPENDITURE7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "UNIT_MEASURE7",
-                  "-position": "13",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).UNIT_MEASURE7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEASURE7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "PRICES7",
-                  "-position": "14",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).PRICES7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "PRICES7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_PRICES7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TRANSFORMATION7",
-                  "-position": "15",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).TRANSFORMATION7",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "TRANSFORMATION7",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_TRANSFORMATION7",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT7"
                 }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "1",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:NA_MAIN(1.5).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "FR1",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CONCEPTS_INSEE",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": ""
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACCOUNTING_ENTRY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "STO7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INSTR_ASSET7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EXPENDITURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "UNIT_MEASURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRICES7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "TRANSFORMATION7"
                 }
               }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:NA_MAIN(1.5).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:NA_MAIN(1.5).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "FR1",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CONCEPTS_INSEE",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                }
-              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "TIME_FORMAT7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
             }
           },
-          "Name": [
-            {
-              "#text": "IMF",
-              "-lang": "fr"
-            },
-            {
-              "#text": "IMF",
-              "-lang": "en"
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_TIME_FORMAT7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
             }
-          ]
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "DECIMALS7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).DECIMALS7",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACCOUNTING_ENTRY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "STO7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INSTR_ASSET7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EXPENDITURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "UNIT_MEASURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRICES7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "TRANSFORMATION7"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "DECIMALS7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_DECIMALS7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MULT7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).UNIT_MULT7",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACCOUNTING_ENTRY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "STO7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INSTR_ASSET7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EXPENDITURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "UNIT_MEASURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRICES7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "TRANSFORMATION7"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "UNIT_MULT7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "CURRENCY7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:NA_MAIN(1.5).CURRENCY7",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_AREA7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNTERPART_SECTOR7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACCOUNTING_ENTRY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "STO7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INSTR_ASSET7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EXPENDITURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "UNIT_MEASURE7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRICES7"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "TRANSFORMATION7"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "CURRENCY7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_CURRENCY7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:NA_MAIN(1.5).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ7",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).FREQ7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "FREQ7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_FREQ7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ADJUSTMENT7",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).ADJUSTMENT7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "ADJUSTMENT7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_ADJUSTMENT7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REF_AREA7",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).REF_AREA7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "REF_AREA7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_REF_AREA7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COUNTERPART_AREA7",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).COUNTERPART_AREA7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "COUNTERPART_AREA7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_COUNTERPART_AREA7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REF_SECTOR7",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).REF_SECTOR7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "REF_SECTOR7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_REF_SECTOR7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COUNTERPART_SECTOR7",
+          "position"": "7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).COUNTERPART_SECTOR7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "COUNTERPART_SECTOR7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_COUNTERPART_SECTOR7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ACCOUNTING_ENTRY7",
+          "position"": "8",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).ACCOUNTING_ENTRY7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "ACCOUNTING_ENTRY7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_ACCOUNTING_ENTRY7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "STO7",
+          "position"": "9",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).STO7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "STO7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_STO7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "INSTR_ASSET7",
+          "position"": "10",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).INSTR_ASSET7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "INSTR_ASSET7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_INSTR_ASSET7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ACTIVITY7",
+          "position"": "11",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).ACTIVITY7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "ACTIVITY7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_ACTIVITY7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "EXPENDITURE7",
+          "position"": "12",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).EXPENDITURE7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "EXPENDITURE7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_EXPENDITURE7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "UNIT_MEASURE7",
+          "position"": "13",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).UNIT_MEASURE7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "UNIT_MEASURE7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "PRICES7",
+          "position"": "14",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).PRICES7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "PRICES7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_PRICES7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TRANSFORMATION7",
+          "position"": "15",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:NA_MAIN(1.5).TRANSFORMATION7",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "TRANSFORMATION7",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_TRANSFORMATION7",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "1",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:NA_MAIN(1.5).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "FR1",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CONCEPTS_INSEE",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:NA_MAIN(1.5).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:NA_MAIN(1.5).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "FR1",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CONCEPTS_INSEE",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
         }
       }
     }
-  }
+  },
+  "Name": [
+    {
+      "#text": "IMF",
+      "lang"": "fr"
+    },
+    {
+      "#text": "IMF",
+      "lang"": "en"
+    }
+  ]
 }

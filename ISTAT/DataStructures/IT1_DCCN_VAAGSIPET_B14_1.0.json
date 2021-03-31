@@ -1,578 +1,556 @@
 {
-  "Structure": {
-    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "IDREF2208",
-      "Prepared": "2021-03-31T07:35:00.1673136+02:00",
-      "Receiver": {
-        "-id": "Unknown"
-      },
-      "Sender": {
-        "-id": "Unknown"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "IT1",
-          "-id": "DCCN_VAAGSIPET_B14",
-          "-isFinal": "true",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCCN_VAAGSIPET_B14(1.0)",
-          "-validFrom": "2020-05-21T00:00:00",
-          "-validTo": "2099-12-31T00:00:00",
-          "-version": "1.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BREAK",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).BREAK",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "BREAK",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "CONF_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).CONF_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "CONF_STATUS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_CONF",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_PRE_BREAK",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).OBS_PRE_BREAK",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "OBS_PRE_BREAK",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_FLAG",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BASE_PER",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).BASE_PER",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "BASE_PER",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_BASE_YEAR",
-                        "-package": "codelist",
-                        "-version": "1.3"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MEAS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).UNIT_MEAS",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEAS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "METADATA_EN",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).METADATA_EN",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "METADATA_EN",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "METADATA_IT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).METADATA_IT",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "METADATA_IT",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "GPROD_PPROD",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).GPROD_PPROD",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "GPROD_PPROD",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "21.5",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_AGRI_ATTPROD",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "BRANCA_ATTIV_REV2",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).BRANCA_ATTIV_REV2",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "BRANCA_ATTIV_REV2",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "21.5",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_BRANCA_ATTIVITAREV2",
-                        "-package": "codelist",
-                        "-version": "2.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ADJUSTMENT",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).ADJUSTMENT",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "ADJUSTMENT",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_CORREZ",
-                        "-package": "codelist",
-                        "-version": "1.2"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "VAL",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).VAL",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "VAL",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_VAL",
-                        "-package": "codelist",
-                        "-version": "1.4"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ITTER107",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).ITTER107",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "ITTER107",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "21.5",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_ITTER107",
-                        "-package": "codelist",
-                        "-version": "5.2"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TIPO_AGGR_MIGLEURO",
-                  "-position": "7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).TIPO_AGGR_MIGLEURO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "TIPO_AGGR_MIGLEURO",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_TIPO_DATO_BRANCA",
-                        "-package": "codelist",
-                        "-version": "1.5"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "EDI",
-                  "-position": "8",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).EDI",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "EDI",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_T_BIS",
-                        "-package": "codelist",
-                        "-version": "4.0"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "9",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCCN_VAAGSIPET_B14(1.0).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IT1",
-                    "-class": "Concept",
-                    "-id": "SELECT_TIME",
-                    "-maintainableParentID": "CROSS_DOMAIN",
-                    "-maintainableParentVersion": "5.3",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
-              }
-            },
-            "Group": {
-              "-id": "X_MEASURE",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).X_MEASURE",
-              "GroupDimension": {
-                "DimensionReference": {
-                  "Ref": {
-                    "-id": "TIPO_AGGR_MIGLEURO"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCCN_VAAGSIPET_B14(1.0).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IT1",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CROSS_DOMAIN",
-                    "-maintainableParentVersion": "5.3",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "Double"
-                  }
-                }
+  "agencyID"": "IT1",
+  "id"": "DCCN_VAAGSIPET_B14",
+  "isFinal"": "true",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCCN_VAAGSIPET_B14(1.0)",
+  "validFrom"": "202005-21T00:00:00"",
+  "validTo"": "209912-31T00:00:00"",
+  "version"": "1.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BREAK",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).BREAK",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": [
-            {
-              "#text": "Conti della branca agricoltura, silvicoltura e pesca - versione 2014",
-              "-lang": "it"
-            },
-            {
-              "#text": "Agriculture, forestry and fishing accounts in the 2014 version",
-              "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "BREAK",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
             }
-          ]
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "CONF_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).CONF_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "CONF_STATUS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_OBS_CONF",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_PRE_BREAK",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).OBS_PRE_BREAK",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "OBS_PRE_BREAK",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).OBS_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_FLAG",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            },
+            "EnumerationFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BASE_PER",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).BASE_PER",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "BASE_PER",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_BASE_YEAR",
+                "package"": "codelist",
+                "version"": "1.3"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MEAS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).UNIT_MEAS",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "UNIT_MEAS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).UNIT_MULT",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "UNIT_MULT",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "METADATA_EN",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).METADATA_EN",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "METADATA_EN",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "METADATA_IT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCN_VAAGSIPET_B14(1.0).METADATA_IT",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "METADATA_IT",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).FREQ",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "GPROD_PPROD",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).GPROD_PPROD",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "GPROD_PPROD",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "21.5",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_AGRI_ATTPROD",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "BRANCA_ATTIV_REV2",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).BRANCA_ATTIV_REV2",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "BRANCA_ATTIV_REV2",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "21.5",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_BRANCA_ATTIVITAREV2",
+                "package"": "codelist",
+                "version"": "2.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ADJUSTMENT",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).ADJUSTMENT",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "ADJUSTMENT",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_CORREZ",
+                "package"": "codelist",
+                "version"": "1.2"
+              }
+            }
+          }
+        },
+        {
+          "id"": "VAL",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).VAL",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "VAL",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_VAL",
+                "package"": "codelist",
+                "version"": "1.4"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ITTER107",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).ITTER107",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "ITTER107",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "21.5",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_ITTER107",
+                "package"": "codelist",
+                "version"": "5.2"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TIPO_AGGR_MIGLEURO",
+          "position"": "7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).TIPO_AGGR_MIGLEURO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "TIPO_AGGR_MIGLEURO",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_TIPO_DATO_BRANCA",
+                "package"": "codelist",
+                "version"": "1.5"
+              }
+            }
+          }
+        },
+        {
+          "id"": "EDI",
+          "position"": "8",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCN_VAAGSIPET_B14(1.0).EDI",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "EDI",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_T_BIS",
+                "package"": "codelist",
+                "version"": "4.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "9",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCCN_VAAGSIPET_B14(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IT1",
+            "class"": "Concept",
+            "id"": "SELECT_TIME",
+            "maintainableParentID"": "CROSS_DOMAIN",
+            "maintainableParentVersion"": "5.3",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "Group": {
+      "id"": "X_MEASURE",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).X_MEASURE",
+      "GroupDimension": {
+        "DimensionReference": {
+          "Ref": {
+            "id"": "TIPO_AGGR_MIGLEURO"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCCN_VAAGSIPET_B14(1.0).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCCN_VAAGSIPET_B14(1.0).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IT1",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CROSS_DOMAIN",
+            "maintainableParentVersion"": "5.3",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "Double"
+          }
         }
       }
     }
-  }
+  },
+  "Name": [
+    {
+      "#text": "Conti della branca agricoltura, silvicoltura e pesca  versione 2014"",
+      "lang"": "it"
+    },
+    {
+      "#text": "Agriculture, forestry and fishing accounts in the 2014 version",
+      "lang"": "en"
+    }
+  ]
 }

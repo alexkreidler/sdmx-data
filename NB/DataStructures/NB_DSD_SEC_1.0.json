@@ -1,319 +1,294 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "-xml": "http://www.w3.org/XML/1998/namespace",
-    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "Header": {
-      "ID": "IREF689445",
-      "Prepared": "2021-03-31T05:35:41Z",
-      "Receiver": {
-        "-id": "not_supplied"
-      },
-      "Sender": {
-        "-id": "NB"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "NB",
-          "-id": "DSD_SEC",
-          "-isExternalReference": "false",
-          "-isFinal": "false",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_SEC(1.0)",
-          "-version": "1.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=NB:DSD_SEC(1.0).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "DECIMALS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).DECIMALS",
-                  "AttributeRelationship": {
-                    "Dimension": {
-                      "Ref": {
-                        "-id": "UNIT_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "DECIMALS",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_DECIMALS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "MATURITY",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).MATURITY",
-                  "AttributeRelationship": {
-                    "Dimension": {
-                      "Ref": {
-                        "-id": "UNIT_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "MATURITY",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-isSequence": "false",
-                      "-textType": "GregorianDay"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "ISSUE_DATE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).ISSUE_DATE",
-                  "AttributeRelationship": {
-                    "Dimension": {
-                      "Ref": {
-                        "-id": "UNIT_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "ISSUE_DATE",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-isSequence": "false",
-                      "-textType": "GregorianDay"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "COUPON",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).COUPON",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SECURITY"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "UNIT_MEASURE"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "COUPON",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-decimals": "2",
-                      "-isSequence": "false",
-                      "-textType": "Decimal"
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_SEC(1.0).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_SEC(1.0).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SECURITY",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_SEC(1.0).SECURITY",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "SECURITY",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_SECURITY",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "UNIT_MEASURE",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_SEC(1.0).UNIT_MEASURE",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "NB",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEASURE",
-                      "-maintainableParentID": "CS_NB",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "NB",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "4",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_SEC(1.0).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "NB",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CS_NB",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "GregorianDay"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_SEC(1.0).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_SEC(1.0).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "NB",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CS_NB",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-isSequence": "false",
-                    "-textType": "Double"
-                  }
-                }
+  "agencyID"": "NB",
+  "id"": "DSD_SEC",
+  "isExternalReference"": "false",
+  "isFinal"": "false",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_SEC(1.0)",
+  "version"": "1.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=NB:DSD_SEC(1.0).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "DECIMALS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).DECIMALS",
+          "AttributeRelationship": {
+            "Dimension": {
+              "Ref": {
+                "id"": "UNIT_MEASURE"
               }
             }
           },
-          "Description": [
-            {
-              "#text": "Beste kjøps- og salgskurser / renter stilt av primærhandlere i norske statspapirer klokken 16:00.\n\nAll historic information on quotes and trading volume up until 30.06.2020 are property of Oslo Børs and Oslo Børs has exclusive rights to dispose of these data. All information on quotes and trading volume from 01.07.2020 are property of Bloomberg and Bloomberg has exclusive rights to dispose of these data. The contents may not be made available outside of the private sphere or copied for a purpose other than for private use or as prescribed by involuntary statute, except with Oslo Børs’ and/or Bloombergs prior written consent. For further information, please see https://www.oslobors.no/ob_eng/Oslo-Boers/About-Oslo-Boers/Disclaimer-and-Copyright-Notice",
-              "-lang": "no"
-            },
-            {
-              "#text": "Best bid- and ask prices / yields quoted by primary dealers in Norwegian Treasury bills and government bonds at 4 p.m.\n\nAll historic information on quotes and trading volume up until 30.06.2020 are property of Oslo Børs and Oslo Børs has exclusive rights to dispose of these data. All information on quotes and trading volume from 01.07.2020 are property of Bloomberg and Bloomberg has exclusive rights to dispose of these data. The contents may not be made available outside of the private sphere or copied for a purpose other than for private use or as prescribed by involuntary statute, except with Oslo Børs’ and/or Bloombergs prior written consent. For further information, please see https://www.oslobors.no/ob_eng/Oslo-Boers/About-Oslo-Boers/Disclaimer-and-Copyright-Notice",
-              "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "DECIMALS",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
             }
-          ],
-          "Name": [
-            {
-              "#text": "Securities",
-              "-lang": "en"
-            },
-            {
-              "#text": "Lån",
-              "-lang": "no"
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_DECIMALS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
             }
-          ]
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "MATURITY",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).MATURITY",
+          "AttributeRelationship": {
+            "Dimension": {
+              "Ref": {
+                "id"": "UNIT_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "MATURITY",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "isSequence"": "false",
+              "textType"": "GregorianDay"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "ISSUE_DATE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).ISSUE_DATE",
+          "AttributeRelationship": {
+            "Dimension": {
+              "Ref": {
+                "id"": "UNIT_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "ISSUE_DATE",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "isSequence"": "false",
+              "textType"": "GregorianDay"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "COUPON",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_SEC(1.0).COUPON",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SECURITY"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "UNIT_MEASURE"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "COUPON",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "decimals"": "2",
+              "isSequence"": "false",
+              "textType"": "Decimal"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_SEC(1.0).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_SEC(1.0).FREQ",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SECURITY",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_SEC(1.0).SECURITY",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "SECURITY",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_SECURITY",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "UNIT_MEASURE",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_SEC(1.0).UNIT_MEASURE",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "NB",
+              "class"": "Concept",
+              "id"": "UNIT_MEASURE",
+              "maintainableParentID"": "CS_NB",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "NB",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "4",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_SEC(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "NB",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CS_NB",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "GregorianDay"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_SEC(1.0).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_SEC(1.0).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "NB",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CS_NB",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence"": "false",
+            "textType"": "Double"
+          }
         }
       }
     }
-  }
+  },
+  "Description": [
+    {
+      "#text": "Beste kjøps og salgskurser / renter stilt av primærhandlere i norske statspapirer klokken 16:00.\n\nAll historic information on quotes and trading volume up until 30.06.2020 are property of Oslo Børs and Oslo Børs has exclusive rights to dispose of these data. All information on quotes and trading volume from 01.07.2020 are property of Bloomberg and Bloomberg has exclusive rights to dispose of these data. The contents may not be made available outside of the private sphere or copied for a purpose other than for private use or as prescribed by involuntary statute, except with Oslo Børs’ and/or Bloombergs prior written consent. For further information, please see https://www.oslobors.no/ob_eng/Oslo-Boers/About-Oslo-Boers/Disclaimer-and-Copyright-Notice"",
+      "lang"": "no"
+    },
+    {
+      "#text": "Best bid and ask prices / yields quoted by primary dealers in Norwegian Treasury bills and government bonds at 4 p.m.\n\nAll historic information on quotes and trading volume up until 30.06.2020 are property of Oslo Børs and Oslo Børs has exclusive rights to dispose of these data. All information on quotes and trading volume from 01.07.2020 are property of Bloomberg and Bloomberg has exclusive rights to dispose of these data. The contents may not be made available outside of the private sphere or copied for a purpose other than for private use or as prescribed by involuntary statute, except with Oslo Børs’ and/or Bloombergs prior written consent. For further information, please see https://www.oslobors.no/ob_eng/Oslo-Boers/About-Oslo-Boers/Disclaimer-and-Copyright-Notice"",
+      "lang"": "en"
+    }
+  ],
+  "Name": [
+    {
+      "#text": "Securities",
+      "lang"": "en"
+    },
+    {
+      "#text": "Lån",
+      "lang"": "no"
+    }
+  ]
 }

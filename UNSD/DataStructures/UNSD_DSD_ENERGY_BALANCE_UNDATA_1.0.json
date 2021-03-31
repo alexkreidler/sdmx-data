@@ -1,287 +1,265 @@
 {
-  "Structure": {
-    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "IDREF682",
-      "Prepared": "2021-03-31T07:39:01.0949936+02:00",
-      "Receiver": {
-        "-id": "Unknown"
-      },
-      "Sender": {
-        "-id": "Unknown"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "UNSD",
-          "-id": "DSD_ENERGY_BALANCE_UNDATA",
-          "-isFinal": "true",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0)",
-          "-version": "1.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "ESTIMATE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).ESTIMATE",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "ESTIMATE",
-                      "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_ESTIMATE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "FOOTNOTES",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).FOOTNOTES",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "FOOTNOTES",
-                      "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULTIPLIER",
-                      "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_UNITMUL_ENERGY_UNDATA",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "REF_AREA",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).REF_AREA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "REFAREA",
-                      "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "SDMX",
-                        "-class": "Codelist",
-                        "-id": "CL_AREA",
-                        "-package": "codelist",
-                        "-version": "2.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COMMODITY",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).COMMODITY",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "COMMODITY",
-                      "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_COMMODITY_ENERGY_BALANCE_UNDATA",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TRANSACTION",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).TRANSACTION",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "TRANSACTIONS",
-                      "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_TRANS_ENERGY_BALANCE_UNDATA",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "UNIT",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).UNIT",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "UNSD",
-                      "-class": "Concept",
-                      "-id": "UNIT",
-                      "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "UNSD",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_ENERGY_UNDATA",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "5",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "UNSD",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "UNSD",
-                    "-class": "Concept",
-                    "-id": "OBSERVATION",
-                    "-maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "String"
-                  }
-                }
+  "agencyID"": "UNSD",
+  "id"": "DSD_ENERGY_BALANCE_UNDATA",
+  "isFinal"": "true",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0)",
+  "version"": "1.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "ESTIMATE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).ESTIMATE",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": {
-            "#text": "Energy Balance Data Structure Definition",
-            "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "ESTIMATE",
+              "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_ESTIMATE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "FOOTNOTES",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).FOOTNOTES",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "FOOTNOTES",
+              "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).UNIT_MULT",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "UNIT_MULTIPLIER",
+              "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_UNITMUL_ENERGY_UNDATA",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "REF_AREA",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).REF_AREA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "REFAREA",
+              "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "SDMX",
+                "class"": "Codelist",
+                "id"": "CL_AREA",
+                "package"": "codelist",
+                "version"": "2.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COMMODITY",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).COMMODITY",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "COMMODITY",
+              "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_COMMODITY_ENERGY_BALANCE_UNDATA",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TRANSACTION",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).TRANSACTION",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "TRANSACTIONS",
+              "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_TRANS_ENERGY_BALANCE_UNDATA",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "UNIT",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).UNIT",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "UNSD",
+              "class"": "Concept",
+              "id"": "UNIT",
+              "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "UNSD",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_ENERGY_UNDATA",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "5",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "UNSD",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "UNSD",
+            "class"": "Concept",
+            "id"": "OBSERVATION",
+            "maintainableParentID"": "CS_ENERGY_BALANCE_UNDATA",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "String"
           }
         }
       }
     }
+  },
+  "Name": {
+    "#text": "Energy Balance Data Structure Definition",
+    "lang"": "en"
   }
 }

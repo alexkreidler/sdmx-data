@@ -1,1352 +1,1327 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "-xml": "http://www.w3.org/XML/1998/namespace",
-    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "Header": {
-      "ID": "IREF690815",
-      "Prepared": "2021-03-31T05:38:08Z",
-      "Receiver": {
-        "-id": "not_supplied"
-      },
-      "Sender": {
-        "-id": "UNICEF"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "IAEG-SDGs",
-          "-id": "SDG",
-          "-isExternalReference": "false",
-          "-isFinal": "true",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEG-SDGs:SDG(1.3)",
-          "-version": "1.3",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IAEG-SDGs:SDG(1.3).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "OBS_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "SDMX",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_STATUS",
-                        "-package": "codelist",
-                        "-version": "2.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "SDMX",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MEASURE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).UNIT_MEASURE",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "AGE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRODUCT"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEASURE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.3"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BASE_PER",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).BASE_PER",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "BASE_PER",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "DateTime"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "NATURE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).NATURE",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "NATURE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_NATURE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "TIME_DETAIL",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).TIME_DETAIL",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "TIME_DETAIL",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "COMMENT_OBS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).COMMENT_OBS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "COMMENT_OBS",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "TIME_COVERAGE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).TIME_COVERAGE",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "TIME_COVERAGE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "DateTime"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UPPER_BOUND",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).UPPER_BOUND",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "UPPER_BOUND",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "Double"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "LOWER_BOUND",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).LOWER_BOUND",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "LOWER_BOUND",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "Double"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "SOURCE_DETAIL",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).SOURCE_DETAIL",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "SOURCE_DETAIL",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "COMMENT_TS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).COMMENT_TS",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "AGE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRODUCT"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "COMMENT_TS",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "GEO_INFO_URL",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).GEO_INFO_URL",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "AGE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRODUCT"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "GEO_INFO_URL",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "GEO_INFO_TYPE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).GEO_INFO_TYPE",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "AGE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRODUCT"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "GEO_INFO_TYPE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_GEO_INFO_TYPE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "CUST_BREAKDOWN_LB",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).CUST_BREAKDOWN_LB",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "AGE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRODUCT"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "CUST_BREAKDOWN_LB",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "DATA_LAST_UPDATE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.3).DATA_LAST_UPDATE",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "AGE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ACTIVITY"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "PRODUCT"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "DATA_LAST_UPDATE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "DateTime"
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IAEG-SDGs:SDG(1.3).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "SDMX",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "2.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REPORTING_TYPE",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).REPORTING_TYPE",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "REPORTING_TYPE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_REPORTING_TYPE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SERIES",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).SERIES",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "SERIES",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_SERIES",
-                        "-package": "codelist",
-                        "-version": "1.3"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REF_AREA",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).REF_AREA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "REF_AREA",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_AREA",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SEX",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).SEX",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "SEX",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_SEX",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "AGE",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).AGE",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "AGE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_AGE",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "URBANISATION",
-                  "-position": "7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).URBANISATION",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "URBANISATION",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_URBANISATION",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "INCOME_WEALTH_QUANTILE",
-                  "-position": "8",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).INCOME_WEALTH_QUANTILE",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "INCOME_WEALTH_QUANTILE",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_QUANTILE",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "EDUCATION_LEV",
-                  "-position": "9",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).EDUCATION_LEV",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "EDUCATION_LEV",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_EDUCATION_LEV",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "OCCUPATION",
-                  "-position": "10",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).OCCUPATION",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "OCCUPATION",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_OCCUPATION",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CUST_BREAKDOWN",
-                  "-position": "11",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).CUST_BREAKDOWN",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "CUST_BREAKDOWN",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_CUST_BREAKDOWN",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COMPOSITE_BREAKDOWN",
-                  "-position": "12",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).COMPOSITE_BREAKDOWN",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "COMPOSITE_BREAKDOWN",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_COMP_BREAKDOWN",
-                        "-package": "codelist",
-                        "-version": "1.3"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "DISABILITY_STATUS",
-                  "-position": "13",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).DISABILITY_STATUS",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "DISABILITY_STATUS",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_DISABILITY",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ACTIVITY",
-                  "-position": "14",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).ACTIVITY",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "ACTIVITY",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_ACTIVITY",
-                        "-package": "codelist",
-                        "-version": "1.1"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "PRODUCT",
-                  "-position": "15",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.3).PRODUCT",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IAEG-SDGs",
-                      "-class": "Concept",
-                      "-id": "PRODUCT",
-                      "-maintainableParentID": "SDG_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IAEG-SDGs",
-                        "-class": "Codelist",
-                        "-id": "CL_PRODUCT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "16",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEG-SDGs:SDG(1.3).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IAEG-SDGs",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "SDG_CONCEPTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IAEG-SDGs:SDG(1.3).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEG-SDGs:SDG(1.3).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IAEG-SDGs",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "SDG_CONCEPTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "Double"
-                  }
-                }
+  "agencyID"": "IAEGSDGs"",
+  "id"": "SDG",
+  "isExternalReference"": "false",
+  "isFinal"": "true",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEGSDGs:SDG(1.3)"",
+  "version"": "1.3",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IAEGSDGs:SDG(1.3).AttributeDescriptor"",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "OBS_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).OBS_STATUS"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Description": {
-            "#text": "Data Structure Definition for Sustainable Development Goals Indicators.",
-            "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
           },
-          "Name": {
-            "#text": "SDG DSD",
-            "-lang": "en"
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "SDMX",
+                "class"": "Codelist",
+                "id"": "CL_OBS_STATUS",
+                "package"": "codelist",
+                "version"": "2.1"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).UNIT_MULT"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "UNIT_MULT",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "SDMX",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MEASURE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).UNIT_MEASURE"",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "AGE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRODUCT"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "UNIT_MEASURE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.3"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BASE_PER",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).BASE_PER"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "BASE_PER",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "DateTime"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "NATURE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).NATURE"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "NATURE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_NATURE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "TIME_DETAIL",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).TIME_DETAIL"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "TIME_DETAIL",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "COMMENT_OBS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).COMMENT_OBS"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "COMMENT_OBS",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "TIME_COVERAGE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).TIME_COVERAGE"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "TIME_COVERAGE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "DateTime"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UPPER_BOUND",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).UPPER_BOUND"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "UPPER_BOUND",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "Double"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "LOWER_BOUND",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).LOWER_BOUND"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "LOWER_BOUND",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "Double"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "SOURCE_DETAIL",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).SOURCE_DETAIL"",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "SOURCE_DETAIL",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "COMMENT_TS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).COMMENT_TS"",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "AGE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRODUCT"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "COMMENT_TS",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "GEO_INFO_URL",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).GEO_INFO_URL"",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "AGE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRODUCT"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "GEO_INFO_URL",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "GEO_INFO_TYPE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).GEO_INFO_TYPE"",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "AGE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRODUCT"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "GEO_INFO_TYPE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_GEO_INFO_TYPE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "CUST_BREAKDOWN_LB",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).CUST_BREAKDOWN_LB"",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "AGE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRODUCT"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "CUST_BREAKDOWN_LB",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "DATA_LAST_UPDATE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).DATA_LAST_UPDATE"",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "AGE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ACTIVITY"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "PRODUCT"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "DATA_LAST_UPDATE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "DateTime"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IAEGSDGs:SDG(1.3).DimensionDescriptor"",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).FREQ"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "SDMX",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "2.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REPORTING_TYPE",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).REPORTING_TYPE"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "REPORTING_TYPE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_REPORTING_TYPE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SERIES",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).SERIES"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "SERIES",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_SERIES",
+                "package"": "codelist",
+                "version"": "1.3"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REF_AREA",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).REF_AREA"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "REF_AREA",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_AREA",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SEX",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).SEX"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "SEX",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_SEX",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "AGE",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).AGE"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "AGE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_AGE",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "URBANISATION",
+          "position"": "7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).URBANISATION"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "URBANISATION",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_URBANISATION",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "INCOME_WEALTH_QUANTILE",
+          "position"": "8",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).INCOME_WEALTH_QUANTILE"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "INCOME_WEALTH_QUANTILE",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_QUANTILE",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "EDUCATION_LEV",
+          "position"": "9",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).EDUCATION_LEV"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "EDUCATION_LEV",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_EDUCATION_LEV",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "OCCUPATION",
+          "position"": "10",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).OCCUPATION"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "OCCUPATION",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_OCCUPATION",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CUST_BREAKDOWN",
+          "position"": "11",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).CUST_BREAKDOWN"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "CUST_BREAKDOWN",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_CUST_BREAKDOWN",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COMPOSITE_BREAKDOWN",
+          "position"": "12",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).COMPOSITE_BREAKDOWN"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "COMPOSITE_BREAKDOWN",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_COMP_BREAKDOWN",
+                "package"": "codelist",
+                "version"": "1.3"
+              }
+            }
+          }
+        },
+        {
+          "id"": "DISABILITY_STATUS",
+          "position"": "13",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).DISABILITY_STATUS"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "DISABILITY_STATUS",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_DISABILITY",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ACTIVITY",
+          "position"": "14",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).ACTIVITY"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "ACTIVITY",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_ACTIVITY",
+                "package"": "codelist",
+                "version"": "1.1"
+              }
+            }
+          }
+        },
+        {
+          "id"": "PRODUCT",
+          "position"": "15",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).PRODUCT"",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IAEGSDGs"",
+              "class"": "Concept",
+              "id"": "PRODUCT",
+              "maintainableParentID"": "SDG_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IAEGSDGs"",
+                "class"": "Codelist",
+                "id"": "CL_PRODUCT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "16",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEGSDGs:SDG(1.3).TIME_PERIOD"",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IAEGSDGs"",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "SDG_CONCEPTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IAEGSDGs:SDG(1.3).MeasureDescriptor"",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEGSDGs:SDG(1.3).OBS_VALUE"",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IAEGSDGs"",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "SDG_CONCEPTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "Double"
           }
         }
       }
     }
+  },
+  "Description": {
+    "#text": "Data Structure Definition for Sustainable Development Goals Indicators.",
+    "lang"": "en"
+  },
+  "Name": {
+    "#text": "SDG DSD",
+    "lang"": "en"
   }
 }

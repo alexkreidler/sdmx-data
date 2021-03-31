@@ -1,734 +1,712 @@
 {
-  "Structure": {
-    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "IDREF2051",
-      "Prepared": "2021-03-31T07:32:31.7490115+02:00",
-      "Receiver": {
-        "-id": "Unknown"
-      },
-      "Sender": {
-        "-id": "Unknown"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "IT1",
-          "-id": "DCIS_MATRIMONI_SOC",
-          "-isFinal": "true",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCIS_MATRIMONI_SOC(1.4)",
-          "-validFrom": "2019-11-26T00:00:00",
-          "-validTo": "2099-12-31T00:00:00",
-          "-version": "1.4",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BREAK",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).BREAK",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "BREAK",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "CONF_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).CONF_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "CONF_STATUS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_CONF",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_PRE_BREAK",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).OBS_PRE_BREAK",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "OBS_PRE_BREAK",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_FLAG",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BASE_PER",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).BASE_PER",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "BASE_PER",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_BASE_YEAR",
-                        "-package": "codelist",
-                        "-version": "1.3"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MEAS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).UNIT_MEAS",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEAS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "METADATA_EN",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).METADATA_EN",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "METADATA_EN",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "METADATA_IT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).METADATA_IT",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "METADATA_IT",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REG_NASCITA_SPOSO",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_NASCITA_SPOSO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "REG_NASCITA_SPOSO",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_PROV_DEST_Z",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REG_RESID_SPOSA",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_RESID_SPOSA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "REG_RESID_SPOSA",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_PROV_DEST_Z",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REG_RESID_SPOSO",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_RESID_SPOSO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "REG_RESID_SPOSO",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_PROV_DEST_Z",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TIPO_CONV_BIS",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).TIPO_CONV_BIS",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "TIPO_CONV_BIS",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_TIPO_CONV_BIS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TIPO_DATO",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).TIPO_DATO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "TIPO_DATO",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "5.1",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_TIPO_DATO15",
-                        "-package": "codelist",
-                        "-version": "3.5"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SETT_ATTIV_SPOSA",
-                  "-position": "7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).SETT_ATTIV_SPOSA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "SETT_ATTIV_SPOSA",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_ATECO_2007",
-                        "-package": "codelist",
-                        "-version": "2.7"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SETT_ATTIV_SPOSO",
-                  "-position": "8",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).SETT_ATTIV_SPOSO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "SETT_ATTIV_SPOSO",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_ATECO_2007",
-                        "-package": "codelist",
-                        "-version": "2.7"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COND_PROF_SPOSA",
-                  "-position": "9",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).COND_PROF_SPOSA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "COND_PROF_SPOSA",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_CONDIZIONE_DICH",
-                        "-package": "codelist",
-                        "-version": "1.7"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COND_PROF_SPOSO",
-                  "-position": "10",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).COND_PROF_SPOSO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "COND_PROF_SPOSO",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_CONDIZIONE_DICH",
-                        "-package": "codelist",
-                        "-version": "1.7"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ITTER107",
-                  "-position": "11",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).ITTER107",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "ITTER107",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_ITTER107",
-                        "-package": "codelist",
-                        "-version": "5.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "POSIZ_PROF_SPOSA",
-                  "-position": "12",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).POSIZ_PROF_SPOSA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "POSIZ_PROF_SPOSA",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_PROFILO_PROF",
-                        "-package": "codelist",
-                        "-version": "2.4"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "POSIZ_PROF_SPOSO",
-                  "-position": "13",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).POSIZ_PROF_SPOSO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "POSIZ_PROF_SPOSO",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_PROFILO_PROF",
-                        "-package": "codelist",
-                        "-version": "2.4"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REG_NASCITA_SPOSA",
-                  "-position": "14",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_NASCITA_SPOSA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "REG_NASCITA_SPOSA",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "20.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_PROV_DEST_Z",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "15",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCIS_MATRIMONI_SOC(1.4).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IT1",
-                    "-class": "Concept",
-                    "-id": "SELECT_TIME",
-                    "-maintainableParentID": "CROSS_DOMAIN",
-                    "-maintainableParentVersion": "5.1",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
-              }
-            },
-            "Group": {
-              "-id": "X_MEASURE",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).X_MEASURE",
-              "GroupDimension": {
-                "DimensionReference": {
-                  "Ref": {
-                    "-id": "TIPO_DATO"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCIS_MATRIMONI_SOC(1.4).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IT1",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CROSS_DOMAIN",
-                    "-maintainableParentVersion": "5.1",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "Double"
-                  }
-                }
+  "agencyID"": "IT1",
+  "id"": "DCIS_MATRIMONI_SOC",
+  "isFinal"": "true",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCIS_MATRIMONI_SOC(1.4)",
+  "validFrom"": "201911-26T00:00:00"",
+  "validTo"": "209912-31T00:00:00"",
+  "version"": "1.4",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BREAK",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).BREAK",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": [
-            {
-              "#text": "Caratteristiche professionali e territoriali degli sposi",
-              "-lang": "it"
-            },
-            {
-              "#text": "Spouses professional and territorial characteristics",
-              "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "BREAK",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
             }
-          ]
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "CONF_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).CONF_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "CONF_STATUS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_OBS_CONF",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_PRE_BREAK",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).OBS_PRE_BREAK",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "OBS_PRE_BREAK",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).OBS_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_FLAG",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            },
+            "EnumerationFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BASE_PER",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).BASE_PER",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "BASE_PER",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_BASE_YEAR",
+                "package"": "codelist",
+                "version"": "1.3"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MEAS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).UNIT_MEAS",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "UNIT_MEAS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).UNIT_MULT",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "UNIT_MULT",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "METADATA_EN",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).METADATA_EN",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "METADATA_EN",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "METADATA_IT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_MATRIMONI_SOC(1.4).METADATA_IT",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "METADATA_IT",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).FREQ",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REG_NASCITA_SPOSO",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_NASCITA_SPOSO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "REG_NASCITA_SPOSO",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_PROV_DEST_Z",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REG_RESID_SPOSA",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_RESID_SPOSA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "REG_RESID_SPOSA",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_PROV_DEST_Z",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REG_RESID_SPOSO",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_RESID_SPOSO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "REG_RESID_SPOSO",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_PROV_DEST_Z",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TIPO_CONV_BIS",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).TIPO_CONV_BIS",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "TIPO_CONV_BIS",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_TIPO_CONV_BIS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TIPO_DATO",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).TIPO_DATO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "TIPO_DATO",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "5.1",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_TIPO_DATO15",
+                "package"": "codelist",
+                "version"": "3.5"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SETT_ATTIV_SPOSA",
+          "position"": "7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).SETT_ATTIV_SPOSA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "SETT_ATTIV_SPOSA",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_ATECO_2007",
+                "package"": "codelist",
+                "version"": "2.7"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SETT_ATTIV_SPOSO",
+          "position"": "8",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).SETT_ATTIV_SPOSO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "SETT_ATTIV_SPOSO",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_ATECO_2007",
+                "package"": "codelist",
+                "version"": "2.7"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COND_PROF_SPOSA",
+          "position"": "9",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).COND_PROF_SPOSA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "COND_PROF_SPOSA",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_CONDIZIONE_DICH",
+                "package"": "codelist",
+                "version"": "1.7"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COND_PROF_SPOSO",
+          "position"": "10",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).COND_PROF_SPOSO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "COND_PROF_SPOSO",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_CONDIZIONE_DICH",
+                "package"": "codelist",
+                "version"": "1.7"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ITTER107",
+          "position"": "11",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).ITTER107",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "ITTER107",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_ITTER107",
+                "package"": "codelist",
+                "version"": "5.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "POSIZ_PROF_SPOSA",
+          "position"": "12",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).POSIZ_PROF_SPOSA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "POSIZ_PROF_SPOSA",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_PROFILO_PROF",
+                "package"": "codelist",
+                "version"": "2.4"
+              }
+            }
+          }
+        },
+        {
+          "id"": "POSIZ_PROF_SPOSO",
+          "position"": "13",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).POSIZ_PROF_SPOSO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "POSIZ_PROF_SPOSO",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_PROFILO_PROF",
+                "package"": "codelist",
+                "version"": "2.4"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REG_NASCITA_SPOSA",
+          "position"": "14",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_MATRIMONI_SOC(1.4).REG_NASCITA_SPOSA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "REG_NASCITA_SPOSA",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "20.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_PROV_DEST_Z",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "15",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCIS_MATRIMONI_SOC(1.4).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IT1",
+            "class"": "Concept",
+            "id"": "SELECT_TIME",
+            "maintainableParentID"": "CROSS_DOMAIN",
+            "maintainableParentVersion"": "5.1",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "Group": {
+      "id"": "X_MEASURE",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).X_MEASURE",
+      "GroupDimension": {
+        "DimensionReference": {
+          "Ref": {
+            "id"": "TIPO_DATO"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCIS_MATRIMONI_SOC(1.4).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCIS_MATRIMONI_SOC(1.4).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IT1",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CROSS_DOMAIN",
+            "maintainableParentVersion"": "5.1",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "Double"
+          }
         }
       }
     }
-  }
+  },
+  "Name": [
+    {
+      "#text": "Caratteristiche professionali e territoriali degli sposi",
+      "lang"": "it"
+    },
+    {
+      "#text": "Spouses professional and territorial characteristics",
+      "lang"": "en"
+    }
+  ]
 }

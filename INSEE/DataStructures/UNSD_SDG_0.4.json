@@ -1,719 +1,689 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "datastructure_SDG_1617168634469",
-      "Prepared": "2021-03-31T07:30:34.469+02:00",
-      "Receiver": {
-        "-id": "unknown"
-      },
-      "Sender": {
-        "-id": "FR1",
-        "Name": {
-          "#text": "Institut national de la statistique et des études économiques",
-          "-lang": "fr"
-        }
-      },
-      "Source": {
-        "#text": "Banque de données macro-économiques",
-        "-lang": "fr"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "UNSD",
-          "-id": "SDG",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:SDG(0.4)",
-          "-version": "0.4",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:SDG(0.4).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MULT110689853",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).UNIT_MULT110689853",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "AGE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "FREQ110689853"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MEASURE110689853",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).UNIT_MEASURE110689853",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "AGE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "FREQ110689853"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEASURE110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "NATURE110689853",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).NATURE110689853",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "AGE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "URBANISATION110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REPORTING_TYPE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CUST_BREAKDOWN110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "INCOME_WEALTH_QUANTILE110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DISABILITY_STATUS110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "OCCUPATION110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COMPOSITE_BREAKDOWN110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SEX110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "EDUCATION_LEV110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA110689853"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "FREQ110689853"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "NATURE110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_NATURE110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+  "agencyID"": "UNSD",
+  "id"": "SDG",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:SDG(0.4)",
+  "version"": "0.4",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:SDG(0.4).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MULT110689853",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).UNIT_MULT110689853",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "AGE110689853"
                 }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:SDG(0.4).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "AGE110689853",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).AGE110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "AGE110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_AGE110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "URBANISATION110689853",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).URBANISATION110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "URBANISATION110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_URBANISATION110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REPORTING_TYPE110689853",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).REPORTING_TYPE110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "REPORTING_TYPE110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_REPORTING_TYPE110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CUST_BREAKDOWN110689853",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).CUST_BREAKDOWN110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "CUST_BREAKDOWN110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_CUST_BREAKDOWN110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "INCOME_WEALTH_QUANTILE110689853",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).INCOME_WEALTH_QUANTILE110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "INCOME_WEALTH_QUANTILE110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_INCOME_WEALTH_QUANTILE110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "DISABILITY_STATUS110689853",
-                  "-position": "7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).DISABILITY_STATUS110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "DISABILITY_STATUS110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_DISABILITY_STATUS110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "OCCUPATION110689853",
-                  "-position": "8",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).OCCUPATION110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "OCCUPATION110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_OCCUPATION110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "COMPOSITE_BREAKDOWN110689853",
-                  "-position": "9",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).COMPOSITE_BREAKDOWN110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "COMPOSITE_BREAKDOWN110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_COMPOSITE_BREAKDOWN110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SERIES110689853",
-                  "-position": "10",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).SERIES110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "SERIES110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_SERIES110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SEX110689853",
-                  "-position": "11",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).SEX110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "SEX110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_SEX110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "EDUCATION_LEV110689853",
-                  "-position": "12",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).EDUCATION_LEV110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "EDUCATION_LEV110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_EDUCATION_LEV110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "REF_AREA110689853",
-                  "-position": "13",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).REF_AREA110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "REF_AREA110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_REF_AREA110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "FREQ110689853",
-                  "-position": "14",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).FREQ110689853",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "FR1",
-                      "-class": "Concept",
-                      "-id": "FREQ110689853",
-                      "-maintainableParentID": "CONCEPTS_INSEE",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "FR1",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ110689853",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION110689853"
                 }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "1",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:SDG(0.4).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "FR1",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CONCEPTS_INSEE",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": ""
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "FREQ110689853"
                 }
               }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:SDG(0.4).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:SDG(0.4).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "FR1",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CONCEPTS_INSEE",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                }
-              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "UNIT_MULT110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
             }
           },
-          "Name": [
-            {
-              "#text": "UNSD",
-              "-lang": "fr"
-            },
-            {
-              "#text": "UNSD",
-              "-lang": "en"
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
             }
-          ]
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MEASURE110689853",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).UNIT_MEASURE110689853",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "AGE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "FREQ110689853"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "UNIT_MEASURE110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "NATURE110689853",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).NATURE110689853",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "AGE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "URBANISATION110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REPORTING_TYPE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CUST_BREAKDOWN110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "INCOME_WEALTH_QUANTILE110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DISABILITY_STATUS110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "OCCUPATION110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COMPOSITE_BREAKDOWN110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SEX110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "EDUCATION_LEV110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA110689853"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "FREQ110689853"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "NATURE110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_NATURE110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:SDG(0.4).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "AGE110689853",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).AGE110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "AGE110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_AGE110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "URBANISATION110689853",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).URBANISATION110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "URBANISATION110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_URBANISATION110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REPORTING_TYPE110689853",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).REPORTING_TYPE110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "REPORTING_TYPE110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_REPORTING_TYPE110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CUST_BREAKDOWN110689853",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).CUST_BREAKDOWN110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "CUST_BREAKDOWN110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_CUST_BREAKDOWN110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "INCOME_WEALTH_QUANTILE110689853",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).INCOME_WEALTH_QUANTILE110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "INCOME_WEALTH_QUANTILE110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_INCOME_WEALTH_QUANTILE110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "DISABILITY_STATUS110689853",
+          "position"": "7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).DISABILITY_STATUS110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "DISABILITY_STATUS110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_DISABILITY_STATUS110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "OCCUPATION110689853",
+          "position"": "8",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).OCCUPATION110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "OCCUPATION110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_OCCUPATION110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "COMPOSITE_BREAKDOWN110689853",
+          "position"": "9",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).COMPOSITE_BREAKDOWN110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "COMPOSITE_BREAKDOWN110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_COMPOSITE_BREAKDOWN110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SERIES110689853",
+          "position"": "10",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).SERIES110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "SERIES110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_SERIES110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SEX110689853",
+          "position"": "11",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).SEX110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "SEX110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_SEX110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "EDUCATION_LEV110689853",
+          "position"": "12",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).EDUCATION_LEV110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "EDUCATION_LEV110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_EDUCATION_LEV110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "REF_AREA110689853",
+          "position"": "13",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).REF_AREA110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "REF_AREA110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_REF_AREA110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "FREQ110689853",
+          "position"": "14",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).FREQ110689853",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "FR1",
+              "class"": "Concept",
+              "id"": "FREQ110689853",
+              "maintainableParentID"": "CONCEPTS_INSEE",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "FR1",
+                "class"": "Codelist",
+                "id"": "CL_FREQ110689853",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "1",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:SDG(0.4).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "FR1",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CONCEPTS_INSEE",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:SDG(0.4).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:SDG(0.4).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "FR1",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CONCEPTS_INSEE",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
         }
       }
     }
-  }
+  },
+  "Name": [
+    {
+      "#text": "UNSD",
+      "lang"": "fr"
+    },
+    {
+      "#text": "UNSD",
+      "lang"": "en"
+    }
+  ]
 }

@@ -1,1527 +1,1502 @@
 {
-  "Structure": {
-    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
-    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "-xml": "http://www.w3.org/XML/1998/namespace",
-    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "Header": {
-      "ID": "IREF683179",
-      "Prepared": "2021-03-31T05:25:15Z",
-      "Receiver": {
-        "-id": "not_supplied"
-      },
-      "Sender": {
-        "-id": "Unknown"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "ECB",
-          "-id": "ECB_BOP1",
-          "-isExternalReference": "false",
-          "-isFinal": "false",
-          "-uri": "https://www.ecb.europa.eu/vocabulary/stats/bop/1",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_BOP1(1.0)",
-          "-version": "1.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_BOP1(1.0).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "TIME_FORMAT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).TIME_FORMAT",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "TIME_FORMAT",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "3",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "OBS_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_STATUS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_CONF",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_CONF",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "OBS_CONF",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_CONF",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_PRE_BREAK",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_PRE_BREAK",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "OBS_PRE_BREAK",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "15",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_COM",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_COM",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "OBS_COM",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "1050",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "BOP_BASIS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).BOP_BASIS",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "BOP_BASIS",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_BOP_BASIS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BREAKS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).BREAKS",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "BREAKS",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "350",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "COLLECTION",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).COLLECTION",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "COLLECTION",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_COLLECTION",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "PUBL_ECB",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).PUBL_ECB",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "PUBL_ECB",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "1050",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "PUBL_MU",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).PUBL_MU",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "PUBL_MU",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "1050",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "PUBL_PUBLIC",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).PUBL_PUBLIC",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "FREQ"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "PUBL_PUBLIC",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "1050",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "AGG_EQUN",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).AGG_EQUN",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "AGG_EQUN",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "350",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "COMPILATION",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).COMPILATION",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "COMPILATION",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "1050",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "DECIMALS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).DECIMALS",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "DECIMALS",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_DECIMALS",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "2",
-                      "-minLength": "1",
-                      "-textType": "BigInteger"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "SOURCE_AGENCY",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).SOURCE_AGENCY",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "SOURCE_AGENCY",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_ORGANISATION",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "6",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "TITLE",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).TITLE",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "TITLE",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "200",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "TITLE_COMPL",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).TITLE_COMPL",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "TITLE_COMPL",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-maxLength": "1050",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).UNIT",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "UNIT",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "13",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Mandatory",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "Dimension": [
-                      {
-                        "Ref": {
-                          "-id": "REF_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "ADJUSTMENT"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "DATA_TYPE_BOP"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "BOP_ITEM"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "CURR_BRKDWN"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "COUNT_AREA"
-                        }
-                      },
-                      {
-                        "Ref": {
-                          "-id": "SERIES_DENOM"
-                        }
-                      }
-                    ]
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "3",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
+  "agencyID"": "ECB",
+  "id"": "ECB_BOP1",
+  "isExternalReference"": "false",
+  "isFinal"": "false",
+  "uri"": "https://www.ecb.europa.eu/vocabulary/stats/bop/1",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_BOP1(1.0)",
+  "version"": "1.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_BOP1(1.0).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "TIME_FORMAT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).TIME_FORMAT",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
                 }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_BOP1(1.0).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-id": "REF_AREA",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).REF_AREA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "REF_AREA",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_AREA_EE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "2",
-                      "-minLength": "2",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-id": "ADJUSTMENT",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).ADJUSTMENT",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "ADJUSTMENT",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_ADJUSTMENT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-id": "DATA_TYPE_BOP",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).DATA_TYPE_BOP",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "DATA_TYPE_BOP",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_DATA_TYPE_BOP",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-id": "BOP_ITEM",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).BOP_ITEM",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "BOP_ITEM",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_BOP_ITEM",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "8",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-id": "CURR_BRKDWN",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).CURR_BRKDWN",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "CURR_BRKDWN",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_CURR_BRKDWN",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-id": "COUNT_AREA",
-                  "-position": "7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).COUNT_AREA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "COUNT_AREA",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_AREA_EE",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "2",
-                      "-minLength": "2",
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-id": "SERIES_DENOM",
-                  "-position": "8",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).SERIES_DENOM",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ECB",
-                      "-class": "Concept",
-                      "-id": "SERIES_DENOM",
-                      "-maintainableParentID": "ECB_CONCEPTS",
-                      "-maintainableParentVersion": "1.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ECB",
-                        "-class": "Codelist",
-                        "-id": "CL_SERIES_DENOM",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-maxLength": "1",
-                      "-minLength": "1",
-                      "-textType": "String"
-                    }
-                  }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
                 }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "9",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_BOP1(1.0).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "ECB",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "ECB_CONCEPTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
                 }
               }
-            },
-            "Group": {
-              "-id": "Group",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_BOP1(1.0).Group",
-              "GroupDimension": [
-                {
-                  "DimensionReference": {
-                    "Ref": {
-                      "-id": "REF_AREA"
-                    }
-                  }
-                },
-                {
-                  "DimensionReference": {
-                    "Ref": {
-                      "-id": "ADJUSTMENT"
-                    }
-                  }
-                },
-                {
-                  "DimensionReference": {
-                    "Ref": {
-                      "-id": "DATA_TYPE_BOP"
-                    }
-                  }
-                },
-                {
-                  "DimensionReference": {
-                    "Ref": {
-                      "-id": "BOP_ITEM"
-                    }
-                  }
-                },
-                {
-                  "DimensionReference": {
-                    "Ref": {
-                      "-id": "CURR_BRKDWN"
-                    }
-                  }
-                },
-                {
-                  "DimensionReference": {
-                    "Ref": {
-                      "-id": "COUNT_AREA"
-                    }
-                  }
-                },
-                {
-                  "DimensionReference": {
-                    "Ref": {
-                      "-id": "SERIES_DENOM"
-                    }
-                  }
-                }
-              ]
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_BOP1(1.0).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_BOP1(1.0).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "ECB",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "ECB_CONCEPTS",
-                    "-maintainableParentVersion": "1.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-maxLength": "15",
-                    "-textType": "String"
-                  }
-                }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "TIME_FORMAT",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "3",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "OBS_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": {
-            "#text": "Balance of Payments, I.I.P. and Reserve Assets Statistics",
-            "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_OBS_STATUS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_CONF",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_CONF",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "OBS_CONF",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_OBS_CONF",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_PRE_BREAK",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_PRE_BREAK",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "OBS_PRE_BREAK",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "15",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_COM",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).OBS_COM",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "OBS_COM",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "1050",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "BOP_BASIS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).BOP_BASIS",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "BOP_BASIS",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_BOP_BASIS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BREAKS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).BREAKS",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "BREAKS",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "350",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "COLLECTION",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).COLLECTION",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "COLLECTION",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_COLLECTION",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "PUBL_ECB",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).PUBL_ECB",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "PUBL_ECB",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "1050",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "PUBL_MU",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).PUBL_MU",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "PUBL_MU",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "1050",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "PUBL_PUBLIC",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).PUBL_PUBLIC",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "FREQ"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "PUBL_PUBLIC",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "1050",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "AGG_EQUN",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).AGG_EQUN",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "AGG_EQUN",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "350",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "COMPILATION",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).COMPILATION",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "COMPILATION",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "1050",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "DECIMALS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).DECIMALS",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "DECIMALS",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_DECIMALS",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "2",
+              "minLength"": "1",
+              "textType"": "BigInteger"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "SOURCE_AGENCY",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).SOURCE_AGENCY",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "SOURCE_AGENCY",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_ORGANISATION",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "6",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "TITLE",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).TITLE",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "TITLE",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "200",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "TITLE_COMPL",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).TITLE_COMPL",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "TITLE_COMPL",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "maxLength"": "1050",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).UNIT",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "UNIT",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_UNIT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "13",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Mandatory",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BOP1(1.0).UNIT_MULT",
+          "AttributeRelationship": {
+            "Dimension": [
+              {
+                "Ref": {
+                  "id"": "REF_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "ADJUSTMENT"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "DATA_TYPE_BOP"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "BOP_ITEM"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "CURR_BRKDWN"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "COUNT_AREA"
+                }
+              },
+              {
+                "Ref": {
+                  "id"": "SERIES_DENOM"
+                }
+              }
+            ]
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "UNIT_MULT",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "3",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_BOP1(1.0).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).FREQ",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "id"": "REF_AREA",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).REF_AREA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "REF_AREA",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_AREA_EE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "2",
+              "minLength"": "2",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "id"": "ADJUSTMENT",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).ADJUSTMENT",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "ADJUSTMENT",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_ADJUSTMENT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "id"": "DATA_TYPE_BOP",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).DATA_TYPE_BOP",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "DATA_TYPE_BOP",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_DATA_TYPE_BOP",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "id"": "BOP_ITEM",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).BOP_ITEM",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "BOP_ITEM",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_BOP_ITEM",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "8",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "id"": "CURR_BRKDWN",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).CURR_BRKDWN",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "CURR_BRKDWN",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_CURR_BRKDWN",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "id"": "COUNT_AREA",
+          "position"": "7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).COUNT_AREA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "COUNT_AREA",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_AREA_EE",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "2",
+              "minLength"": "2",
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "id"": "SERIES_DENOM",
+          "position"": "8",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BOP1(1.0).SERIES_DENOM",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ECB",
+              "class"": "Concept",
+              "id"": "SERIES_DENOM",
+              "maintainableParentID"": "ECB_CONCEPTS",
+              "maintainableParentVersion"": "1.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ECB",
+                "class"": "Codelist",
+                "id"": "CL_SERIES_DENOM",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "maxLength"": "1",
+              "minLength"": "1",
+              "textType"": "String"
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "9",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_BOP1(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "ECB",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "ECB_CONCEPTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "Group": {
+      "id"": "Group",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_BOP1(1.0).Group",
+      "GroupDimension": [
+        {
+          "DimensionReference": {
+            "Ref": {
+              "id"": "REF_AREA"
+            }
+          }
+        },
+        {
+          "DimensionReference": {
+            "Ref": {
+              "id"": "ADJUSTMENT"
+            }
+          }
+        },
+        {
+          "DimensionReference": {
+            "Ref": {
+              "id"": "DATA_TYPE_BOP"
+            }
+          }
+        },
+        {
+          "DimensionReference": {
+            "Ref": {
+              "id"": "BOP_ITEM"
+            }
+          }
+        },
+        {
+          "DimensionReference": {
+            "Ref": {
+              "id"": "CURR_BRKDWN"
+            }
+          }
+        },
+        {
+          "DimensionReference": {
+            "Ref": {
+              "id"": "COUNT_AREA"
+            }
+          }
+        },
+        {
+          "DimensionReference": {
+            "Ref": {
+              "id"": "SERIES_DENOM"
+            }
+          }
+        }
+      ]
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_BOP1(1.0).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_BOP1(1.0).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "ECB",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "ECB_CONCEPTS",
+            "maintainableParentVersion"": "1.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength"": "15",
+            "textType"": "String"
           }
         }
       }
     }
+  },
+  "Name": {
+    "#text": "Balance of Payments, I.I.P. and Reserve Assets Statistics",
+    "lang"": "en"
   }
 }

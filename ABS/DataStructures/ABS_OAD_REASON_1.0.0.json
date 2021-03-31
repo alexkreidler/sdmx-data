@@ -1,285 +1,263 @@
 {
-  "Structure": {
-    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "IDREF50588",
-      "Prepared": "2021-03-31T16:24:15.4151646+11:00",
-      "Receiver": {
-        "-id": "Unknown"
-      },
-      "Sender": {
-        "-id": "Unknown"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "ABS",
-          "-id": "OAD_REASON",
-          "-isFinal": "true",
-          "-version": "1.0.0",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MEASURE",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEASURE",
-                      "-maintainableParentID": "CS_ATTRIBUTE",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "CS_ATTRIBUTE",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_STATUS",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_COMMENT",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "OBS_COMMENT",
-                      "-maintainableParentID": "CS_ATTRIBUTE",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "CAT_TRAVELLER",
-                  "-position": "1",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "CAT_TRAVELLER",
-                      "-maintainableParentID": "CS_OAD",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_OAD_CAT_TRAVEL",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "DURATION",
-                  "-position": "2",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "DURATION",
-                      "-maintainableParentID": "CS_OAD",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_OAD_ST_STAY_DURATION",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "JOUR_REASON",
-                  "-position": "3",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "JOUR_REASON",
-                      "-maintainableParentID": "CS_OAD",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_OAD_JOURNEY_REASON",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TSEST",
-                  "-position": "4",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "TSEST",
-                      "-maintainableParentID": "CS_COMMON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_TSEST",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "FREQ",
-                  "-position": "5",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "ABS",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CS_COMMON",
-                      "-maintainableParentVersion": "1.0.0",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "ABS",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0.0"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "6",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "ABS",
-                    "-class": "Concept",
-                    "-id": "TIME_PERIOD",
-                    "-maintainableParentID": "CS_COMMON",
-                    "-maintainableParentVersion": "1.0.0",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
+  "agencyID"": "ABS",
+  "id"": "OAD_REASON",
+  "isFinal"": "true",
+  "version"": "1.0.0",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MEASURE",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "UNIT_MEASURE",
+              "maintainableParentID"": "CS_ATTRIBUTE",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.0.0"
               }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "ABS",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CS_COMMON",
-                    "-maintainableParentVersion": "1.0.0",
-                    "-package": "conceptscheme"
-                  }
-                }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": {
-            "#text": "Visitor arrivals and resident returns, Intended Length of Stay and Main Reason for Journey Datastructure",
-            "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "CS_ATTRIBUTE",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_OBS_STATUS",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_COMMENT",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "OBS_COMMENT",
+              "maintainableParentID"": "CS_ATTRIBUTE",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "CAT_TRAVELLER",
+          "position"": "1",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "CAT_TRAVELLER",
+              "maintainableParentID"": "CS_OAD",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_OAD_CAT_TRAVEL",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "DURATION",
+          "position"": "2",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "DURATION",
+              "maintainableParentID"": "CS_OAD",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_OAD_ST_STAY_DURATION",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "JOUR_REASON",
+          "position"": "3",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "JOUR_REASON",
+              "maintainableParentID"": "CS_OAD",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_OAD_JOURNEY_REASON",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TSEST",
+          "position"": "4",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "TSEST",
+              "maintainableParentID"": "CS_COMMON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_TSEST",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "FREQ",
+          "position"": "5",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "ABS",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CS_COMMON",
+              "maintainableParentVersion"": "1.0.0",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "ABS",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0.0"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "6",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "ABS",
+            "class"": "Concept",
+            "id"": "TIME_PERIOD",
+            "maintainableParentID"": "CS_COMMON",
+            "maintainableParentVersion"": "1.0.0",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "ABS",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CS_COMMON",
+            "maintainableParentVersion"": "1.0.0",
+            "package"": "conceptscheme"
           }
         }
       }
     }
+  },
+  "Name": {
+    "#text": "Visitor arrivals and resident returns, Intended Length of Stay and Main Reason for Journey Datastructure",
+    "lang"": "en"
   }
 }

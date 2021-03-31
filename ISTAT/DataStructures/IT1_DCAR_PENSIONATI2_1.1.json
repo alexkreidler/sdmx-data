@@ -1,546 +1,524 @@
 {
-  "Structure": {
-    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
-    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
-    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
-    "Header": {
-      "ID": "IDREF2124",
-      "Prepared": "2021-03-31T07:33:49.8115486+02:00",
-      "Receiver": {
-        "-id": "Unknown"
-      },
-      "Sender": {
-        "-id": "Unknown"
-      },
-      "Test": "false"
-    },
-    "Structures": {
-      "DataStructures": {
-        "DataStructure": {
-          "-agencyID": "IT1",
-          "-id": "DCAR_PENSIONATI2",
-          "-isFinal": "true",
-          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCAR_PENSIONATI2(1.1)",
-          "-validFrom": "2018-11-04T00:00:00",
-          "-version": "1.1",
-          "DataStructureComponents": {
-            "AttributeList": {
-              "-id": "AttributeDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCAR_PENSIONATI2(1.1).AttributeDescriptor",
-              "Attribute": [
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BREAK",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).BREAK",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "BREAK",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "CONF_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).CONF_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "CONF_STATUS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_OBS_CONF",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_PRE_BREAK",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).OBS_PRE_BREAK",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "OBS_PRE_BREAK",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "TextFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "OBS_STATUS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).OBS_STATUS",
-                  "AttributeRelationship": {
-                    "PrimaryMeasure": {
-                      "Ref": {
-                        "-id": "OBS_VALUE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "OBS_STATUS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_FLAG",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    },
-                    "EnumerationFormat": {
-                      "-textType": "String"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "BASE_PER",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).BASE_PER",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "BASE_PER",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_BASE_YEAR",
-                        "-package": "codelist",
-                        "-version": "1.3"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MEAS",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).UNIT_MEAS",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MEAS",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MEASURE",
-                        "-package": "codelist",
-                        "-version": "1.6"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "UNIT_MULT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).UNIT_MULT",
-                  "AttributeRelationship": {
-                    "Group": {
-                      "Ref": {
-                        "-id": "X_MEASURE"
-                      }
-                    }
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "UNIT_MULT",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_UNIT_MULT",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "METADATA_EN",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).METADATA_EN",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "METADATA_EN",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                },
-                {
-                  "-assignmentStatus": "Conditional",
-                  "-id": "METADATA_IT",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).METADATA_IT",
-                  "AttributeRelationship": {
-                    "None": ""
-                  },
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "METADATA_IT",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  }
-                }
-              ]
-            },
-            "DimensionList": {
-              "-id": "DimensionDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCAR_PENSIONATI2(1.1).DimensionDescriptor",
-              "Dimension": [
-                {
-                  "-id": "FREQ",
-                  "-position": "1",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).FREQ",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "FREQ",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_FREQ",
-                        "-package": "codelist",
-                        "-version": "1.0"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "CLASSE_ETA",
-                  "-position": "2",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).CLASSE_ETA",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "CLASSE_ETA",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "11.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_ETA1",
-                        "-package": "codelist",
-                        "-version": "2.3"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "IMPORTO",
-                  "-position": "3",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).IMPORTO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "IMPORTO",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "11.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_IMPORTOEURO",
-                        "-package": "codelist",
-                        "-version": "2.2"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "ITTER107",
-                  "-position": "4",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).ITTER107",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "ITTER107",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "11.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_ITTER107",
-                        "-package": "codelist",
-                        "-version": "3.5"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "SESSO",
-                  "-position": "5",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).SESSO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "SESSO",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "11.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_SEXISTAT1",
-                        "-package": "codelist",
-                        "-version": "1.8"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TIPO_DATO",
-                  "-position": "6",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).TIPO_DATO",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "TIPO_DATO",
-                      "-maintainableParentID": "CROSS_DOMAIN",
-                      "-maintainableParentVersion": "3.6",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_TIPO_DATO38",
-                        "-package": "codelist",
-                        "-version": "1.2"
-                      }
-                    }
-                  }
-                },
-                {
-                  "-id": "TIPO_PENSIONE",
-                  "-position": "7",
-                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).TIPO_PENSIONE",
-                  "ConceptIdentity": {
-                    "Ref": {
-                      "-agencyID": "IT1",
-                      "-class": "Concept",
-                      "-id": "TIPO_PENSIONE",
-                      "-maintainableParentID": "VARIAB_ALL",
-                      "-maintainableParentVersion": "11.3",
-                      "-package": "conceptscheme"
-                    }
-                  },
-                  "LocalRepresentation": {
-                    "Enumeration": {
-                      "Ref": {
-                        "-agencyID": "IT1",
-                        "-class": "Codelist",
-                        "-id": "CL_TIPO_PENSIONE1",
-                        "-package": "codelist",
-                        "-version": "1.3"
-                      }
-                    }
-                  }
-                }
-              ],
-              "TimeDimension": {
-                "-id": "TIME_PERIOD",
-                "-position": "8",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCAR_PENSIONATI2(1.1).TIME_PERIOD",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IT1",
-                    "-class": "Concept",
-                    "-id": "SELECT_TIME",
-                    "-maintainableParentID": "CROSS_DOMAIN",
-                    "-maintainableParentVersion": "3.6",
-                    "-package": "conceptscheme"
-                  }
-                },
-                "LocalRepresentation": {
-                  "TextFormat": {
-                    "-textType": "ObservationalTimePeriod"
-                  }
-                }
-              }
-            },
-            "Group": {
-              "-id": "X_MEASURE",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCAR_PENSIONATI2(1.1).X_MEASURE",
-              "GroupDimension": {
-                "DimensionReference": {
-                  "Ref": {
-                    "-id": "TIPO_DATO"
-                  }
-                }
-              }
-            },
-            "MeasureList": {
-              "-id": "MeasureDescriptor",
-              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCAR_PENSIONATI2(1.1).MeasureDescriptor",
-              "PrimaryMeasure": {
-                "-id": "OBS_VALUE",
-                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCAR_PENSIONATI2(1.1).OBS_VALUE",
-                "ConceptIdentity": {
-                  "Ref": {
-                    "-agencyID": "IT1",
-                    "-class": "Concept",
-                    "-id": "OBS_VALUE",
-                    "-maintainableParentID": "CROSS_DOMAIN",
-                    "-maintainableParentVersion": "3.6",
-                    "-package": "conceptscheme"
-                  }
-                }
+  "agencyID"": "IT1",
+  "id"": "DCAR_PENSIONATI2",
+  "isFinal"": "true",
+  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCAR_PENSIONATI2(1.1)",
+  "validFrom"": "201811-04T00:00:00"",
+  "version"": "1.1",
+  "DataStructureComponents": {
+    "AttributeList": {
+      "id"": "AttributeDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCAR_PENSIONATI2(1.1).AttributeDescriptor",
+      "Attribute": [
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BREAK",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).BREAK",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
               }
             }
           },
-          "Name": [
-            {
-              "#text": "Pensionati",
-              "-lang": "it"
-            },
-            {
-              "#text": "Pensioners",
-              "-lang": "en"
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "BREAK",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
             }
-          ]
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "CONF_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).CONF_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "CONF_STATUS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_OBS_CONF",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            },
+            "EnumerationFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_PRE_BREAK",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).OBS_PRE_BREAK",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "OBS_PRE_BREAK",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "TextFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "OBS_STATUS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).OBS_STATUS",
+          "AttributeRelationship": {
+            "PrimaryMeasure": {
+              "Ref": {
+                "id"": "OBS_VALUE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "OBS_STATUS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_FLAG",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            },
+            "EnumerationFormat": {
+              "textType"": "String"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "BASE_PER",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).BASE_PER",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "BASE_PER",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_BASE_YEAR",
+                "package"": "codelist",
+                "version"": "1.3"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MEAS",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).UNIT_MEAS",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "UNIT_MEAS",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MEASURE",
+                "package"": "codelist",
+                "version"": "1.6"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "UNIT_MULT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).UNIT_MULT",
+          "AttributeRelationship": {
+            "Group": {
+              "Ref": {
+                "id"": "X_MEASURE"
+              }
+            }
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "UNIT_MULT",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_UNIT_MULT",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "METADATA_EN",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).METADATA_EN",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "METADATA_EN",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          }
+        },
+        {
+          "assignmentStatus"": "Conditional",
+          "id"": "METADATA_IT",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCAR_PENSIONATI2(1.1).METADATA_IT",
+          "AttributeRelationship": {
+            "None": ""
+          },
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "METADATA_IT",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          }
+        }
+      ]
+    },
+    "DimensionList": {
+      "id"": "DimensionDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCAR_PENSIONATI2(1.1).DimensionDescriptor",
+      "Dimension": [
+        {
+          "id"": "FREQ",
+          "position"": "1",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).FREQ",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "FREQ",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_FREQ",
+                "package"": "codelist",
+                "version"": "1.0"
+              }
+            }
+          }
+        },
+        {
+          "id"": "CLASSE_ETA",
+          "position"": "2",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).CLASSE_ETA",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "CLASSE_ETA",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "11.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_ETA1",
+                "package"": "codelist",
+                "version"": "2.3"
+              }
+            }
+          }
+        },
+        {
+          "id"": "IMPORTO",
+          "position"": "3",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).IMPORTO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "IMPORTO",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "11.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_IMPORTOEURO",
+                "package"": "codelist",
+                "version"": "2.2"
+              }
+            }
+          }
+        },
+        {
+          "id"": "ITTER107",
+          "position"": "4",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).ITTER107",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "ITTER107",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "11.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_ITTER107",
+                "package"": "codelist",
+                "version"": "3.5"
+              }
+            }
+          }
+        },
+        {
+          "id"": "SESSO",
+          "position"": "5",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).SESSO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "SESSO",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "11.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_SEXISTAT1",
+                "package"": "codelist",
+                "version"": "1.8"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TIPO_DATO",
+          "position"": "6",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).TIPO_DATO",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "TIPO_DATO",
+              "maintainableParentID"": "CROSS_DOMAIN",
+              "maintainableParentVersion"": "3.6",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_TIPO_DATO38",
+                "package"": "codelist",
+                "version"": "1.2"
+              }
+            }
+          }
+        },
+        {
+          "id"": "TIPO_PENSIONE",
+          "position"": "7",
+          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCAR_PENSIONATI2(1.1).TIPO_PENSIONE",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID"": "IT1",
+              "class"": "Concept",
+              "id"": "TIPO_PENSIONE",
+              "maintainableParentID"": "VARIAB_ALL",
+              "maintainableParentVersion"": "11.3",
+              "package"": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID"": "IT1",
+                "class"": "Codelist",
+                "id"": "CL_TIPO_PENSIONE1",
+                "package"": "codelist",
+                "version"": "1.3"
+              }
+            }
+          }
+        }
+      ],
+      "TimeDimension": {
+        "id"": "TIME_PERIOD",
+        "position"": "8",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCAR_PENSIONATI2(1.1).TIME_PERIOD",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IT1",
+            "class"": "Concept",
+            "id"": "SELECT_TIME",
+            "maintainableParentID"": "CROSS_DOMAIN",
+            "maintainableParentVersion"": "3.6",
+            "package"": "conceptscheme"
+          }
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType"": "ObservationalTimePeriod"
+          }
+        }
+      }
+    },
+    "Group": {
+      "id"": "X_MEASURE",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCAR_PENSIONATI2(1.1).X_MEASURE",
+      "GroupDimension": {
+        "DimensionReference": {
+          "Ref": {
+            "id"": "TIPO_DATO"
+          }
+        }
+      }
+    },
+    "MeasureList": {
+      "id"": "MeasureDescriptor",
+      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCAR_PENSIONATI2(1.1).MeasureDescriptor",
+      "PrimaryMeasure": {
+        "id"": "OBS_VALUE",
+        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCAR_PENSIONATI2(1.1).OBS_VALUE",
+        "ConceptIdentity": {
+          "Ref": {
+            "agencyID"": "IT1",
+            "class"": "Concept",
+            "id"": "OBS_VALUE",
+            "maintainableParentID"": "CROSS_DOMAIN",
+            "maintainableParentVersion"": "3.6",
+            "package"": "conceptscheme"
+          }
         }
       }
     }
-  }
+  },
+  "Name": [
+    {
+      "#text": "Pensionati",
+      "lang"": "it"
+    },
+    {
+      "#text": "Pensioners",
+      "lang"": "en"
+    }
+  ]
 }
