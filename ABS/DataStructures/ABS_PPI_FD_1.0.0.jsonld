@@ -1,0 +1,281 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ABS",
+    "isFinal": "true",
+    "version": "1.0.0",
+    "name": {
+      "@value": "Producer Price Indexes, Final Demand Datastructure",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ABS/DataStructure/PPI_FD",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "MEASURE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_ATTRIBUTE",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/ABS/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_ATTRIBUTE",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ABS/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_ATTRIBUTE",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/OBS_COMMENT",
+          "skos:notation": "OBS_COMMENT"
+        },
+        "@id": "https://loqu.dev/ABS/Attribute/OBS_COMMENT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/MEASURE",
+          "skos:notation": "MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_INDEX_MEASURES",
+          "skos:notation": "CL_INDEX_MEASURES"
+        },
+        "@id": "https://loqu.dev/ABS/Dimension/MEASURE"
+      },
+      {
+        "position": "2",
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_INDEX",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/INDEX",
+          "skos:notation": "INDEX"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_PPI_FD_ITEM",
+          "skos:notation": "CL_PPI_FD_ITEM"
+        },
+        "@id": "https://loqu.dev/ABS/Dimension/INDEX"
+      },
+      {
+        "position": "3",
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_PPI",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/STAGE",
+          "skos:notation": "STAGE"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_PPI_STAGE",
+          "skos:notation": "CL_PPI_STAGE"
+        },
+        "@id": "https://loqu.dev/ABS/Dimension/STAGE"
+      },
+      {
+        "position": "4",
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_PPI",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/SOURCE",
+          "skos:notation": "SOURCE"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_PPI_SOURCE",
+          "skos:notation": "CL_PPI_SOURCE"
+        },
+        "@id": "https://loqu.dev/ABS/Dimension/SOURCE"
+      },
+      {
+        "position": "5",
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_PPI",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/DESTINATION",
+          "skos:notation": "DESTINATION"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_PPI_DESTINATION",
+          "skos:notation": "CL_PPI_DESTINATION"
+        },
+        "@id": "https://loqu.dev/ABS/Dimension/DESTINATION"
+      },
+      {
+        "position": "6",
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "ABS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ABS/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ABS/Dimension/FREQ"
+      },
+      {
+        "position": "7",
+        "ConceptIdentity": {
+          "agencyID": "ABS",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "1.0.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ABS/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ABS/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "ConceptIdentity": {
+        "agencyID": "ABS",
+        "class": "Concept",
+        "maintainableParentID": "CS_COMMON",
+        "maintainableParentVersion": "1.0.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ABS/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/ABS/Measure/OBS_VALUE"
+    }
+  }
+}

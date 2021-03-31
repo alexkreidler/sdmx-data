@@ -1,0 +1,1798 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ESTAT",
+    "isExternalReference": "false",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:NA_SU(2.1)",
+    "version": "2.1",
+    "name": {
+      "@value": "NA Supply/Use and Input/Output",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ESTAT/DataStructure/NA_SU",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).CONF_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CONF_STATUS",
+          "skos:notation": "CONF_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/CONF_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "4000",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).EMBARGO_DATE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/EMBARGO_DATE",
+          "skos:notation": "EMBARGO_DATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "25",
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/EMBARGO_DATE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).REPYEARSTART",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REPYEARSTART",
+          "skos:notation": "REPYEARSTART"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "25",
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/REPYEARSTART"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).REPYEAREND",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REPYEAREND",
+          "skos:notation": "REPYEAREND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "25",
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/REPYEAREND"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_TIME_FORMAT",
+          "skos:notation": "CL_TIME_FORMAT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).TIME_PER_COLLECT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_PER_COLLECT",
+          "skos:notation": "TIME_PER_COLLECT"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_TIME_COLLECT",
+          "skos:notation": "CL_TIME_COLLECT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TIME_PER_COLLECT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "200",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).LAST_UPDATE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/LAST_UPDATE",
+          "skos:notation": "LAST_UPDATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "25",
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/LAST_UPDATE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).CUST_BREAKDOWN_LB",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CUST_BREAKDOWN_LB",
+          "skos:notation": "CUST_BREAKDOWN_LB"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/CUST_BREAKDOWN_LB"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).COMMENT_DSET",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_DSET",
+          "skos:notation": "COMMENT_DSET"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_DSET"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).COMMENT_TS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_TS",
+          "skos:notation": "COMMENT_TS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_TS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).PRE_BREAK_VALUE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/PRE_BREAK_VALUE",
+          "skos:notation": "PRE_BREAK_VALUE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/PRE_BREAK_VALUE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).DATA_COMP",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DATA_COMP",
+          "skos:notation": "DATA_COMP"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "4000",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DATA_COMP"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).CURRENCY",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CURRENCY",
+          "skos:notation": "CURRENCY"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.13",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/CURRENCY"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DISS_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SU(2.1).TABLE_IDENTIFIER",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REP_AREA"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "STO_TO"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_TO"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "PRODUCT_TO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "PRICES"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TABLE_IDENTIFIER",
+          "skos:notation": "TABLE_IDENTIFIER"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.7",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_NA_TABLEID",
+          "skos:notation": "CL_NA_TABLEID"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TABLE_IDENTIFIER"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).REP_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REP_AREA",
+          "skos:notation": "REP_AREA"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/REP_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.11",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/REF_AREA"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).COUNTERPART_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COUNTERPART_AREA",
+          "skos:notation": "COUNTERPART_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.11",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/COUNTERPART_AREA"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).REF_SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REF_SECTOR",
+          "skos:notation": "REF_SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_SECTOR",
+          "skos:notation": "CL_SECTOR"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/REF_SECTOR"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).COUNTERPART_SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COUNTERPART_SECTOR",
+          "skos:notation": "COUNTERPART_SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_SECTOR",
+          "skos:notation": "CL_SECTOR"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/COUNTERPART_SECTOR"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).ACCOUNTING_ENTRY",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/ACCOUNTING_ENTRY",
+          "skos:notation": "ACCOUNTING_ENTRY"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.3",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ACCOUNT_ENTRY",
+          "skos:notation": "CL_ACCOUNT_ENTRY"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/ACCOUNTING_ENTRY"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).STO",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/STO",
+          "skos:notation": "STO"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_NA_STO",
+          "skos:notation": "CL_NA_STO"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/STO"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).STO_TO",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/STO_TO",
+          "skos:notation": "STO_TO"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_NA_STO",
+          "skos:notation": "CL_NA_STO"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/STO_TO"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).ACTIVITY",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/ACTIVITY",
+          "skos:notation": "ACTIVITY"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.6",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_ACTIVITY",
+          "skos:notation": "CL_ACTIVITY"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/ACTIVITY"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).ACTIVITY_TO",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/ACTIVITY_TO",
+          "skos:notation": "ACTIVITY_TO"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.6",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_ACTIVITY",
+          "skos:notation": "CL_ACTIVITY"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/ACTIVITY_TO"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).PRODUCT",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/PRODUCT",
+          "skos:notation": "PRODUCT"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_PRODUCT",
+          "skos:notation": "CL_PRODUCT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/PRODUCT"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).PRODUCT_TO",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/PRODUCT_TO",
+          "skos:notation": "PRODUCT_TO"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_PRODUCT",
+          "skos:notation": "CL_PRODUCT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/PRODUCT_TO"
+      },
+      {
+        "position": "14",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.13",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "15",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).VALUATION",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/VALUATION",
+          "skos:notation": "VALUATION"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.6",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_VALUATION",
+          "skos:notation": "CL_VALUATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/VALUATION"
+      },
+      {
+        "position": "16",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).PRICES",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/PRICES",
+          "skos:notation": "PRICES"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_NA_PRICES",
+          "skos:notation": "CL_NA_PRICES"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/PRICES"
+      },
+      {
+        "position": "17",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SU(2.1).CUST_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CUST_BREAKDOWN",
+          "skos:notation": "CUST_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_CUST_BREAKDOWN",
+          "skos:notation": "CL_CUST_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/CUST_BREAKDOWN"
+      },
+      {
+        "position": "18",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:NA_SU(2.1).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_NA",
+          "maintainableParentVersion": "1.11",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:NA_SU(2.1).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "ESTAT",
+        "class": "Concept",
+        "maintainableParentID": "CS_NA",
+        "maintainableParentVersion": "1.11",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ESTAT/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "maxLength": "15",
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/ESTAT/Measure/OBS_VALUE"
+    }
+  }
+}

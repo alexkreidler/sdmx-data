@@ -1,595 +1,595 @@
 {
-  "agencyID"": "IT1",
-  "id"": "SEP_CONDFAM_CONSUMI_COMP_SPEFF",
-  "isFinal"": "true",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0)",
-  "version"": "1.0",
+  "agencyID": "IT1",
+  "id": "SEP_CONDFAM_CONSUMI_COMP_SPEFF",
+  "isFinal": "true",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).COMMENT",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).COMMENT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "COMMENT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "COMMENT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CONF_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).CONF_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "CONF_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).CONF_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "CONF_STATUS",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "CONF_STATUS",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_OBS_CONF",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_OBS_CONF",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_PRE_BREAK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).OBS_PRE_BREAK",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_PRE_BREAK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).OBS_PRE_BREAK",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "OBS_PRE_BREAK",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "OBS_PRE_BREAK",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_FLAG",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_FLAG",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).DECIMALS",
+          "assignmentStatus": "Conditional",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).DECIMALS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_DECI",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_DECI",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).UNIT",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).UNIT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "UNIT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "UNIT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_UNIT",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_UNIT",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).UNIT_MULT",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "NOTA_IT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).NOTA_IT",
+          "assignmentStatus": "Conditional",
+          "id": "NOTA_IT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).NOTA_IT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "NOTA_IT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "NOTA_IT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "NOTA_EN",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).NOTA_EN",
+          "assignmentStatus": "Conditional",
+          "id": "NOTA_EN",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).NOTA_EN",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "NOTA_EN",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "NOTA_EN",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BREAK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).BREAK",
+          "assignmentStatus": "Conditional",
+          "id": "BREAK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).BREAK",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MEASURE"
+                  "id": "MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TIPO_SPESA"
+                  "id": "TIPO_SPESA"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "BREAK",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "BREAK",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COLLECTION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).COLLECTION",
+          "assignmentStatus": "Conditional",
+          "id": "COLLECTION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).COLLECTION",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "COLLECTION",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "COLLECTION",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_COLLECTION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_COLLECTION",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TIME_FORMAT",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TIME_FORMAT",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_TIME_FORMAT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_TIME_FORMAT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TITLE",
+          "assignmentStatus": "Mandatory",
+          "id": "TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TITLE",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "TITLE",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "TITLE",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "METADATA_EN",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).METADATA_EN",
+          "assignmentStatus": "Conditional",
+          "id": "METADATA_EN",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).METADATA_EN",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "METADATA_EN",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "METADATA_EN",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "METADATA_IT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).METADATA_IT",
+          "assignmentStatus": "Conditional",
+          "id": "METADATA_IT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).METADATA_IT",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "METADATA_IT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "METADATA_IT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "SEP_CONDFAM",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "SEP_CONDFAM",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_REFAREA",
-                "package"": "codelist",
-                "version"": "1.2"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_REFAREA",
+                "package": "codelist",
+                "version": "1.2"
               }
             }
           }
         },
         {
-          "id"": "IND_TYPE",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).IND_TYPE",
+          "id": "IND_TYPE",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).IND_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "IND_TYPE",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "IND_TYPE",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_AGGREG_FAMIGLIE",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_AGGREG_FAMIGLIE",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "id"": "MEASURE",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).MEASURE",
+          "id": "MEASURE",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).MEASURE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "MEASURE",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "MEASURE",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_MEASURE",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_MEASURE",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "id"": "TIPO_SPESA",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TIPO_SPESA",
+          "id": "TIPO_SPESA",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TIPO_SPESA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "TIPO_SPESA",
-              "maintainableParentID"": "SEP_CONDFAM",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "TIPO_SPESA",
+              "maintainableParentID": "SEP_CONDFAM",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_COICOP_CEF1",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_COICOP_CEF1",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "6",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IT1",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CROSS_DOMAIN",
-            "maintainableParentVersion"": "1.1",
-            "package"": "conceptscheme"
+            "agencyID": "IT1",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CROSS_DOMAIN",
+            "maintainableParentVersion": "1.1",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:SEP_CONDFAM_CONSUMI_COMP_SPEFF(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IT1",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CROSS_DOMAIN",
-            "maintainableParentVersion"": "1.1",
-            "package"": "conceptscheme"
+            "agencyID": "IT1",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CROSS_DOMAIN",
+            "maintainableParentVersion": "1.1",
+            "package": "conceptscheme"
           }
         }
       }
@@ -598,21 +598,21 @@
   "Description": [
     {
       "#text": "Composizione della spesa effettiva",
-      "lang"": "it"
+      "lang": "it"
     },
     {
       "#text": "Actual expenditure composition:",
-      "lang"": "en"
+      "lang": "en"
     }
   ],
   "Name": [
     {
-      "#text": "Condizioni economiche delle famiglie e disuguaglianze  consumi"",
-      "lang"": "it"
+      "#text": "Condizioni economiche delle famiglie e disuguaglianze  consumi",
+      "lang": "it"
     },
     {
-      "#text": "Households Economic Conditions and Disparities  Consumptions"",
-      "lang"": "en"
+      "#text": "Households Economic Conditions and Disparities  Consumptions",
+      "lang": "en"
     }
   ]
 }

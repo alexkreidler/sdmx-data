@@ -1,256 +1,256 @@
 {
-  "agencyID"": "ABS",
-  "id"": "ABS_C16_T25_SA",
-  "isFinal"": "true",
-  "version"": "1.0.0",
+  "agencyID": "ABS",
+  "id": "ABS_C16_T25_SA",
+  "isFinal": "true",
+  "version": "1.0.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
+      "id": "AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_COMMENT",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_COMMENT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_COMMENT",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_COMMENT",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
+      "id": "DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "MRERD_2016",
-          "position"": "1",
+          "id": "MRERD_2016",
+          "position": "1",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "MRERD",
-              "maintainableParentID"": "CS_C16_HOUSEHOLD",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "MRERD",
+              "maintainableParentID": "CS_C16_HOUSEHOLD",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_C16_MRERD",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_C16_MRERD",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "STRD_2016",
-          "position"": "2",
+          "id": "STRD_2016",
+          "position": "2",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "STRD",
-              "maintainableParentID"": "CS_C16_HOUSEHOLD",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "STRD",
+              "maintainableParentID": "CS_C16_HOUSEHOLD",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_C16_STRD",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_C16_STRD",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "STATE",
-          "position"": "3",
+          "id": "STATE",
+          "position": "3",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "STATE",
-              "maintainableParentID"": "CS_C16_COMMON",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "STATE",
+              "maintainableParentID": "CS_C16_COMMON",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_C16_STATE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_C16_STATE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "REGIONTYPE",
-          "position"": "4",
+          "id": "REGIONTYPE",
+          "position": "4",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "REGION_TYPE",
-              "maintainableParentID"": "CS_C16_COMMON",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "REGION_TYPE",
+              "maintainableParentID": "CS_C16_COMMON",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_C16_REGION_TYPE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_C16_REGION_TYPE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "ASGS_2016",
-          "position"": "5",
+          "id": "ASGS_2016",
+          "position": "5",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "REGION",
-              "maintainableParentID"": "CS_C16_COMMON",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "REGION",
+              "maintainableParentID": "CS_C16_COMMON",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_C16_ASGS_SA",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_C16_ASGS_SA",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "6",
+        "id": "TIME_PERIOD",
+        "position": "6",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_C16_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_C16_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
+      "id": "MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
+        "id": "OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_C16_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_C16_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -258,6 +258,6 @@
   },
   "Name": {
     "#text": "Census 2016, Mortgage Repayments (monthly) by Dwelling Structure (SA2+)",
-    "lang"": "en"
+    "lang": "en"
   }
 }

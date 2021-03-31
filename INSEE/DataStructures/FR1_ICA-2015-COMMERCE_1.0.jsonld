@@ -1,0 +1,920 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "FR1",
+    "id": "ICA2015-COMMERCE",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=FR1:ICA2015-COMMERCE(1.0)",
+    "version": "1.0",
+    "name": {},
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxValue": "9",
+            "minValue": "0",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).IDBANK",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/IDBANK",
+          "skos:notation": "IDBANK"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "9",
+            "pattern": "[09]{9}",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/IDBANK"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).TITLE_FR",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/TITLE_FR",
+          "skos:notation": "TITLE_FR"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "240",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/TITLE_FR"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).TITLE_EN",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/TITLE_EN",
+          "skos:notation": "TITLE_EN"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "240",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/TITLE_EN"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).LAST_UPDATE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/LAST_UPDATE",
+          "skos:notation": "LAST_UPDATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "GregorianTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/LAST_UPDATE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxValue": "9",
+            "minValue": "0",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).OBS_QUAL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/OBS_QUAL",
+          "skos:notation": "OBS_QUAL"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_OBS_QUAL",
+          "skos:notation": "CL_OBS_QUAL"
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/OBS_QUAL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).OBS_REV",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/OBS_REV",
+          "skos:notation": "OBS_REV"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_OBS_REV",
+          "skos:notation": "CL_OBS_REV"
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/OBS_REV"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_OBS_CONF",
+          "skos:notation": "CL_OBS_CONF"
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/OBS_CONF"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).OBS_TYPE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/OBS_TYPE",
+          "skos:notation": "OBS_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_OBS_TYPE",
+          "skos:notation": "CL_OBS_TYPE"
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/OBS_TYPE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:ICA2015-COMMERCE(1.0).DATE_JO",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "EUROSTAT_ICA_COMMERCE"
+            },
+            {
+              "id": "INDICATEUR"
+            },
+            {
+              "id": "NAF2"
+            },
+            {
+              "id": "NATURE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "CORRECTION"
+            },
+            {
+              "id": "BASIND"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/DATE_JO",
+          "skos:notation": "DATE_JO"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "GregorianTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/FR1/Attribute/DATE_JO"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_PERIODICITE",
+          "skos:notation": "CL_PERIODICITE"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/FREQ"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).EUROSTAT_ICA_COMMERCE",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/INDICATEUR",
+          "skos:notation": "INDICATEUR"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_EUROSTAT_ICA_COMMERCE",
+          "skos:notation": "CL_EUROSTAT_ICA_COMMERCE"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/EUROSTAT_ICA_COMMERCE"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).INDICATEUR",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/INDICATEUR",
+          "skos:notation": "INDICATEUR"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_INDICATEUR",
+          "skos:notation": "CL_INDICATEUR"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/INDICATEUR"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).NAF2",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/ACTIVITE",
+          "skos:notation": "ACTIVITE"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_NAF2",
+          "skos:notation": "CL_NAF2"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/NAF2"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).NATURE",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/NATURE",
+          "skos:notation": "NATURE"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_NATURE",
+          "skos:notation": "CL_NATURE"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/NATURE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/GEOGRAPHIE",
+          "skos:notation": "GEOGRAPHIE"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_ZONE_GEO",
+          "skos:notation": "CL_ZONE_GEO"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/REF_AREA"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/UNITE",
+          "skos:notation": "UNITE"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_UNITE",
+          "skos:notation": "CL_UNITE"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).CORRECTION",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/CORRECTION",
+          "skos:notation": "CORRECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_CORRECTION",
+          "skos:notation": "CL_CORRECTION"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/CORRECTION"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:ICA2015-COMMERCE(1.0).BASIND",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/BASE_PER",
+          "skos:notation": "BASE_PER"
+        },
+        "qb:codeList": {
+          "agencyID": "FR1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/FR1/Concept/CL_BASIND",
+          "skos:notation": "CL_BASIND"
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/BASIND"
+      },
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=FR1:ICA2015-COMMERCE(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "FR1",
+          "class": "Concept",
+          "maintainableParentID": "CONCEPTS_INSEE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/FR1/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        },
+        "@id": "https://loqu.dev/FR1/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=FR1:ICA2015-COMMERCE(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "FR1",
+        "class": "Concept",
+        "maintainableParentID": "CONCEPTS_INSEE",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/FR1/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/FR1/Measure/OBS_VALUE"
+    }
+  }
+}

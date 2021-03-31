@@ -1,0 +1,232 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "CD2030",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=CD2030:CDT2(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "Countdown  tier 2 indicators",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/CD2030/DataStructure/CDT2",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDT2(1.0).CDDATASOURCE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "CD2030",
+          "class": "Concept",
+          "maintainableParentID": "CD2030_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/CD2030/Concept/CDDATASOURCE",
+          "skos:notation": "CDDATASOURCE"
+        },
+        "qb:codeList": {
+          "agencyID": "CD2030",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/CD2030/Concept/CL_CD2030_DATA_SOURCE",
+          "skos:notation": "CL_CD2030_DATA_SOURCE"
+        },
+        "@id": "https://loqu.dev/CD2030/Attribute/CDDATASOURCE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDT2(1.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "CD2030",
+          "class": "Concept",
+          "maintainableParentID": "CD2030_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/CD2030/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "qb:codeList": {
+          "agencyID": "CD2030",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/CD2030/Concept/CL_CD2030_TIME_FORMAT",
+          "skos:notation": "CL_CD2030_TIME_FORMAT"
+        },
+        "@id": "https://loqu.dev/CD2030/Attribute/TIME_FORMAT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDT2INDICS",
+        "ConceptIdentity": {
+          "agencyID": "CD2030",
+          "class": "Concept",
+          "maintainableParentID": "CD2030_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/CD2030/Concept/CDT2INDICS",
+          "skos:notation": "CDT2INDICS"
+        },
+        "qb:codeList": {
+          "agencyID": "CD2030",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/CD2030/Concept/CL_CD2030_CDT2_INDICATORS",
+          "skos:notation": "CL_CD2030_CDT2_INDICATORS"
+        },
+        "@id": "https://loqu.dev/CD2030/Dimension/CDT2INDICS"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDUNIT",
+        "ConceptIdentity": {
+          "agencyID": "CD2030",
+          "class": "Concept",
+          "maintainableParentID": "CD2030_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/CD2030/Concept/CDUNIT",
+          "skos:notation": "CDUNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "CD2030",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/CD2030/Concept/CL_CD2030_UNITS",
+          "skos:notation": "CL_CD2030_UNITS"
+        },
+        "@id": "https://loqu.dev/CD2030/Dimension/CDUNIT"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDAREAS",
+        "ConceptIdentity": {
+          "agencyID": "CD2030",
+          "class": "Concept",
+          "maintainableParentID": "CD2030_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/CD2030/Concept/CDAREAS",
+          "skos:notation": "CDAREAS"
+        },
+        "qb:codeList": {
+          "agencyID": "CD2030",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/CD2030/Concept/CL_CD2030_AREAS",
+          "skos:notation": "CL_CD2030_AREAS"
+        },
+        "@id": "https://loqu.dev/CD2030/Dimension/CDAREAS"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDT2STRATS",
+        "ConceptIdentity": {
+          "agencyID": "CD2030",
+          "class": "Concept",
+          "maintainableParentID": "CD2030_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/CD2030/Concept/CDT2STRATS",
+          "skos:notation": "CDT2STRATS"
+        },
+        "qb:codeList": {
+          "agencyID": "CD2030",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/CD2030/Concept/CL_CD2030_CDT2_CDT2STRATS",
+          "skos:notation": "CL_CD2030_CDT2_CDT2STRATS"
+        },
+        "@id": "https://loqu.dev/CD2030/Dimension/CDT2STRATS"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=CD2030:CDT2(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "CS_SDG",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/CD2030/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=CD2030:CDT2(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNICEF",
+        "class": "Concept",
+        "maintainableParentID": "CS_SDG",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNICEF/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "isSequence": "false",
+          "textType": "String"
+        }
+      },
+      "@id": "https://loqu.dev/CD2030/Measure/OBS_VALUE"
+    }
+  }
+}

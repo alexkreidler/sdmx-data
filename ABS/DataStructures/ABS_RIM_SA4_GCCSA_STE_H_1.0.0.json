@@ -1,213 +1,213 @@
 {
-  "agencyID"": "ABS",
-  "id"": "RIM_SA4_GCCSA_STE_H",
-  "isFinal"": "true",
-  "version"": "1.0.0",
+  "agencyID": "ABS",
+  "id": "RIM_SA4_GCCSA_STE_H",
+  "isFinal": "true",
+  "version": "1.0.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
+      "id": "AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_COMMENT",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_COMMENT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_COMMENT",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_COMMENT",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
+      "id": "DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "ASGS_2011_SA4_GCCSA_STE",
-          "position"": "1",
+          "id": "ASGS_2011_SA4_GCCSA_STE",
+          "position": "1",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "REGION_DEP",
-              "maintainableParentID"": "CS_GEOGRAPHY",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "REGION_DEP",
+              "maintainableParentID": "CS_GEOGRAPHY",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_ASGS_2011",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_ASGS_2011",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "ASGS_2011_STE_GGCSA_SA4A",
-          "position"": "2",
+          "id": "ASGS_2011_STE_GGCSA_SA4A",
+          "position": "2",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "REGION_ARR",
-              "maintainableParentID"": "CS_GEOGRAPHY",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "REGION_ARR",
+              "maintainableParentID": "CS_GEOGRAPHY",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_ASGS_2011",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_ASGS_2011",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "FREQUENCY",
-          "position"": "3",
+          "id": "FREQUENCY",
+          "position": "3",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "4",
+        "id": "TIME_PERIOD",
+        "position": "4",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
+      "id": "MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
+        "id": "OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         }
       }
     }
   },
   "Name": {
-    "#text": "Regional Internal Migration Estimates by Region of Arrival and Departure (SA4 and above), 200607 to 2015-16"",
-    "lang"": "en"
+    "#text": "Regional Internal Migration Estimates by Region of Arrival and Departure (SA4 and above), 200607 to 2015-16",
+    "lang": "en"
   }
 }

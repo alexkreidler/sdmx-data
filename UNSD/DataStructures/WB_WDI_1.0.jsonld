@@ -1,0 +1,170 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "WB",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=WB:WDI(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "World Development Indicators",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/WB/DataStructure/WDI",
+    "attributes": {
+      "assignmentStatus": "Conditional",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WB:WDI(1.0).UNIT_MULT",
+      "AttributeRelationship": {
+        "PrimaryMeasure": {
+          "id": "OBS_VALUE"
+        }
+      },
+      "ConceptIdentity": {
+        "agencyID": "WB",
+        "class": "Concept",
+        "maintainableParentID": "CS_WDI",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/WB/Concept/UNIT_MULT",
+        "skos:notation": "UNIT_MULT"
+      },
+      "qb:codeList": {
+        "agencyID": "WB",
+        "class": "Codelist",
+        "package": "codelist",
+        "version": "1.0",
+        "@type": "qb:HierarchicalCodeList",
+        "@id": "https://loqu.dev/WB/Concept/CL_UNIT_MULT_WDI",
+        "skos:notation": "CL_UNIT_MULT_WDI"
+      },
+      "@id": "https://loqu.dev/WB/Attribute/UNIT_MULT"
+    },
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WB:WDI(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "WB",
+          "class": "Concept",
+          "maintainableParentID": "CS_WDI",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/WB/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "WB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/WB/Concept/CL_FREQ_WDI",
+          "skos:notation": "CL_FREQ_WDI"
+        },
+        "@id": "https://loqu.dev/WB/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WB:WDI(1.0).SERIES",
+        "ConceptIdentity": {
+          "agencyID": "WB",
+          "class": "Concept",
+          "maintainableParentID": "CS_WDI",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/WB/Concept/SERIES",
+          "skos:notation": "SERIES"
+        },
+        "qb:codeList": {
+          "agencyID": "WB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/WB/Concept/CL_SERIES_WDI",
+          "skos:notation": "CL_SERIES_WDI"
+        },
+        "@id": "https://loqu.dev/WB/Dimension/SERIES"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WB:WDI(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "WB",
+          "class": "Concept",
+          "maintainableParentID": "CS_WDI",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/WB/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "WB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/WB/Concept/CL_REF_AREA_WDI",
+          "skos:notation": "CL_REF_AREA_WDI"
+        },
+        "@id": "https://loqu.dev/WB/Dimension/REF_AREA"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=WB:WDI(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "WB",
+          "class": "Concept",
+          "maintainableParentID": "CS_WDI",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/WB/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/WB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=WB:WDI(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "WB",
+        "class": "Concept",
+        "maintainableParentID": "CS_WDI",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/WB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/WB/Measure/OBS_VALUE"
+    }
+  }
+}

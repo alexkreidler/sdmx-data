@@ -1,0 +1,639 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNESCO_ARCHIVE",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNESCO_ARCHIVE:SDG4(2.0)",
+    "version": "2.0",
+    "name": {},
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNESCO_ARCHIVE/DataStructure/SDG4",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:SDG4(2.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:SDG4(2.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:SDG4(2.0).FREQ",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Attribute/FREQ"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:SDG4(2.0).DECIMALS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Attribute/DECIMALS"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).STAT_UNIT",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/STAT_UNIT",
+          "skos:notation": "STAT_UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_STAT_UNIT",
+          "skos:notation": "CL_STAT_UNIT"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/STAT_UNIT"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).EDU_LEVEL",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/EDU_LEVEL",
+          "skos:notation": "EDU_LEVEL"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_EDU_LEVEL",
+          "skos:notation": "CL_EDU_LEVEL"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/EDU_LEVEL"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).EDU_CAT",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/EDU_CAT",
+          "skos:notation": "EDU_CAT"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_EDU_CAT",
+          "skos:notation": "CL_EDU_CAT"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/EDU_CAT"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).SEX",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/SEX"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).AGE",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/AGE",
+          "skos:notation": "AGE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_AGE",
+          "skos:notation": "CL_AGE"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/AGE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).GRADE",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/GRADE",
+          "skos:notation": "GRADE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_GRADE",
+          "skos:notation": "CL_GRADE"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/GRADE"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).SECTOR_EDU",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/SECTOR_EDU",
+          "skos:notation": "SECTOR_EDU"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_SECTOR_EDU",
+          "skos:notation": "CL_SECTOR_EDU"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/SECTOR_EDU"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).EDU_ATTAIN",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/EDU_ATTAIN",
+          "skos:notation": "EDU_ATTAIN"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_EDU_ATTAIN",
+          "skos:notation": "CL_EDU_ATTAIN"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/EDU_ATTAIN"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).SUBJECT",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/SUBJECT",
+          "skos:notation": "SUBJECT"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_SUBJECT",
+          "skos:notation": "CL_SUBJECT"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/SUBJECT"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).WEALTH_QUINTILE",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/WEALTH_QUINTILE",
+          "skos:notation": "WEALTH_QUINTILE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_WEALTH_QUINTILE",
+          "skos:notation": "CL_WEALTH_QUINTILE"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/WEALTH_QUINTILE"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).INFRASTR",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/INFRASTR",
+          "skos:notation": "INFRASTR"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_INFRASTR",
+          "skos:notation": "CL_INFRASTR"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/INFRASTR"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).LOCATION",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/LOCATION",
+          "skos:notation": "LOCATION"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_LOCATION",
+          "skos:notation": "CL_LOCATION"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/LOCATION"
+      },
+      {
+        "position": "14",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).EDU_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/EDU_TYPE",
+          "skos:notation": "EDU_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_EDU_TYPE",
+          "skos:notation": "CL_EDU_TYPE"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/EDU_TYPE"
+      },
+      {
+        "position": "15",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).SE_BKGRD",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/SE_BKGRD",
+          "skos:notation": "SE_BKGRD"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_SE_BKGRD",
+          "skos:notation": "CL_SE_BKGRD"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/SE_BKGRD"
+      },
+      {
+        "position": "16",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).SOURCE_FUND",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/SOURCE_FUND",
+          "skos:notation": "SOURCE_FUND"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_SOURCE_FUND",
+          "skos:notation": "CL_SOURCE_FUND"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/SOURCE_FUND"
+      },
+      {
+        "position": "17",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).FUND_FLOW",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/FUND_FLOW",
+          "skos:notation": "FUND_FLOW"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_FUND_FLOW",
+          "skos:notation": "CL_FUND_FLOW"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/FUND_FLOW"
+      },
+      {
+        "position": "18",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).IMM_STATUS",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/IMM_STATUS",
+          "skos:notation": "IMM_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_IMM_STATUS",
+          "skos:notation": "CL_IMM_STATUS"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/IMM_STATUS"
+      },
+      {
+        "position": "19",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:SDG4(2.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO_ARCHIVE",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO_ARCHIVE/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/REF_AREA"
+      },
+      {
+        "position": "20",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNESCO_ARCHIVE:SDG4(2.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        },
+        "@id": "https://loqu.dev/UNESCO_ARCHIVE/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNESCO_ARCHIVE:SDG4(2.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "SDMX",
+        "class": "Concept",
+        "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/SDMX/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNESCO_ARCHIVE/Measure/OBS_VALUE"
+    }
+  }
+}

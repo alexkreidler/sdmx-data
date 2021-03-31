@@ -1,0 +1,751 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UIS",
+    "isExternalReference": "false",
+    "isFinal": "true",
+    "structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/UIS/UOE_FINANCE/1.0",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UIS:UOE_FINANCE(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "UOE_FINANCE",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UIS/DataStructure/UOE_FINANCE",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).TABLE_IDENTIFIER",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "INTENSITY"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "EXPENDITURE_TYPE"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "BREAKDOWN_GROUP"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/TABLE_IDENTIFIER",
+          "skos:notation": "TABLE_IDENTIFIER"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_EDU_TABLEID",
+          "skos:notation": "CL_EDU_TABLEID"
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/TABLE_IDENTIFIER"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).REPYEARSTART",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/REPYEARSTART",
+          "skos:notation": "REPYEARSTART"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/REPYEARSTART"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).REPYEAREND",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/REPYEAREND",
+          "skos:notation": "REPYEAREND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/REPYEAREND"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).FIN_STUD_YEARSTART",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/FIN_STUD_YEARSTART",
+          "skos:notation": "FIN_STUD_YEARSTART"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/FIN_STUD_YEARSTART"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).FIN_STUD_YEAREND",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/FIN_STUD_YEAREND",
+          "skos:notation": "FIN_STUD_YEAREND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/FIN_STUD_YEAREND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).TYPE_EXP_REPORTED",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "INTENSITY"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "EXPENDITURE_TYPE"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "BREAKDOWN_GROUP"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/TYPE_EXP_REPORTED",
+          "skos:notation": "TYPE_EXP_REPORTED"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_TYPE_EXP_REPORTED",
+          "skos:notation": "CL_TYPE_EXP_REPORTED"
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/TYPE_EXP_REPORTED"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "INTENSITY"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "EXPENDITURE_TYPE"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "BREAKDOWN_GROUP"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).TIME_PER_COLLECT",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/TIME_PER_COLLECT",
+          "skos:notation": "TIME_PER_COLLECT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/TIME_PER_COLLECT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).COMPILING_ORG",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "INTENSITY"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "COUNTERPART_SECTOR"
+            },
+            {
+              "id": "EXPENDITURE_TYPE"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "BREAKDOWN_GROUP"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).CONF_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/CONF_STATUS",
+          "skos:notation": "CONF_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/CONF_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UIS/Attribute/COMMENT_OBS"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).EDUCATION_LEV",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/EDUCATION_LEV",
+          "skos:notation": "EDUCATION_LEV"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_EDUCATION_LEVEL",
+          "skos:notation": "CL_EDUCATION_LEVEL"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/EDUCATION_LEV"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).INTENSITY",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/INTENSITY",
+          "skos:notation": "INTENSITY"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_INTENSITY",
+          "skos:notation": "CL_INTENSITY"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/INTENSITY"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).STAT_UNIT",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/STAT_UNIT",
+          "skos:notation": "STAT_UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_STAT_UNIT",
+          "skos:notation": "CL_STAT_UNIT"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/STAT_UNIT"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/FREQ"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/REF_AREA"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).REF_SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/REF_SECTOR",
+          "skos:notation": "REF_SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_SECTOR",
+          "skos:notation": "CL_SECTOR"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/REF_SECTOR"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).COUNTERPART_SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/COUNTERPART_SECTOR",
+          "skos:notation": "COUNTERPART_SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_SECTOR",
+          "skos:notation": "CL_SECTOR"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/COUNTERPART_SECTOR"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).EXPENDITURE_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/EXPENDITURE_TYPE",
+          "skos:notation": "EXPENDITURE_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_EXPENDITURE_TYPE",
+          "skos:notation": "CL_EXPENDITURE_TYPE"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/EXPENDITURE_TYPE"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.13",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).BREAKDOWN_GROUP",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/BREAKDOWN_GROUP",
+          "skos:notation": "BREAKDOWN_GROUP"
+        },
+        "qb:codeList": {
+          "agencyID": "UIS",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UIS/Concept/CL_BREAKDOWN_GROUP",
+          "skos:notation": "CL_BREAKDOWN_GROUP"
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/BREAKDOWN_GROUP"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UIS:UOE_FINANCE(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UIS",
+          "class": "Concept",
+          "maintainableParentID": "CS_EDUC_UOE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UIS/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        },
+        "@id": "https://loqu.dev/UIS/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UIS:UOE_FINANCE(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UIS",
+        "class": "Concept",
+        "maintainableParentID": "CS_EDUC_UOE",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UIS/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/UIS/Measure/OBS_VALUE"
+    }
+  }
+}

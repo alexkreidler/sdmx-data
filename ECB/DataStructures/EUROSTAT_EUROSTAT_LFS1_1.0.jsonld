@@ -1,0 +1,897 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "EUROSTAT",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "uri": "/default/namespace/might/get/from/SDMXRegistry/when/available",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=EUROSTAT:EUROSTAT_LFS1(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "Labour Force Survey",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/EUROSTAT/DataStructure/EUROSTAT_LFS1",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "3",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_OBS_CONF",
+          "skos:notation": "CL_OBS_CONF"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/OBS_CONF"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).OBS_PRE_BREAK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_PRE_BREAK",
+          "skos:notation": "OBS_PRE_BREAK"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/OBS_PRE_BREAK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).OBS_COM",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_COM",
+          "skos:notation": "OBS_COM"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/OBS_COM"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).COLLECTION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/COLLECTION",
+          "skos:notation": "COLLECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_COLLECTION",
+          "skos:notation": "CL_COLLECTION"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/COLLECTION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).UNIT_INDEX_BASE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/UNIT_INDEX_BASE",
+          "skos:notation": "UNIT_INDEX_BASE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "35",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/UNIT_INDEX_BASE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).COMPILATION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/COMPILATION",
+          "skos:notation": "COMPILATION"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/COMPILATION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).COVERAGE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/COVERAGE",
+          "skos:notation": "COVERAGE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "350",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/COVERAGE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).SOURCE_AGENCY",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/SOURCE_AGENCY",
+          "skos:notation": "SOURCE_AGENCY"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/SOURCE_AGENCY"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).SOURCE_PUB",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/SOURCE_PUB",
+          "skos:notation": "SOURCE_PUB"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "350",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/SOURCE_PUB"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "70",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).TITLE_COMPL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TITLE_COMPL",
+          "skos:notation": "TITLE_COMPL"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/TITLE_COMPL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).UNIT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/UNIT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_LFS1(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "LFS_INDICATOR"
+            },
+            {
+              "id": "LFS_BREAKDOWN"
+            },
+            {
+              "id": "AGE_BREAKDOWN"
+            },
+            {
+              "id": "GENDER"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/UNIT_MULT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_LFS1(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_LFS1(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_AREA_EE",
+          "skos:notation": "CL_AREA_EE"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_LFS1(1.0).ADJUSTMENT",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/ADJUSTMENT",
+          "skos:notation": "ADJUSTMENT"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_ADJUSTMENT",
+          "skos:notation": "CL_ADJUSTMENT"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/ADJUSTMENT"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_LFS1(1.0).LFS_INDICATOR",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/LFS_INDICATOR",
+          "skos:notation": "LFS_INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_LFS_INDICATOR",
+          "skos:notation": "CL_LFS_INDICATOR"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/LFS_INDICATOR"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_LFS1(1.0).LFS_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/LFS_BREAKDOWN",
+          "skos:notation": "LFS_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_LFS_BREAKDOWN",
+          "skos:notation": "CL_LFS_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/LFS_BREAKDOWN"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_LFS1(1.0).AGE_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/AGE_BREAKDOWN",
+          "skos:notation": "AGE_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_AGE_BREAKDOWN",
+          "skos:notation": "CL_AGE_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/AGE_BREAKDOWN"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_LFS1(1.0).GENDER",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/GENDER",
+          "skos:notation": "GENDER"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_GENDER",
+          "skos:notation": "CL_GENDER"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/GENDER"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=EUROSTAT:EUROSTAT_LFS1(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=EUROSTAT:EUROSTAT_LFS1(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "EUROSTAT",
+        "class": "Concept",
+        "maintainableParentID": "EUROSTAT_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "maxLength": "15",
+          "textType": "String"
+        }
+      },
+      "@id": "https://loqu.dev/EUROSTAT/Measure/OBS_VALUE"
+    }
+  }
+}

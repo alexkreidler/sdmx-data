@@ -1,0 +1,796 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "EUROSTAT",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=EUROSTAT:EUROSTAT_JVC2(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "Job Vacancy Statistics",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/EUROSTAT/DataStructure/EUROSTAT_JVC2",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "maxLength": "3",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_OBS_CONF",
+          "skos:notation": "CL_OBS_CONF"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/OBS_CONF"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_PRE_BREAK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_PRE_BREAK",
+          "skos:notation": "OBS_PRE_BREAK"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/OBS_PRE_BREAK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).AVAILABILITY",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/AVAILABILITY",
+          "skos:notation": "AVAILABILITY"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_AVAILABILITY",
+          "skos:notation": "CL_AVAILABILITY"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/AVAILABILITY"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COLLECTION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/COLLECTION",
+          "skos:notation": "COLLECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_COLLECTION",
+          "skos:notation": "CL_COLLECTION"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/COLLECTION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COV_THRES",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/COV_THRES",
+          "skos:notation": "COV_THRES"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/COV_THRES"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COMPILATION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/COMPILATION",
+          "skos:notation": "COMPILATION"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/COMPILATION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COVERAGE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/COVERAGE",
+          "skos:notation": "COVERAGE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "350",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/COVERAGE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "70",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TITLE_COMPL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TITLE_COMPL",
+          "skos:notation": "TITLE_COMPL"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/TITLE_COMPL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).UNIT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/UNIT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "ADJUSTMENT"
+            },
+            {
+              "id": "JVC_CONCEPT"
+            },
+            {
+              "id": "JVC2_ACTIVITY"
+            },
+            {
+              "id": "EMPCOV"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Attribute/UNIT_MULT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_AREA_EE",
+          "skos:notation": "CL_AREA_EE"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).ADJUSTMENT",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/ADJUSTMENT",
+          "skos:notation": "ADJUSTMENT"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_ADJUSTMENT",
+          "skos:notation": "CL_ADJUSTMENT"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/ADJUSTMENT"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).JVC_CONCEPT",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/JVC_CONCEPT",
+          "skos:notation": "JVC_CONCEPT"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_JVC_CONCEPT",
+          "skos:notation": "CL_JVC_CONCEPT"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/JVC_CONCEPT"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).JVC2_ACTIVITY",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/JVC2_ACTIVITY",
+          "skos:notation": "JVC2_ACTIVITY"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_NACE2",
+          "skos:notation": "CL_NACE2"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/JVC2_ACTIVITY"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).EMPCOV",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/EMPCOV",
+          "skos:notation": "EMPCOV"
+        },
+        "qb:codeList": {
+          "agencyID": "EUROSTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/CL_EMPCOV",
+          "skos:notation": "CL_EMPCOV"
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/EMPCOV"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=EUROSTAT:EUROSTAT_JVC2(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "EUROSTAT",
+          "class": "Concept",
+          "maintainableParentID": "EUROSTAT_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/EUROSTAT/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/EUROSTAT/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "EUROSTAT",
+        "class": "Concept",
+        "maintainableParentID": "EUROSTAT_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/EUROSTAT/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "isSequence": "false",
+          "maxLength": "15",
+          "textType": "String"
+        }
+      },
+      "@id": "https://loqu.dev/EUROSTAT/Measure/OBS_VALUE"
+    }
+  }
+}

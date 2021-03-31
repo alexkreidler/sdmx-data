@@ -1,474 +1,474 @@
 {
-  "agencyID"": "UNICEF",
-  "id"": "MIGRATION",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:MIGRATION(1.0)",
-  "version"": "1.0",
+  "agencyID": "UNICEF",
+  "id": "MIGRATION",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:MIGRATION(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:MIGRATION(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:MIGRATION(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_CONF",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).OBS_CONF",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_CONF",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).OBS_CONF",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_CONF",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_CONF",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_CONF_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_CONF_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).UNIT_MEASURE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "STAT_POP"
+                  "id": "STAT_POP"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_SOURCE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).DATA_SOURCE",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_SOURCE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).DATA_SOURCE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "DATA_SOURCE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "DATA_SOURCE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "String"
+              "isSequence": "false",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MULTIPLIER",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).UNIT_MULTIPLIER",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MULTIPLIER",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).UNIT_MULTIPLIER",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "STAT_POP"
+                  "id": "STAT_POP"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MULTIPLIER",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MULTIPLIER",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SOURCE_LINK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).SOURCE_LINK",
+          "assignmentStatus": "Conditional",
+          "id": "SOURCE_LINK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).SOURCE_LINK",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "STAT_POP"
+                  "id": "STAT_POP"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SOURCE_LINK",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SOURCE_LINK",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_PERIOD_METHOD",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).TIME_PERIOD_METHOD",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_PERIOD_METHOD",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).TIME_PERIOD_METHOD",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "TIME_PERIOD_METHOD",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "TIME_PERIOD_METHOD",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COVERAGE_TIME",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).COVERAGE_TIME",
+          "assignmentStatus": "Conditional",
+          "id": "COVERAGE_TIME",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).COVERAGE_TIME",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "COVERAGE_TIME",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "COVERAGE_TIME",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "FREQ_COLL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).FREQ_COLL",
+          "assignmentStatus": "Conditional",
+          "id": "FREQ_COLL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).FREQ_COLL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "FREQ_COLL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "FREQ_COLL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_FREQ_COLL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_FREQ_COLL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SERIES_FOOTNOTE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).SERIES_FOOTNOTE",
+          "assignmentStatus": "Conditional",
+          "id": "SERIES_FOOTNOTE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).SERIES_FOOTNOTE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "STAT_POP"
+                  "id": "STAT_POP"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_FOOTNOTE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_FOOTNOTE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_FOOTNOTE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).OBS_FOOTNOTE",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_FOOTNOTE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:MIGRATION(1.0).OBS_FOOTNOTE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_FOOTNOTE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_FOOTNOTE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:MIGRATION(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:MIGRATION(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "REF_AREA",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:MIGRATION(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:MIGRATION(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_COUNTRY",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_COUNTRY",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:MIGRATION(1.0).INDICATOR",
+          "id": "INDICATOR",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:MIGRATION(1.0).INDICATOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNICEF_INDICATOR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNICEF_INDICATOR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNICEF_INDICATOR",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNICEF_INDICATOR",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "STAT_POP",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:MIGRATION(1.0).STAT_POP",
+          "id": "STAT_POP",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:MIGRATION(1.0).STAT_POP",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "STAT_POP",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "STAT_POP",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_STAT_POP",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_STAT_POP",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "4",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:MIGRATION(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:MIGRATION(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:MIGRATION(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:MIGRATION(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:MIGRATION(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:MIGRATION(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "isSequence"": "false",
-            "pattern"": "[\u0026lt;|\u0026gt;]??[0-9]*(\\.[0-9]+)?"",
-            "textType"": "String"
+            "isSequence": "false",
+            "pattern": "[\u0026lt;|\u0026gt;]??[0-9]*(\\.[0-9]+)?",
+            "textType": "String"
           }
         }
       }
@@ -476,6 +476,6 @@
   },
   "Name": {
     "#text": "Migration and Refugees",
-    "lang"": "en"
+    "lang": "en"
   }
 }

@@ -1,0 +1,875 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ECB",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "uri": "https://www.ecb.europa.eu/vocabulary/stats/fxs/1",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_FXS1(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "Foreign eXchange Statistics (foreign reserves &amp; exchange operations)",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ECB/DataStructure/ECB_FXS1",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "3",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_OBS_CONF",
+          "skos:notation": "CL_OBS_CONF"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_CONF"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).OBS_PRE_BREAK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_PRE_BREAK",
+          "skos:notation": "OBS_PRE_BREAK"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_PRE_BREAK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).OBS_COM",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_COM",
+          "skos:notation": "OBS_COM"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_COM"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).COLLECTION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COLLECTION",
+          "skos:notation": "COLLECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_COLLECTION",
+          "skos:notation": "CL_COLLECTION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COLLECTION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/DISS_ORG"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).SOURCE_AGENCY",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SOURCE_AGENCY",
+          "skos:notation": "SOURCE_AGENCY"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/SOURCE_AGENCY"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "200",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).TITLE_COMPL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TITLE_COMPL",
+          "skos:notation": "TITLE_COMPL"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "minLength": "1",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TITLE_COMPL"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).UNIT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/UNIT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FXS1(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FXS_OP_TYPE"
+            },
+            {
+              "id": "DATA_TYPE_FXS"
+            },
+            {
+              "id": "MARKET_TRANS"
+            },
+            {
+              "id": "CURRENCY_P_H"
+            },
+            {
+              "id": "CURRENCY_S"
+            },
+            {
+              "id": "SERIES_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/UNIT_MULT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_AREA_EE",
+          "skos:notation": "CL_AREA_EE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).FXS_OP_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FXS_OP_TYPE",
+          "skos:notation": "FXS_OP_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FXS_OP_TYPE",
+          "skos:notation": "CL_FXS_OP_TYPE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FXS_OP_TYPE"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).DATA_TYPE_FXS",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DATA_TYPE_FXS",
+          "skos:notation": "DATA_TYPE_FXS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_DATA_TYPE_FXS",
+          "skos:notation": "CL_DATA_TYPE_FXS"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/DATA_TYPE_FXS"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).MARKET_TRANS",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/MARKET_TRANS",
+          "skos:notation": "MARKET_TRANS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_MARKET_TRANS",
+          "skos:notation": "CL_MARKET_TRANS"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/MARKET_TRANS"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).CURRENCY_P_H",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/CURRENCY_P_H",
+          "skos:notation": "CURRENCY_P_H"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_CURRENCY",
+          "skos:notation": "CL_CURRENCY"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/CURRENCY_P_H"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).CURRENCY_S",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/CURRENCY_S",
+          "skos:notation": "CURRENCY_S"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_CURRENCY",
+          "skos:notation": "CL_CURRENCY"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/CURRENCY_S"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FXS1(1.0).SERIES_DENOM",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SERIES_DENOM",
+          "skos:notation": "SERIES_DENOM"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_SERIES_DENOM",
+          "skos:notation": "CL_SERIES_DENOM"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SERIES_DENOM"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_FXS1(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_FXS1(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "ECB",
+        "class": "Concept",
+        "maintainableParentID": "ECB_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ECB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "maxLength": "15",
+          "textType": "String"
+        }
+      },
+      "@id": "https://loqu.dev/ECB/Measure/OBS_VALUE"
+    }
+  }
+}

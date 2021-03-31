@@ -1,228 +1,228 @@
 {
-  "agencyID"": "SPC",
-  "id"": "DSD_COMMODITY_PRICES",
-  "isFinal"": "false",
-  "version"": "1.0",
+  "agencyID": "SPC",
+  "id": "DSD_COMMODITY_PRICES",
+  "isFinal": "false",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
+      "id": "AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_SOURCE",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_SOURCE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMMODITY"
+                  "id": "COMMODITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SPC",
-              "class"": "Concept",
-              "id"": "DATA_SOURCE",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme"
+              "agencyID": "SPC",
+              "class": "Concept",
+              "id": "DATA_SOURCE",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "String"
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "COMMODITY"
+                  "id": "COMMODITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SPC",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme"
+              "agencyID": "SPC",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SPC",
-                "class"": "Codelist",
-                "id"": "CL_COM_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SPC",
+                "class": "Codelist",
+                "id": "CL_COM_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_COMMENT",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_COMMENT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SPC",
-              "class"": "Concept",
-              "id"": "COMMENT",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme"
+              "agencyID": "SPC",
+              "class": "Concept",
+              "id": "COMMENT",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "String"
+              "textType": "String"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
+      "id": "DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
+          "id": "FREQ",
+          "position": "1",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SPC",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme"
+              "agencyID": "SPC",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SPC",
-                "class"": "Codelist",
-                "id"": "CL_COM_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SPC",
+                "class": "Codelist",
+                "id": "CL_COM_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "COMMODITY",
-          "position"": "2",
+          "id": "COMMODITY",
+          "position": "2",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SPC",
-              "class"": "Concept",
-              "id"": "COMMODITY",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme"
+              "agencyID": "SPC",
+              "class": "Concept",
+              "id": "COMMODITY",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SPC",
-                "class"": "Codelist",
-                "id"": "CL_COMMODITY_PRICES",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SPC",
+                "class": "Codelist",
+                "id": "CL_COMMODITY_PRICES",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "3",
+          "id": "INDICATOR",
+          "position": "3",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SPC",
-              "class"": "Concept",
-              "id"": "INDICATOR",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme"
+              "agencyID": "SPC",
+              "class": "Concept",
+              "id": "INDICATOR",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SPC",
-                "class"": "Codelist",
-                "id"": "CL_COMMODITY_PRICES_INDICATORS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SPC",
+                "class": "Codelist",
+                "id": "CL_COMMODITY_PRICES_INDICATORS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "4",
+        "id": "TIME_PERIOD",
+        "position": "4",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "SPC",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "2.0",
-            "package"": "conceptscheme"
+            "agencyID": "SPC",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "2.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
+      "id": "MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
+        "id": "OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "SPC",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "2.0",
-            "package"": "conceptscheme"
+            "agencyID": "SPC",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "2.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -230,6 +230,6 @@
   },
   "Name": {
     "#text": "DSD for commodity prices",
-    "lang"": "en"
+    "lang": "en"
   }
 }

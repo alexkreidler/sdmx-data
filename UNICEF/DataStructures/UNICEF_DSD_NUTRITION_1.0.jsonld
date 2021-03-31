@@ -1,0 +1,936 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNICEF",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:DSD_NUTRITION(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "Child Nutrition",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNICEF/DataStructure/DSD_NUTRITION",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UNIT_MULTIPLIER",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNIT_MULTIPLIER",
+          "skos:notation": "UNIT_MULTIPLIER"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/UNIT_MULTIPLIER"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UNIT_MEASURE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).DATA_SOURCE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/DATA_SOURCE",
+          "skos:notation": "DATA_SOURCE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/DATA_SOURCE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/OBS_CONF"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).LOWER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/LOWER_BOUND",
+          "skos:notation": "LOWER_BOUND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "pattern": "[&lt;|&gt;]??[0-9]*(\\.[0-9]+)?",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/LOWER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UPPER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UPPER_BOUND",
+          "skos:notation": "UPPER_BOUND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "pattern": "[&lt;|&gt;]??[0-9]*(\\.[0-9]+)?",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/UPPER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).STD_ERR",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/STD_ERR",
+          "skos:notation": "STD_ERR"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/STD_ERR"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).WGTD_SAMPL_SIZE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/WGTD_SAMPL_SIZE",
+          "skos:notation": "WGTD_SAMPL_SIZE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/WGTD_SAMPL_SIZE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).SOURCE_LINK",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "RESIDENCE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            },
+            {
+              "id": "HEAD_OF_HOUSE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/SOURCE_LINK",
+          "skos:notation": "SOURCE_LINK"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/SOURCE_LINK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).TIME_PERIOD_METHOD",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD_METHOD",
+          "skos:notation": "TIME_PERIOD_METHOD"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/TIME_PERIOD_METHOD"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).COVERAGE_TIME",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/COVERAGE_TIME",
+          "skos:notation": "COVERAGE_TIME"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/COVERAGE_TIME"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).FREQ_COLL",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/FREQ_COLL",
+          "skos:notation": "FREQ_COLL"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_FREQ_COLL",
+          "skos:notation": "CL_FREQ_COLL"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/FREQ_COLL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).SERIES_FOOTNOTE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "RESIDENCE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            },
+            {
+              "id": "HEAD_OF_HOUSE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/SERIES_FOOTNOTE",
+          "skos:notation": "SERIES_FOOTNOTE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/SERIES_FOOTNOTE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_FOOTNOTE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/OBS_FOOTNOTE",
+          "skos:notation": "OBS_FOOTNOTE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/OBS_FOOTNOTE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).CUSTODIAN",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "RESIDENCE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            },
+            {
+              "id": "HEAD_OF_HOUSE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/CUSTODIAN",
+          "skos:notation": "CUSTODIAN"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/CUSTODIAN"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).INDICATOR_DEFINITION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "RESIDENCE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            },
+            {
+              "id": "HEAD_OF_HOUSE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/INDICATOR_DEFINITION",
+          "skos:notation": "INDICATOR_DEFINITION"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/INDICATOR_DEFINITION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).NUMERATOR_DEFINITION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "RESIDENCE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            },
+            {
+              "id": "HEAD_OF_HOUSE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/NUMERATOR_DEFINITION",
+          "skos:notation": "NUMERATOR_DEFINITION"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/NUMERATOR_DEFINITION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).DENOMINATOR_DEFINITION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "RESIDENCE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            },
+            {
+              "id": "HEAD_OF_HOUSE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/DENOMINATOR_DEFINITION",
+          "skos:notation": "DENOMINATOR_DEFINITION"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/DENOMINATOR_DEFINITION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).PUBLICATION_DATE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "WEALTH_QUINTILE"
+            },
+            {
+              "id": "RESIDENCE"
+            },
+            {
+              "id": "MATERNAL_EDU_LVL"
+            },
+            {
+              "id": "HEAD_OF_HOUSE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/PUBLICATION_DATE",
+          "skos:notation": "PUBLICATION_DATE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/PUBLICATION_DATE"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/COUNTRY",
+          "skos:notation": "COUNTRY"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_COUNTRY",
+          "skos:notation": "CL_COUNTRY"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/REF_AREA"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).INDICATOR",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNICEF_INDICATOR",
+          "skos:notation": "UNICEF_INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_UNICEF_INDICATOR",
+          "skos:notation": "CL_UNICEF_INDICATOR"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/INDICATOR"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).SEX",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/SEX"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).AGE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/AGE",
+          "skos:notation": "AGE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_AGE",
+          "skos:notation": "CL_AGE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/AGE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).WEALTH_QUINTILE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/WEALTH_QUINTILE",
+          "skos:notation": "WEALTH_QUINTILE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_WEALTH_QUINTILE",
+          "skos:notation": "CL_WEALTH_QUINTILE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/WEALTH_QUINTILE"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).RESIDENCE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/RESIDENCE",
+          "skos:notation": "RESIDENCE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_RESIDENCE",
+          "skos:notation": "CL_RESIDENCE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/RESIDENCE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).MATERNAL_EDU_LVL",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/MATERNAL_EDU_LVL",
+          "skos:notation": "MATERNAL_EDU_LVL"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_EDU_LEVEL",
+          "skos:notation": "CL_EDU_LEVEL"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/MATERNAL_EDU_LVL"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).HEAD_OF_HOUSE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/HEAD_OF_HOUSE",
+          "skos:notation": "HEAD_OF_HOUSE"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/HEAD_OF_HOUSE"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:DSD_NUTRITION(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:DSD_NUTRITION(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNICEF",
+        "class": "Concept",
+        "maintainableParentID": "UNICEF_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNICEF/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNICEF/Measure/OBS_VALUE"
+    }
+  }
+}

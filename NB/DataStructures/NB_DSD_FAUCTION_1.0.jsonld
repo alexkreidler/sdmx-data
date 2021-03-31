@@ -1,0 +1,357 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "NB",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_FAUCTION(1.0)",
+    "version": "1.0",
+    "Description": [
+      {
+        "#text": "Norges Banks announcements and results of Fauctions. TIME_PERIOD indicates bidding deadline in the dataset.",
+        "lang": "en"
+      },
+      {
+        "#text": "Norges Banks auksjonsinnbydelser og resultater av Fauksjon. TIME_PERIOD indikerer budfrist i datasettet.",
+        "lang": "no"
+      }
+    ],
+    "name": {},
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/NB/DataStructure/DSD_FAUCTION",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_FAUCTION(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "INSTRUMENT_TYPE"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "AUCTION_ID"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/NB/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_FAUCTION(1.0).TERM_FROM",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/TERM_FROM",
+          "skos:notation": "TERM_FROM"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "GregorianDay"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/TERM_FROM"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_FAUCTION(1.0).TERM_TO",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/TERM_TO",
+          "skos:notation": "TERM_TO"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "GregorianDay"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/TERM_TO"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_FAUCTION(1.0).AUCTION_TYPE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/AUCTION_TYPE",
+          "skos:notation": "AUCTION_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_AUCTION_TYPE",
+          "skos:notation": "CL_AUCTION_TYPE"
+        },
+        "@id": "https://loqu.dev/NB/Attribute/AUCTION_TYPE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_FAUCTION(1.0).ANNOUNCEMENT_DATE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/ANNOUNCEMENT_DATE",
+          "skos:notation": "ANNOUNCEMENT_DATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "GregorianDay"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/ANNOUNCEMENT_DATE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_FAUCTION(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "INSTRUMENT_TYPE"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "AUCTION_ID"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_FAUCTION(1.0).FIXED_INTEREST_RATE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/FIXED_INTEREST_RATE",
+          "skos:notation": "FIXED_INTEREST_RATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Decimal"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/FIXED_INTEREST_RATE"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_FAUCTION(1.0).INSTRUMENT_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/INSTRUMENT_TYPE",
+          "skos:notation": "INSTRUMENT_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_INSTRUMENT_TYPE",
+          "skos:notation": "CL_INSTRUMENT_TYPE"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/INSTRUMENT_TYPE"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_FAUCTION(1.0).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_FAUCTION(1.0).AUCTION_ID",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/AUCTION_ID",
+          "skos:notation": "AUCTION_ID"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Dimension/AUCTION_ID"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_FAUCTION(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/BIDDING_DEADLINE",
+          "skos:notation": "BIDDING_DEADLINE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_FAUCTION(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "NB",
+        "class": "Concept",
+        "maintainableParentID": "CS_NB",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/NB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "isSequence": "false",
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/NB/Measure/OBS_VALUE"
+    }
+  }
+}

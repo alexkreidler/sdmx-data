@@ -1,0 +1,531 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "IT1",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0)",
+    "version": "1.0",
+    "Description": [
+      {
+        "#text": "Soglia di povertà assoluta",
+        "lang": "it"
+      },
+      {
+        "#text": "Absolute poverty threshold",
+        "lang": "en"
+      }
+    ],
+    "name": {},
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/IT1/DataStructure/SEP_CONDFAM_POVER_SOGLIASS",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).COMMENT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/COMMENT",
+          "skos:notation": "COMMENT"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/COMMENT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).CONF_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/CONF_STATUS",
+          "skos:notation": "CONF_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_OBS_CONF",
+          "skos:notation": "CL_OBS_CONF"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/CONF_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).OBS_PRE_BREAK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/OBS_PRE_BREAK",
+          "skos:notation": "OBS_PRE_BREAK"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/OBS_PRE_BREAK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_FLAG",
+          "skos:notation": "CL_FLAG"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_DECI",
+          "skos:notation": "CL_DECI"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).NOTA_IT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/NOTA_IT",
+          "skos:notation": "NOTA_IT"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/NOTA_IT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).NOTA_EN",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/NOTA_EN",
+          "skos:notation": "NOTA_EN"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/NOTA_EN"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).BREAK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/BREAK",
+          "skos:notation": "BREAK"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/BREAK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).COLLECTION",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/COLLECTION",
+          "skos:notation": "COLLECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_COLLECTION",
+          "skos:notation": "CL_COLLECTION"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/COLLECTION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).TIME_FORMAT",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_TIME_FORMAT",
+          "skos:notation": "CL_TIME_FORMAT"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).TITLE",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).METADATA_EN",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/METADATA_EN",
+          "skos:notation": "METADATA_EN"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/METADATA_EN"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).METADATA_IT",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/METADATA_IT",
+          "skos:notation": "METADATA_IT"
+        },
+        "@id": "https://loqu.dev/IT1/Attribute/METADATA_IT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/IT1/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "SEP_CONDFAM",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_REFAREA",
+          "skos:notation": "CL_REFAREA"
+        },
+        "@id": "https://loqu.dev/IT1/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).IND_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/IND_TYPE",
+          "skos:notation": "IND_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_AGGREG_FAMIGLIE",
+          "skos:notation": "CL_AGGREG_FAMIGLIE"
+        },
+        "@id": "https://loqu.dev/IT1/Dimension/IND_TYPE"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/MEASURE",
+          "skos:notation": "MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_MEASURE",
+          "skos:notation": "CL_MEASURE"
+        },
+        "@id": "https://loqu.dev/IT1/Dimension/MEASURE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).TIPOLOGIA_FAM",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "SEP_CONDFAM",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/TIPOLOGIA_FAM",
+          "skos:notation": "TIPOLOGIA_FAM"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_TIPOLOGIA_FAMILIARE2",
+          "skos:notation": "CL_TIPOLOGIA_FAMILIARE2"
+        },
+        "@id": "https://loqu.dev/IT1/Dimension/TIPOLOGIA_FAM"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).AMPIEZZA_COMUNE",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "SEP_CONDFAM",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/AMPIEZZA_COMUNE",
+          "skos:notation": "AMPIEZZA_COMUNE"
+        },
+        "qb:codeList": {
+          "agencyID": "IT1",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IT1/Concept/CL_REFAREA",
+          "skos:notation": "CL_REFAREA"
+        },
+        "@id": "https://loqu.dev/IT1/Dimension/AMPIEZZA_COMUNE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "IT1",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IT1/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/IT1/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:SEP_CONDFAM_POVER_SOGLIASS(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "IT1",
+        "class": "Concept",
+        "maintainableParentID": "CROSS_DOMAIN",
+        "maintainableParentVersion": "1.1",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/IT1/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/IT1/Measure/OBS_VALUE"
+    }
+  }
+}

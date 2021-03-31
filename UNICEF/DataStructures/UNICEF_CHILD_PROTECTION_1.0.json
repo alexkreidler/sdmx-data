@@ -1,802 +1,802 @@
 {
-  "agencyID"": "UNICEF",
-  "id"": "CHILD_PROTECTION",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:CHILD_PROTECTION(1.0)",
-  "version"": "1.0",
+  "agencyID": "UNICEF",
+  "id": "CHILD_PROTECTION",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:CHILD_PROTECTION(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:CHILD_PROTECTION(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:CHILD_PROTECTION(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MULTIPLIER",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UNIT_MULTIPLIER",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MULTIPLIER",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UNIT_MULTIPLIER",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EDUCATION_LEVEL"
+                  "id": "EDUCATION_LEVEL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NUMBER_CHLD"
+                  "id": "NUMBER_CHLD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MULTIPLIER",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MULTIPLIER",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UNIT_MEASURE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EDUCATION_LEVEL"
+                  "id": "EDUCATION_LEVEL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NUMBER_CHLD"
+                  "id": "NUMBER_CHLD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_CONF",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).OBS_CONF",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_CONF",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).OBS_CONF",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_CONF",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_CONF",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_CONF_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_CONF_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_SOURCE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).DATA_SOURCE",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_SOURCE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).DATA_SOURCE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "DATA_SOURCE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "DATA_SOURCE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "String"
+              "isSequence": "false",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "LOWER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).LOWER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "LOWER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).LOWER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "LOWER_BOUND",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "LOWER_BOUND",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UPPER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UPPER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "UPPER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UPPER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UPPER_BOUND",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UPPER_BOUND",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "WGTD_SAMPL_SIZE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).WGTD_SAMPL_SIZE",
+          "assignmentStatus": "Conditional",
+          "id": "WGTD_SAMPL_SIZE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).WGTD_SAMPL_SIZE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "WGTD_SAMPL_SIZE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "WGTD_SAMPL_SIZE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Double"
+              "isSequence": "false",
+              "textType": "Double"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNWGTD_SAMPL_SIZE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UNWGTD_SAMPL_SIZE",
+          "assignmentStatus": "Conditional",
+          "id": "UNWGTD_SAMPL_SIZE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).UNWGTD_SAMPL_SIZE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNWGTD_SAMPL_SIZE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNWGTD_SAMPL_SIZE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Double"
+              "isSequence": "false",
+              "textType": "Double"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SOURCE_LINK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).SOURCE_LINK",
+          "assignmentStatus": "Conditional",
+          "id": "SOURCE_LINK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).SOURCE_LINK",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EDUCATION_LEVEL"
+                  "id": "EDUCATION_LEVEL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NUMBER_CHLD"
+                  "id": "NUMBER_CHLD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SOURCE_LINK",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SOURCE_LINK",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_PERIOD_METHOD",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).TIME_PERIOD_METHOD",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_PERIOD_METHOD",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).TIME_PERIOD_METHOD",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "TIME_PERIOD_METHOD",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "TIME_PERIOD_METHOD",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COVERAGE_TIME",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).COVERAGE_TIME",
+          "assignmentStatus": "Conditional",
+          "id": "COVERAGE_TIME",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).COVERAGE_TIME",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "COVERAGE_TIME",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "COVERAGE_TIME",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "FREQ_COLL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).FREQ_COLL",
+          "assignmentStatus": "Conditional",
+          "id": "FREQ_COLL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).FREQ_COLL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "FREQ_COLL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "FREQ_COLL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_FREQ_COLL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_FREQ_COLL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SERIES_FOOTNOTE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).SERIES_FOOTNOTE",
+          "assignmentStatus": "Conditional",
+          "id": "SERIES_FOOTNOTE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).SERIES_FOOTNOTE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EDUCATION_LEVEL"
+                  "id": "EDUCATION_LEVEL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NUMBER_CHLD"
+                  "id": "NUMBER_CHLD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_FOOTNOTE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_FOOTNOTE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_FOOTNOTE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).OBS_FOOTNOTE",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_FOOTNOTE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION(1.0).OBS_FOOTNOTE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_FOOTNOTE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_FOOTNOTE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:CHILD_PROTECTION(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:CHILD_PROTECTION(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "REF_AREA",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_COUNTRY",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_COUNTRY",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).INDICATOR",
+          "id": "INDICATOR",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).INDICATOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNICEF_INDICATOR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNICEF_INDICATOR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNICEF_INDICATOR",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNICEF_INDICATOR",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "SEX",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).SEX",
+          "id": "SEX",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).SEX",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SEX",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SEX",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_SEX",
-                "package"": "codelist",
-                "version"": "2.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_SEX",
+                "package": "codelist",
+                "version": "2.1"
               }
             }
           }
         },
         {
-          "id"": "AGE",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).AGE",
+          "id": "AGE",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).AGE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "AGE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "AGE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_AGE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_AGE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "EDUCATION_LEVEL",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).EDUCATION_LEVEL",
+          "id": "EDUCATION_LEVEL",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).EDUCATION_LEVEL",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "EDUCATION_LEVEL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "EDUCATION_LEVEL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_EDU_LEVEL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_EDU_LEVEL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "WEALTH_QUINTILE",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).WEALTH_QUINTILE",
+          "id": "WEALTH_QUINTILE",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).WEALTH_QUINTILE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "WEALTH_QUINTILE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "WEALTH_QUINTILE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_WEALTH_QUINTILE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_WEALTH_QUINTILE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "RESIDENCE",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).RESIDENCE",
+          "id": "RESIDENCE",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).RESIDENCE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "RESIDENCE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "RESIDENCE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_RESIDENCE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_RESIDENCE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "NUMBER_CHLD",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).NUMBER_CHLD",
+          "id": "NUMBER_CHLD",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION(1.0).NUMBER_CHLD",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "NUMBER_CHLD",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "NUMBER_CHLD",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_NUMBER_CHLD",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_NUMBER_CHLD",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "9",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:CHILD_PROTECTION(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:CHILD_PROTECTION(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:CHILD_PROTECTION(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:CHILD_PROTECTION(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:CHILD_PROTECTION(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:CHILD_PROTECTION(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "isSequence"": "false",
-            "textType"": "Double"
+            "isSequence": "false",
+            "textType": "Double"
           }
         }
       }
@@ -804,6 +804,6 @@
   },
   "Name": {
     "#text": "Child Protection",
-    "lang"": "en"
+    "lang": "en"
   }
 }

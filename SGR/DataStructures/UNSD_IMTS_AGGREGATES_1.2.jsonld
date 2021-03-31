@@ -1,0 +1,333 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNSD",
+    "isExternalReference": "false",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:IMTS_AGGREGATES(1.2)",
+    "version": "1.2",
+    "name": {
+      "@value": "International Merchandise Trade Statistics",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNSD/DataStructure/IMTS_AGGREGATES",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).UNIT_MULT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).UNIT_MEASURE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/COMMENT",
+          "skos:notation": "COMMENT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).TRADE_SYSTEM",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "REF_AREA"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TRADE_SYSTEM",
+          "skos:notation": "TRADE_SYSTEM"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_TRADE_SYSTEM",
+          "skos:notation": "CL_TRADE_SYSTEM"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/TRADE_SYSTEM"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:IMTS_AGGREGATES(1.2).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/OBS_STATUS"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).TRADE_FLOW",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TRADE_FLOW",
+          "skos:notation": "TRADE_FLOW"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_TRADE_FLOW",
+          "skos:notation": "CL_TRADE_FLOW"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/TRADE_FLOW"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).COMMODITY_1",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/COMMODITY_1",
+          "skos:notation": "COMMODITY_1"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_COMMODITY",
+          "skos:notation": "CL_COMMODITY"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/COMMODITY_1"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:IMTS_AGGREGATES(1.2).TRANSFORMATION",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TRANSFORMATION",
+          "skos:notation": "TRANSFORMATION"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_TRANSFORMATION",
+          "skos:notation": "CL_TRANSFORMATION"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/TRANSFORMATION"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:IMTS_AGGREGATES(1.2).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_IMTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:IMTS_AGGREGATES(1.2).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNSD",
+        "class": "Concept",
+        "maintainableParentID": "CS_IMTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNSD/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNSD/Measure/OBS_VALUE"
+    }
+  }
+}

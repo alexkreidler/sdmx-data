@@ -1,1051 +1,1051 @@
 {
-  "agencyID"": "EUROSTAT",
-  "id"": "EUROSTAT_JVC2",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=EUROSTAT:EUROSTAT_JVC2(1.0)",
-  "version"": "1.0",
+  "agencyID": "EUROSTAT",
+  "id": "EUROSTAT_JVC2",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=EUROSTAT:EUROSTAT_JVC2(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TIME_FORMAT",
+          "assignmentStatus": "Mandatory",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TIME_FORMAT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "maxLength"": "3",
-              "textType"": "String"
+              "isSequence": "false",
+              "maxLength": "3",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_CONF",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_CONF",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_CONF",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_CONF",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "OBS_CONF",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "OBS_CONF",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_OBS_CONF",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_OBS_CONF",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_PRE_BREAK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_PRE_BREAK",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_PRE_BREAK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_PRE_BREAK",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "OBS_PRE_BREAK",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "OBS_PRE_BREAK",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "15",
-              "textType"": "String"
+              "maxLength": "15",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "AVAILABILITY",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).AVAILABILITY",
+          "assignmentStatus": "Conditional",
+          "id": "AVAILABILITY",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).AVAILABILITY",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "AVAILABILITY",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "AVAILABILITY",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_AVAILABILITY",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_AVAILABILITY",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COLLECTION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COLLECTION",
+          "assignmentStatus": "Conditional",
+          "id": "COLLECTION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COLLECTION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "COLLECTION",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "COLLECTION",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_COLLECTION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_COLLECTION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COV_THRES",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COV_THRES",
+          "assignmentStatus": "Conditional",
+          "id": "COV_THRES",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COV_THRES",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "COV_THRES",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "COV_THRES",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "15",
-              "textType"": "String"
+              "maxLength": "15",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMPILATION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COMPILATION",
+          "assignmentStatus": "Conditional",
+          "id": "COMPILATION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COMPILATION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "COMPILATION",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "COMPILATION",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COVERAGE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COVERAGE",
+          "assignmentStatus": "Conditional",
+          "id": "COVERAGE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).COVERAGE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "COVERAGE",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "COVERAGE",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "350",
-              "textType"": "String"
+              "maxLength": "350",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).DECIMALS",
+          "assignmentStatus": "Conditional",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).DECIMALS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_DECIMALS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_DECIMALS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "BigInteger"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "BigInteger"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TITLE",
+          "assignmentStatus": "Conditional",
+          "id": "TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TITLE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "TITLE",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "TITLE",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "70",
-              "textType"": "String"
+              "maxLength": "70",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TITLE_COMPL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TITLE_COMPL",
+          "assignmentStatus": "Conditional",
+          "id": "TITLE_COMPL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).TITLE_COMPL",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "TITLE_COMPL",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "TITLE_COMPL",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).UNIT",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).UNIT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "UNIT",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "UNIT",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_UNIT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_UNIT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "12",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "12",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).UNIT_MULT",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=EUROSTAT:EUROSTAT_JVC2(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC_CONCEPT"
+                  "id": "JVC_CONCEPT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "JVC2_ACTIVITY"
+                  "id": "JVC2_ACTIVITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "EMPCOV"
+                  "id": "EMPCOV"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_AREA_EE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_AREA_EE",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "ADJUSTMENT",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).ADJUSTMENT",
+          "id": "ADJUSTMENT",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).ADJUSTMENT",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "ADJUSTMENT",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "ADJUSTMENT",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_ADJUSTMENT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_ADJUSTMENT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "JVC_CONCEPT",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).JVC_CONCEPT",
+          "id": "JVC_CONCEPT",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).JVC_CONCEPT",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "JVC_CONCEPT",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "JVC_CONCEPT",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_JVC_CONCEPT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_JVC_CONCEPT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "JVC2_ACTIVITY",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).JVC2_ACTIVITY",
+          "id": "JVC2_ACTIVITY",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).JVC2_ACTIVITY",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "JVC2_ACTIVITY",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "JVC2_ACTIVITY",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_NACE2",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_NACE2",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "6",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "6",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "EMPCOV",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).EMPCOV",
+          "id": "EMPCOV",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=EUROSTAT:EUROSTAT_JVC2(1.0).EMPCOV",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "EUROSTAT",
-              "class"": "Concept",
-              "id"": "EMPCOV",
-              "maintainableParentID"": "EUROSTAT_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "EUROSTAT",
+              "class": "Concept",
+              "id": "EMPCOV",
+              "maintainableParentID": "EUROSTAT_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "EUROSTAT",
-                "class"": "Codelist",
-                "id"": "CL_EMPCOV",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "EUROSTAT",
+                "class": "Codelist",
+                "id": "CL_EMPCOV",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "3",
-              "minLength"": "3",
-              "textType"": "String"
+              "maxLength": "3",
+              "minLength": "3",
+              "textType": "String"
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "7",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=EUROSTAT:EUROSTAT_JVC2(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=EUROSTAT:EUROSTAT_JVC2(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "EUROSTAT",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "EUROSTAT_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "EUROSTAT",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "EUROSTAT_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "Group": {
-      "id"": "Group",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).Group",
+      "id": "Group",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).Group",
       "GroupDimension": [
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "REF_AREA"
+              "id": "REF_AREA"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "ADJUSTMENT"
+              "id": "ADJUSTMENT"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "JVC_CONCEPT"
+              "id": "JVC_CONCEPT"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "JVC2_ACTIVITY"
+              "id": "JVC2_ACTIVITY"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "EMPCOV"
+              "id": "EMPCOV"
             }
           }
         }
       ]
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=EUROSTAT:EUROSTAT_JVC2(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=EUROSTAT:EUROSTAT_JVC2(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "EUROSTAT",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "EUROSTAT_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "EUROSTAT",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "EUROSTAT_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "isSequence"": "false",
-            "maxLength"": "15",
-            "textType"": "String"
+            "isSequence": "false",
+            "maxLength": "15",
+            "textType": "String"
           }
         }
       }
@@ -1053,6 +1053,6 @@
   },
   "Name": {
     "#text": "Job Vacancy Statistics",
-    "lang"": "en"
+    "lang": "en"
   }
 }

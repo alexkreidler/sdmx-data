@@ -1,0 +1,676 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNSD",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:SDG(0.1)",
+    "version": "0.1",
+    "Description": {
+      "#text": "Data Structure Definition for Sustainable Development Goals Indicators.",
+      "lang": "en",
+      "xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+    },
+    "name": {
+      "@value": "SDGs DSD",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNSD/DataStructure/SDG",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UNIT_MULT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UNIT_MEASURE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).NATURE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/NATURE",
+          "skos:notation": "NATURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_NATURE",
+          "skos:notation": "CL_NATURE"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/NATURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).TIME_COVERAGE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TIME_COVERAGE",
+          "skos:notation": "TIME_COVERAGE"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/TIME_COVERAGE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UPPER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/UPPER_BOUND",
+          "skos:notation": "UPPER_BOUND"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/UPPER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).LOWER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/LOWER_BOUND",
+          "skos:notation": "LOWER_BOUND"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/LOWER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).BASE_PER",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/BASE_PER",
+          "skos:notation": "BASE_PER"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/BASE_PER"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).TIME_DETAIL",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TIME_DETAIL",
+          "skos:notation": "TIME_DETAIL"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/TIME_DETAIL"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).REPORTING_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/REPORTING_TYPE",
+          "skos:notation": "REPORTING_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_REPORTING_TYPE",
+          "skos:notation": "CL_REPORTING_TYPE"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/REPORTING_TYPE"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).SERIES",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/SERIES",
+          "skos:notation": "SERIES"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_SDG_SERIES",
+          "skos:notation": "CL_SDG_SERIES"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/SERIES"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/REF_AREA"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).SEX",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/SEX"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).AGE",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/AGE",
+          "skos:notation": "AGE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_AGE",
+          "skos:notation": "CL_AGE"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/AGE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).URBANISATION",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/URBANISATION",
+          "skos:notation": "URBANISATION"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_URBANISATION",
+          "skos:notation": "CL_URBANISATION"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/URBANISATION"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).INCOME_WEALTH_QUANTILE",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/INCOME_WEALTH_QUANTILE",
+          "skos:notation": "INCOME_WEALTH_QUANTILE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_QUANTILE",
+          "skos:notation": "CL_QUANTILE"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/INCOME_WEALTH_QUANTILE"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).EDUCATION_LEV",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/EDUCATION_LEV",
+          "skos:notation": "EDUCATION_LEV"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_EDUCATION_LEV",
+          "skos:notation": "CL_EDUCATION_LEV"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/EDUCATION_LEV"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).OCCUPATION",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/OCCUPATION",
+          "skos:notation": "OCCUPATION"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_OCCUPATION",
+          "skos:notation": "CL_OCCUPATION"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/OCCUPATION"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).CUST_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/CUST_BREAKDOWN",
+          "skos:notation": "CUST_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_SDG_CUST_BREAKDOWN",
+          "skos:notation": "CL_SDG_CUST_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/CUST_BREAKDOWN"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).COMPOSITE_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/COMPOSITE_BREAKDOWN",
+          "skos:notation": "COMPOSITE_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_SDG_COMP_BREAKDOWN",
+          "skos:notation": "CL_SDG_COMP_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/COMPOSITE_BREAKDOWN"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).DISABILITY_STATUS",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "0.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/DISABILITY_STATUS",
+          "skos:notation": "DISABILITY_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_DISABILITY",
+          "skos:notation": "CL_DISABILITY"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/DISABILITY_STATUS"
+      },
+      {
+        "position": "14",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:SDG(0.1).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:SDG(0.1).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "SDMX",
+        "class": "Concept",
+        "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+        "maintainableParentVersion": "2.0",
+        "package": "conceptscheme",
+        "xmlns": "",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/SDMX/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNSD/Measure/OBS_VALUE"
+    }
+  }
+}

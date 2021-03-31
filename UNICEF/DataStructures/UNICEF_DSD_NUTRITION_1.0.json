@@ -1,1105 +1,1105 @@
 {
-  "agencyID"": "UNICEF",
-  "id"": "DSD_NUTRITION",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:DSD_NUTRITION(1.0)",
-  "version"": "1.0",
+  "agencyID": "UNICEF",
+  "id": "DSD_NUTRITION",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:DSD_NUTRITION(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:DSD_NUTRITION(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:DSD_NUTRITION(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MULTIPLIER",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UNIT_MULTIPLIER",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MULTIPLIER",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UNIT_MULTIPLIER",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MULTIPLIER",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MULTIPLIER",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UNIT_MEASURE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_SOURCE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).DATA_SOURCE",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_SOURCE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).DATA_SOURCE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "DATA_SOURCE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "DATA_SOURCE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "String"
+              "isSequence": "false",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_CONF",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_CONF",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_CONF",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_CONF",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_CONF",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_CONF",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_CONF_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_CONF_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "LOWER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).LOWER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "LOWER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).LOWER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "LOWER_BOUND",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "LOWER_BOUND",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "pattern"": "[\u0026lt;|\u0026gt;]??[0-9]*(\\.[0-9]+)?"",
-              "textType"": "String"
+              "isSequence": "false",
+              "pattern": "[\u0026lt;|\u0026gt;]??[0-9]*(\\.[0-9]+)?",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UPPER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UPPER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "UPPER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).UPPER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UPPER_BOUND",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UPPER_BOUND",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "pattern"": "[\u0026lt;|\u0026gt;]??[0-9]*(\\.[0-9]+)?"",
-              "textType"": "String"
+              "isSequence": "false",
+              "pattern": "[\u0026lt;|\u0026gt;]??[0-9]*(\\.[0-9]+)?",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "STD_ERR",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).STD_ERR",
+          "assignmentStatus": "Conditional",
+          "id": "STD_ERR",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).STD_ERR",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "STD_ERR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "STD_ERR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Double"
+              "isSequence": "false",
+              "textType": "Double"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "WGTD_SAMPL_SIZE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).WGTD_SAMPL_SIZE",
+          "assignmentStatus": "Conditional",
+          "id": "WGTD_SAMPL_SIZE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).WGTD_SAMPL_SIZE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "WGTD_SAMPL_SIZE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "WGTD_SAMPL_SIZE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Double"
+              "isSequence": "false",
+              "textType": "Double"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SOURCE_LINK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).SOURCE_LINK",
+          "assignmentStatus": "Conditional",
+          "id": "SOURCE_LINK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).SOURCE_LINK",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "HEAD_OF_HOUSE"
+                  "id": "HEAD_OF_HOUSE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SOURCE_LINK",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SOURCE_LINK",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_PERIOD_METHOD",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).TIME_PERIOD_METHOD",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_PERIOD_METHOD",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).TIME_PERIOD_METHOD",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "TIME_PERIOD_METHOD",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "TIME_PERIOD_METHOD",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COVERAGE_TIME",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).COVERAGE_TIME",
+          "assignmentStatus": "Conditional",
+          "id": "COVERAGE_TIME",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).COVERAGE_TIME",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "COVERAGE_TIME",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "COVERAGE_TIME",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "FREQ_COLL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).FREQ_COLL",
+          "assignmentStatus": "Conditional",
+          "id": "FREQ_COLL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).FREQ_COLL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "FREQ_COLL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "FREQ_COLL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_FREQ_COLL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_FREQ_COLL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SERIES_FOOTNOTE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).SERIES_FOOTNOTE",
+          "assignmentStatus": "Conditional",
+          "id": "SERIES_FOOTNOTE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).SERIES_FOOTNOTE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "HEAD_OF_HOUSE"
+                  "id": "HEAD_OF_HOUSE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_FOOTNOTE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_FOOTNOTE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_FOOTNOTE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_FOOTNOTE",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_FOOTNOTE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).OBS_FOOTNOTE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_FOOTNOTE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_FOOTNOTE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CUSTODIAN",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).CUSTODIAN",
+          "assignmentStatus": "Conditional",
+          "id": "CUSTODIAN",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).CUSTODIAN",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "HEAD_OF_HOUSE"
+                  "id": "HEAD_OF_HOUSE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "CUSTODIAN",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "CUSTODIAN",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "INDICATOR_DEFINITION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).INDICATOR_DEFINITION",
+          "assignmentStatus": "Conditional",
+          "id": "INDICATOR_DEFINITION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).INDICATOR_DEFINITION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "HEAD_OF_HOUSE"
+                  "id": "HEAD_OF_HOUSE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "INDICATOR_DEFINITION",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "INDICATOR_DEFINITION",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "NUMERATOR_DEFINITION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).NUMERATOR_DEFINITION",
+          "assignmentStatus": "Conditional",
+          "id": "NUMERATOR_DEFINITION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).NUMERATOR_DEFINITION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "HEAD_OF_HOUSE"
+                  "id": "HEAD_OF_HOUSE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "NUMERATOR_DEFINITION",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "NUMERATOR_DEFINITION",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DENOMINATOR_DEFINITION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).DENOMINATOR_DEFINITION",
+          "assignmentStatus": "Conditional",
+          "id": "DENOMINATOR_DEFINITION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).DENOMINATOR_DEFINITION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "HEAD_OF_HOUSE"
+                  "id": "HEAD_OF_HOUSE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "DENOMINATOR_DEFINITION",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "DENOMINATOR_DEFINITION",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "PUBLICATION_DATE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).PUBLICATION_DATE",
+          "assignmentStatus": "Conditional",
+          "id": "PUBLICATION_DATE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_NUTRITION(1.0).PUBLICATION_DATE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEX"
+                  "id": "SEX"
                 }
               },
               {
                 "Ref": {
-                  "id"": "AGE"
+                  "id": "AGE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "WEALTH_QUINTILE"
+                  "id": "WEALTH_QUINTILE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "RESIDENCE"
+                  "id": "RESIDENCE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATERNAL_EDU_LVL"
+                  "id": "MATERNAL_EDU_LVL"
                 }
               },
               {
                 "Ref": {
-                  "id"": "HEAD_OF_HOUSE"
+                  "id": "HEAD_OF_HOUSE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "PUBLICATION_DATE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "PUBLICATION_DATE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:DSD_NUTRITION(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:DSD_NUTRITION(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "REF_AREA",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "COUNTRY",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "COUNTRY",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_COUNTRY",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_COUNTRY",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).INDICATOR",
+          "id": "INDICATOR",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).INDICATOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNICEF_INDICATOR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNICEF_INDICATOR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNICEF_INDICATOR",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNICEF_INDICATOR",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "SEX",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).SEX",
+          "id": "SEX",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).SEX",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SEX",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SEX",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_SEX",
-                "package"": "codelist",
-                "version"": "2.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_SEX",
+                "package": "codelist",
+                "version": "2.1"
               }
             }
           }
         },
         {
-          "id"": "AGE",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).AGE",
+          "id": "AGE",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).AGE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "AGE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "AGE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_AGE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_AGE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "WEALTH_QUINTILE",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).WEALTH_QUINTILE",
+          "id": "WEALTH_QUINTILE",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).WEALTH_QUINTILE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "WEALTH_QUINTILE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "WEALTH_QUINTILE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_WEALTH_QUINTILE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_WEALTH_QUINTILE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "RESIDENCE",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).RESIDENCE",
+          "id": "RESIDENCE",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).RESIDENCE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "RESIDENCE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "RESIDENCE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_RESIDENCE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_RESIDENCE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "MATERNAL_EDU_LVL",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).MATERNAL_EDU_LVL",
+          "id": "MATERNAL_EDU_LVL",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).MATERNAL_EDU_LVL",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "MATERNAL_EDU_LVL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "MATERNAL_EDU_LVL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_EDU_LEVEL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_EDU_LEVEL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "HEAD_OF_HOUSE",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).HEAD_OF_HOUSE",
+          "id": "HEAD_OF_HOUSE",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_NUTRITION(1.0).HEAD_OF_HOUSE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "HEAD_OF_HOUSE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "HEAD_OF_HOUSE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_SEX",
-                "package"": "codelist",
-                "version"": "2.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_SEX",
+                "package": "codelist",
+                "version": "2.1"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "9",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:DSD_NUTRITION(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:DSD_NUTRITION(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:DSD_NUTRITION(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:DSD_NUTRITION(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:DSD_NUTRITION(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:DSD_NUTRITION(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -1107,6 +1107,6 @@
   },
   "Name": {
     "#text": "Child Nutrition",
-    "lang"": "en"
+    "lang": "en"
   }
 }

@@ -1,338 +1,338 @@
 {
-  "agencyID"": "ABS",
-  "id"": "POP_PROJ_REGION_2012_2061",
-  "isFinal"": "true",
-  "version"": "1.0.0",
+  "agencyID": "ABS",
+  "id": "POP_PROJ_REGION_2012_2061",
+  "isFinal": "true",
+  "version": "1.0.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
+      "id": "AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_COMMENT",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_COMMENT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_COMMENT",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_COMMENT",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
+      "id": "DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "REGION",
-          "position"": "1",
+          "id": "REGION",
+          "position": "1",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "REGION",
-              "maintainableParentID"": "CS_GEOGRAPHY",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "REGION",
+              "maintainableParentID": "CS_GEOGRAPHY",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_POP_PROJ_REGION_GCCSA",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_POP_PROJ_REGION_GCCSA",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "SEX_ABS",
-          "position"": "2",
+          "id": "SEX_ABS",
+          "position": "2",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "SEX",
-              "maintainableParentID"": "CS_DEMOG",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "SEX",
+              "maintainableParentID": "CS_DEMOG",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_SEX",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_SEX",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "AGE",
-          "position"": "3",
+          "id": "AGE",
+          "position": "3",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "AGE",
-              "maintainableParentID"": "CS_DEMOG",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "AGE",
+              "maintainableParentID": "CS_DEMOG",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_AGE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_AGE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "FERTILITY",
-          "position"": "4",
+          "id": "FERTILITY",
+          "position": "4",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "FERTILITY",
-              "maintainableParentID"": "CS_DEMOG",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "FERTILITY",
+              "maintainableParentID": "CS_DEMOG",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_DEMOG_FERTILITY",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_DEMOG_FERTILITY",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "MORTALITY",
-          "position"": "5",
+          "id": "MORTALITY",
+          "position": "5",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "MORT_ASSUMP",
-              "maintainableParentID"": "CS_DEMOG",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "MORT_ASSUMP",
+              "maintainableParentID": "CS_DEMOG",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_DEMOG_MORTALITY",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_DEMOG_MORTALITY",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "NOM",
-          "position"": "6",
+          "id": "NOM",
+          "position": "6",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "NOM",
-              "maintainableParentID"": "CS_DEMOG",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "NOM",
+              "maintainableParentID": "CS_DEMOG",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_DEMOG_NOM",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_DEMOG_NOM",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "NIM",
-          "position"": "7",
+          "id": "NIM",
+          "position": "7",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "NIM",
-              "maintainableParentID"": "CS_DEMOG",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "NIM",
+              "maintainableParentID": "CS_DEMOG",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_DEMOG_NIM",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_DEMOG_NIM",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "FREQUENCY",
-          "position"": "8",
+          "id": "FREQUENCY",
+          "position": "8",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "9",
+        "id": "TIME_PERIOD",
+        "position": "9",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
+      "id": "MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
+        "id": "OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         }
       }
     }
   },
   "Name": {
-    "#text": "Population Projections by Region, 20172066"",
-    "lang"": "en"
+    "#text": "Population Projections by Region, 20172066",
+    "lang": "en"
   }
 }

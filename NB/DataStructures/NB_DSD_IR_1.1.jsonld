@@ -1,0 +1,269 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "NB",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_IR(1.1)",
+    "version": "1.1",
+    "name": {},
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/NB/DataStructure/DSD_IR",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_IR(1.1).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "INSTRUMENT_TYPE"
+            },
+            {
+              "id": "TENOR"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_IR(1.1).COLLECTION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "INSTRUMENT_TYPE"
+            },
+            {
+              "id": "TENOR"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/COLLECTION",
+          "skos:notation": "COLLECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_COLLECTION",
+          "skos:notation": "CL_COLLECTION"
+        },
+        "@id": "https://loqu.dev/NB/Attribute/COLLECTION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_IR(1.1).CALC_METHOD",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/CALC_METHOD",
+          "skos:notation": "CALC_METHOD"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CALC_METHOD",
+          "skos:notation": "CALC_METHOD"
+        },
+        "@id": "https://loqu.dev/NB/Attribute/CALC_METHOD"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_IR(1.1).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_IR(1.1).INSTRUMENT_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/INSTRUMENT_TYPE",
+          "skos:notation": "INSTRUMENT_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_INSTRUMENT_TYPE",
+          "skos:notation": "CL_INSTRUMENT_TYPE"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/INSTRUMENT_TYPE"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_IR(1.1).TENOR",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/TENOR",
+          "skos:notation": "TENOR"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_TENOR",
+          "skos:notation": "CL_TENOR"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/TENOR"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_IR(1.1).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_IR(1.1).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        },
+        "@id": "https://loqu.dev/NB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_IR(1.1).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "NB",
+        "class": "Concept",
+        "maintainableParentID": "CS_NB",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/NB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "isSequence": "false",
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/NB/Measure/OBS_VALUE"
+    }
+  }
+}

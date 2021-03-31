@@ -1,0 +1,465 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNICEF_DRAFT",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF_DRAFT:SDG_CONS_2020_1(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "SDG consultation 2020",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNICEF_DRAFT/DataStructure/SDG_CONS_2020_1",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).SERIES_FOOTNOTE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/SERIES_FOOTNOTE",
+          "skos:notation": "SERIES_FOOTNOTE"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/SERIES_FOOTNOTE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).SOURCE_LINK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/SOURCE_LINK",
+          "skos:notation": "SOURCE_LINK"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/SOURCE_LINK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).TIME_PERIOD_METHOD",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD_METHOD",
+          "skos:notation": "TIME_PERIOD_METHOD"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_TIME_PERIOD_METHOD",
+          "skos:notation": "CL_TIME_PERIOD_METHOD"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/TIME_PERIOD_METHOD"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).COVERAGE_TIME",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/COVERAGE_TIME",
+          "skos:notation": "COVERAGE_TIME"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/COVERAGE_TIME"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).OBS_FOOTNOTE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/OBS_FOOTNOTE",
+          "skos:notation": "OBS_FOOTNOTE"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/OBS_FOOTNOTE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).UNIT_MULTIPLIER",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNIT_MULTIPLIER",
+          "skos:notation": "UNIT_MULTIPLIER"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/UNIT_MULTIPLIER"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).UNIT_MEASURE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Attribute/OBS_CONF"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_COUNTRY",
+          "skos:notation": "CL_COUNTRY"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/REF_AREA"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).INDICATOR",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/INDICATOR",
+          "skos:notation": "INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_UNICEF_INDICATOR",
+          "skos:notation": "CL_UNICEF_INDICATOR"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/INDICATOR"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).SEX",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/SEX"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).AGE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/AGE",
+          "skos:notation": "AGE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_AGE",
+          "skos:notation": "CL_AGE"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/AGE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).RESIDENCE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/RESIDENCE",
+          "skos:notation": "RESIDENCE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_RESIDENCE",
+          "skos:notation": "CL_RESIDENCE"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/RESIDENCE"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).WEALTH_QUINTILE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/WEALTH_QUINTILE",
+          "skos:notation": "WEALTH_QUINTILE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_WEALTH_QUINTILE",
+          "skos:notation": "CL_WEALTH_QUINTILE"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/WEALTH_QUINTILE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).DATA_SOURCE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/DATA_SOURCE",
+          "skos:notation": "DATA_SOURCE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF_DRAFT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF_DRAFT/Concept/CL_SDG_2020_DATA_SOURCES",
+          "skos:notation": "CL_SDG_2020_DATA_SOURCES"
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/DATA_SOURCE"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "CS_SDG",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_DRAFT/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF_DRAFT:SDG_CONS_2020_1(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNICEF",
+        "class": "Concept",
+        "maintainableParentID": "CS_SDG",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNICEF/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNICEF_DRAFT/Measure/OBS_VALUE"
+    }
+  }
+}

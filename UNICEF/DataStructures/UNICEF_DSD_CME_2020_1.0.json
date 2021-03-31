@@ -1,749 +1,749 @@
 {
-  "agencyID"": "UNICEF",
-  "id"": "DSD_CME_2020",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:DSD_CME_2020(1.0)",
-  "version"": "1.0",
+  "agencyID": "UNICEF",
+  "id": "DSD_CME_2020",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:DSD_CME_2020(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:DSD_CME_2020(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:DSD_CME_2020(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "REGIONAL_GROUP",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).REGIONAL_GROUP",
+          "assignmentStatus": "Conditional",
+          "id": "REGIONAL_GROUP",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).REGIONAL_GROUP",
           "AttributeRelationship": {
             "Dimension": {
               "Ref": {
-                "id"": "REF_AREA"
+                "id": "REF_AREA"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "REGIONAL_GROUP",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "REGIONAL_GROUP",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_REGIONAL_GROUPS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_REGIONAL_GROUPS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CONNECTION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).CONNECTION",
+          "assignmentStatus": "Conditional",
+          "id": "CONNECTION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).CONNECTION",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "CONNECTION",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "CONNECTION",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DEATH_CATEGORY",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).DEATH_CATEGORY",
+          "assignmentStatus": "Conditional",
+          "id": "DEATH_CATEGORY",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).DEATH_CATEGORY",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "DEATH_CATEGORY",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "DEATH_CATEGORY",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CATEGORY",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).CATEGORY",
+          "assignmentStatus": "Conditional",
+          "id": "CATEGORY",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).CATEGORY",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "CATEGORY",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "CATEGORY",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).OBS_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MEASURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).UNIT_MEASURE",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MEASURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).UNIT_MEASURE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SERIES_CATEGORY",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).SERIES_CATEGORY",
+          "assignmentStatus": "Conditional",
+          "id": "SERIES_CATEGORY",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).SERIES_CATEGORY",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_CATEGORY",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_CATEGORY",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_SERIES_CATEGORY_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_SERIES_CATEGORY_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SERIES_TYPE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).SERIES_TYPE",
+          "assignmentStatus": "Conditional",
+          "id": "SERIES_TYPE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).SERIES_TYPE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_TYPE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_TYPE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_SERIES_TYPE_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_SERIES_TYPE_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "STD_ERR",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).STD_ERR",
+          "assignmentStatus": "Conditional",
+          "id": "STD_ERR",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).STD_ERR",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "STD_ERR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "STD_ERR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "REF_DATE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).REF_DATE",
+          "assignmentStatus": "Mandatory",
+          "id": "REF_DATE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).REF_DATE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "REF_DATE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "REF_DATE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "AGE_GROUP_OF_WOMEN",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).AGE_GROUP_OF_WOMEN",
+          "assignmentStatus": "Conditional",
+          "id": "AGE_GROUP_OF_WOMEN",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).AGE_GROUP_OF_WOMEN",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "AGE_GROUP_OF_WOMEN",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "AGE_GROUP_OF_WOMEN",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_AGE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_AGE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_SINCE_FIRST_BIRTH",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).TIME_SINCE_FIRST_BIRTH",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_SINCE_FIRST_BIRTH",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).TIME_SINCE_FIRST_BIRTH",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "TIME_SINCE_FIRST_BIRTH",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "TIME_SINCE_FIRST_BIRTH",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_TSFB_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_TSFB_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DEFINITION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).DEFINITION",
+          "assignmentStatus": "Conditional",
+          "id": "DEFINITION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).DEFINITION",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "DEFINITION",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "DEFINITION",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "INTERVAL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).INTERVAL",
+          "assignmentStatus": "Conditional",
+          "id": "INTERVAL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).INTERVAL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "INTERVAL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "INTERVAL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SERIES_METHOD",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).SERIES_METHOD",
+          "assignmentStatus": "Conditional",
+          "id": "SERIES_METHOD",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).SERIES_METHOD",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_METHOD",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_METHOD",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_METHOD_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_METHOD_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "LOWER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).LOWER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "LOWER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).LOWER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "LOWER_BOUND",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "LOWER_BOUND",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UPPER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).UPPER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "UPPER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).UPPER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UPPER_BOUND",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UPPER_BOUND",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "STATUS",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "STATUS",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "YEAR_TO_ACHIEVE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).YEAR_TO_ACHIEVE",
+          "assignmentStatus": "Conditional",
+          "id": "YEAR_TO_ACHIEVE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).YEAR_TO_ACHIEVE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "YEAR_TO_ACHIEVE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "YEAR_TO_ACHIEVE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "MODEL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).MODEL",
+          "assignmentStatus": "Conditional",
+          "id": "MODEL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).MODEL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "MODEL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "MODEL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_MODEL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_MODEL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COUNTRY_NOTES",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).COUNTRY_NOTES",
+          "assignmentStatus": "Conditional",
+          "id": "COUNTRY_NOTES",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:DSD_CME_2020(1.0).COUNTRY_NOTES",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "COUNTRY_NOTES",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "COUNTRY_NOTES",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:DSD_CME_2020(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:DSD_CME_2020(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "REF_AREA",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_REF_AREA_SDG",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_REF_AREA_SDG",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).INDICATOR",
+          "id": "INDICATOR",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).INDICATOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "INDICATOR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "INDICATOR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_INDICATOR_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_INDICATOR_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "SEX",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).SEX",
+          "id": "SEX",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).SEX",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SEX",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SEX",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_SEX",
-                "package"": "codelist",
-                "version"": "2.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_SEX",
+                "package": "codelist",
+                "version": "2.1"
               }
             }
           }
         },
         {
-          "id"": "SERIES_NAME",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).SERIES_NAME",
+          "id": "SERIES_NAME",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).SERIES_NAME",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_NAME",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_NAME",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_SERIES_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_SERIES_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "SERIES_YEAR",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).SERIES_YEAR",
+          "id": "SERIES_YEAR",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:DSD_CME_2020(1.0).SERIES_YEAR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SERIES_YEAR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SERIES_YEAR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_SERIES_YEAR_CME",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_SERIES_YEAR_CME",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "6",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:DSD_CME_2020(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:DSD_CME_2020(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:DSD_CME_2020(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:DSD_CME_2020(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:DSD_CME_2020(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:DSD_CME_2020(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "UNICEF_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "UNICEF_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -751,6 +751,6 @@
   },
   "Name": {
     "#text": "Child Mortality Estimates DSD",
-    "lang"": "en"
+    "lang": "en"
   }
 }

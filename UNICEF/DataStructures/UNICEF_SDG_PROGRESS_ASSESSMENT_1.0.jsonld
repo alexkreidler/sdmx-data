@@ -1,0 +1,276 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNICEF",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "SDG Progress assessment",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNICEF/DataStructure/SDG_PROGRESS_ASSESSMENT",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).UNIT_MEASURE",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "INDICATOR"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).GOAL",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/GOAL",
+          "skos:notation": "GOAL"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_SP_GOAL",
+          "skos:notation": "CL_SP_GOAL"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/GOAL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).LATEST_DATA_POINT_YEAR",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/LATEST_DATA_POINT_YEAR",
+          "skos:notation": "LATEST_DATA_POINT_YEAR"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/LATEST_DATA_POINT_YEAR"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).FINAL_ASSESSMENT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/FINAL_ASSESSMENT",
+          "skos:notation": "FINAL_ASSESSMENT"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_ASSESSMENT",
+          "skos:notation": "CL_ASSESSMENT"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/FINAL_ASSESSMENT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).FOOTNOTE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/FOOTNOTE",
+          "skos:notation": "FOOTNOTE"
+        },
+        "@id": "https://loqu.dev/UNICEF/Attribute/FOOTNOTE"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).COUNTRY",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/COUNTRY",
+          "skos:notation": "COUNTRY"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_COUNTRY",
+          "skos:notation": "CL_COUNTRY"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/COUNTRY"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).INDICATOR",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/INDICATOR",
+          "skos:notation": "INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_SDG_ASSESSMENT_INDICATOR",
+          "skos:notation": "CL_SDG_ASSESSMENT_INDICATOR"
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/INDICATOR"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "CS_SDG",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:SDG_PROGRESS_ASSESSMENT(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNICEF",
+        "class": "Concept",
+        "maintainableParentID": "CS_SDG",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNICEF/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNICEF/Measure/OBS_VALUE"
+    }
+  }
+}

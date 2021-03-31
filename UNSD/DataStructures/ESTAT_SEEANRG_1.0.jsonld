@@ -1,0 +1,1055 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ESTAT",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:SEEANRG(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "SEEA Global DSD for Energy",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ESTAT/DataStructure/SEEANRG",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DISS_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).PRE_BREAK_VALUE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/PRE_BREAK_VALUE",
+          "skos:notation": "PRE_BREAK_VALUE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/PRE_BREAK_VALUE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).LAST_UPDATE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/LAST_UPDATE",
+          "skos:notation": "LAST_UPDATE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/LAST_UPDATE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).TITLE_COMPL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TITLE_COMPL",
+          "skos:notation": "TITLE_COMPL"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TITLE_COMPL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).EMBARGO_TIME",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/EMBARGO_TIME",
+          "skos:notation": "EMBARGO_TIME"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/EMBARGO_TIME"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).COMMENT_TS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "DEMAND_PROD"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "INTERACTORS"
+            },
+            {
+              "id": "BRIDGE_ITEMS"
+            },
+            {
+              "id": "ENERGY_FLOWS"
+            },
+            {
+              "id": "STO"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "PRODUCT"
+            },
+            {
+              "id": "SECTOR"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_TS",
+          "skos:notation": "COMMENT_TS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_TS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).COMMENT_DSET",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_DSET",
+          "skos:notation": "COMMENT_DSET"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_DSET"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).OBS_STATUS_4",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/OBS_STATUS_4",
+          "skos:notation": "OBS_STATUS_4"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/OBS_STATUS_4"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).OBS_STATUS_3",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/OBS_STATUS_3",
+          "skos:notation": "OBS_STATUS_3"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/OBS_STATUS_3"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).OBS_STATUS_2",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/OBS_STATUS_2",
+          "skos:notation": "OBS_STATUS_2"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/OBS_STATUS_2"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).OBS_STATUS_1",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/OBS_STATUS_1",
+          "skos:notation": "OBS_STATUS_1"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/OBS_STATUS_1"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEANRG(1.0).CONF_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CONF_STATUS",
+          "skos:notation": "CONF_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/CONF_STATUS"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.11",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).DEMAND_PROD",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DEMAND_PROD",
+          "skos:notation": "DEMAND_PROD"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_DEMAND_PROD",
+          "skos:notation": "CL_DEMAND_PROD"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/DEMAND_PROD"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).ACCOUNTING_ENTRY",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/ACCOUNTING_ENTRY",
+          "skos:notation": "ACCOUNTING_ENTRY"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.3",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ACCOUNT_ENTRY",
+          "skos:notation": "CL_ACCOUNT_ENTRY"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/ACCOUNTING_ENTRY"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).COUNTERPART_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COUNTERPART_AREA",
+          "skos:notation": "COUNTERPART_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.11",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/COUNTERPART_AREA"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).INTERACTORS",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/INTERACTORS",
+          "skos:notation": "INTERACTORS"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_INTERACTORS",
+          "skos:notation": "CL_INTERACTORS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/INTERACTORS"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).BRIDGE_ITEMS",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/BRIDGE_ITEMS",
+          "skos:notation": "BRIDGE_ITEMS"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_BRIDGE_ITEM",
+          "skos:notation": "CL_BRIDGE_ITEM"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/BRIDGE_ITEMS"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).ENERGY_FLOWS",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/ENERGY_FLOWS",
+          "skos:notation": "ENERGY_FLOWS"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_ENERGY_FLOWS",
+          "skos:notation": "CL_ENERGY_FLOWS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/ENERGY_FLOWS"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).STO",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/STO",
+          "skos:notation": "STO"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_SEEA_STO",
+          "skos:notation": "CL_SEEA_STO"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/STO"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.13",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).PRODUCT",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/PRODUCT",
+          "skos:notation": "PRODUCT"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_PRODUCT",
+          "skos:notation": "CL_PRODUCT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/PRODUCT"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEANRG(1.0).SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/SECTOR",
+          "skos:notation": "SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_SECTOR",
+          "skos:notation": "CL_SECTOR"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/SECTOR"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:SEEANRG(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_SEEA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:SEEANRG(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "ESTAT",
+        "class": "Concept",
+        "maintainableParentID": "CS_SEEA",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ESTAT/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/ESTAT/Measure/OBS_VALUE"
+    }
+  }
+}

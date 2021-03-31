@@ -1,154 +1,154 @@
 {
-  "agencyID"": "UNSD",
-  "id"": "DSD_GHG_UNDATA",
-  "isFinal"": "true",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_GHG_UNDATA(1.0)",
-  "version"": "1.0",
+  "agencyID": "UNSD",
+  "id": "DSD_GHG_UNDATA",
+  "isFinal": "true",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_GHG_UNDATA(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:DSD_GHG_UNDATA(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:DSD_GHG_UNDATA(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_UNDATA",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_UNDATA",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).INDICATOR",
+          "id": "INDICATOR",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).INDICATOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "INDICATOR",
-              "maintainableParentID"": "CS_UNDATA",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "INDICATOR",
+              "maintainableParentID": "CS_UNDATA",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_INDICATOR",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_INDICATOR",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "CS_UNDATA",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "CS_UNDATA",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_REF_AREA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_REF_AREA",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "UNIT",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).UNIT",
+          "id": "UNIT",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).UNIT",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "UNIT",
-              "maintainableParentID"": "CS_UNDATA",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "UNIT",
+              "maintainableParentID": "CS_UNDATA",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_UNIT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_UNIT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "5",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_GHG_UNDATA(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_GHG_UNDATA(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNSD",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_UNDATA",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNSD",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_UNDATA",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:DSD_GHG_UNDATA(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:DSD_GHG_UNDATA(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_GHG_UNDATA(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_GHG_UNDATA(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNSD",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_UNDATA",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNSD",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_UNDATA",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -156,6 +156,6 @@
   },
   "Name": {
     "#text": "Green House Gas DSD",
-    "lang"": "en"
+    "lang": "en"
   }
 }

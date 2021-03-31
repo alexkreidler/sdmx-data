@@ -1,285 +1,285 @@
 {
-  "agencyID"": "ABS",
-  "id"": "PPI_FD",
-  "isFinal"": "true",
-  "version"": "1.0.0",
+  "agencyID": "ABS",
+  "id": "PPI_FD",
+  "isFinal": "true",
+  "version": "1.0.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
+      "id": "AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MEASURE",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MEASURE",
           "AttributeRelationship": {
             "Dimension": {
               "Ref": {
-                "id"": "MEASURE"
+                "id": "MEASURE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_COMMENT",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_COMMENT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "OBS_COMMENT",
-              "maintainableParentID"": "CS_ATTRIBUTE",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "OBS_COMMENT",
+              "maintainableParentID": "CS_ATTRIBUTE",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
+      "id": "DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "MEASURE",
-          "position"": "1",
+          "id": "MEASURE",
+          "position": "1",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "MEASURE",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "MEASURE",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_INDEX_MEASURES",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_INDEX_MEASURES",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "INDEX",
-          "position"": "2",
+          "id": "INDEX",
+          "position": "2",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "INDEX",
-              "maintainableParentID"": "CS_INDEX",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "INDEX",
+              "maintainableParentID": "CS_INDEX",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_PPI_FD_ITEM",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_PPI_FD_ITEM",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "STAGE",
-          "position"": "3",
+          "id": "STAGE",
+          "position": "3",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "STAGE",
-              "maintainableParentID"": "CS_PPI",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "STAGE",
+              "maintainableParentID": "CS_PPI",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_PPI_STAGE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_PPI_STAGE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "SOURCE",
-          "position"": "4",
+          "id": "SOURCE",
+          "position": "4",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "SOURCE",
-              "maintainableParentID"": "CS_PPI",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "SOURCE",
+              "maintainableParentID": "CS_PPI",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_PPI_SOURCE",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_PPI_SOURCE",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "DESTINATION",
-          "position"": "5",
+          "id": "DESTINATION",
+          "position": "5",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "DESTINATION",
-              "maintainableParentID"": "CS_PPI",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "DESTINATION",
+              "maintainableParentID": "CS_PPI",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_PPI_DESTINATION",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_PPI_DESTINATION",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         },
         {
-          "id"": "FREQ",
-          "position"": "6",
+          "id": "FREQ",
+          "position": "6",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ABS",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_COMMON",
-              "maintainableParentVersion"": "1.0.0",
-              "package"": "conceptscheme"
+              "agencyID": "ABS",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_COMMON",
+              "maintainableParentVersion": "1.0.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ABS",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0.0"
+                "agencyID": "ABS",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "7",
+        "id": "TIME_PERIOD",
+        "position": "7",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
+      "id": "MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
+        "id": "OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ABS",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_COMMON",
-            "maintainableParentVersion"": "1.0.0",
-            "package"": "conceptscheme"
+            "agencyID": "ABS",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_COMMON",
+            "maintainableParentVersion": "1.0.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -287,6 +287,6 @@
   },
   "Name": {
     "#text": "Producer Price Indexes, Final Demand Datastructure",
-    "lang"": "en"
+    "lang": "en"
   }
 }

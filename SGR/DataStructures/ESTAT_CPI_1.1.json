@@ -1,1862 +1,1862 @@
 {
-  "agencyID"": "ESTAT",
-  "id"": "CPI",
-  "isExternalReference"": "false",
-  "isFinal"": "true",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:CPI(1.1)",
-  "version"": "1.1",
+  "agencyID": "ESTAT",
+  "id": "CPI",
+  "isExternalReference": "false",
+  "isFinal": "true",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:CPI(1.1)",
+  "version": "1.1",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:CPI(1.1).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:CPI(1.1).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DISS_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DISS_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "DISS_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DISS_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "DISS_ORG",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "DISS_ORG",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.7"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.7"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMPILING_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMPILING_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "COMPILING_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMPILING_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMPILING_ORG",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMPILING_ORG",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.7"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.7"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_COMP",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DATA_COMP",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_COMP",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DATA_COMP",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "DATA_COMP",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "DATA_COMP",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "4000",
-              "textType"": "String"
+              "maxLength": "4000",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "PRE_BREAK_VALUE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).PRE_BREAK_VALUE",
+          "assignmentStatus": "Conditional",
+          "id": "PRE_BREAK_VALUE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).PRE_BREAK_VALUE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "PRE_BREAK_VALUE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "PRE_BREAK_VALUE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Double"
+              "isSequence": "false",
+              "textType": "Double"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "LAST_UPDATE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).LAST_UPDATE",
+          "assignmentStatus": "Conditional",
+          "id": "LAST_UPDATE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).LAST_UPDATE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "LAST_UPDATE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "LAST_UPDATE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "DateTime"
+              "isSequence": "false",
+              "textType": "DateTime"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).UNIT_MULT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Integer"
+              "isSequence": "false",
+              "textType": "Integer"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TITLE",
+          "assignmentStatus": "Conditional",
+          "id": "TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TITLE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "TITLE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "TITLE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "200",
-              "textType"": "String"
+              "maxLength": "200",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_PER_COLLECT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TIME_PER_COLLECT",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_PER_COLLECT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TIME_PER_COLLECT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "TIME_PER_COLLECT",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "TIME_PER_COLLECT",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_TIME_COLLECT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_TIME_COLLECT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TIME_FORMAT",
+          "assignmentStatus": "Mandatory",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TIME_FORMAT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_TIME_FORMAT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_TIME_FORMAT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).OBS_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "2.2"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "2.2"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DECIMALS",
+          "assignmentStatus": "Mandatory",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DECIMALS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Integer"
+              "isSequence": "false",
+              "textType": "Integer"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CONF_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).CONF_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "CONF_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).CONF_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "CONF_STATUS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "CONF_STATUS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_CONF_STATUS",
-                "package"": "codelist",
-                "version"": "1.2"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_CONF_STATUS",
+                "package": "codelist",
+                "version": "1.2"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_TS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_TS",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_TS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_TS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMMENT_TS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMMENT_TS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_OBS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_OBS",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_OBS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_OBS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMMENT_OBS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMMENT_OBS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "4000",
-              "textType"": "String"
+              "maxLength": "4000",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_DSET",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_DSET",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_DSET",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_DSET",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMMENT_DSET",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMMENT_DSET",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "REPYEAREND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).REPYEAREND",
+          "assignmentStatus": "Conditional",
+          "id": "REPYEAREND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).REPYEAREND",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "REPYEAREND",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "REPYEAREND",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "MonthDay"
+              "isSequence": "false",
+              "textType": "MonthDay"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "REPYEARSTART",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).REPYEARSTART",
+          "assignmentStatus": "Conditional",
+          "id": "REPYEARSTART",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).REPYEARSTART",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "REPYEARSTART",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "REPYEARSTART",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "MonthDay"
+              "isSequence": "false",
+              "textType": "MonthDay"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "EMBARGO_TIME",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).EMBARGO_TIME",
+          "assignmentStatus": "Conditional",
+          "id": "EMBARGO_TIME",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).EMBARGO_TIME",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "EMBARGO_TIME",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "EMBARGO_TIME",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "DateTime"
+              "isSequence": "false",
+              "textType": "DateTime"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CUST_BREAKDOWN_LB",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).CUST_BREAKDOWN_LB",
+          "assignmentStatus": "Conditional",
+          "id": "CUST_BREAKDOWN_LB",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).CUST_BREAKDOWN_LB",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "CUST_BREAKDOWN_LB",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "CUST_BREAKDOWN_LB",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "String"
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "IND_BASE_PER",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).IND_BASE_PER",
+          "assignmentStatus": "Conditional",
+          "id": "IND_BASE_PER",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).IND_BASE_PER",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "IND_BASE_PER",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "IND_BASE_PER",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "ObservationalTimePeriod"
+              "textType": "ObservationalTimePeriod"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BASE_PER_START",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).BASE_PER_START",
+          "assignmentStatus": "Conditional",
+          "id": "BASE_PER_START",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).BASE_PER_START",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "BASE_PER_START",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "BASE_PER_START",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "ObservationalTimePeriod"
+              "textType": "ObservationalTimePeriod"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BASE_PER_END",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).BASE_PER_END",
+          "assignmentStatus": "Conditional",
+          "id": "BASE_PER_END",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).BASE_PER_END",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SEASONAL_ADJUST"
+                  "id": "SEASONAL_ADJUST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BASE_PER"
+                  "id": "BASE_PER"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_GEO"
+                  "id": "COVERAGE_GEO"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COVERAGE_POP"
+                  "id": "COVERAGE_POP"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "TRANSFORMATION"
+                  "id": "TRANSFORMATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CUST_BREAKDOWN"
+                  "id": "CUST_BREAKDOWN"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "BASE_PER_END",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "BASE_PER_END",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "ObservationalTimePeriod"
+              "textType": "ObservationalTimePeriod"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:CPI(1.1).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:CPI(1.1).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "2.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "2.0"
               }
             }
           }
         },
         {
-          "id"": "SEASONAL_ADJUST",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).SEASONAL_ADJUST",
+          "id": "SEASONAL_ADJUST",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).SEASONAL_ADJUST",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "SEASONAL_ADJUST",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "SEASONAL_ADJUST",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_SEASON_ADJUST",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_SEASON_ADJUST",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).REF_AREA",
+          "id": "REF_AREA",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_AREA",
-                "package"": "codelist",
-                "version"": "1.9"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_AREA",
+                "package": "codelist",
+                "version": "1.9"
               }
             }
           }
         },
         {
-          "id"": "IND_TYPE",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).IND_TYPE",
+          "id": "IND_TYPE",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).IND_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "IND_TYPE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "IND_TYPE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_IND_TYPE",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_IND_TYPE",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "id"": "IDX_TYPE",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).IDX_TYPE",
+          "id": "IDX_TYPE",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).IDX_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "IDX_TYPE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "IDX_TYPE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_IDX_TYPE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_IDX_TYPE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "BASE_PER",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).BASE_PER",
+          "id": "BASE_PER",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).BASE_PER",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "BASE_PER",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "BASE_PER",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "ObservationalTimePeriod"
+              "textType": "ObservationalTimePeriod"
             }
           }
         },
         {
-          "id"": "ITEM",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).ITEM",
+          "id": "ITEM",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).ITEM",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "ITEM",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "ITEM",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_ITEM_PRICE",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_ITEM_PRICE",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "id"": "COVERAGE_GEO",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).COVERAGE_GEO",
+          "id": "COVERAGE_GEO",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).COVERAGE_GEO",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COVERAGE_GEO",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COVERAGE_GEO",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_COVERAGE_GEO",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_COVERAGE_GEO",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "COVERAGE_POP",
-          "position"": "9",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).COVERAGE_POP",
+          "id": "COVERAGE_POP",
+          "position": "9",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).COVERAGE_POP",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COVERAGE_POP",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COVERAGE_POP",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_COVERAGE_POP",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_COVERAGE_POP",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "UNIT_MEASURE",
-          "position"": "10",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).UNIT_MEASURE",
+          "id": "UNIT_MEASURE",
+          "position": "10",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).UNIT_MEASURE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT",
-                "package"": "codelist",
-                "version"": "1.11"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_UNIT",
+                "package": "codelist",
+                "version": "1.11"
               }
             }
           }
         },
         {
-          "id"": "TRANSFORMATION",
-          "position"": "11",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).TRANSFORMATION",
+          "id": "TRANSFORMATION",
+          "position": "11",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).TRANSFORMATION",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "TRANSFORMATION",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "TRANSFORMATION",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_TRANSFORMATION",
-                "package"": "codelist",
-                "version"": "1.3"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_TRANSFORMATION",
+                "package": "codelist",
+                "version": "1.3"
               }
             }
           }
         },
         {
-          "id"": "CUST_BREAKDOWN",
-          "position"": "12",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).CUST_BREAKDOWN",
+          "id": "CUST_BREAKDOWN",
+          "position": "12",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).CUST_BREAKDOWN",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "CUST_BREAKDOWN",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "CUST_BREAKDOWN",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_CUST_BREAKDOWN",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_CUST_BREAKDOWN",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "13",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:CPI(1.1).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:CPI(1.1).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ESTAT",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_PRICE",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "ESTAT",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_PRICE",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:CPI(1.1).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:CPI(1.1).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:CPI(1.1).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:CPI(1.1).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ESTAT",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_PRICE",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "ESTAT",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_PRICE",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "isSequence"": "false",
-            "textType"": "Double"
+            "isSequence": "false",
+            "textType": "Double"
           }
         }
       }
@@ -1864,6 +1864,6 @@
   },
   "Name": {
     "#text": "Consumer Price Index DSD",
-    "lang"": "en"
+    "lang": "en"
   }
 }

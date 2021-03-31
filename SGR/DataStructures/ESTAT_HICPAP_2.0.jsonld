@@ -1,0 +1,581 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ESTAT",
+    "isExternalReference": "false",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:HICPAP(2.0)",
+    "version": "2.0",
+    "name": {
+      "@value": "HICP AP DSD",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ESTAT/DataStructure/HICPAP",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "ITEM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.7",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DISS_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "ITEM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.7",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "ITEM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_TIME_FORMAT",
+          "skos:notation": "CL_TIME_FORMAT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DECIMALS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).CONF_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CONF_STATUS",
+          "skos:notation": "CONF_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/CONF_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_TS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "ITEM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_TS",
+          "skos:notation": "COMMENT_TS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_TS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "ITEM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "200",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DATA_COMP",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "ITEM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DATA_COMP",
+          "skos:notation": "DATA_COMP"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "4000",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DATA_COMP"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "4000",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_DSET",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_DSET",
+          "skos:notation": "COMMENT_DSET"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_DSET"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).IND_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/IND_TYPE",
+          "skos:notation": "IND_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_IND_TYPE",
+          "skos:notation": "CL_IND_TYPE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/IND_TYPE"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).IDX_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/IDX_TYPE",
+          "skos:notation": "IDX_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_IDX_TYPE",
+          "skos:notation": "CL_IDX_TYPE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/IDX_TYPE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).ITEM",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/ITEM",
+          "skos:notation": "ITEM"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_ITEM_PRICE",
+          "skos:notation": "CL_ITEM_PRICE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/ITEM"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:HICPAP(2.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.1",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:HICPAP(2.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "ESTAT",
+        "class": "Concept",
+        "maintainableParentID": "CS_PRICE",
+        "maintainableParentVersion": "1.1",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ESTAT/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "qb:codeList": {
+        "agencyID": "ESTAT",
+        "class": "Codelist",
+        "package": "codelist",
+        "version": "1.0",
+        "@type": "qb:HierarchicalCodeList",
+        "@id": "https://loqu.dev/ESTAT/Concept/CL_VALUE_AP",
+        "skos:notation": "CL_VALUE_AP"
+      },
+      "@id": "https://loqu.dev/ESTAT/Measure/OBS_VALUE"
+    }
+  }
+}

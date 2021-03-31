@@ -1,1129 +1,1129 @@
 {
-  "agencyID"": "ECB",
-  "id"": "ECB_FCT1",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_FCT1(1.0)",
-  "version"": "1.0",
+  "agencyID": "ECB",
+  "id": "ECB_FCT1",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_FCT1(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_FCT1(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_FCT1(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).TIME_FORMAT",
+          "assignmentStatus": "Mandatory",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).TIME_FORMAT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "3",
-              "textType"": "String"
+              "maxLength": "3",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_CONF",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_CONF",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_CONF",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_CONF",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_CONF",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_CONF",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_OBS_CONF",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_OBS_CONF",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_PRE_BREAK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_PRE_BREAK",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_PRE_BREAK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_PRE_BREAK",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_PRE_BREAK",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_PRE_BREAK",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "15",
-              "textType"": "String"
+              "maxLength": "15",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_COM",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_COM",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_COM",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).OBS_COM",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_COM",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_COM",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SURVEY_ROUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).SURVEY_ROUND",
+          "assignmentStatus": "Conditional",
+          "id": "SURVEY_ROUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).SURVEY_ROUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "SURVEY_ROUND",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "SURVEY_ROUND",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "35",
-              "textType"": "String"
+              "maxLength": "35",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COLLECTION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).COLLECTION",
+          "assignmentStatus": "Conditional",
+          "id": "COLLECTION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).COLLECTION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "COLLECTION",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "COLLECTION",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_COLLECTION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_COLLECTION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMPILING_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).COMPILING_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "COMPILING_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).COMPILING_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "COMPILING_ORG",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "COMPILING_ORG",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DISS_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).DISS_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "DISS_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).DISS_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "DISS_ORG",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "DISS_ORG",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).DECIMALS",
+          "assignmentStatus": "Mandatory",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).DECIMALS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_DECIMALS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_DECIMALS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "1",
-              "textType"": "BigInteger"
+              "maxLength": "2",
+              "minLength": "1",
+              "textType": "BigInteger"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SOURCE_AGENCY",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).SOURCE_AGENCY",
+          "assignmentStatus": "Conditional",
+          "id": "SOURCE_AGENCY",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).SOURCE_AGENCY",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "SOURCE_AGENCY",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "SOURCE_AGENCY",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).TITLE",
+          "assignmentStatus": "Conditional",
+          "id": "TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).TITLE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "TITLE",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "TITLE",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "200",
-              "textType"": "String"
+              "maxLength": "200",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TITLE_COMPL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).TITLE_COMPL",
+          "assignmentStatus": "Mandatory",
+          "id": "TITLE_COMPL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).TITLE_COMPL",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "TITLE_COMPL",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "TITLE_COMPL",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1050",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).UNIT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).UNIT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "UNIT",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "UNIT",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_UNIT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_UNIT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "13",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "13",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).UNIT_MULT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_FCT1(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_TOPIC"
+                  "id": "FCT_TOPIC"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_BREAKDOWN"
+                  "id": "FCT_BREAKDOWN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_HORIZON"
+                  "id": "FCT_HORIZON"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SURVEY_FREQ"
+                  "id": "SURVEY_FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FCT_SOURCE"
+                  "id": "FCT_SOURCE"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "3",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "3",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_FCT1(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_FCT1(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_AREA_EE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_AREA_EE",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "FCT_TOPIC",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_TOPIC",
+          "id": "FCT_TOPIC",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_TOPIC",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "FCT_TOPIC",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "FCT_TOPIC",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_FCT_TOPIC",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_FCT_TOPIC",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "4",
-              "minLength"": "4",
-              "textType"": "String"
+              "maxLength": "4",
+              "minLength": "4",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "FCT_BREAKDOWN",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_BREAKDOWN",
+          "id": "FCT_BREAKDOWN",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_BREAKDOWN",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "FCT_BREAKDOWN",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "FCT_BREAKDOWN",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_FCT_BREAKDOWN",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_FCT_BREAKDOWN",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "12",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "12",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "FCT_HORIZON",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_HORIZON",
+          "id": "FCT_HORIZON",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_HORIZON",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "FCT_HORIZON",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "FCT_HORIZON",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_FCT_HORIZON",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_FCT_HORIZON",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "4",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "4",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "SURVEY_FREQ",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).SURVEY_FREQ",
+          "id": "SURVEY_FREQ",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).SURVEY_FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "SURVEY_FREQ",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "SURVEY_FREQ",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "FCT_SOURCE",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_SOURCE",
+          "id": "FCT_SOURCE",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_FCT1(1.0).FCT_SOURCE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "FCT_SOURCE",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "FCT_SOURCE",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_FCT_SOURCE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_FCT_SOURCE",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "3",
-              "minLength"": "3",
-              "textType"": "String"
+              "maxLength": "3",
+              "minLength": "3",
+              "textType": "String"
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "8",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_FCT1(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_FCT1(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ECB",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "ECB_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "ECB",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "ECB_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "Group": {
-      "id"": "Group",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_FCT1(1.0).Group",
+      "id": "Group",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_FCT1(1.0).Group",
       "GroupDimension": [
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "REF_AREA"
+              "id": "REF_AREA"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "FCT_TOPIC"
+              "id": "FCT_TOPIC"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "FCT_BREAKDOWN"
+              "id": "FCT_BREAKDOWN"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "FCT_HORIZON"
+              "id": "FCT_HORIZON"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "SURVEY_FREQ"
+              "id": "SURVEY_FREQ"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "FCT_SOURCE"
+              "id": "FCT_SOURCE"
             }
           }
         }
       ]
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_FCT1(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_FCT1(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_FCT1(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_FCT1(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ECB",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "ECB_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "ECB",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "ECB_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "maxLength"": "15",
-            "textType"": "String"
+            "maxLength": "15",
+            "textType": "String"
           }
         }
       }
@@ -1131,6 +1131,6 @@
   },
   "Name": {
     "#text": "Forecast",
-    "lang"": "en"
+    "lang": "en"
   }
 }

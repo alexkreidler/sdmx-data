@@ -1,0 +1,255 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNSD",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "Energy Balance Data Structure Definition",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNSD/DataStructure/DSD_ENERGY_BALANCE_UNDATA",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).ESTIMATE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/ESTIMATE",
+          "skos:notation": "ESTIMATE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_ESTIMATE",
+          "skos:notation": "CL_ESTIMATE"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/ESTIMATE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).FOOTNOTES",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/FOOTNOTES",
+          "skos:notation": "FOOTNOTES"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/FOOTNOTES"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/UNIT_MULTIPLIER",
+          "skos:notation": "UNIT_MULTIPLIER"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_UNITMUL_ENERGY_UNDATA",
+          "skos:notation": "CL_UNITMUL_ENERGY_UNDATA"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/UNIT_MULT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/REFAREA",
+          "skos:notation": "REFAREA"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/REF_AREA"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).COMMODITY",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/COMMODITY",
+          "skos:notation": "COMMODITY"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_COMMODITY_ENERGY_BALANCE_UNDATA",
+          "skos:notation": "CL_COMMODITY_ENERGY_BALANCE_UNDATA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/COMMODITY"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).TRANSACTION",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TRANSACTIONS",
+          "skos:notation": "TRANSACTIONS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_TRANS_ENERGY_BALANCE_UNDATA",
+          "skos:notation": "CL_TRANS_ENERGY_BALANCE_UNDATA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/TRANSACTION"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).UNIT",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_UNIT_ENERGY_UNDATA",
+          "skos:notation": "CL_UNIT_ENERGY_UNDATA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/UNIT"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNSD",
+          "class": "Concept",
+          "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNSD/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_ENERGY_BALANCE_UNDATA(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNSD",
+        "class": "Concept",
+        "maintainableParentID": "CS_ENERGY_BALANCE_UNDATA",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNSD/Concept/OBSERVATION",
+        "skos:notation": "OBSERVATION"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "textType": "String"
+        }
+      },
+      "@id": "https://loqu.dev/UNSD/Measure/OBS_VALUE"
+    }
+  }
+}

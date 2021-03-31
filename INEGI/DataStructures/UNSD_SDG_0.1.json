@@ -1,710 +1,710 @@
 {
-  "agencyID"": "UNSD",
-  "id"": "SDG",
-  "isFinal"": "true",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:SDG(0.1)",
-  "version"": "0.1",
+  "agencyID": "UNSD",
+  "id": "SDG",
+  "isFinal": "true",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:SDG(0.1)",
+  "version": "0.1",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:SDG(0.1).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:SDG(0.1).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).OBS_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "2.1",
-                "xmlns"": ""
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "2.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UNIT_MULT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UNIT_MULT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.1",
-                "xmlns"": ""
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MEASURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UNIT_MEASURE",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MEASURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UNIT_MEASURE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "NATURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).NATURE",
+          "assignmentStatus": "Conditional",
+          "id": "NATURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).NATURE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "NATURE",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "NATURE",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_NATURE",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_NATURE",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_OBS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).COMMENT_OBS",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_OBS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).COMMENT_OBS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "COMMENT_OBS",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "COMMENT_OBS",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_COVERAGE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).TIME_COVERAGE",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_COVERAGE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).TIME_COVERAGE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "TIME_COVERAGE",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "TIME_COVERAGE",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UPPER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UPPER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "UPPER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).UPPER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "UPPER_BOUND",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "UPPER_BOUND",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "LOWER_BOUND",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).LOWER_BOUND",
+          "assignmentStatus": "Conditional",
+          "id": "LOWER_BOUND",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).LOWER_BOUND",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "LOWER_BOUND",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "LOWER_BOUND",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BASE_PER",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).BASE_PER",
+          "assignmentStatus": "Conditional",
+          "id": "BASE_PER",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).BASE_PER",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "BASE_PER",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "BASE_PER",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_DETAIL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).TIME_DETAIL",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_DETAIL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.1).TIME_DETAIL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE",
-                "xmlns"": ""
+                "id": "OBS_VALUE",
+                "xmlns": ""
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "TIME_DETAIL",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "TIME_DETAIL",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:SDG(0.1).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:SDG(0.1).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "2.0",
-                "xmlns"": ""
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "2.0",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "REPORTING_TYPE",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).REPORTING_TYPE",
+          "id": "REPORTING_TYPE",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).REPORTING_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "REPORTING_TYPE",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "REPORTING_TYPE",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_REPORTING_TYPE",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_REPORTING_TYPE",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "SERIES",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).SERIES",
+          "id": "SERIES",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).SERIES",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "SERIES",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "SERIES",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_SDG_SERIES",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_SDG_SERIES",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).REF_AREA",
+          "id": "REF_AREA",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_AREA",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_AREA",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "SEX",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).SEX",
+          "id": "SEX",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).SEX",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "SEX",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "SEX",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_SEX",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_SEX",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "AGE",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).AGE",
+          "id": "AGE",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).AGE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "AGE",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "AGE",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_AGE",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_AGE",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "URBANISATION",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).URBANISATION",
+          "id": "URBANISATION",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).URBANISATION",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "URBANISATION",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "URBANISATION",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_URBANISATION",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_URBANISATION",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "INCOME_WEALTH_QUANTILE",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).INCOME_WEALTH_QUANTILE",
+          "id": "INCOME_WEALTH_QUANTILE",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).INCOME_WEALTH_QUANTILE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "INCOME_WEALTH_QUANTILE",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "INCOME_WEALTH_QUANTILE",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_QUANTILE",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_QUANTILE",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "EDUCATION_LEV",
-          "position"": "9",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).EDUCATION_LEV",
+          "id": "EDUCATION_LEV",
+          "position": "9",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).EDUCATION_LEV",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "EDUCATION_LEV",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "EDUCATION_LEV",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_EDUCATION_LEV",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_EDUCATION_LEV",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "OCCUPATION",
-          "position"": "10",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).OCCUPATION",
+          "id": "OCCUPATION",
+          "position": "10",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).OCCUPATION",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "OCCUPATION",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "2.0",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "OCCUPATION",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "2.0",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_OCCUPATION",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_OCCUPATION",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "CUST_BREAKDOWN",
-          "position"": "11",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).CUST_BREAKDOWN",
+          "id": "CUST_BREAKDOWN",
+          "position": "11",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).CUST_BREAKDOWN",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "CUST_BREAKDOWN",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "CUST_BREAKDOWN",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_SDG_CUST_BREAKDOWN",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_SDG_CUST_BREAKDOWN",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "COMPOSITE_BREAKDOWN",
-          "position"": "12",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).COMPOSITE_BREAKDOWN",
+          "id": "COMPOSITE_BREAKDOWN",
+          "position": "12",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).COMPOSITE_BREAKDOWN",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "COMPOSITE_BREAKDOWN",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "COMPOSITE_BREAKDOWN",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_SDG_COMP_BREAKDOWN",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_SDG_COMP_BREAKDOWN",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         },
         {
-          "id"": "DISABILITY_STATUS",
-          "position"": "13",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).DISABILITY_STATUS",
+          "id": "DISABILITY_STATUS",
+          "position": "13",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.1).DISABILITY_STATUS",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNSD",
-              "class"": "Concept",
-              "id"": "DISABILITY_STATUS",
-              "maintainableParentID"": "SDG_CONCEPTS",
-              "maintainableParentVersion"": "0.1",
-              "package"": "conceptscheme",
-              "xmlns"": ""
+              "agencyID": "UNSD",
+              "class": "Concept",
+              "id": "DISABILITY_STATUS",
+              "maintainableParentID": "SDG_CONCEPTS",
+              "maintainableParentVersion": "0.1",
+              "package": "conceptscheme",
+              "xmlns": ""
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNSD",
-                "class"": "Codelist",
-                "id"": "CL_DISABILITY",
-                "package"": "codelist",
-                "version"": "0.1",
-                "xmlns"": ""
+                "agencyID": "UNSD",
+                "class": "Codelist",
+                "id": "CL_DISABILITY",
+                "package": "codelist",
+                "version": "0.1",
+                "xmlns": ""
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "14",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:SDG(0.1).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "14",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:SDG(0.1).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "SDMX",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-            "maintainableParentVersion"": "2.0",
-            "package"": "conceptscheme",
-            "xmlns"": ""
+            "agencyID": "SDMX",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+            "maintainableParentVersion": "2.0",
+            "package": "conceptscheme",
+            "xmlns": ""
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:SDG(0.1).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:SDG(0.1).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:SDG(0.1).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:SDG(0.1).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "SDMX",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-            "maintainableParentVersion"": "2.0",
-            "package"": "conceptscheme",
-            "xmlns"": ""
+            "agencyID": "SDMX",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+            "maintainableParentVersion": "2.0",
+            "package": "conceptscheme",
+            "xmlns": ""
           }
         }
       }
@@ -712,12 +712,12 @@
   },
   "Description": {
     "#text": "Data Structure Definition for Sustainable Development Goals Indicators.",
-    "lang"": "en",
-    "xmlns"": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+    "lang": "en",
+    "xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
   },
   "Name": {
     "#text": "SDGs DSD",
-    "lang"": "en",
-    "xmlns"": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+    "lang": "en",
+    "xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
   }
 }

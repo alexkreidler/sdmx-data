@@ -1,0 +1,408 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "OECD",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=OECD:INFRA_ANNUAL_LABOUR(3.1)",
+    "version": "3.1",
+    "name": {
+      "@value": "Infraannual Labour",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/OECD/DataStructure/INFRA_ANNUAL_LABOUR",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:INFRA_ANNUAL_LABOUR(3.1).DOMAIN",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "SUBJECT",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/DOMAIN",
+          "skos:notation": "DOMAIN"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_DOMAIN",
+          "skos:notation": "CL_DOMAIN"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/DOMAIN"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:INFRA_ANNUAL_LABOUR(3.1).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:INFRA_ANNUAL_LABOUR(3.1).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REFERENCE_AREA",
+              "xmlns": ""
+            },
+            {
+              "id": "SUBJECT",
+              "xmlns": ""
+            },
+            {
+              "id": "AGE",
+              "xmlns": ""
+            },
+            {
+              "id": "SEX",
+              "xmlns": ""
+            },
+            {
+              "id": "ACTIVITY",
+              "xmlns": ""
+            },
+            {
+              "id": "ADJUSTMENT",
+              "xmlns": ""
+            },
+            {
+              "id": "UNIT_MEASURE",
+              "xmlns": ""
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/UNIT_MULT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).REFERENCE_AREA",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/REFERENCE_AREA",
+          "skos:notation": "REFERENCE_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.3",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/REFERENCE_AREA"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).SUBJECT",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/ACTIVITY",
+          "skos:notation": "ACTIVITY"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "3.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_SUBJECT",
+          "skos:notation": "CL_SUBJECT"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/SUBJECT"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).AGE",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/AGE",
+          "skos:notation": "AGE"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_AGE",
+          "skos:notation": "CL_AGE"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/AGE"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).SEX",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/SEX"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).ACTIVITY",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/ACTIVITY",
+          "skos:notation": "ACTIVITY"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_ACTIVITY",
+          "skos:notation": "CL_ACTIVITY"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/ACTIVITY"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).ADJUSTMENT",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/ADJUSTMENT",
+          "skos:notation": "ADJUSTMENT"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_ADJUSTMENT",
+          "skos:notation": "CL_ADJUSTMENT"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/ADJUSTMENT"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/FREQ"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=OECD:INFRA_ANNUAL_LABOUR(3.1).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "3.1",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ReportingTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=OECD:INFRA_ANNUAL_LABOUR(3.1).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "OECD",
+        "class": "Concept",
+        "maintainableParentID": "CS_STES",
+        "maintainableParentVersion": "3.1",
+        "package": "conceptscheme",
+        "xmlns": "",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/OECD/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "textType": "Decimal"
+        }
+      },
+      "@id": "https://loqu.dev/OECD/Measure/OBS_VALUE"
+    }
+  }
+}

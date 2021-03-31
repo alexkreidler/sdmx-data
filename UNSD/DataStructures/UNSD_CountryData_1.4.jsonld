@@ -1,0 +1,381 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNSD",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:CountryData(1.4)",
+    "version": "1.4",
+    "name": {
+      "@value": "SDMXCountryData",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNSD/DataStructure/CountryData",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).UNIT_MULT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEG",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEG/Concept/CL_UNIT_MULT_SDMX",
+          "skos:notation": "CL_UNIT_MULT_SDMX"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).TIME_DETAIL",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/TIME_DETAIL",
+          "skos:notation": "TIME_DETAIL"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/TIME_DETAIL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).NATURE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/NATURE",
+          "skos:notation": "NATURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEG",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEG/Concept/CL_NATURE_MDG",
+          "skos:notation": "CL_NATURE_MDG"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/NATURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).SOURCE_DETAIL",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/SOURCE_DETAIL",
+          "skos:notation": "SOURCE_DETAIL"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/SOURCE_DETAIL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).FOOTNOTES",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/FOOTNOTES",
+          "skos:notation": "FOOTNOTES"
+        },
+        "@id": "https://loqu.dev/UNSD/Attribute/FOOTNOTES"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEG",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEG/Concept/CL_FREQ_MDG",
+          "skos:notation": "CL_FREQ_MDG"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SERIES",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/SERIES",
+          "skos:notation": "SERIES"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_SERIES_COUNTRY_DATA",
+          "skos:notation": "CL_SERIES_COUNTRY_DATA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/SERIES"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).UNIT",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_UNIT_COUNTRY_DATA",
+          "skos:notation": "CL_UNIT_COUNTRY_DATA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/UNIT"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).LOCATION",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/LOCATION",
+          "skos:notation": "LOCATION"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEG",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEG/Concept/CL_LOCATION_MDG",
+          "skos:notation": "CL_LOCATION_MDG"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/LOCATION"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).AGE_GROUP",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/AGE_GROUP",
+          "skos:notation": "AGE_GROUP"
+        },
+        "qb:codeList": {
+          "agencyID": "UNSD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "0.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNSD/Concept/CL_AGE_GROUP_COUNTRY_DATA",
+          "skos:notation": "CL_AGE_GROUP_COUNTRY_DATA"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/AGE_GROUP"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SEX",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEG",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEG/Concept/CL_SEX_MDG",
+          "skos:notation": "CL_SEX_MDG"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/SEX"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEG",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "4.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEG/Concept/CL_REF_AREA_MDG",
+          "skos:notation": "CL_REF_AREA_MDG"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/REF_AREA"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SOURCE_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/SOURCE_TYPE",
+          "skos:notation": "SOURCE_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEG",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEG/Concept/CL_SOURCE_TYPE_MDG",
+          "skos:notation": "CL_SOURCE_TYPE_MDG"
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/SOURCE_TYPE"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:CountryData(1.4).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "IAEG",
+          "class": "Concept",
+          "maintainableParentID": "MDG_DATA_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEG/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNSD/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:CountryData(1.4).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "IAEG",
+        "class": "Concept",
+        "maintainableParentID": "MDG_DATA_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/IAEG/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNSD/Measure/OBS_VALUE"
+    }
+  }
+}

@@ -1,673 +1,673 @@
 {
-  "agencyID"": "IT1",
-  "id"": "DCSC_TRAFERR",
-  "isFinal"": "true",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCSC_TRAFERR(1.0)",
-  "validFrom"": "202001-28T00:00:00"",
-  "validTo"": "209912-31T00:00:00"",
-  "version"": "1.0",
+  "agencyID": "IT1",
+  "id": "DCSC_TRAFERR",
+  "isFinal": "true",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCSC_TRAFERR(1.0)",
+  "validFrom": "202001-28T00:00:00",
+  "validTo": "209912-31T00:00:00",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCSC_TRAFERR(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCSC_TRAFERR(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BREAK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).BREAK",
+          "assignmentStatus": "Conditional",
+          "id": "BREAK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).BREAK",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "BREAK",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "BREAK",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "String"
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CONF_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).CONF_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "CONF_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).CONF_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "CONF_STATUS",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "CONF_STATUS",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_OBS_CONF",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_OBS_CONF",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "textType"": "String"
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_PRE_BREAK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).OBS_PRE_BREAK",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_PRE_BREAK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).OBS_PRE_BREAK",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "OBS_PRE_BREAK",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "OBS_PRE_BREAK",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "String"
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_FLAG",
-                "package"": "codelist",
-                "version"": "1.6"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_FLAG",
+                "package": "codelist",
+                "version": "1.6"
               }
             },
             "EnumerationFormat": {
-              "textType"": "String"
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BASE_PER",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).BASE_PER",
+          "assignmentStatus": "Conditional",
+          "id": "BASE_PER",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).BASE_PER",
           "AttributeRelationship": {
             "Group": {
               "Ref": {
-                "id"": "X_MEASURE"
+                "id": "X_MEASURE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "BASE_PER",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "BASE_PER",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_BASE_YEAR",
-                "package"": "codelist",
-                "version"": "1.3"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_BASE_YEAR",
+                "package": "codelist",
+                "version": "1.3"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEAS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).UNIT_MEAS",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEAS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).UNIT_MEAS",
           "AttributeRelationship": {
             "Group": {
               "Ref": {
-                "id"": "X_MEASURE"
+                "id": "X_MEASURE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "UNIT_MEAS",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "UNIT_MEAS",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.6"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.6"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).UNIT_MULT",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "Group": {
               "Ref": {
-                "id"": "X_MEASURE"
+                "id": "X_MEASURE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "METADATA_EN",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).METADATA_EN",
+          "assignmentStatus": "Conditional",
+          "id": "METADATA_EN",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).METADATA_EN",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "METADATA_EN",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "METADATA_EN",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "METADATA_IT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).METADATA_IT",
+          "assignmentStatus": "Conditional",
+          "id": "METADATA_IT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCSC_TRAFERR(1.0).METADATA_IT",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "METADATA_IT",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "METADATA_IT",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCSC_TRAFERR(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCSC_TRAFERR(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "TIPO_INCIDENTE",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).TIPO_INCIDENTE",
+          "id": "TIPO_INCIDENTE",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).TIPO_INCIDENTE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "TIPO_INCIDENTE",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "TIPO_INCIDENTE",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_TIPO_INCIDENTE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_TIPO_INCIDENTE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "DEST_PASSEGGERO",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).DEST_PASSEGGERO",
+          "id": "DEST_PASSEGGERO",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).DEST_PASSEGGERO",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "DEST_PASSEGGERO",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "DEST_PASSEGGERO",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_TRASPORTO_TIPO",
-                "package"": "codelist",
-                "version"": "1.2"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_TRASPORTO_TIPO",
+                "package": "codelist",
+                "version": "1.2"
               }
             }
           }
         },
         {
-          "id"": "TIPO_TRASP",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).TIPO_TRASP",
+          "id": "TIPO_TRASP",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).TIPO_TRASP",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "TIPO_TRASP",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "TIPO_TRASP",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_TRASPORTO_TIPO",
-                "package"": "codelist",
-                "version"": "1.2"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_TRASPORTO_TIPO",
+                "package": "codelist",
+                "version": "1.2"
               }
             }
           }
         },
         {
-          "id"": "PAESE_ORIG_MERCE",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).PAESE_ORIG_MERCE",
+          "id": "PAESE_ORIG_MERCE",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).PAESE_ORIG_MERCE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "PAESE_ORIG_MERCE",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "PAESE_ORIG_MERCE",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_ISO",
-                "package"": "codelist",
-                "version"": "2.2"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_ISO",
+                "package": "codelist",
+                "version": "2.2"
               }
             }
           }
         },
         {
-          "id"": "ITTER107",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).ITTER107",
+          "id": "ITTER107",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).ITTER107",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "ITTER107",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "ITTER107",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_ITTER107",
-                "package"": "codelist",
-                "version"": "5.1"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_ITTER107",
+                "package": "codelist",
+                "version": "5.1"
               }
             }
           }
         },
         {
-          "id"": "NST_2007",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).NST_2007",
+          "id": "NST_2007",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).NST_2007",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "NST_2007",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "NST_2007",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_NST2007",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_NST2007",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "id"": "NST_R",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).NST_R",
+          "id": "NST_R",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).NST_R",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "NST_R",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "NST_R",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_NST_R",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_NST_R",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "TIPO_DATO",
-          "position"": "9",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).TIPO_DATO",
+          "id": "TIPO_DATO",
+          "position": "9",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).TIPO_DATO",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "TIPO_DATO",
-              "maintainableParentID"": "CROSS_DOMAIN",
-              "maintainableParentVersion"": "5.2",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "TIPO_DATO",
+              "maintainableParentID": "CROSS_DOMAIN",
+              "maintainableParentVersion": "5.2",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_TIPO_DATO7",
-                "package"": "codelist",
-                "version"": "2.8"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_TIPO_DATO7",
+                "package": "codelist",
+                "version": "2.8"
               }
             }
           }
         },
         {
-          "id"": "DIM_IMPRESA",
-          "position"": "10",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).DIM_IMPRESA",
+          "id": "DIM_IMPRESA",
+          "position": "10",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).DIM_IMPRESA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "DIM_IMPRESA",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "DIM_IMPRESA",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_DIMENSIONE_IMPRESA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_DIMENSIONE_IMPRESA",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "PAESE_DEST_MERCE",
-          "position"": "11",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).PAESE_DEST_MERCE",
+          "id": "PAESE_DEST_MERCE",
+          "position": "11",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).PAESE_DEST_MERCE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "PAESE_DEST_MERCE",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "PAESE_DEST_MERCE",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_ISO",
-                "package"": "codelist",
-                "version"": "2.2"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_ISO",
+                "package": "codelist",
+                "version": "2.2"
               }
             }
           }
         },
         {
-          "id"": "UNIT_TRASP_INTERMOD",
-          "position"": "12",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).UNIT_TRASP_INTERMOD",
+          "id": "UNIT_TRASP_INTERMOD",
+          "position": "12",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).UNIT_TRASP_INTERMOD",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "UNIT_TRASP_INTERMOD",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "UNIT_TRASP_INTERMOD",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_CATEGVEICOLI",
-                "package"": "codelist",
-                "version"": "1.4"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_CATEGVEICOLI",
+                "package": "codelist",
+                "version": "1.4"
               }
             }
           }
         },
         {
-          "id"": "ADR_MERCI_PERIC",
-          "position"": "13",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).ADR_MERCI_PERIC",
+          "id": "ADR_MERCI_PERIC",
+          "position": "13",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCSC_TRAFERR(1.0).ADR_MERCI_PERIC",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IT1",
-              "class"": "Concept",
-              "id"": "ADR_MERCI_PERIC",
-              "maintainableParentID"": "VARIAB_ALL",
-              "maintainableParentVersion"": "20.4",
-              "package"": "conceptscheme"
+              "agencyID": "IT1",
+              "class": "Concept",
+              "id": "ADR_MERCI_PERIC",
+              "maintainableParentID": "VARIAB_ALL",
+              "maintainableParentVersion": "20.4",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IT1",
-                "class"": "Codelist",
-                "id"": "CL_ADR_MERCI_PERIC",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IT1",
+                "class": "Codelist",
+                "id": "CL_ADR_MERCI_PERIC",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "14",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCSC_TRAFERR(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "14",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCSC_TRAFERR(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IT1",
-            "class"": "Concept",
-            "id"": "SELECT_TIME",
-            "maintainableParentID"": "CROSS_DOMAIN",
-            "maintainableParentVersion"": "5.2",
-            "package"": "conceptscheme"
+            "agencyID": "IT1",
+            "class": "Concept",
+            "id": "SELECT_TIME",
+            "maintainableParentID": "CROSS_DOMAIN",
+            "maintainableParentVersion": "5.2",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "Group": {
-      "id"": "X_MEASURE",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCSC_TRAFERR(1.0).X_MEASURE",
+      "id": "X_MEASURE",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCSC_TRAFERR(1.0).X_MEASURE",
       "GroupDimension": {
         "DimensionReference": {
           "Ref": {
-            "id"": "TIPO_DATO"
+            "id": "TIPO_DATO"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCSC_TRAFERR(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCSC_TRAFERR(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCSC_TRAFERR(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCSC_TRAFERR(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IT1",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CROSS_DOMAIN",
-            "maintainableParentVersion"": "5.2",
-            "package"": "conceptscheme"
+            "agencyID": "IT1",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CROSS_DOMAIN",
+            "maintainableParentVersion": "5.2",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "Double"
+            "textType": "Double"
           }
         }
       }
@@ -676,11 +676,11 @@
   "Name": [
     {
       "#text": "Trasporto ferroviario",
-      "lang"": "it"
+      "lang": "it"
     },
     {
       "#text": "Rail transport",
-      "lang"": "en"
+      "lang": "en"
     }
   ]
 }

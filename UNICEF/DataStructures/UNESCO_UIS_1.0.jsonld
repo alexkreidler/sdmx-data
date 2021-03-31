@@ -1,0 +1,352 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNESCO",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNESCO:UIS(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "UNESCO UIS",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNESCO/DataStructure/UIS",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO:UIS(1.0).OBS_FOOTNOTE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/OBS_FOOTNOTE",
+          "skos:notation": "OBS_FOOTNOTE"
+        },
+        "@id": "https://loqu.dev/UNESCO/Attribute/OBS_FOOTNOTE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO:UIS(1.0).DATA_SOURCE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/DATA_SOURCE",
+          "skos:notation": "DATA_SOURCE"
+        },
+        "@id": "https://loqu.dev/UNESCO/Attribute/DATA_SOURCE"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_COUNTRY",
+          "skos:notation": "CL_COUNTRY"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/REF_AREA"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).INDICATOR",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/INDICATOR",
+          "skos:notation": "INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/INDICATOR",
+          "skos:notation": "INDICATOR"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/INDICATOR"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).SEX",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/SEX"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).RESIDENCE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/RESIDENCE",
+          "skos:notation": "RESIDENCE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_RESIDENCE",
+          "skos:notation": "CL_RESIDENCE"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/RESIDENCE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).WEALTH_QUINTILE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/WEALTH_QUINTILE",
+          "skos:notation": "WEALTH_QUINTILE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_WEALTH_QUINTILE",
+          "skos:notation": "CL_WEALTH_QUINTILE"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/WEALTH_QUINTILE"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).EDUCATION_LEVEL",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/EDUCATION_LEVEL",
+          "skos:notation": "EDUCATION_LEVEL"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_EDU_LEVEL",
+          "skos:notation": "CL_EDU_LEVEL"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/EDUCATION_LEVEL"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).IMM_STATUS",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/IMM_STATUS",
+          "skos:notation": "IMM_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_IMM_STATUS",
+          "skos:notation": "CL_IMM_STATUS"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/IMM_STATUS"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).SOCIOECONOMIC_BACKGROUND",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/SOCIOECONOMIC_BACKGROUND",
+          "skos:notation": "SOCIOECONOMIC_BACKGROUND"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_SE_BKGRD",
+          "skos:notation": "CL_SE_BKGRD"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/SOCIOECONOMIC_BACKGROUND"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).SCHOOL_SUBJECT",
+        "ConceptIdentity": {
+          "agencyID": "UNESCO",
+          "class": "Concept",
+          "maintainableParentID": "EDU",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNESCO/Concept/SCHOOL_SUBJECT",
+          "skos:notation": "SCHOOL_SUBJECT"
+        },
+        "qb:codeList": {
+          "agencyID": "UNESCO",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNESCO/Concept/CL_SUBJECT",
+          "skos:notation": "CL_SUBJECT"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/SCHOOL_SUBJECT"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNESCO:UIS(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "CS_SDG",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNESCO/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNESCO:UIS(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNICEF",
+        "class": "Concept",
+        "maintainableParentID": "CS_SDG",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNICEF/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/UNESCO/Measure/OBS_VALUE"
+    }
+  }
+}

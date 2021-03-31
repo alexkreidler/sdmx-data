@@ -1,403 +1,403 @@
 {
-  "agencyID"": "IAEG",
-  "id"": "MDG",
-  "isFinal"": "true",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEG:MDG(1.2)",
-  "version"": "1.2",
+  "agencyID": "IAEG",
+  "id": "MDG",
+  "isFinal": "true",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEG:MDG(1.2)",
+  "version": "1.2",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IAEG:MDG(1.2).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IAEG:MDG(1.2).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).UNIT_MULT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).UNIT_MULT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT_SDMX",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT_SDMX",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_DETAIL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).TIME_DETAIL",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_DETAIL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).TIME_DETAIL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "TIME_DETAIL",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "TIME_DETAIL",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "NATURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).NATURE",
+          "assignmentStatus": "Conditional",
+          "id": "NATURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).NATURE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "NATURE",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "NATURE",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_NATURE_MDG",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_NATURE_MDG",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SOURCE_DETAIL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).SOURCE_DETAIL",
+          "assignmentStatus": "Conditional",
+          "id": "SOURCE_DETAIL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).SOURCE_DETAIL",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "SOURCE_DETAIL",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "SOURCE_DETAIL",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "FOOTNOTES",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).FOOTNOTES",
+          "assignmentStatus": "Conditional",
+          "id": "FOOTNOTES",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).FOOTNOTES",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "FOOTNOTES",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "FOOTNOTES",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IAEG:MDG(1.2).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IAEG:MDG(1.2).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_FREQ_MDG",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_FREQ_MDG",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "SERIES",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SERIES",
+          "id": "SERIES",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SERIES",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "SERIES",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "SERIES",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_SERIES_MDG",
-                "package"": "codelist",
-                "version"": "4.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_SERIES_MDG",
+                "package": "codelist",
+                "version": "4.0"
               }
             }
           }
         },
         {
-          "id"": "UNIT",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).UNIT",
+          "id": "UNIT",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).UNIT",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "UNIT",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "UNIT",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MDG",
-                "package"": "codelist",
-                "version"": "2.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_UNIT_MDG",
+                "package": "codelist",
+                "version": "2.0"
               }
             }
           }
         },
         {
-          "id"": "LOCATION",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).LOCATION",
+          "id": "LOCATION",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).LOCATION",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "LOCATION",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "LOCATION",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_LOCATION_MDG",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_LOCATION_MDG",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "AGE_GROUP",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).AGE_GROUP",
+          "id": "AGE_GROUP",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).AGE_GROUP",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "AGE_GROUP",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "AGE_GROUP",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_AGE_GROUP_MDG",
-                "package"": "codelist",
-                "version"": "2.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_AGE_GROUP_MDG",
+                "package": "codelist",
+                "version": "2.0"
               }
             }
           }
         },
         {
-          "id"": "SEX",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SEX",
+          "id": "SEX",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SEX",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "SEX",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "SEX",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_SEX_MDG",
-                "package"": "codelist",
-                "version"": "2.1"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_SEX_MDG",
+                "package": "codelist",
+                "version": "2.1"
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).REF_AREA",
+          "id": "REF_AREA",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_REF_AREA_MDG",
-                "package"": "codelist",
-                "version"": "4.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_REF_AREA_MDG",
+                "package": "codelist",
+                "version": "4.0"
               }
             }
           }
         },
         {
-          "id"": "SOURCE_TYPE",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SOURCE_TYPE",
+          "id": "SOURCE_TYPE",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SOURCE_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IAEG",
-              "class"": "Concept",
-              "id"": "SOURCE_TYPE",
-              "maintainableParentID"": "MDG_DATA_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IAEG",
+              "class": "Concept",
+              "id": "SOURCE_TYPE",
+              "maintainableParentID": "MDG_DATA_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IAEG",
-                "class"": "Codelist",
-                "id"": "CL_SOURCE_TYPE_MDG",
-                "package"": "codelist",
-                "version"": "2.0"
+                "agencyID": "IAEG",
+                "class": "Codelist",
+                "id": "CL_SOURCE_TYPE_MDG",
+                "package": "codelist",
+                "version": "2.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "9",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEG:MDG(1.2).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEG:MDG(1.2).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IAEG",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "MDG_DATA_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "IAEG",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "MDG_DATA_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IAEG:MDG(1.2).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IAEG:MDG(1.2).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEG:MDG(1.2).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEG:MDG(1.2).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IAEG",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "MDG_DATA_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "IAEG",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "MDG_DATA_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         }
       }
     }
   },
   "Name": {
-    "#text": "SDMXMDGs"",
-    "lang"": "en"
+    "#text": "SDMXMDGs",
+    "lang": "en"
   }
 }

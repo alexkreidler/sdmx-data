@@ -1,78 +1,78 @@
 {
-  "agencyID"": "CD2030",
-  "id"": "CDT2",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=CD2030:CDT2(1.0)",
-  "version"": "1.0",
+  "agencyID": "CD2030",
+  "id": "CDT2",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=CD2030:CDT2(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=CD2030:CDT2(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=CD2030:CDT2(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CDDATASOURCE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDT2(1.0).CDDATASOURCE",
+          "assignmentStatus": "Conditional",
+          "id": "CDDATASOURCE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDT2(1.0).CDDATASOURCE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "CD2030",
-              "class"": "Concept",
-              "id"": "CDDATASOURCE",
-              "maintainableParentID"": "CD2030_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "CD2030",
+              "class": "Concept",
+              "id": "CDDATASOURCE",
+              "maintainableParentID": "CD2030_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "CD2030",
-                "class"": "Codelist",
-                "id"": "CL_CD2030_DATA_SOURCE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "CD2030",
+                "class": "Codelist",
+                "id": "CL_CD2030_DATA_SOURCE",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDT2(1.0).TIME_FORMAT",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=CD2030:CDT2(1.0).TIME_FORMAT",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "CD2030",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "CD2030_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "CD2030",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "CD2030_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "CD2030",
-                "class"": "Codelist",
-                "id"": "CL_CD2030_TIME_FORMAT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "CD2030",
+                "class": "Codelist",
+                "id": "CL_CD2030_TIME_FORMAT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
@@ -80,162 +80,162 @@
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=CD2030:CDT2(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=CD2030:CDT2(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "CDT2INDICS",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDT2INDICS",
+          "id": "CDT2INDICS",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDT2INDICS",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "CD2030",
-              "class"": "Concept",
-              "id"": "CDT2INDICS",
-              "maintainableParentID"": "CD2030_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "CD2030",
+              "class": "Concept",
+              "id": "CDT2INDICS",
+              "maintainableParentID": "CD2030_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "CD2030",
-                "class"": "Codelist",
-                "id"": "CL_CD2030_CDT2_INDICATORS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "CD2030",
+                "class": "Codelist",
+                "id": "CL_CD2030_CDT2_INDICATORS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "CDUNIT",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDUNIT",
+          "id": "CDUNIT",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDUNIT",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "CD2030",
-              "class"": "Concept",
-              "id"": "CDUNIT",
-              "maintainableParentID"": "CD2030_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "CD2030",
+              "class": "Concept",
+              "id": "CDUNIT",
+              "maintainableParentID": "CD2030_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "CD2030",
-                "class"": "Codelist",
-                "id"": "CL_CD2030_UNITS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "CD2030",
+                "class": "Codelist",
+                "id": "CL_CD2030_UNITS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "CDAREAS",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDAREAS",
+          "id": "CDAREAS",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDAREAS",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "CD2030",
-              "class"": "Concept",
-              "id"": "CDAREAS",
-              "maintainableParentID"": "CD2030_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "CD2030",
+              "class": "Concept",
+              "id": "CDAREAS",
+              "maintainableParentID": "CD2030_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "CD2030",
-                "class"": "Codelist",
-                "id"": "CL_CD2030_AREAS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "CD2030",
+                "class": "Codelist",
+                "id": "CL_CD2030_AREAS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "CDT2STRATS",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDT2STRATS",
+          "id": "CDT2STRATS",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=CD2030:CDT2(1.0).CDT2STRATS",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "CD2030",
-              "class"": "Concept",
-              "id"": "CDT2STRATS",
-              "maintainableParentID"": "CD2030_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "CD2030",
+              "class": "Concept",
+              "id": "CDT2STRATS",
+              "maintainableParentID": "CD2030_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "CD2030",
-                "class"": "Codelist",
-                "id"": "CL_CD2030_CDT2_CDT2STRATS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "CD2030",
+                "class": "Codelist",
+                "id": "CL_CD2030_CDT2_CDT2STRATS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "5",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=CD2030:CDT2(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=CD2030:CDT2(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_SDG",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_SDG",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=CD2030:CDT2(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=CD2030:CDT2(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=CD2030:CDT2(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=CD2030:CDT2(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_SDG",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_SDG",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "isSequence"": "false",
-            "textType"": "String"
+            "isSequence": "false",
+            "textType": "String"
           }
         }
       }
     }
   },
   "Name": {
-    "#text": "Countdown  tier 2 indicators"",
-    "lang"": "en"
+    "#text": "Countdown  tier 2 indicators",
+    "lang": "en"
   }
 }

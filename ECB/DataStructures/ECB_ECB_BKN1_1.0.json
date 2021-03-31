@@ -1,1635 +1,1635 @@
 {
-  "agencyID"": "ECB",
-  "id"": "ECB_BKN1",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "uri"": "https://www.ecb.europa.eu/vocabulary/stats/bkn/1",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_BKN1(1.0)",
-  "version"": "1.0",
+  "agencyID": "ECB",
+  "id": "ECB_BKN1",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "uri": "https://www.ecb.europa.eu/vocabulary/stats/bkn/1",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_BKN1(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_BKN1(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_BKN1(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).TIME_FORMAT",
+          "assignmentStatus": "Mandatory",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).TIME_FORMAT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "3",
-              "textType"": "String"
+              "maxLength": "3",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_CONF",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_CONF",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_CONF",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_CONF",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_CONF",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_CONF",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_OBS_CONF",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_OBS_CONF",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_PRE_BREAK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_PRE_BREAK",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_PRE_BREAK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_PRE_BREAK",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_PRE_BREAK",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_PRE_BREAK",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "15",
-              "textType"": "String"
+              "maxLength": "15",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_COM",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_COM",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_COM",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).OBS_COM",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "OBS_COM",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "OBS_COM",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BREAKS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).BREAKS",
+          "assignmentStatus": "Conditional",
+          "id": "BREAKS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).BREAKS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "BREAKS",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "BREAKS",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "350",
-              "textType"": "String"
+              "maxLength": "350",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "COLLECTION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).COLLECTION",
+          "assignmentStatus": "Mandatory",
+          "id": "COLLECTION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).COLLECTION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "COLLECTION",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "COLLECTION",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_COLLECTION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_COLLECTION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMPILING_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).COMPILING_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "COMPILING_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).COMPILING_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "COMPILING_ORG",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "COMPILING_ORG",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DISS_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).DISS_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "DISS_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).DISS_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "DISS_ORG",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "DISS_ORG",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DOM_SER_IDS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).DOM_SER_IDS",
+          "assignmentStatus": "Conditional",
+          "id": "DOM_SER_IDS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).DOM_SER_IDS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "DOM_SER_IDS",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "DOM_SER_IDS",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "70",
-              "textType"": "String"
+              "maxLength": "70",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "PUBL_ECB",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).PUBL_ECB",
+          "assignmentStatus": "Conditional",
+          "id": "PUBL_ECB",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).PUBL_ECB",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "PUBL_ECB",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "PUBL_ECB",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "PUBL_MU",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).PUBL_MU",
+          "assignmentStatus": "Conditional",
+          "id": "PUBL_MU",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).PUBL_MU",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "PUBL_MU",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "PUBL_MU",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "PUBL_PUBLIC",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).PUBL_PUBLIC",
+          "assignmentStatus": "Conditional",
+          "id": "PUBL_PUBLIC",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).PUBL_PUBLIC",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "PUBL_PUBLIC",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "PUBL_PUBLIC",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMPILATION",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).COMPILATION",
+          "assignmentStatus": "Conditional",
+          "id": "COMPILATION",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).COMPILATION",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "COMPILATION",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "COMPILATION",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).DECIMALS",
+          "assignmentStatus": "Mandatory",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).DECIMALS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_DECIMALS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_DECIMALS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "1",
-              "textType"": "BigInteger"
+              "maxLength": "2",
+              "minLength": "1",
+              "textType": "BigInteger"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "NAT_TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).NAT_TITLE",
+          "assignmentStatus": "Conditional",
+          "id": "NAT_TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).NAT_TITLE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "NAT_TITLE",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "NAT_TITLE",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "350",
-              "textType"": "String"
+              "maxLength": "350",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SOURCE_AGENCY",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).SOURCE_AGENCY",
+          "assignmentStatus": "Conditional",
+          "id": "SOURCE_AGENCY",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).SOURCE_AGENCY",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "SOURCE_AGENCY",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "SOURCE_AGENCY",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).TITLE",
+          "assignmentStatus": "Conditional",
+          "id": "TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).TITLE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "TITLE",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "TITLE",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "200",
-              "textType"": "String"
+              "maxLength": "200",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TITLE_COMPL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).TITLE_COMPL",
+          "assignmentStatus": "Mandatory",
+          "id": "TITLE_COMPL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).TITLE_COMPL",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "TITLE_COMPL",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "TITLE_COMPL",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1050",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).UNIT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).UNIT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "UNIT",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "UNIT",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_UNIT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_UNIT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "13",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "13",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).UNIT_MULT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_BKN1(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_ITEM"
+                  "id": "BKN_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_TYPE"
+                  "id": "BKN_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_DENOM"
+                  "id": "BKN_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "BKN_SERIES"
+                  "id": "BKN_SERIES"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_TYPE_BKN"
+                  "id": "DATA_TYPE_BKN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SERIES_DENOM"
+                  "id": "SERIES_DENOM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "3",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "3",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_BKN1(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_BKN1(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_AREA_EE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_AREA_EE",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "BKN_ITEM",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_ITEM",
+          "id": "BKN_ITEM",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_ITEM",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "BKN_ITEM",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "BKN_ITEM",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_BKN_ITEM",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_BKN_ITEM",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "4",
-              "minLength"": "4",
-              "textType"": "String"
+              "maxLength": "4",
+              "minLength": "4",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "BKN_TYPE",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_TYPE",
+          "id": "BKN_TYPE",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "BKN_TYPE",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "BKN_TYPE",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_BKN_TYPE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_BKN_TYPE",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "BKN_DENOM",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_DENOM",
+          "id": "BKN_DENOM",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_DENOM",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "BKN_DENOM",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "BKN_DENOM",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_BKN_DENOM",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_BKN_DENOM",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "4",
-              "minLength"": "4",
-              "textType"": "String"
+              "maxLength": "4",
+              "minLength": "4",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "BKN_SERIES",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_SERIES",
+          "id": "BKN_SERIES",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).BKN_SERIES",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "BKN_SERIES",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "BKN_SERIES",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_BKN_SERIES",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_BKN_SERIES",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "DATA_TYPE_BKN",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).DATA_TYPE_BKN",
+          "id": "DATA_TYPE_BKN",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).DATA_TYPE_BKN",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "DATA_TYPE_BKN",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "DATA_TYPE_BKN",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_DATA_TYPE_BKN",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_DATA_TYPE_BKN",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "SERIES_DENOM",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).SERIES_DENOM",
+          "id": "SERIES_DENOM",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_BKN1(1.0).SERIES_DENOM",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ECB",
-              "class"": "Concept",
-              "id"": "SERIES_DENOM",
-              "maintainableParentID"": "ECB_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "ECB",
+              "class": "Concept",
+              "id": "SERIES_DENOM",
+              "maintainableParentID": "ECB_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ECB",
-                "class"": "Codelist",
-                "id"": "CL_SERIES_DENOM",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ECB",
+                "class": "Codelist",
+                "id": "CL_SERIES_DENOM",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "9",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_BKN1(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_BKN1(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ECB",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "ECB_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "ECB",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "ECB_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "Group": {
-      "id"": "Group",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_BKN1(1.0).Group",
+      "id": "Group",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_BKN1(1.0).Group",
       "GroupDimension": [
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "REF_AREA"
+              "id": "REF_AREA"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "BKN_ITEM"
+              "id": "BKN_ITEM"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "BKN_TYPE"
+              "id": "BKN_TYPE"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "BKN_DENOM"
+              "id": "BKN_DENOM"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "BKN_SERIES"
+              "id": "BKN_SERIES"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "DATA_TYPE_BKN"
+              "id": "DATA_TYPE_BKN"
             }
           }
         },
         {
           "DimensionReference": {
             "Ref": {
-              "id"": "SERIES_DENOM"
+              "id": "SERIES_DENOM"
             }
           }
         }
       ]
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_BKN1(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_BKN1(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_BKN1(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_BKN1(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ECB",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "ECB_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "ECB",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "ECB_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "maxLength"": "15",
-            "textType"": "String"
+            "maxLength": "15",
+            "textType": "String"
           }
         }
       }
@@ -1637,6 +1637,6 @@
   },
   "Name": {
     "#text": "Banknotes Statistics",
-    "lang"": "en"
+    "lang": "en"
   }
 }

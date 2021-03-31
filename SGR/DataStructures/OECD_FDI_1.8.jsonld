@@ -1,0 +1,1245 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "OECD",
+    "isExternalReference": "false",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=OECD:FDI(1.8)",
+    "version": "1.8",
+    "name": {
+      "@value": "Foreign Direct Investment",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/OECD/DataStructure/FDI",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_TIME_FORMAT",
+          "skos:notation": "CL_TIME_FORMAT"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).CONF_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/CONF_STATUS",
+          "skos:notation": "CONF_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/CONF_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).PRE_BREAK_VALUE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/PRE_BREAK_VALUE",
+          "skos:notation": "PRE_BREAK_VALUE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/PRE_BREAK_VALUE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "4000",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).COMMENT_TS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/COMMENT_TS",
+          "skos:notation": "COMMENT_TS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/COMMENT_TS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "200",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).REF_PERIOD_DETAIL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/REF_PERIOD_DETAIL",
+          "skos:notation": "REF_PERIOD_DETAIL"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_REF_PERIOD_DTL",
+          "skos:notation": "CL_REF_PERIOD_DTL"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/REF_PERIOD_DETAIL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "MEASURE_PRINCIPLE"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            },
+            {
+              "id": "REF_SECTOR"
+            },
+            {
+              "id": "LEVEL_COUNTERPART"
+            },
+            {
+              "id": "FLOW_STOCK_ENTRY"
+            },
+            {
+              "id": "ACCOUNTING_ENTRY"
+            },
+            {
+              "id": "INT_ACC_ITEM"
+            },
+            {
+              "id": "FUNCTIONAL_CAT"
+            },
+            {
+              "id": "INSTR_ASSET"
+            },
+            {
+              "id": "TYPE_ENTITY"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "FDI_RELATIONSHIP"
+            },
+            {
+              "id": "VALUATION"
+            },
+            {
+              "id": "STAT_UNIT"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "ACTIVITY_ALLOC"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/OECD/Attribute/DISS_ORG"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).MEASURE_PRINCIPLE",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/MEASURE_PRINCIPLE",
+          "skos:notation": "MEASURE_PRINCIPLE"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_MEASURE_PRINCIP",
+          "skos:notation": "CL_MEASURE_PRINCIP"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/MEASURE_PRINCIPLE"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.13",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/REF_AREA"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).COUNTERPART_AREA",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/COUNTERPART_AREA",
+          "skos:notation": "COUNTERPART_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.13",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/COUNTERPART_AREA"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).REF_SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/REF_SECTOR",
+          "skos:notation": "REF_SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.11",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_SECTOR",
+          "skos:notation": "CL_SECTOR"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/REF_SECTOR"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).LEVEL_COUNTERPART",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/LEVEL_COUNTERPART",
+          "skos:notation": "LEVEL_COUNTERPART"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_LEV_COUNTERPART",
+          "skos:notation": "CL_LEV_COUNTERPART"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/LEVEL_COUNTERPART"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FLOW_STOCK_ENTRY",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/FLOW_STOCK_ENTRY",
+          "skos:notation": "FLOW_STOCK_ENTRY"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_FSENTRY",
+          "skos:notation": "CL_FSENTRY"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/FLOW_STOCK_ENTRY"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).ACCOUNTING_ENTRY",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/ACCOUNTING_ENTRY",
+          "skos:notation": "ACCOUNTING_ENTRY"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.4",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ACCOUNT_ENTRY",
+          "skos:notation": "CL_ACCOUNT_ENTRY"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/ACCOUNTING_ENTRY"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).INT_ACC_ITEM",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/INT_ACC_ITEM",
+          "skos:notation": "INT_ACC_ITEM"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.6",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ACCOUNTS_ITEM",
+          "skos:notation": "CL_ACCOUNTS_ITEM"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/INT_ACC_ITEM"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FUNCTIONAL_CAT",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/FUNCTIONAL_CAT",
+          "skos:notation": "FUNCTIONAL_CAT"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_FUNCTIONAL_CAT",
+          "skos:notation": "CL_FUNCTIONAL_CAT"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/FUNCTIONAL_CAT"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).INSTR_ASSET",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/INSTR_ASSET",
+          "skos:notation": "INSTR_ASSET"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.10",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_INSTR_ASSET",
+          "skos:notation": "CL_INSTR_ASSET"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/INSTR_ASSET"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).TYPE_ENTITY",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/TYPE_ENTITY",
+          "skos:notation": "TYPE_ENTITY"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_TYPE_ENTITY",
+          "skos:notation": "CL_TYPE_ENTITY"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/TYPE_ENTITY"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.14",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "14",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FDI_RELATIONSHIP",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/FDI_RELATIONSHIP",
+          "skos:notation": "FDI_RELATIONSHIP"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_FDI_RELATION",
+          "skos:notation": "CL_FDI_RELATION"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/FDI_RELATIONSHIP"
+      },
+      {
+        "position": "15",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).VALUATION",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/VALUATION",
+          "skos:notation": "VALUATION"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.6",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_VALUATION",
+          "skos:notation": "CL_VALUATION"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/VALUATION"
+      },
+      {
+        "position": "16",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).STAT_UNIT",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/STAT_UNIT",
+          "skos:notation": "STAT_UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_STAT_UNIT",
+          "skos:notation": "CL_STAT_UNIT"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/STAT_UNIT"
+      },
+      {
+        "position": "17",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).ACTIVITY",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/ACTIVITY",
+          "skos:notation": "ACTIVITY"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.7",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_ACTIVITY",
+          "skos:notation": "CL_ACTIVITY"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/ACTIVITY"
+      },
+      {
+        "position": "18",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).ACTIVITY_ALLOC",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/ACTIVITY_ALLOC",
+          "skos:notation": "ACTIVITY_ALLOC"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_ACTIVITY_ALLOC",
+          "skos:notation": "CL_ACTIVITY_ALLOC"
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/ACTIVITY_ALLOC"
+      },
+      {
+        "position": "19",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=OECD:FDI(1.8).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_FDI",
+          "maintainableParentVersion": "1.8",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/OECD/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=OECD:FDI(1.8).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "OECD",
+        "class": "Concept",
+        "maintainableParentID": "CS_FDI",
+        "maintainableParentVersion": "1.8",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/OECD/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/OECD/Measure/OBS_VALUE"
+    }
+  }
+}

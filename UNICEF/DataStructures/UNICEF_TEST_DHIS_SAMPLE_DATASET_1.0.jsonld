@@ -1,0 +1,380 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "UNICEF_TEST",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "DHIS Sample Dataset",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/UNICEF_TEST/DataStructure/DHIS_SAMPLE_DATASET",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).LOWER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/LOWER_BOUND",
+          "skos:notation": "LOWER_BOUND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/LOWER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).UPPER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UPPER_BOUND",
+          "skos:notation": "UPPER_BOUND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/UPPER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).DATA_SOURCE_TYPE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/DATA_SOURCE_TYPE",
+          "skos:notation": "DATA_SOURCE_TYPE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/DATA_SOURCE_TYPE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).SURVEY_TYPE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_TEST_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/SURVEY_TYPE",
+          "skos:notation": "SURVEY_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/CL_SURVEY_TYPE_DHIS",
+          "skos:notation": "CL_SURVEY_TYPE_DHIS"
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/SURVEY_TYPE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).SURVEY_YEAR_0",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_TEST_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/SURVEY_YEAR",
+          "skos:notation": "SURVEY_YEAR"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "GregorianYear"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/SURVEY_YEAR_0"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).SURVEY_YEAR_1",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_TEST_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/SURVEY_YEAR",
+          "skos:notation": "SURVEY_YEAR"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "GregorianYear"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/SURVEY_YEAR_1"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).REF_PERIOD",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/REF_PERIOD",
+          "skos:notation": "REF_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/REF_PERIOD"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).SOURCE_REGIONAL_ID",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_TEST_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/SOURCE_REGIONAL_ID",
+          "skos:notation": "SOURCE_REGIONAL_ID"
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/SOURCE_REGIONAL_ID"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).SURVEY_NAME",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_TEST_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/SURVEY_NAME",
+          "skos:notation": "SURVEY_NAME"
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/SURVEY_NAME"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).HELIX_DSD_LINK",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "UNICEF_INDICATOR"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_TEST_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/HELIX_DSD_LINK",
+          "skos:notation": "HELIX_DSD_LINK"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/CL_UNICF_DSD_LINK",
+          "skos:notation": "CL_UNICF_DSD_LINK"
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Attribute/HELIX_DSD_LINK"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).COUNTRY",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/COUNTRY",
+          "skos:notation": "COUNTRY"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/TRAININGLAND_REF_AREA",
+          "skos:notation": "TRAININGLAND_REF_AREA"
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Dimension/COUNTRY"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).UNICEF_INDICATOR",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/UNICEF_INDICATOR",
+          "skos:notation": "UNICEF_INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "UNICEF_TEST",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/UNICEF_TEST/Concept/CL_UNICEF_TEST_INDICATOR",
+          "skos:notation": "CL_UNICEF_TEST_INDICATOR"
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Dimension/UNICEF_INDICATOR"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "UNICEF",
+          "class": "Concept",
+          "maintainableParentID": "UNICEF_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/UNICEF/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/UNICEF_TEST/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "UNICEF",
+        "class": "Concept",
+        "maintainableParentID": "UNICEF_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/UNICEF/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "isSequence": "false",
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/UNICEF_TEST/Measure/OBS_VALUE"
+    }
+  }
+}

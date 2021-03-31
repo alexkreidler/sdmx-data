@@ -1,0 +1,1468 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ESTAT",
+    "isExternalReference": "false",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:CPI(1.1)",
+    "version": "1.1",
+    "name": {
+      "@value": "Consumer Price Index DSD",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ESTAT/DataStructure/CPI",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.7",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DISS_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.7",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DATA_COMP",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DATA_COMP",
+          "skos:notation": "DATA_COMP"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "4000",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DATA_COMP"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).PRE_BREAK_VALUE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/PRE_BREAK_VALUE",
+          "skos:notation": "PRE_BREAK_VALUE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/PRE_BREAK_VALUE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).LAST_UPDATE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/LAST_UPDATE",
+          "skos:notation": "LAST_UPDATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/LAST_UPDATE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "200",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TIME_PER_COLLECT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_PER_COLLECT",
+          "skos:notation": "TIME_PER_COLLECT"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_TIME_COLLECT",
+          "skos:notation": "CL_TIME_COLLECT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TIME_PER_COLLECT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_TIME_FORMAT",
+          "skos:notation": "CL_TIME_FORMAT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).DECIMALS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "Integer"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).CONF_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CONF_STATUS",
+          "skos:notation": "CONF_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_CONF_STATUS",
+          "skos:notation": "CL_CONF_STATUS"
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/CONF_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_TS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_TS",
+          "skos:notation": "COMMENT_TS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_TS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "4000",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).COMMENT_DSET",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COMMENT_DSET",
+          "skos:notation": "COMMENT_DSET"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/COMMENT_DSET"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).REPYEAREND",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REPYEAREND",
+          "skos:notation": "REPYEAREND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "MonthDay"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/REPYEAREND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).REPYEARSTART",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REPYEARSTART",
+          "skos:notation": "REPYEARSTART"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "MonthDay"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/REPYEARSTART"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).EMBARGO_TIME",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/EMBARGO_TIME",
+          "skos:notation": "EMBARGO_TIME"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/EMBARGO_TIME"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).CUST_BREAKDOWN_LB",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CUST_BREAKDOWN_LB",
+          "skos:notation": "CUST_BREAKDOWN_LB"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/CUST_BREAKDOWN_LB"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).IND_BASE_PER",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/IND_BASE_PER",
+          "skos:notation": "IND_BASE_PER"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/IND_BASE_PER"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).BASE_PER_START",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/BASE_PER_START",
+          "skos:notation": "BASE_PER_START"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/BASE_PER_START"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:CPI(1.1).BASE_PER_END",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "SEASONAL_ADJUST"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "IND_TYPE"
+            },
+            {
+              "id": "IDX_TYPE"
+            },
+            {
+              "id": "BASE_PER"
+            },
+            {
+              "id": "ITEM"
+            },
+            {
+              "id": "COVERAGE_GEO"
+            },
+            {
+              "id": "COVERAGE_POP"
+            },
+            {
+              "id": "UNIT_MEASURE"
+            },
+            {
+              "id": "TRANSFORMATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/BASE_PER_END",
+          "skos:notation": "BASE_PER_END"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Attribute/BASE_PER_END"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).SEASONAL_ADJUST",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/SEASONAL_ADJUST",
+          "skos:notation": "SEASONAL_ADJUST"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_SEASON_ADJUST",
+          "skos:notation": "CL_SEASON_ADJUST"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/SEASONAL_ADJUST"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.9",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/REF_AREA"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).IND_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/IND_TYPE",
+          "skos:notation": "IND_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_IND_TYPE",
+          "skos:notation": "CL_IND_TYPE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/IND_TYPE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).IDX_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/IDX_TYPE",
+          "skos:notation": "IDX_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_IDX_TYPE",
+          "skos:notation": "CL_IDX_TYPE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/IDX_TYPE"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).BASE_PER",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/BASE_PER",
+          "skos:notation": "BASE_PER"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/BASE_PER"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).ITEM",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/ITEM",
+          "skos:notation": "ITEM"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_ITEM_PRICE",
+          "skos:notation": "CL_ITEM_PRICE"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/ITEM"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).COVERAGE_GEO",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COVERAGE_GEO",
+          "skos:notation": "COVERAGE_GEO"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_COVERAGE_GEO",
+          "skos:notation": "CL_COVERAGE_GEO"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/COVERAGE_GEO"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).COVERAGE_POP",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/COVERAGE_POP",
+          "skos:notation": "COVERAGE_POP"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_COVERAGE_POP",
+          "skos:notation": "CL_COVERAGE_POP"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/COVERAGE_POP"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).UNIT_MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.11",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/UNIT_MEASURE"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).TRANSFORMATION",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TRANSFORMATION",
+          "skos:notation": "TRANSFORMATION"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.3",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_TRANSFORMATION",
+          "skos:notation": "CL_TRANSFORMATION"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/TRANSFORMATION"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:CPI(1.1).CUST_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/CUST_BREAKDOWN",
+          "skos:notation": "CUST_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "ESTAT",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ESTAT/Concept/CL_CUST_BREAKDOWN",
+          "skos:notation": "CL_CUST_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/CUST_BREAKDOWN"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:CPI(1.1).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "ESTAT",
+          "class": "Concept",
+          "maintainableParentID": "CS_PRICE",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ESTAT/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ESTAT/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:CPI(1.1).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "ESTAT",
+        "class": "Concept",
+        "maintainableParentID": "CS_PRICE",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ESTAT/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "isSequence": "false",
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/ESTAT/Measure/OBS_VALUE"
+    }
+  }
+}

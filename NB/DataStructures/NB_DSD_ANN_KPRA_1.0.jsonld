@@ -1,0 +1,273 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "NB",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_ANN_KPRA(1.0)",
+    "version": "1.0",
+    "Description": [
+      {
+        "#text": "Norges Banks annonseringer av rentebeslutninger",
+        "lang": "no"
+      },
+      {
+        "#text": "Norges Banks announcements of key policy rate decisions",
+        "lang": "en"
+      }
+    ],
+    "name": {},
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/NB/DataStructure/DSD_ANN_KPRA",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_KPRA(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "INSTRUMENT_TYPE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/NB/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_KPRA(1.0).VALID_FROM",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/VALID_FROM",
+          "skos:notation": "VALID_FROM"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "isSequence": "false",
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/VALID_FROM"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_KPRA(1.0).DELTA_VALUE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/DELTA_VALUE",
+          "skos:notation": "DELTA_VALUE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "decimals": "2",
+            "isSequence": "false",
+            "textType": "Decimal"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/DELTA_VALUE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_KPRA(1.0).OVERNIGHT_LENDING_RATE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/OVERNIGHT_LENDING_RATE",
+          "skos:notation": "OVERNIGHT_LENDING_RATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "decimals": "2",
+            "isSequence": "false",
+            "textType": "Decimal"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/OVERNIGHT_LENDING_RATE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_KPRA(1.0).RESERVE_RATE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/RESERVE_RATE",
+          "skos:notation": "RESERVE_RATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "decimals": "2",
+            "isSequence": "false",
+            "textType": "Decimal"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/RESERVE_RATE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_KPRA(1.0).SIGHT_DEPOSIT_RATE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/SIGHT_DEPOSIT_RATE",
+          "skos:notation": "SIGHT_DEPOSIT_RATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "decimals": "2",
+            "isSequence": "false",
+            "textType": "Decimal"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Attribute/SIGHT_DEPOSIT_RATE"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_ANN_KPRA(1.0).INSTRUMENT_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/INSTRUMENT_TYPE",
+          "skos:notation": "INSTRUMENT_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_INSTRUMENT_TYPE",
+          "skos:notation": "CL_INSTRUMENT_TYPE"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/INSTRUMENT_TYPE"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_ANN_KPRA(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/ANNOUNCEMENT_DATE",
+          "skos:notation": "ANNOUNCEMENT_DATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_ANN_KPRA(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "NB",
+        "class": "Concept",
+        "maintainableParentID": "CS_NB",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/NB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "decimals": "2",
+          "isSequence": "false",
+          "textType": "Decimal"
+        }
+      },
+      "@id": "https://loqu.dev/NB/Measure/OBS_VALUE"
+    }
+  }
+}

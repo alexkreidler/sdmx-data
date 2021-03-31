@@ -1,0 +1,275 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "SPC",
+    "isFinal": "false",
+    "version": "1.0",
+    "Annotations": {
+      "Annotation": {
+        "AnnotationTitle": "500",
+        "AnnotationType": "MAXTEXTATTRIBUTELENGTH"
+      }
+    },
+    "name": {
+      "@value": "DSD for COVID",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/SPC/DataStructure/DSD_COVID",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "INDICATOR"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "SPC",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SPC/Concept/CL_COM_UNIT_MEASURE",
+          "skos:notation": "CL_COM_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/SPC/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "INDICATOR"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SPC",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SPC/Concept/CL_COM_UNIT_MULT",
+          "skos:notation": "CL_COM_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/SPC/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/OBS_SATUS",
+          "skos:notation": "OBS_SATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SPC",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SPC/Concept/CL_COM_OBS_STATUS",
+          "skos:notation": "CL_COM_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/SPC/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "AttributeRelationship": {
+          "Dimension": {
+            "id": "GEO_PICT"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/DATA_SOURCE",
+          "skos:notation": "DATA_SOURCE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/SPC/Attribute/DATA_SOURCE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/COMMENT",
+          "skos:notation": "COMMENT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/SPC/Attribute/OBS_COMMENT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SPC",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SPC/Concept/CL_COM_FREQ",
+          "skos:notation": "CL_COM_FREQ"
+        },
+        "@id": "https://loqu.dev/SPC/Dimension/FREQ"
+      },
+      {
+        "position": "3",
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/GEO_PICT",
+          "skos:notation": "GEO_PICT"
+        },
+        "qb:codeList": {
+          "agencyID": "SPC",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SPC/Concept/CL_COM_GEO_PICT",
+          "skos:notation": "CL_COM_GEO_PICT"
+        },
+        "@id": "https://loqu.dev/SPC/Dimension/GEO_PICT"
+      },
+      {
+        "position": "4",
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/INDICATOR",
+          "skos:notation": "INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "SPC",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SPC/Concept/CL_COVID_INDICATORS",
+          "skos:notation": "CL_COVID_INDICATORS"
+        },
+        "@id": "https://loqu.dev/SPC/Dimension/INDICATOR"
+      },
+      {
+        "position": "2",
+        "ConceptIdentity": {
+          "agencyID": "SPC",
+          "class": "Concept",
+          "maintainableParentID": "CS_COMMON",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SPC/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/SPC/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "ConceptIdentity": {
+        "agencyID": "SPC",
+        "class": "Concept",
+        "maintainableParentID": "CS_COMMON",
+        "maintainableParentVersion": "2.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/SPC/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/SPC/Measure/OBS_VALUE"
+    }
+  }
+}

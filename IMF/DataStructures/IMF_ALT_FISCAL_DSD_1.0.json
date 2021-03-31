@@ -1,30 +1,30 @@
 {
-  "agencyID"": "IMF",
-  "id"": "ALT_FISCAL_DSD",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:ALT_FISCAL_DSD(1.0)",
-  "version"": "1.0",
+  "agencyID": "IMF",
+  "id": "ALT_FISCAL_DSD",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:ALT_FISCAL_DSD(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:ALT_FISCAL_DSD(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:ALT_FISCAL_DSD(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).COMMENT",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).COMMENT",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COMMENT",
-              "maintainableParentID"": "ECOFIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COMMENT",
+              "maintainableParentID": "ECOFIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
@@ -32,46 +32,46 @@
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "BASE_PER",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).BASE_PER",
+          "assignmentStatus": "Conditional",
+          "id": "BASE_PER",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).BASE_PER",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_DOMAIN"
+                  "id": "DATA_DOMAIN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "BASE_PER",
-              "maintainableParentID"": "ECOFIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "BASE_PER",
+              "maintainableParentID": "ECOFIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
@@ -79,144 +79,144 @@
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).UNIT_MULT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_DOMAIN"
+                  "id": "DATA_DOMAIN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "ECOFIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "ECOFIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "ECOFIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "ECOFIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).TIME_FORMAT",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).TIME_FORMAT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "DATA_DOMAIN"
+                  "id": "DATA_DOMAIN"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATOR"
+                  "id": "INDICATOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_TIME_FORMAT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_TIME_FORMAT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
@@ -224,175 +224,175 @@
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:ALT_FISCAL_DSD(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:ALT_FISCAL_DSD(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "SDMX",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "SDMX",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "DATA_DOMAIN",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).DATA_DOMAIN",
+          "id": "DATA_DOMAIN",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).DATA_DOMAIN",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "DATA_DOMAIN",
-              "maintainableParentID"": "ECOFIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "DATA_DOMAIN",
+              "maintainableParentID": "ECOFIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_DATADOMAIN",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_DATADOMAIN",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "ECOFIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "ECOFIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_REF_AREA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_REF_AREA",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).INDICATOR",
+          "id": "INDICATOR",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).INDICATOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "INDICATOR",
-              "maintainableParentID"": "IMF_FISCAL_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "INDICATOR",
+              "maintainableParentID": "IMF_FISCAL_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ALT_FISCAL_INDICATOR",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ALT_FISCAL_INDICATOR",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "COUNTERPART_AREA",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).COUNTERPART_AREA",
+          "id": "COUNTERPART_AREA",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).COUNTERPART_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COUNTERPART_AREA",
-              "maintainableParentID"": "ECOFIN_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COUNTERPART_AREA",
+              "maintainableParentID": "ECOFIN_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_REF_AREA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_REF_AREA",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "6",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:ALT_FISCAL_DSD(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:ALT_FISCAL_DSD(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "SDMX",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "SDMX",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:ALT_FISCAL_DSD(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:ALT_FISCAL_DSD(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:ALT_FISCAL_DSD(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:ALT_FISCAL_DSD(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "SDMX",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CROSS_DOMAIN_CONCEPTS",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "SDMX",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
@@ -403,10 +403,10 @@
   },
   "Description": {
     "#text": "Country Specific Fiscal Sector Coding Structure",
-    "lang"": "en"
+    "lang": "en"
   },
   "Name": {
     "#text": "Alternate FISCAL Data Structure Definition",
-    "lang"": "en"
+    "lang": "en"
   }
 }

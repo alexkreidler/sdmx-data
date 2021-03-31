@@ -1,1132 +1,1132 @@
 {
-  "agencyID"": "FR1",
-  "id"": "CNA2010-CSI"",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=FR1:CNA2010-CSI(1.0)"",
-  "version"": "1.0",
+  "agencyID": "FR1",
+  "id": "CNA2010-CSI",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=FR1:CNA2010-CSI(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=FR1:CNA2010-CSI(1.0).AttributeDescriptor"",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=FR1:CNA2010-CSI(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).UNIT_MULT"",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxValue"": "9",
-              "minValue"": "0",
-              "textType"": "Integer"
+              "maxValue": "9",
+              "minValue": "0",
+              "textType": "Integer"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "IDBANK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).IDBANK"",
+          "assignmentStatus": "Mandatory",
+          "id": "IDBANK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).IDBANK",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "IDBANK",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "IDBANK",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "9",
-              "pattern"": "[09]{9}"",
-              "textType"": "String"
+              "maxLength": "9",
+              "pattern": "[09]{9}",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TITLE_FR",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).TITLE_FR"",
+          "assignmentStatus": "Mandatory",
+          "id": "TITLE_FR",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).TITLE_FR",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "TITLE_FR",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "TITLE_FR",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "240",
-              "textType"": "String"
+              "maxLength": "240",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TITLE_EN",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).TITLE_EN"",
+          "assignmentStatus": "Mandatory",
+          "id": "TITLE_EN",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).TITLE_EN",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "TITLE_EN",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "TITLE_EN",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "240",
-              "textType"": "String"
+              "maxLength": "240",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "LAST_UPDATE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).LAST_UPDATE"",
+          "assignmentStatus": "Mandatory",
+          "id": "LAST_UPDATE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).LAST_UPDATE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "LAST_UPDATE",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "LAST_UPDATE",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "GregorianTimePeriod"
+              "textType": "GregorianTimePeriod"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).DECIMALS"",
+          "assignmentStatus": "Mandatory",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).DECIMALS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxValue"": "9",
-              "minValue"": "0",
-              "textType"": "Integer"
+              "maxValue": "9",
+              "minValue": "0",
+              "textType": "Integer"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_STATUS"",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_QUAL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_QUAL"",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_QUAL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_QUAL",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "OBS_QUAL",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "OBS_QUAL",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_OBS_QUAL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_OBS_QUAL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_REV",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_REV"",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_REV",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_REV",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "OBS_REV",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "OBS_REV",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_OBS_REV",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_OBS_REV",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_CONF",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_CONF"",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_CONF",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_CONF",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "OBS_CONF",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "OBS_CONF",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_OBS_CONF",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_OBS_CONF",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_TYPE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_TYPE"",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_TYPE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).OBS_TYPE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "OBS_TYPE",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "OBS_TYPE",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_OBS_TYPE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_OBS_TYPE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATE_JO",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).DATE_JO"",
+          "assignmentStatus": "Conditional",
+          "id": "DATE_JO",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=FR1:CNA2010-CSI(1.0).DATE_JO",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INDICATEUR"
+                  "id": "INDICATEUR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "SECTINST""
+                  "id": "SECTINST"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMPTE"
+                  "id": "COMPTE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "OPERATION"
+                  "id": "OPERATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "NATURE"
+                  "id": "NATURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CORRECTION"
+                  "id": "CORRECTION"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "DATE_JO",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "DATE_JO",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "textType"": "GregorianTimePeriod"
+              "textType": "GregorianTimePeriod"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=FR1:CNA2010-CSI(1.0).DimensionDescriptor"",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=FR1:CNA2010-CSI(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).FREQ"",
+          "id": "FREQ",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_PERIODICITE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_PERIODICITE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATEUR",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).INDICATEUR"",
+          "id": "INDICATEUR",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).INDICATEUR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "INDICATEUR",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "INDICATEUR",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_INDICATEUR",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_INDICATEUR",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "SECTINST"",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).SECT-INST"",
+          "id": "SECTINST",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).SECT-INST",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "SECTINST"",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "SECTINST",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_SECTINST"",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_SECTINST",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "COMPTE",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).COMPTE"",
+          "id": "COMPTE",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).COMPTE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "COMPTE",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "COMPTE",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_COMPTE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_COMPTE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "OPERATION",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).OPERATION"",
+          "id": "OPERATION",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).OPERATION",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "COMPTE",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "COMPTE",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_OPERATION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_OPERATION",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "NATURE",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).NATURE"",
+          "id": "NATURE",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).NATURE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "NATURE",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "NATURE",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_NATURE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_NATURE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).REF_AREA"",
+          "id": "REF_AREA",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "GEOGRAPHIE",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "GEOGRAPHIE",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_ZONE_GEO",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_ZONE_GEO",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "UNIT_MEASURE",
-          "position"": "9",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).UNIT_MEASURE"",
+          "id": "UNIT_MEASURE",
+          "position": "9",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).UNIT_MEASURE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "UNITE",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "UNITE",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_UNITE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_UNITE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "CORRECTION",
-          "position"": "10",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).CORRECTION"",
+          "id": "CORRECTION",
+          "position": "10",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=FR1:CNA2010-CSI(1.0).CORRECTION",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "FR1",
-              "class"": "Concept",
-              "id"": "CORRECTION",
-              "maintainableParentID"": "CONCEPTS_INSEE",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "FR1",
+              "class": "Concept",
+              "id": "CORRECTION",
+              "maintainableParentID": "CONCEPTS_INSEE",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "FR1",
-                "class"": "Codelist",
-                "id"": "CL_CORRECTION",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "FR1",
+                "class": "Codelist",
+                "id": "CL_CORRECTION",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "1",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=FR1:CNA2010-CSI(1.0).TIME_PERIOD"",
+        "id": "TIME_PERIOD",
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=FR1:CNA2010-CSI(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "FR1",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CONCEPTS_INSEE",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "FR1",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CONCEPTS_INSEE",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
@@ -1135,19 +1135,19 @@
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=FR1:CNA2010-CSI(1.0).MeasureDescriptor"",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=FR1:CNA2010-CSI(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=FR1:CNA2010-CSI(1.0).OBS_VALUE"",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=FR1:CNA2010-CSI(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "FR1",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CONCEPTS_INSEE",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "FR1",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CONCEPTS_INSEE",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -1155,12 +1155,12 @@
   },
   "Name": [
     {
-      "#text": "Comptes des secteurs institutionnels  Résultats annuels"",
-      "lang"": "fr"
+      "#text": "Comptes des secteurs institutionnels  Résultats annuels",
+      "lang": "fr"
     },
     {
-      "#text": "Institutional sectors accounts  Annual results"",
-      "lang"": "en"
+      "#text": "Institutional sectors accounts  Annual results",
+      "lang": "en"
     }
   ]
 }

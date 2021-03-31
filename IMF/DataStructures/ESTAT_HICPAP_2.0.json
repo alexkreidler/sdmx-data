@@ -1,665 +1,665 @@
 {
-  "agencyID"": "ESTAT",
-  "id"": "HICPAP",
-  "isExternalReference"": "false",
-  "isFinal"": "true",
-  "structureURL"": "https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/ESTAT/HICPAP/2.0",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:HICPAP(2.0)",
-  "version"": "2.0",
+  "agencyID": "ESTAT",
+  "id": "HICPAP",
+  "isExternalReference": "false",
+  "isFinal": "true",
+  "structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/ESTAT/HICPAP/2.0",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:HICPAP(2.0)",
+  "version": "2.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:HICPAP(2.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:HICPAP(2.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DISS_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DISS_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "DISS_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DISS_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "DISS_ORG",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "DISS_ORG",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.7"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.7"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMPILING_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMPILING_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "COMPILING_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMPILING_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMPILING_ORG",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMPILING_ORG",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.7"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.7"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).TIME_FORMAT",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).TIME_FORMAT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_TIME_FORMAT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_TIME_FORMAT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "2.2"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "2.2"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DECIMALS",
+          "assignmentStatus": "Mandatory",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DECIMALS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "Integer"
+              "isSequence": "false",
+              "textType": "Integer"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "CONF_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).CONF_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "CONF_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).CONF_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "CONF_STATUS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "CONF_STATUS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_CONF_STATUS",
-                "package"": "codelist",
-                "version"": "1.2"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_CONF_STATUS",
+                "package": "codelist",
+                "version": "1.2"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_TS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_TS",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_TS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_TS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMMENT_TS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMMENT_TS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).TITLE",
+          "assignmentStatus": "Conditional",
+          "id": "TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).TITLE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "TITLE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "TITLE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "200",
-              "textType"": "String"
+              "maxLength": "200",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_COMP",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DATA_COMP",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_COMP",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).DATA_COMP",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "FREQ"
+                  "id": "FREQ"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IND_TYPE"
+                  "id": "IND_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "IDX_TYPE"
+                  "id": "IDX_TYPE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ITEM"
+                  "id": "ITEM"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "DATA_COMP",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "DATA_COMP",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "4000",
-              "textType"": "String"
+              "maxLength": "4000",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_OBS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_OBS",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_OBS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_OBS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMMENT_OBS",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMMENT_OBS",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "4000",
-              "textType"": "String"
+              "maxLength": "4000",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_DSET",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_DSET",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_DSET",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:HICPAP(2.0).COMMENT_DSET",
           "AttributeRelationship": {
             "None": ""
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "COMMENT_DSET",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "COMMENT_DSET",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:HICPAP(2.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:HICPAP(2.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "2.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "2.0"
               }
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_AREA",
-                "package"": "codelist",
-                "version"": "1.9"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_AREA",
+                "package": "codelist",
+                "version": "1.9"
               }
             }
           }
         },
         {
-          "id"": "IND_TYPE",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).IND_TYPE",
+          "id": "IND_TYPE",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).IND_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "IND_TYPE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "IND_TYPE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_IND_TYPE",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_IND_TYPE",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         },
         {
-          "id"": "IDX_TYPE",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).IDX_TYPE",
+          "id": "IDX_TYPE",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).IDX_TYPE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "IDX_TYPE",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "IDX_TYPE",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_IDX_TYPE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_IDX_TYPE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "ITEM",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).ITEM",
+          "id": "ITEM",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:HICPAP(2.0).ITEM",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Concept",
-              "id"": "ITEM",
-              "maintainableParentID"": "CS_PRICE",
-              "maintainableParentVersion"": "1.1",
-              "package"": "conceptscheme"
+              "agencyID": "ESTAT",
+              "class": "Concept",
+              "id": "ITEM",
+              "maintainableParentID": "CS_PRICE",
+              "maintainableParentVersion": "1.1",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_ITEM_PRICE",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_ITEM_PRICE",
+                "package": "codelist",
+                "version": "1.1"
               }
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "6",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:HICPAP(2.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:HICPAP(2.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ESTAT",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_PRICE",
-            "maintainableParentVersion"": "1.1",
-            "package"": "conceptscheme"
+            "agencyID": "ESTAT",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_PRICE",
+            "maintainableParentVersion": "1.1",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:HICPAP(2.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:HICPAP(2.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:HICPAP(2.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:HICPAP(2.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "ESTAT",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_PRICE",
-            "maintainableParentVersion"": "1.1",
-            "package"": "conceptscheme"
+            "agencyID": "ESTAT",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_PRICE",
+            "maintainableParentVersion": "1.1",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "Enumeration": {
             "Ref": {
-              "agencyID"": "ESTAT",
-              "class"": "Codelist",
-              "id"": "CL_VALUE_AP",
-              "package"": "codelist",
-              "version"": "1.0"
+              "agencyID": "ESTAT",
+              "class": "Codelist",
+              "id": "CL_VALUE_AP",
+              "package": "codelist",
+              "version": "1.0"
             }
           },
           "EnumerationFormat": {
-            "maxLength"": "3",
-            "minLength"": "3",
-            "textType"": "String"
+            "maxLength": "3",
+            "minLength": "3",
+            "textType": "String"
           }
         }
       }
@@ -667,6 +667,6 @@
   },
   "Name": {
     "#text": "HICP AP DSD",
-    "lang"": "en"
+    "lang": "en"
   }
 }

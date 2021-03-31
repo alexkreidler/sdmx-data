@@ -1,557 +1,557 @@
 {
-  "agencyID"": "PFP",
-  "id"": "DSD_CRB_ATLAS",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=PFP:DSD_CRB_ATLAS(1.0)",
-  "version"": "1.0",
+  "agencyID": "PFP",
+  "id": "DSD_CRB_ATLAS",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=PFP:DSD_CRB_ATLAS(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=PFP:DSD_CRB_ATLAS(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=PFP:DSD_CRB_ATLAS(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "RELEASE_DATE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).RELEASE_DATE",
+          "assignmentStatus": "Conditional",
+          "id": "RELEASE_DATE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).RELEASE_DATE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "RELEASE_DATE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "RELEASE_DATE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SOURCE_LINK",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).SOURCE_LINK",
+          "assignmentStatus": "Conditional",
+          "id": "SOURCE_LINK",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).SOURCE_LINK",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SOURCE_LINK",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SOURCE_LINK",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_SOURCE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).DATA_SOURCE",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_SOURCE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).DATA_SOURCE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "DATA_SOURCE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "DATA_SOURCE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "RAW_OBS_VALUE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).RAW_OBS_VALUE",
+          "assignmentStatus": "Conditional",
+          "id": "RAW_OBS_VALUE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).RAW_OBS_VALUE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "PFP",
-              "class"": "Concept",
-              "id"": "RAW_OBS_VALUE",
-              "maintainableParentID"": "PFP_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "PFP",
+              "class": "Concept",
+              "id": "RAW_OBS_VALUE",
+              "maintainableParentID": "PFP_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).OBS_STATUS",
+          "assignmentStatus": "Conditional",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MEASURE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).UNIT_MEASURE",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MEASURE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).UNIT_MEASURE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MEASURE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_UNIT_MEASURE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "INDICATOR_ISSUE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).INDICATOR_ISSUE",
+          "assignmentStatus": "Conditional",
+          "id": "INDICATOR_ISSUE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).INDICATOR_ISSUE",
           "AttributeRelationship": {
             "Dimension": {
               "Ref": {
-                "id"": "INDICATOR"
+                "id": "INDICATOR"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "PFP",
-              "class"": "Concept",
-              "id"": "INDICATOR_ISSUE",
-              "maintainableParentID"": "PFP_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "PFP",
+              "class": "Concept",
+              "id": "INDICATOR_ISSUE",
+              "maintainableParentID": "PFP_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "PFP",
-                "class"": "Codelist",
-                "id"": "CL_INDICATOR_ISSUE_CRBA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "PFP",
+                "class": "Codelist",
+                "id": "CL_INDICATOR_ISSUE_CRBA",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "INDICATOR_INDEX",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).INDICATOR_INDEX",
+          "assignmentStatus": "Conditional",
+          "id": "INDICATOR_INDEX",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).INDICATOR_INDEX",
           "AttributeRelationship": {
             "Dimension": {
               "Ref": {
-                "id"": "INDICATOR"
+                "id": "INDICATOR"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "PFP",
-              "class"": "Concept",
-              "id"": "INDICATOR_INDEX",
-              "maintainableParentID"": "PFP_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "PFP",
+              "class": "Concept",
+              "id": "INDICATOR_INDEX",
+              "maintainableParentID": "PFP_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "PFP",
-                "class"": "Codelist",
-                "id"": "CL_INDICATOR_INDEX_CRBA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "PFP",
+                "class": "Codelist",
+                "id": "CL_INDICATOR_INDEX_CRBA",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "INDICATOR_CATEGORY",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).INDICATOR_CATEGORY",
+          "assignmentStatus": "Conditional",
+          "id": "INDICATOR_CATEGORY",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).INDICATOR_CATEGORY",
           "AttributeRelationship": {
             "Dimension": {
               "Ref": {
-                "id"": "INDICATOR"
+                "id": "INDICATOR"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "PFP",
-              "class"": "Concept",
-              "id"": "INDICATOR_CATEGORY",
-              "maintainableParentID"": "PFP_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "PFP",
+              "class": "Concept",
+              "id": "INDICATOR_CATEGORY",
+              "maintainableParentID": "PFP_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "PFP",
-                "class"": "Codelist",
-                "id"": "CL_INDICATOR_CATEGORY_CRBA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "PFP",
+                "class": "Codelist",
+                "id": "CL_INDICATOR_CATEGORY_CRBA",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "SDG_CODE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).SDG_CODE",
+          "assignmentStatus": "Conditional",
+          "id": "SDG_CODE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=PFP:DSD_CRB_ATLAS(1.0).SDG_CODE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SDG_CODE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SDG_CODE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           }
         }
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=PFP:DSD_CRB_ATLAS(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=PFP:DSD_CRB_ATLAS(1.0).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "REF_AREA",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).REF_AREA",
+          "id": "REF_AREA",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_COUNTRY",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_COUNTRY",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "INDICATOR",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).INDICATOR",
+          "id": "INDICATOR",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).INDICATOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "INDICATOR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "INDICATOR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "PFP",
-                "class"": "Codelist",
-                "id"": "CL_INDICATORS_CRBA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "PFP",
+                "class": "Codelist",
+                "id": "CL_INDICATORS_CRBA",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "SEX",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).SEX",
+          "id": "SEX",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).SEX",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SEX",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SEX",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_SEX",
-                "package"": "codelist",
-                "version"": "2.1"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_SEX",
+                "package": "codelist",
+                "version": "2.1"
               }
             }
           }
         },
         {
-          "id"": "AGE",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).AGE",
+          "id": "AGE",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).AGE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "AGE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "AGE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_AGE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_AGE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "RESIDENCE",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).RESIDENCE",
+          "id": "RESIDENCE",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).RESIDENCE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "RESIDENCE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "RESIDENCE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_RESIDENCE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_RESIDENCE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "WEALTH_QUINTILE",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).WEALTH_QUINTILE",
+          "id": "WEALTH_QUINTILE",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).WEALTH_QUINTILE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "WEALTH_QUINTILE",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "WEALTH_QUINTILE",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_WEALTH_QUINTILE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_WEALTH_QUINTILE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "EDUCATION_LEVEL",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).EDUCATION_LEVEL",
+          "id": "EDUCATION_LEVEL",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).EDUCATION_LEVEL",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "EDUCATION_LEVEL",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "EDUCATION_LEVEL",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "UNICEF",
-                "class"": "Codelist",
-                "id"": "CL_EDU_LEVEL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "UNICEF",
+                "class": "Codelist",
+                "id": "CL_EDU_LEVEL",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "id"": "MANAGEMENT_LEVEL",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).MANAGEMENT_LEVEL",
+          "id": "MANAGEMENT_LEVEL",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).MANAGEMENT_LEVEL",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "PFP",
-              "class"": "Concept",
-              "id"": "MANAGEMENT_LEVEL",
-              "maintainableParentID"": "PFP_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "PFP",
+              "class": "Concept",
+              "id": "MANAGEMENT_LEVEL",
+              "maintainableParentID": "PFP_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "PFP",
-                "class"": "Codelist",
-                "id"": "CL_MANAGEMENT_LEVEL_CRBA",
-                "package"": "codelist",
-                "version"": "1.0"
-              }
-            },
-            "EnumerationFormat": ""
-          }
-        },
-        {
-          "id"": "SECTOR",
-          "position"": "9",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).SECTOR",
-          "ConceptIdentity": {
-            "Ref": {
-              "agencyID"": "UNICEF",
-              "class"": "Concept",
-              "id"": "SECTOR",
-              "maintainableParentID"": "UNICEF_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
-            }
-          },
-          "LocalRepresentation": {
-            "Enumeration": {
-              "Ref": {
-                "agencyID"": "PFP",
-                "class"": "Codelist",
-                "id"": "CL_SECTOR_CRBA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "PFP",
+                "class": "Codelist",
+                "id": "CL_MANAGEMENT_LEVEL_CRBA",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
           }
         },
         {
-          "id"": "OCCUPATION_TYPE",
-          "position"": "10",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).OCCUPATION_TYPE",
+          "id": "SECTOR",
+          "position": "9",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).SECTOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "PFP",
-              "class"": "Concept",
-              "id"": "OCCUPATION_TYPE",
-              "maintainableParentID"": "PFP_CONCEPTS",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "UNICEF",
+              "class": "Concept",
+              "id": "SECTOR",
+              "maintainableParentID": "UNICEF_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "PFP",
-                "class"": "Codelist",
-                "id"": "CL_OCCUPATION_TYPE_CRBA",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "PFP",
+                "class": "Codelist",
+                "id": "CL_SECTOR_CRBA",
+                "package": "codelist",
+                "version": "1.0"
+              }
+            },
+            "EnumerationFormat": ""
+          }
+        },
+        {
+          "id": "OCCUPATION_TYPE",
+          "position": "10",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=PFP:DSD_CRB_ATLAS(1.0).OCCUPATION_TYPE",
+          "ConceptIdentity": {
+            "Ref": {
+              "agencyID": "PFP",
+              "class": "Concept",
+              "id": "OCCUPATION_TYPE",
+              "maintainableParentID": "PFP_CONCEPTS",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
+            }
+          },
+          "LocalRepresentation": {
+            "Enumeration": {
+              "Ref": {
+                "agencyID": "PFP",
+                "class": "Codelist",
+                "id": "CL_OCCUPATION_TYPE_CRBA",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": ""
@@ -559,40 +559,40 @@
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "11",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=PFP:DSD_CRB_ATLAS(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=PFP:DSD_CRB_ATLAS(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_SDG",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_SDG",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=PFP:DSD_CRB_ATLAS(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=PFP:DSD_CRB_ATLAS(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=PFP:DSD_CRB_ATLAS(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=PFP:DSD_CRB_ATLAS(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "UNICEF",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_SDG",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "UNICEF",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_SDG",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         }
       }
@@ -600,6 +600,6 @@
   },
   "Name": {
     "#text": "DSD CRB Atlas",
-    "lang"": "en"
+    "lang": "en"
   }
 }

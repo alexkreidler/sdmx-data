@@ -1,0 +1,1332 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ECB",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "uri": "https://www.ecb.europa.eu/vocabulary/stats/safe",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_SAFE(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "Survey on the Access to Finance of Small and Medium Enterprises",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ECB/DataStructure/ECB_SAFE",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "3",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_OBS_CONF",
+          "skos:notation": "CL_OBS_CONF"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_CONF"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).OBS_PRE_BREAK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_PRE_BREAK",
+          "skos:notation": "OBS_PRE_BREAK"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_PRE_BREAK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).OBS_COM",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_COM",
+          "skos:notation": "OBS_COM"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_COM"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).BREAKS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/BREAKS",
+          "skos:notation": "BREAKS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "350",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/BREAKS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).COLLECTION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COLLECTION",
+          "skos:notation": "COLLECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_COLLECTION",
+          "skos:notation": "CL_COLLECTION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COLLECTION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/DISS_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).PUBL_ECB",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/PUBL_ECB",
+          "skos:notation": "PUBL_ECB"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/PUBL_ECB"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).PUBL_MU",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/PUBL_MU",
+          "skos:notation": "PUBL_MU"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/PUBL_MU"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).PUBL_PUBLIC",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/PUBL_PUBLIC",
+          "skos:notation": "PUBL_PUBLIC"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/PUBL_PUBLIC"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).COMPILATION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COMPILATION",
+          "skos:notation": "COMPILATION"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COMPILATION"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "200",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).TITLE_COMPL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TITLE_COMPL",
+          "skos:notation": "TITLE_COMPL"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "minLength": "1",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TITLE_COMPL"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).UNIT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/UNIT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_SAFE(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "FIRM_SIZE"
+            },
+            {
+              "id": "FIRM_SECTOR"
+            },
+            {
+              "id": "FIRM_TURNOVER"
+            },
+            {
+              "id": "FIRM_AGE"
+            },
+            {
+              "id": "FIRM_OWNERSHIP"
+            },
+            {
+              "id": "SAFE_QUESTION"
+            },
+            {
+              "id": "SAFE_ITEM"
+            },
+            {
+              "id": "SAFE_ANSWER"
+            },
+            {
+              "id": "SAFE_FILTER"
+            },
+            {
+              "id": "SAFE_DENOM"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/UNIT_MULT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_AREA_EE",
+          "skos:notation": "CL_AREA_EE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).FIRM_SIZE",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FIRM_SIZE",
+          "skos:notation": "FIRM_SIZE"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FIRM_SIZE",
+          "skos:notation": "CL_FIRM_SIZE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FIRM_SIZE"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).FIRM_SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FIRM_SECTOR",
+          "skos:notation": "FIRM_SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FIRM_SECTOR",
+          "skos:notation": "CL_FIRM_SECTOR"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FIRM_SECTOR"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).FIRM_TURNOVER",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FIRM_TURNOVER",
+          "skos:notation": "FIRM_TURNOVER"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FIRM_TURNOVER",
+          "skos:notation": "CL_FIRM_TURNOVER"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FIRM_TURNOVER"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).FIRM_AGE",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FIRM_AGE",
+          "skos:notation": "FIRM_AGE"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FIRM_AGE",
+          "skos:notation": "CL_FIRM_AGE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FIRM_AGE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).FIRM_OWNERSHIP",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FIRM_OWNERSHIP",
+          "skos:notation": "FIRM_OWNERSHIP"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FIRM_BREAKDOWN",
+          "skos:notation": "CL_FIRM_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FIRM_OWNERSHIP"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).SAFE_QUESTION",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SAFE_QUESTION",
+          "skos:notation": "SAFE_QUESTION"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_SAFE_QUESTION",
+          "skos:notation": "CL_SAFE_QUESTION"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SAFE_QUESTION"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).SAFE_ITEM",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SAFE_ITEM",
+          "skos:notation": "SAFE_ITEM"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_SAFE_ITEM",
+          "skos:notation": "CL_SAFE_ITEM"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SAFE_ITEM"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).SAFE_ANSWER",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SAFE_ANSWER",
+          "skos:notation": "SAFE_ANSWER"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_SAFE_ANSWER",
+          "skos:notation": "CL_SAFE_ANSWER"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SAFE_ANSWER"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).SAFE_FILTER",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SAFE_FILTER",
+          "skos:notation": "SAFE_FILTER"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_SAFE_FILTER",
+          "skos:notation": "CL_SAFE_FILTER"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SAFE_FILTER"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_SAFE(1.0).SAFE_DENOM",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SAFE_DENOM",
+          "skos:notation": "SAFE_DENOM"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_SAFE_DENOM",
+          "skos:notation": "CL_SAFE_DENOM"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SAFE_DENOM"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_SAFE(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_SAFE(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "ECB",
+        "class": "Concept",
+        "maintainableParentID": "ECB_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ECB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "maxLength": "15",
+          "textType": "String"
+        }
+      },
+      "@id": "https://loqu.dev/ECB/Measure/OBS_VALUE"
+    }
+  }
+}

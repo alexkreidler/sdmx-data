@@ -1,0 +1,369 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "IMF",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:ALT_FISCAL_DSD(1.0)",
+    "version": "1.0",
+    "Description": {
+      "#text": "Country Specific Fiscal Sector Coding Structure",
+      "lang": "en"
+    },
+    "name": {
+      "@value": "Alternate FISCAL Data Structure Definition",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/IMF/DataStructure/ALT_FISCAL_DSD",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).COMMENT",
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "ECOFIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/COMMENT",
+          "skos:notation": "COMMENT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        },
+        "@id": "https://loqu.dev/IMF/Attribute/COMMENT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).BASE_PER",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "DATA_DOMAIN"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "ECOFIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/BASE_PER",
+          "skos:notation": "BASE_PER"
+        },
+        "LocalRepresentation": {
+          "TextFormat": ""
+        },
+        "@id": "https://loqu.dev/IMF/Attribute/BASE_PER"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "DATA_DOMAIN"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "ECOFIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/IMF/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "ECOFIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/IMF/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:ALT_FISCAL_DSD(1.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "DATA_DOMAIN"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "INDICATOR"
+            },
+            {
+              "id": "COUNTERPART_AREA"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_TIME_FORMAT",
+          "skos:notation": "CL_TIME_FORMAT"
+        },
+        "@id": "https://loqu.dev/IMF/Attribute/TIME_FORMAT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/IMF/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).DATA_DOMAIN",
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "ECOFIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/DATA_DOMAIN",
+          "skos:notation": "DATA_DOMAIN"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_DATADOMAIN",
+          "skos:notation": "CL_DATADOMAIN"
+        },
+        "@id": "https://loqu.dev/IMF/Dimension/DATA_DOMAIN"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "ECOFIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_REF_AREA",
+          "skos:notation": "CL_REF_AREA"
+        },
+        "@id": "https://loqu.dev/IMF/Dimension/REF_AREA"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).INDICATOR",
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "IMF_FISCAL_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/INDICATOR",
+          "skos:notation": "INDICATOR"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_ALT_FISCAL_INDICATOR",
+          "skos:notation": "CL_ALT_FISCAL_INDICATOR"
+        },
+        "@id": "https://loqu.dev/IMF/Dimension/INDICATOR"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:ALT_FISCAL_DSD(1.0).COUNTERPART_AREA",
+        "ConceptIdentity": {
+          "agencyID": "IMF",
+          "class": "Concept",
+          "maintainableParentID": "ECOFIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IMF/Concept/COUNTERPART_AREA",
+          "skos:notation": "COUNTERPART_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IMF",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IMF/Concept/CL_REF_AREA",
+          "skos:notation": "CL_REF_AREA"
+        },
+        "@id": "https://loqu.dev/IMF/Dimension/COUNTERPART_AREA"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:ALT_FISCAL_DSD(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "SDMX",
+          "class": "Concept",
+          "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/SDMX/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/IMF/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:ALT_FISCAL_DSD(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "SDMX",
+        "class": "Concept",
+        "maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/SDMX/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": ""
+      },
+      "@id": "https://loqu.dev/IMF/Measure/OBS_VALUE"
+    }
+  }
+}

@@ -1,138 +1,138 @@
 {
-  "agencyID"": "NB",
-  "id"": "DSD_ANN_FX_SPU",
-  "isExternalReference"": "false",
-  "isFinal"": "false",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_ANN_FX_SPU(1.0)",
-  "version"": "1.0",
+  "agencyID": "NB",
+  "id": "DSD_ANN_FX_SPU",
+  "isExternalReference": "false",
+  "isFinal": "false",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_ANN_FX_SPU(1.0)",
+  "version": "1.0",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=NB:DSD_ANN_FX_SPU(1.0).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=NB:DSD_ANN_FX_SPU(1.0).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).DECIMALS",
+          "assignmentStatus": "Mandatory",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).DECIMALS",
           "AttributeRelationship": {
             "Dimension": {
               "Ref": {
-                "id"": "INSTRUMENT_TYPE"
+                "id": "INSTRUMENT_TYPE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "NB",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "CS_NB",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "NB",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "CS_NB",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "NB",
-                "class"": "Codelist",
-                "id"": "CL_DECIMALS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "NB",
+                "class": "Codelist",
+                "id": "CL_DECIMALS",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TRANSACTION_MONTH",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).TRANSACTION_MONTH",
+          "assignmentStatus": "Mandatory",
+          "id": "TRANSACTION_MONTH",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).TRANSACTION_MONTH",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "NB",
-              "class"": "Concept",
-              "id"": "TRANSACTION_MONTH",
-              "maintainableParentID"": "CS_NB",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "NB",
+              "class": "Concept",
+              "id": "TRANSACTION_MONTH",
+              "maintainableParentID": "CS_NB",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "isSequence"": "false",
-              "textType"": "GregorianYearMonth"
+              "isSequence": "false",
+              "textType": "GregorianYearMonth"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TRANSACTION_TYPE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).TRANSACTION_TYPE",
+          "assignmentStatus": "Mandatory",
+          "id": "TRANSACTION_TYPE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).TRANSACTION_TYPE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "NB",
-              "class"": "Concept",
-              "id"": "TRANSACTION_TYPE",
-              "maintainableParentID"": "CS_NB",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "NB",
+              "class": "Concept",
+              "id": "TRANSACTION_TYPE",
+              "maintainableParentID": "CS_NB",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "NB",
-                "class"": "Codelist",
-                "id"": "CL_TRANSACTION_TYPE",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "NB",
+                "class": "Codelist",
+                "id": "CL_TRANSACTION_TYPE",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).UNIT_MULT",
+          "assignmentStatus": "Conditional",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_ANN_FX_SPU(1.0).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": {
               "Ref": {
-                "id"": "INSTRUMENT_TYPE"
+                "id": "INSTRUMENT_TYPE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "NB",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "CS_NB",
-              "maintainableParentVersion"": "1.0",
-              "package"": "conceptscheme"
+              "agencyID": "NB",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "CS_NB",
+              "maintainableParentVersion": "1.0",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "NB",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "NB",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             }
           }
@@ -140,75 +140,75 @@
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_ANN_FX_SPU(1.0).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_ANN_FX_SPU(1.0).DimensionDescriptor",
       "Dimension": {
-        "id"": "INSTRUMENT_TYPE",
-        "position"": "1",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_ANN_FX_SPU(1.0).INSTRUMENT_TYPE",
+        "id": "INSTRUMENT_TYPE",
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_ANN_FX_SPU(1.0).INSTRUMENT_TYPE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "NB",
-            "class"": "Concept",
-            "id"": "INSTRUMENT_TYPE",
-            "maintainableParentID"": "CS_NB",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "NB",
+            "class": "Concept",
+            "id": "INSTRUMENT_TYPE",
+            "maintainableParentID": "CS_NB",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "Enumeration": {
             "Ref": {
-              "agencyID"": "NB",
-              "class"": "Codelist",
-              "id"": "CL_INSTRUMENT_TYPE",
-              "package"": "codelist",
-              "version"": "1.0"
+              "agencyID": "NB",
+              "class": "Codelist",
+              "id": "CL_INSTRUMENT_TYPE",
+              "package": "codelist",
+              "version": "1.0"
             }
           }
         }
       },
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "2",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_ANN_FX_SPU(1.0).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_ANN_FX_SPU(1.0).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "NB",
-            "class"": "Concept",
-            "id"": "ANNOUNCEMENT_DATE",
-            "maintainableParentID"": "CS_NB",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "NB",
+            "class": "Concept",
+            "id": "ANNOUNCEMENT_DATE",
+            "maintainableParentID": "CS_NB",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_ANN_FX_SPU(1.0).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_ANN_FX_SPU(1.0).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_ANN_FX_SPU(1.0).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_ANN_FX_SPU(1.0).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "NB",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_NB",
-            "maintainableParentVersion"": "1.0",
-            "package"": "conceptscheme"
+            "agencyID": "NB",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_NB",
+            "maintainableParentVersion": "1.0",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "isSequence"": "false",
-            "textType"": "Integer"
+            "isSequence": "false",
+            "textType": "Integer"
           }
         }
       }
@@ -217,21 +217,21 @@
   "Description": [
     {
       "#text": "Norges Banks announcements of foreign exchange transactions on behalf of the government",
-      "lang"": "en"
+      "lang": "en"
     },
     {
       "#text": "Norges Banks annonsering av valutatransaksjoner på vegne av staten",
-      "lang"": "no"
+      "lang": "no"
     }
   ],
   "Name": [
     {
       "#text": "Announcement of foreign exchange transaction for SPU",
-      "lang"": "en"
+      "lang": "en"
     },
     {
       "#text": "Annonsering av valutatransaksjoner for SPU",
-      "lang"": "no"
+      "lang": "no"
     }
   ]
 }

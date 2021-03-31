@@ -1,0 +1,146 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "NB",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_GOVT_ZEROCOUPON(1.0)",
+    "version": "1.0",
+    "Description": [
+      {
+        "#text": "Zero coupon rates derived from the Nelson Siegel Svensson curve based upon government bonds and bills in trade",
+        "lang": "en"
+      },
+      {
+        "#text": "Nullkupongrenter avledet av beregnet avkastningskurve basert på statspapirer i omløp. Metode av Nelson Siegel Svensson.",
+        "lang": "no"
+      }
+    ],
+    "name": {},
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/NB/DataStructure/DSD_GOVT_ZEROCOUPON",
+    "attributes": {
+      "assignmentStatus": "Conditional",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_GOVT_ZEROCOUPON(1.0).DECIMALS",
+      "ConceptIdentity": {
+        "agencyID": "NB",
+        "class": "Concept",
+        "maintainableParentID": "CS_NB",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/NB/Concept/DECIMALS",
+        "skos:notation": "DECIMALS"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "isSequence": "false",
+          "textType": "Integer"
+        }
+      },
+      "@id": "https://loqu.dev/NB/Attribute/DECIMALS"
+    },
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_GOVT_ZEROCOUPON(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_GOVT_ZEROCOUPON(1.0).TENOR",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/TENOR",
+          "skos:notation": "TENOR"
+        },
+        "qb:codeList": {
+          "agencyID": "NB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/NB/Concept/CL_TENOR",
+          "skos:notation": "CL_TENOR"
+        },
+        "@id": "https://loqu.dev/NB/Dimension/TENOR"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_GOVT_ZEROCOUPON(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "NB",
+          "class": "Concept",
+          "maintainableParentID": "CS_NB",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/NB/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/NB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_GOVT_ZEROCOUPON(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "NB",
+        "class": "Concept",
+        "maintainableParentID": "CS_NB",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/NB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "@id": "https://loqu.dev/NB/Measure/OBS_VALUE"
+    }
+  }
+}

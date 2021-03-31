@@ -1,0 +1,1573 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "ECB",
+    "isExternalReference": "false",
+    "isFinal": "false",
+    "uri": "https://www.ecb.europa.eu/vocabulary/stats/stp/1",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_STP1(1.0)",
+    "version": "1.0",
+    "name": {
+      "@value": "ShortTerm European Paper Statistics (STEP)",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/ECB/DataStructure/ECB_STP1",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).TIME_FORMAT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TIME_FORMAT",
+          "skos:notation": "TIME_FORMAT"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "3",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TIME_FORMAT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).OBS_CONF",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_CONF",
+          "skos:notation": "OBS_CONF"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_OBS_CONF",
+          "skos:notation": "CL_OBS_CONF"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_CONF"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).OBS_PRE_BREAK",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_PRE_BREAK",
+          "skos:notation": "OBS_PRE_BREAK"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "15",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_PRE_BREAK"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).OBS_COM",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/OBS_COM",
+          "skos:notation": "OBS_COM"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/OBS_COM"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).BREAKS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/BREAKS",
+          "skos:notation": "BREAKS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "350",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/BREAKS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).COLLECTION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COLLECTION",
+          "skos:notation": "COLLECTION"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_COLLECTION",
+          "skos:notation": "CL_COLLECTION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COLLECTION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).COMPILING_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COMPILING_ORG",
+          "skos:notation": "COMPILING_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COMPILING_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).DISS_ORG",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DISS_ORG",
+          "skos:notation": "DISS_ORG"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/DISS_ORG"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).DOM_SER_IDS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DOM_SER_IDS",
+          "skos:notation": "DOM_SER_IDS"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "70",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/DOM_SER_IDS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).PUBL_ECB",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/PUBL_ECB",
+          "skos:notation": "PUBL_ECB"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/PUBL_ECB"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).PUBL_MU",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/PUBL_MU",
+          "skos:notation": "PUBL_MU"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/PUBL_MU"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).PUBL_PUBLIC",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/PUBL_PUBLIC",
+          "skos:notation": "PUBL_PUBLIC"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/PUBL_PUBLIC"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).UNIT_INDEX_BASE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/UNIT_INDEX_BASE",
+          "skos:notation": "UNIT_INDEX_BASE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "35",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/UNIT_INDEX_BASE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).COMPILATION",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COMPILATION",
+          "skos:notation": "COMPILATION"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COMPILATION"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).COVERAGE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COVERAGE",
+          "skos:notation": "COVERAGE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "350",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/COVERAGE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).DECIMALS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DECIMALS",
+          "skos:notation": "DECIMALS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_DECIMALS",
+          "skos:notation": "CL_DECIMALS"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/DECIMALS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).SOURCE_AGENCY",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SOURCE_AGENCY",
+          "skos:notation": "SOURCE_AGENCY"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ORGANISATION",
+          "skos:notation": "CL_ORGANISATION"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/SOURCE_AGENCY"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).TITLE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TITLE",
+          "skos:notation": "TITLE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "200",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TITLE"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).TITLE_COMPL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TITLE_COMPL",
+          "skos:notation": "TITLE_COMPL"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "maxLength": "1050",
+            "minLength": "1",
+            "textType": "String"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/TITLE_COMPL"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).UNIT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/UNIT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_STP1(1.0).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEC_ISSUING_SECTOR"
+            },
+            {
+              "id": "IR_FV_TYPE"
+            },
+            {
+              "id": "FLOATING_RATE_BASE"
+            },
+            {
+              "id": "MATURITY_TYPE"
+            },
+            {
+              "id": "MATURITY_CAT"
+            },
+            {
+              "id": "CREDIT_RATING"
+            },
+            {
+              "id": "DATA_TYPE_SEC"
+            },
+            {
+              "id": "COLLATERAL"
+            },
+            {
+              "id": "CURRENCY_TRANS"
+            },
+            {
+              "id": "SEC_SUFFIX"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/ECB/Attribute/UNIT_MULT"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_AREA_EE",
+          "skos:notation": "CL_AREA_EE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/REF_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).SEC_ISSUING_SECTOR",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SEC_ISSUING_SECTOR",
+          "skos:notation": "SEC_ISSUING_SECTOR"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_ESA95_SECTOR",
+          "skos:notation": "CL_ESA95_SECTOR"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SEC_ISSUING_SECTOR"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).IR_FV_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/IR_FV_TYPE",
+          "skos:notation": "IR_FV_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_IR_FV_TYPE",
+          "skos:notation": "CL_IR_FV_TYPE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/IR_FV_TYPE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).FLOATING_RATE_BASE",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/FLOATING_RATE_BASE",
+          "skos:notation": "FLOATING_RATE_BASE"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_IN_OUT_DATA_IFI",
+          "skos:notation": "CL_IN_OUT_DATA_IFI"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/FLOATING_RATE_BASE"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).MATURITY_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/MATURITY_TYPE",
+          "skos:notation": "MATURITY_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_MATURITY_TYPE",
+          "skos:notation": "CL_MATURITY_TYPE"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/MATURITY_TYPE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).MATURITY_CAT",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/MATURITY_CAT",
+          "skos:notation": "MATURITY_CAT"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_MATURITY_CAT",
+          "skos:notation": "CL_MATURITY_CAT"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/MATURITY_CAT"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).CREDIT_RATING",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/CREDIT_RATING",
+          "skos:notation": "CREDIT_RATING"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_CREDIT_RATING",
+          "skos:notation": "CL_CREDIT_RATING"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/CREDIT_RATING"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).DATA_TYPE_SEC",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/DATA_TYPE_SEC",
+          "skos:notation": "DATA_TYPE_SEC"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_DATA_TYPE_SEC",
+          "skos:notation": "CL_DATA_TYPE_SEC"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/DATA_TYPE_SEC"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).COLLATERAL",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/COLLATERAL",
+          "skos:notation": "COLLATERAL"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_COLLATERAL",
+          "skos:notation": "CL_COLLATERAL"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/COLLATERAL"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).CURRENCY_TRANS",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/CURRENCY_TRANS",
+          "skos:notation": "CURRENCY_TRANS"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_CURRENCY",
+          "skos:notation": "CL_CURRENCY"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/CURRENCY_TRANS"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_STP1(1.0).SEC_SUFFIX",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/SEC_SUFFIX",
+          "skos:notation": "SEC_SUFFIX"
+        },
+        "qb:codeList": {
+          "agencyID": "ECB",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/ECB/Concept/CL_SEC_SUFFIX",
+          "skos:notation": "CL_SEC_SUFFIX"
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/SEC_SUFFIX"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_STP1(1.0).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "ECB",
+          "class": "Concept",
+          "maintainableParentID": "ECB_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/ECB/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/ECB/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_STP1(1.0).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "ECB",
+        "class": "Concept",
+        "maintainableParentID": "ECB_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/ECB/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "maxLength": "15",
+          "textType": "String"
+        }
+      },
+      "@id": "https://loqu.dev/ECB/Measure/OBS_VALUE"
+    }
+  }
+}

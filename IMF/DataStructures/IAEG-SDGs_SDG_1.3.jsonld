@@ -1,0 +1,1096 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "IAEGSDGs",
+    "isExternalReference": "false",
+    "isFinal": "true",
+    "structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/IAEGSDGs/SDG/1.3",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEGSDGs:SDG(1.3)",
+    "version": "1.3",
+    "Description": {
+      "#text": "Data Structure Definition for Sustainable Development Goals Indicators.",
+      "lang": "en"
+    },
+    "name": {
+      "@value": "SDG DSD",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/IAEGSDGs/DataStructure/SDG",
+    "attributes": [
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/OBS_STATUS"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).UNIT_MULT",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Mandatory",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).UNIT_MEASURE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REPORTING_TYPE"
+            },
+            {
+              "id": "SERIES"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "URBANISATION"
+            },
+            {
+              "id": "INCOME_WEALTH_QUANTILE"
+            },
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "OCCUPATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            },
+            {
+              "id": "COMPOSITE_BREAKDOWN"
+            },
+            {
+              "id": "DISABILITY_STATUS"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "PRODUCT"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/UNIT_MEASURE",
+          "skos:notation": "UNIT_MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.3",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_UNIT_MEASURE",
+          "skos:notation": "CL_UNIT_MEASURE"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/UNIT_MEASURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).BASE_PER",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/BASE_PER",
+          "skos:notation": "BASE_PER"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/BASE_PER"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).NATURE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/NATURE",
+          "skos:notation": "NATURE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_NATURE",
+          "skos:notation": "CL_NATURE"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/NATURE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).TIME_DETAIL",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/TIME_DETAIL",
+          "skos:notation": "TIME_DETAIL"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/TIME_DETAIL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).COMMENT_OBS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/COMMENT_OBS",
+          "skos:notation": "COMMENT_OBS"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/COMMENT_OBS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).TIME_COVERAGE",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/TIME_COVERAGE",
+          "skos:notation": "TIME_COVERAGE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/TIME_COVERAGE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).UPPER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/UPPER_BOUND",
+          "skos:notation": "UPPER_BOUND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/UPPER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).LOWER_BOUND",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/LOWER_BOUND",
+          "skos:notation": "LOWER_BOUND"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "Double"
+          }
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/LOWER_BOUND"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).SOURCE_DETAIL",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE"
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/SOURCE_DETAIL",
+          "skos:notation": "SOURCE_DETAIL"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/SOURCE_DETAIL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).COMMENT_TS",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REPORTING_TYPE"
+            },
+            {
+              "id": "SERIES"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "URBANISATION"
+            },
+            {
+              "id": "INCOME_WEALTH_QUANTILE"
+            },
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "OCCUPATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            },
+            {
+              "id": "COMPOSITE_BREAKDOWN"
+            },
+            {
+              "id": "DISABILITY_STATUS"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "PRODUCT"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/COMMENT_TS",
+          "skos:notation": "COMMENT_TS"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/COMMENT_TS"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).GEO_INFO_URL",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REPORTING_TYPE"
+            },
+            {
+              "id": "SERIES"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "URBANISATION"
+            },
+            {
+              "id": "INCOME_WEALTH_QUANTILE"
+            },
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "OCCUPATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            },
+            {
+              "id": "COMPOSITE_BREAKDOWN"
+            },
+            {
+              "id": "DISABILITY_STATUS"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "PRODUCT"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/GEO_INFO_URL",
+          "skos:notation": "GEO_INFO_URL"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/GEO_INFO_URL"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).GEO_INFO_TYPE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REPORTING_TYPE"
+            },
+            {
+              "id": "SERIES"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "URBANISATION"
+            },
+            {
+              "id": "INCOME_WEALTH_QUANTILE"
+            },
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "OCCUPATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            },
+            {
+              "id": "COMPOSITE_BREAKDOWN"
+            },
+            {
+              "id": "DISABILITY_STATUS"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "PRODUCT"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/GEO_INFO_TYPE",
+          "skos:notation": "GEO_INFO_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_GEO_INFO_TYPE",
+          "skos:notation": "CL_GEO_INFO_TYPE"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/GEO_INFO_TYPE"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).CUST_BREAKDOWN_LB",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REPORTING_TYPE"
+            },
+            {
+              "id": "SERIES"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "URBANISATION"
+            },
+            {
+              "id": "INCOME_WEALTH_QUANTILE"
+            },
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "OCCUPATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            },
+            {
+              "id": "COMPOSITE_BREAKDOWN"
+            },
+            {
+              "id": "DISABILITY_STATUS"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "PRODUCT"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CUST_BREAKDOWN_LB",
+          "skos:notation": "CUST_BREAKDOWN_LB"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/CUST_BREAKDOWN_LB"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEGSDGs:SDG(1.3).DATA_LAST_UPDATE",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ"
+            },
+            {
+              "id": "REPORTING_TYPE"
+            },
+            {
+              "id": "SERIES"
+            },
+            {
+              "id": "REF_AREA"
+            },
+            {
+              "id": "SEX"
+            },
+            {
+              "id": "AGE"
+            },
+            {
+              "id": "URBANISATION"
+            },
+            {
+              "id": "INCOME_WEALTH_QUANTILE"
+            },
+            {
+              "id": "EDUCATION_LEV"
+            },
+            {
+              "id": "OCCUPATION"
+            },
+            {
+              "id": "CUST_BREAKDOWN"
+            },
+            {
+              "id": "COMPOSITE_BREAKDOWN"
+            },
+            {
+              "id": "DISABILITY_STATUS"
+            },
+            {
+              "id": "ACTIVITY"
+            },
+            {
+              "id": "PRODUCT"
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/DATA_LAST_UPDATE",
+          "skos:notation": "DATA_LAST_UPDATE"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "DateTime"
+          }
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Attribute/DATA_LAST_UPDATE"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "SDMX",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/SDMX/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).REPORTING_TYPE",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/REPORTING_TYPE",
+          "skos:notation": "REPORTING_TYPE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_REPORTING_TYPE",
+          "skos:notation": "CL_REPORTING_TYPE"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/REPORTING_TYPE"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).SERIES",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/SERIES",
+          "skos:notation": "SERIES"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.3",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_SERIES",
+          "skos:notation": "CL_SERIES"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/SERIES"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).REF_AREA",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/REF_AREA",
+          "skos:notation": "REF_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/REF_AREA"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).SEX",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/SEX",
+          "skos:notation": "SEX"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_SEX",
+          "skos:notation": "CL_SEX"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/SEX"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).AGE",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/AGE",
+          "skos:notation": "AGE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_AGE",
+          "skos:notation": "CL_AGE"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/AGE"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).URBANISATION",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/URBANISATION",
+          "skos:notation": "URBANISATION"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_URBANISATION",
+          "skos:notation": "CL_URBANISATION"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/URBANISATION"
+      },
+      {
+        "position": "8",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).INCOME_WEALTH_QUANTILE",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/INCOME_WEALTH_QUANTILE",
+          "skos:notation": "INCOME_WEALTH_QUANTILE"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_QUANTILE",
+          "skos:notation": "CL_QUANTILE"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/INCOME_WEALTH_QUANTILE"
+      },
+      {
+        "position": "9",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).EDUCATION_LEV",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/EDUCATION_LEV",
+          "skos:notation": "EDUCATION_LEV"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_EDUCATION_LEV",
+          "skos:notation": "CL_EDUCATION_LEV"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/EDUCATION_LEV"
+      },
+      {
+        "position": "10",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).OCCUPATION",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/OCCUPATION",
+          "skos:notation": "OCCUPATION"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_OCCUPATION",
+          "skos:notation": "CL_OCCUPATION"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/OCCUPATION"
+      },
+      {
+        "position": "11",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).CUST_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CUST_BREAKDOWN",
+          "skos:notation": "CUST_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_CUST_BREAKDOWN",
+          "skos:notation": "CL_CUST_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/CUST_BREAKDOWN"
+      },
+      {
+        "position": "12",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).COMPOSITE_BREAKDOWN",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/COMPOSITE_BREAKDOWN",
+          "skos:notation": "COMPOSITE_BREAKDOWN"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.3",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_COMP_BREAKDOWN",
+          "skos:notation": "CL_COMP_BREAKDOWN"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/COMPOSITE_BREAKDOWN"
+      },
+      {
+        "position": "13",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).DISABILITY_STATUS",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/DISABILITY_STATUS",
+          "skos:notation": "DISABILITY_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_DISABILITY",
+          "skos:notation": "CL_DISABILITY"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/DISABILITY_STATUS"
+      },
+      {
+        "position": "14",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).ACTIVITY",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/ACTIVITY",
+          "skos:notation": "ACTIVITY"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_ACTIVITY",
+          "skos:notation": "CL_ACTIVITY"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/ACTIVITY"
+      },
+      {
+        "position": "15",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEGSDGs:SDG(1.3).PRODUCT",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/PRODUCT",
+          "skos:notation": "PRODUCT"
+        },
+        "qb:codeList": {
+          "agencyID": "IAEGSDGs",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/CL_PRODUCT",
+          "skos:notation": "CL_PRODUCT"
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/PRODUCT"
+      },
+      {
+        "position": "16",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEGSDGs:SDG(1.3).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "IAEGSDGs",
+          "class": "Concept",
+          "maintainableParentID": "SDG_CONCEPTS",
+          "maintainableParentVersion": "1.0",
+          "package": "conceptscheme",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/IAEGSDGs/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/IAEGSDGs/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEGSDGs:SDG(1.3).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "IAEGSDGs",
+        "class": "Concept",
+        "maintainableParentID": "SDG_CONCEPTS",
+        "maintainableParentVersion": "1.0",
+        "package": "conceptscheme",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/IAEGSDGs/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/IAEGSDGs/Measure/OBS_VALUE"
+    }
+  }
+}

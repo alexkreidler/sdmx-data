@@ -1,0 +1,320 @@
+{
+  "@context": {
+    "qb": "http://purl.org/linked-data/cube#",
+    "sdmx": "http://sdmx.loqu.dev/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@base": "https://base.loqu.dev/",
+    "id": {
+      "@type": "@id",
+      "@id": "@id"
+    },
+    "attributes": "qb:attribute",
+    "dimensions": "qb:dimension",
+    "measures": "qb:measure",
+    "ConceptIdentity": "qb:concept",
+    "version": "sdmx:version",
+    "urn": "sdmx:urn",
+    "assignmentStatus": "sdmx:assignmentStatus",
+    "name": "rdfs:label"
+  },
+  "@graph": {
+    "agencyID": "INEGI",
+    "isFinal": "true",
+    "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=INEGI:STES(2.8)",
+    "version": "2.8",
+    "name": {
+      "@value": "Shortterm economic statistics",
+      "@language": "en"
+    },
+    "@type": "qb:DataStructureDefinition",
+    "@id": "https://loqu.dev/INEGI/DataStructure/STES",
+    "attributes": [
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=INEGI:STES(2.8).UNIT_MULT",
+        "AttributeRelationship": {
+          "Dimension": [
+            {
+              "id": "FREQ",
+              "xmlns": ""
+            },
+            {
+              "id": "REFERENCE_AREA",
+              "xmlns": ""
+            },
+            {
+              "id": "SUBJECT",
+              "xmlns": ""
+            },
+            {
+              "id": "MEASURE",
+              "xmlns": ""
+            },
+            {
+              "id": "ADJUSTMENT",
+              "xmlns": ""
+            },
+            {
+              "id": "UNIT",
+              "xmlns": ""
+            }
+          ]
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/UNIT_MULT",
+          "skos:notation": "UNIT_MULT"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_UNIT_MULT",
+          "skos:notation": "CL_UNIT_MULT"
+        },
+        "@id": "https://loqu.dev/INEGI/Attribute/UNIT_MULT"
+      },
+      {
+        "assignmentStatus": "Conditional",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=INEGI:STES(2.8).OBS_STATUS",
+        "AttributeRelationship": {
+          "PrimaryMeasure": {
+            "id": "OBS_VALUE",
+            "xmlns": ""
+          }
+        },
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/OBS_STATUS",
+          "skos:notation": "OBS_STATUS"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.1",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_OBS_STATUS",
+          "skos:notation": "CL_OBS_STATUS"
+        },
+        "@id": "https://loqu.dev/INEGI/Attribute/OBS_STATUS"
+      }
+    ],
+    "dimensions": [
+      {
+        "position": "1",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).FREQ",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/FREQ",
+          "skos:notation": "FREQ"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_FREQ",
+          "skos:notation": "CL_FREQ"
+        },
+        "@id": "https://loqu.dev/INEGI/Dimension/FREQ"
+      },
+      {
+        "position": "2",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).REFERENCE_AREA",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/REFERENCE_AREA",
+          "skos:notation": "REFERENCE_AREA"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.2",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_AREA",
+          "skos:notation": "CL_AREA"
+        },
+        "@id": "https://loqu.dev/INEGI/Dimension/REFERENCE_AREA"
+      },
+      {
+        "position": "3",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).SUBJECT",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/SUBJECT",
+          "skos:notation": "SUBJECT"
+        },
+        "qb:codeList": {
+          "agencyID": "INEGI",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "2.2",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/INEGI/Concept/CL_SUBJECT",
+          "skos:notation": "CL_SUBJECT"
+        },
+        "@id": "https://loqu.dev/INEGI/Dimension/SUBJECT"
+      },
+      {
+        "position": "4",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).MEASURE",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/MEASURE",
+          "skos:notation": "MEASURE"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_MEASURE",
+          "skos:notation": "CL_MEASURE"
+        },
+        "@id": "https://loqu.dev/INEGI/Dimension/MEASURE"
+      },
+      {
+        "position": "5",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).ADJUSTMENT",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/ADJUSTMENT",
+          "skos:notation": "ADJUSTMENT"
+        },
+        "qb:codeList": {
+          "agencyID": "OECD",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.0",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/OECD/Concept/CL_ADJUSTMENT",
+          "skos:notation": "CL_ADJUSTMENT"
+        },
+        "@id": "https://loqu.dev/INEGI/Dimension/ADJUSTMENT"
+      },
+      {
+        "position": "6",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).UNIT",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/UNIT",
+          "skos:notation": "UNIT"
+        },
+        "qb:codeList": {
+          "agencyID": "INEGI",
+          "class": "Codelist",
+          "package": "codelist",
+          "version": "1.6",
+          "xmlns": "",
+          "@type": "qb:HierarchicalCodeList",
+          "@id": "https://loqu.dev/INEGI/Concept/CL_UNIT",
+          "skos:notation": "CL_UNIT"
+        },
+        "@id": "https://loqu.dev/INEGI/Dimension/UNIT"
+      },
+      {
+        "position": "7",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=INEGI:STES(2.8).TIME_PERIOD",
+        "ConceptIdentity": {
+          "agencyID": "OECD",
+          "class": "Concept",
+          "maintainableParentID": "CS_STES",
+          "maintainableParentVersion": "2.0",
+          "package": "conceptscheme",
+          "xmlns": "",
+          "@type": "skos:Concept",
+          "@id": "https://loqu.dev/OECD/Concept/TIME_PERIOD",
+          "skos:notation": "TIME_PERIOD"
+        },
+        "LocalRepresentation": {
+          "TextFormat": {
+            "textType": "ObservationalTimePeriod"
+          }
+        },
+        "@id": "https://loqu.dev/INEGI/Dimension/TIME_PERIOD"
+      }
+    ],
+    "measures": {
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=INEGI:STES(2.8).OBS_VALUE",
+      "ConceptIdentity": {
+        "agencyID": "OECD",
+        "class": "Concept",
+        "maintainableParentID": "CS_STES",
+        "maintainableParentVersion": "2.0",
+        "package": "conceptscheme",
+        "xmlns": "",
+        "@type": "skos:Concept",
+        "@id": "https://loqu.dev/OECD/Concept/OBS_VALUE",
+        "skos:notation": "OBS_VALUE"
+      },
+      "LocalRepresentation": {
+        "TextFormat": {
+          "textType": "Double"
+        }
+      },
+      "@id": "https://loqu.dev/INEGI/Measure/OBS_VALUE"
+    }
+  }
+}

@@ -1,1209 +1,1209 @@
 {
-  "agencyID"": "IMF",
-  "id"": "BOP",
-  "isExternalReference"": "false",
-  "isFinal"": "true",
-  "structureURL"": "https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/IMF/BOP/1.5",
-  "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:BOP(1.5)",
-  "version"": "1.5",
+  "agencyID": "IMF",
+  "id": "BOP",
+  "isExternalReference": "false",
+  "isFinal": "true",
+  "structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/IMF/BOP/1.5",
+  "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:BOP(1.5)",
+  "version": "1.5",
   "DataStructureComponents": {
     "AttributeList": {
-      "id"": "AttributeDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:BOP(1.5).AttributeDescriptor",
+      "id": "AttributeDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:BOP(1.5).AttributeDescriptor",
       "Attribute": [
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TIME_FORMAT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).TIME_FORMAT",
+          "assignmentStatus": "Conditional",
+          "id": "TIME_FORMAT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).TIME_FORMAT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "TIME_FORMAT",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "TIME_FORMAT",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_TIME_FORMAT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_TIME_FORMAT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "4",
-              "minLength"": "3",
-              "textType"": "String"
+              "maxLength": "4",
+              "minLength": "3",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "OBS_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).OBS_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "OBS_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).OBS_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "OBS_STATUS",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "OBS_STATUS",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_OBS_STATUS",
-                "package"": "codelist",
-                "version"": "2.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_OBS_STATUS",
+                "package": "codelist",
+                "version": "2.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "CONF_STATUS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).CONF_STATUS",
+          "assignmentStatus": "Mandatory",
+          "id": "CONF_STATUS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).CONF_STATUS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "CONF_STATUS",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "CONF_STATUS",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_CONF_STATUS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_CONF_STATUS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "PRE_BREAK_VALUE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).PRE_BREAK_VALUE",
+          "assignmentStatus": "Conditional",
+          "id": "PRE_BREAK_VALUE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).PRE_BREAK_VALUE",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "PRE_BREAK_VALUE",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "PRE_BREAK_VALUE",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "15",
-              "textType"": "Double"
+              "maxLength": "15",
+              "textType": "Double"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_OBS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).COMMENT_OBS",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_OBS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).COMMENT_OBS",
           "AttributeRelationship": {
             "PrimaryMeasure": {
               "Ref": {
-                "id"": "OBS_VALUE"
+                "id": "OBS_VALUE"
               }
             }
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COMMENT_OBS",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COMMENT_OBS",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "4000",
-              "textType"": "String"
+              "maxLength": "4000",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMMENT_TS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).COMMENT_TS",
+          "assignmentStatus": "Conditional",
+          "id": "COMMENT_TS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).COMMENT_TS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COMMENT_TS",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COMMENT_TS",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "1050",
-              "textType"": "String"
+              "maxLength": "1050",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "TITLE",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).TITLE",
+          "assignmentStatus": "Conditional",
+          "id": "TITLE",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).TITLE",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "TITLE",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "TITLE",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "200",
-              "textType"": "String"
+              "maxLength": "200",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "UNIT_MULT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).UNIT_MULT",
+          "assignmentStatus": "Mandatory",
+          "id": "UNIT_MULT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).UNIT_MULT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "UNIT_MULT",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "UNIT_MULT",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_UNIT_MULT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_UNIT_MULT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "DECIMALS",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).DECIMALS",
+          "assignmentStatus": "Mandatory",
+          "id": "DECIMALS",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).DECIMALS",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "DECIMALS",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "DECIMALS",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_DECIMALS",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_DECIMALS",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Mandatory",
-          "id"": "TIME_PER_COLLECT",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).TIME_PER_COLLECT",
+          "assignmentStatus": "Mandatory",
+          "id": "TIME_PER_COLLECT",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).TIME_PER_COLLECT",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "TIME_PER_COLLECT",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "TIME_PER_COLLECT",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_TIME_COLLECT",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_TIME_COLLECT",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "REF_PERIOD_DETAIL",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).REF_PERIOD_DETAIL",
+          "assignmentStatus": "Conditional",
+          "id": "REF_PERIOD_DETAIL",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).REF_PERIOD_DETAIL",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "REF_PERIOD_DETAIL",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "REF_PERIOD_DETAIL",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_REF_PERIOD_DTL",
-                "package"": "codelist",
-                "version"": "1.0"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_REF_PERIOD_DTL",
+                "package": "codelist",
+                "version": "1.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "3",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "3",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "COMPILING_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).COMPILING_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "COMPILING_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).COMPILING_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COMPILING_ORG",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COMPILING_ORG",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.5"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "4",
-              "minLength"": "3",
-              "textType"": "String"
+              "maxLength": "4",
+              "minLength": "3",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DATA_COMP",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).DATA_COMP",
+          "assignmentStatus": "Conditional",
+          "id": "DATA_COMP",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).DATA_COMP",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "DATA_COMP",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "DATA_COMP",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "TextFormat": {
-              "maxLength"": "4000",
-              "textType"": "String"
+              "maxLength": "4000",
+              "textType": "String"
             }
           }
         },
         {
-          "assignmentStatus"": "Conditional",
-          "id"": "DISS_ORG",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).DISS_ORG",
+          "assignmentStatus": "Conditional",
+          "id": "DISS_ORG",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.5).DISS_ORG",
           "AttributeRelationship": {
             "Dimension": [
               {
                 "Ref": {
-                  "id"": "ADJUSTMENT"
+                  "id": "ADJUSTMENT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_AREA"
+                  "id": "REF_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_AREA"
+                  "id": "COUNTERPART_AREA"
                 }
               },
               {
                 "Ref": {
-                  "id"": "REF_SECTOR"
+                  "id": "REF_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COUNTERPART_SECTOR"
+                  "id": "COUNTERPART_SECTOR"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FLOW_STOCK_ENTRY"
+                  "id": "FLOW_STOCK_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "ACCOUNTING_ENTRY"
+                  "id": "ACCOUNTING_ENTRY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INT_ACC_ITEM"
+                  "id": "INT_ACC_ITEM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "FUNCTIONAL_CAT"
+                  "id": "FUNCTIONAL_CAT"
                 }
               },
               {
                 "Ref": {
-                  "id"": "INSTR_ASSET"
+                  "id": "INSTR_ASSET"
                 }
               },
               {
                 "Ref": {
-                  "id"": "MATURITY"
+                  "id": "MATURITY"
                 }
               },
               {
                 "Ref": {
-                  "id"": "UNIT_MEASURE"
+                  "id": "UNIT_MEASURE"
                 }
               },
               {
                 "Ref": {
-                  "id"": "CURRENCY_DENOM"
+                  "id": "CURRENCY_DENOM"
                 }
               },
               {
                 "Ref": {
-                  "id"": "VALUATION"
+                  "id": "VALUATION"
                 }
               },
               {
                 "Ref": {
-                  "id"": "COMP_METHOD"
+                  "id": "COMP_METHOD"
                 }
               }
             ]
           },
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "DISS_ORG",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "DISS_ORG",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ORGANISATION",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ORGANISATION",
+                "package": "codelist",
+                "version": "1.5"
               }
             }
           }
@@ -1211,547 +1211,547 @@
       ]
     },
     "DimensionList": {
-      "id"": "DimensionDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:BOP(1.5).DimensionDescriptor",
+      "id": "DimensionDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:BOP(1.5).DimensionDescriptor",
       "Dimension": [
         {
-          "id"": "FREQ",
-          "position"": "1",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).FREQ",
+          "id": "FREQ",
+          "position": "1",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).FREQ",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "FREQ",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "FREQ",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "SDMX",
-                "class"": "Codelist",
-                "id"": "CL_FREQ",
-                "package"": "codelist",
-                "version"": "2.0"
+                "agencyID": "SDMX",
+                "class": "Codelist",
+                "id": "CL_FREQ",
+                "package": "codelist",
+                "version": "2.0"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "ADJUSTMENT",
-          "position"": "2",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).ADJUSTMENT",
+          "id": "ADJUSTMENT",
+          "position": "2",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).ADJUSTMENT",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "ADJUSTMENT",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "ADJUSTMENT",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ADJUSTMENT",
-                "package"": "codelist",
-                "version"": "1.4"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ADJUSTMENT",
+                "package": "codelist",
+                "version": "1.4"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "7",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "7",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "REF_AREA",
-          "position"": "3",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).REF_AREA",
+          "id": "REF_AREA",
+          "position": "3",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).REF_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "REF_AREA",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "REF_AREA",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_AREA",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_AREA",
+                "package": "codelist",
+                "version": "1.5"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "5",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "5",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "COUNTERPART_AREA",
-          "position"": "4",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).COUNTERPART_AREA",
+          "id": "COUNTERPART_AREA",
+          "position": "4",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).COUNTERPART_AREA",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COUNTERPART_AREA",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COUNTERPART_AREA",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_AREA",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_AREA",
+                "package": "codelist",
+                "version": "1.5"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "5",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "5",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "REF_SECTOR",
-          "position"": "5",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).REF_SECTOR",
+          "id": "REF_SECTOR",
+          "position": "5",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).REF_SECTOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "REF_SECTOR",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "REF_SECTOR",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_SECTOR",
-                "package"": "codelist",
-                "version"": "1.3"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_SECTOR",
+                "package": "codelist",
+                "version": "1.3"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "7",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "7",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "COUNTERPART_SECTOR",
-          "position"": "6",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).COUNTERPART_SECTOR",
+          "id": "COUNTERPART_SECTOR",
+          "position": "6",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).COUNTERPART_SECTOR",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COUNTERPART_SECTOR",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COUNTERPART_SECTOR",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_SECTOR",
-                "package"": "codelist",
-                "version"": "1.3"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_SECTOR",
+                "package": "codelist",
+                "version": "1.3"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "7",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "7",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "FLOW_STOCK_ENTRY",
-          "position"": "7",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).FLOW_STOCK_ENTRY",
+          "id": "FLOW_STOCK_ENTRY",
+          "position": "7",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).FLOW_STOCK_ENTRY",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "FLOW_STOCK_ENTRY",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "FLOW_STOCK_ENTRY",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_FSENTRY",
-                "package"": "codelist",
-                "version"": "1.1"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_FSENTRY",
+                "package": "codelist",
+                "version": "1.1"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "3",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "3",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "ACCOUNTING_ENTRY",
-          "position"": "8",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).ACCOUNTING_ENTRY",
+          "id": "ACCOUNTING_ENTRY",
+          "position": "8",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).ACCOUNTING_ENTRY",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "ACCOUNTING_ENTRY",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "ACCOUNTING_ENTRY",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ACCOUNT_ENTRY",
-                "package"": "codelist",
-                "version"": "1.2"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ACCOUNT_ENTRY",
+                "package": "codelist",
+                "version": "1.2"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "INT_ACC_ITEM",
-          "position"": "9",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).INT_ACC_ITEM",
+          "id": "INT_ACC_ITEM",
+          "position": "9",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).INT_ACC_ITEM",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "INT_ACC_ITEM",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "INT_ACC_ITEM",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_ACCOUNTS_ITEM",
-                "package"": "codelist",
-                "version"": "1.4"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_ACCOUNTS_ITEM",
+                "package": "codelist",
+                "version": "1.4"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "8",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "8",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "FUNCTIONAL_CAT",
-          "position"": "10",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).FUNCTIONAL_CAT",
+          "id": "FUNCTIONAL_CAT",
+          "position": "10",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).FUNCTIONAL_CAT",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "FUNCTIONAL_CAT",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "FUNCTIONAL_CAT",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_FUNCTIONAL_CAT",
-                "package"": "codelist",
-                "version"": "1.4"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_FUNCTIONAL_CAT",
+                "package": "codelist",
+                "version": "1.4"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "5",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "5",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "INSTR_ASSET",
-          "position"": "11",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).INSTR_ASSET",
+          "id": "INSTR_ASSET",
+          "position": "11",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).INSTR_ASSET",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "INSTR_ASSET",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "INSTR_ASSET",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_INSTR_ASSET",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_INSTR_ASSET",
+                "package": "codelist",
+                "version": "1.5"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "7",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "7",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "MATURITY",
-          "position"": "12",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).MATURITY",
+          "id": "MATURITY",
+          "position": "12",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).MATURITY",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "MATURITY",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "MATURITY",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_MATURITY",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_MATURITY",
+                "package": "codelist",
+                "version": "1.5"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "6",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "6",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "UNIT_MEASURE",
-          "position"": "13",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).UNIT_MEASURE",
+          "id": "UNIT_MEASURE",
+          "position": "13",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).UNIT_MEASURE",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "UNIT_MEASURE",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "UNIT_MEASURE",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_UNIT",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_UNIT",
+                "package": "codelist",
+                "version": "1.5"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "15",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "15",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "CURRENCY_DENOM",
-          "position"": "14",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).CURRENCY_DENOM",
+          "id": "CURRENCY_DENOM",
+          "position": "14",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).CURRENCY_DENOM",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "CURRENCY_DENOM",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "CURRENCY_DENOM",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_CURRENCY",
-                "package"": "codelist",
-                "version"": "1.4"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_CURRENCY",
+                "package": "codelist",
+                "version": "1.4"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "3",
-              "minLength"": "2",
-              "textType"": "String"
+              "maxLength": "3",
+              "minLength": "2",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "VALUATION",
-          "position"": "15",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).VALUATION",
+          "id": "VALUATION",
+          "position": "15",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).VALUATION",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "VALUATION",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "VALUATION",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "ESTAT",
-                "class"": "Codelist",
-                "id"": "CL_VALUATION",
-                "package"": "codelist",
-                "version"": "1.5"
+                "agencyID": "ESTAT",
+                "class": "Codelist",
+                "id": "CL_VALUATION",
+                "package": "codelist",
+                "version": "1.5"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "2",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "2",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         },
         {
-          "id"": "COMP_METHOD",
-          "position"": "16",
-          "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).COMP_METHOD",
+          "id": "COMP_METHOD",
+          "position": "16",
+          "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.5).COMP_METHOD",
           "ConceptIdentity": {
             "Ref": {
-              "agencyID"": "IMF",
-              "class"": "Concept",
-              "id"": "COMP_METHOD",
-              "maintainableParentID"": "CS_BOP",
-              "maintainableParentVersion"": "1.5",
-              "package"": "conceptscheme"
+              "agencyID": "IMF",
+              "class": "Concept",
+              "id": "COMP_METHOD",
+              "maintainableParentID": "CS_BOP",
+              "maintainableParentVersion": "1.5",
+              "package": "conceptscheme"
             }
           },
           "LocalRepresentation": {
             "Enumeration": {
               "Ref": {
-                "agencyID"": "IMF",
-                "class"": "Codelist",
-                "id"": "CL_COMP_METHOD",
-                "package"": "codelist",
-                "version"": "1.2"
+                "agencyID": "IMF",
+                "class": "Codelist",
+                "id": "CL_COMP_METHOD",
+                "package": "codelist",
+                "version": "1.2"
               }
             },
             "EnumerationFormat": {
-              "maxLength"": "1",
-              "minLength"": "1",
-              "textType"": "String"
+              "maxLength": "1",
+              "minLength": "1",
+              "textType": "String"
             }
           }
         }
       ],
       "TimeDimension": {
-        "id"": "TIME_PERIOD",
-        "position"": "17",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:BOP(1.5).TIME_PERIOD",
+        "id": "TIME_PERIOD",
+        "position": "17",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:BOP(1.5).TIME_PERIOD",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IMF",
-            "class"": "Concept",
-            "id"": "TIME_PERIOD",
-            "maintainableParentID"": "CS_BOP",
-            "maintainableParentVersion"": "1.5",
-            "package"": "conceptscheme"
+            "agencyID": "IMF",
+            "class": "Concept",
+            "id": "TIME_PERIOD",
+            "maintainableParentID": "CS_BOP",
+            "maintainableParentVersion": "1.5",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "textType"": "ObservationalTimePeriod"
+            "textType": "ObservationalTimePeriod"
           }
         }
       }
     },
     "MeasureList": {
-      "id"": "MeasureDescriptor",
-      "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:BOP(1.5).MeasureDescriptor",
+      "id": "MeasureDescriptor",
+      "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:BOP(1.5).MeasureDescriptor",
       "PrimaryMeasure": {
-        "id"": "OBS_VALUE",
-        "urn"": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:BOP(1.5).OBS_VALUE",
+        "id": "OBS_VALUE",
+        "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:BOP(1.5).OBS_VALUE",
         "ConceptIdentity": {
           "Ref": {
-            "agencyID"": "IMF",
-            "class"": "Concept",
-            "id"": "OBS_VALUE",
-            "maintainableParentID"": "CS_BOP",
-            "maintainableParentVersion"": "1.2",
-            "package"": "conceptscheme"
+            "agencyID": "IMF",
+            "class": "Concept",
+            "id": "OBS_VALUE",
+            "maintainableParentID": "CS_BOP",
+            "maintainableParentVersion": "1.2",
+            "package": "conceptscheme"
           }
         },
         "LocalRepresentation": {
           "TextFormat": {
-            "maxLength"": "15",
-            "textType"": "Double"
+            "maxLength": "15",
+            "textType": "Double"
           }
         }
       }
@@ -1759,6 +1759,6 @@
   },
   "Name": {
     "#text": "Balance of Payments and International Investment Position",
-    "lang"": "en"
+    "lang": "en"
   }
 }
