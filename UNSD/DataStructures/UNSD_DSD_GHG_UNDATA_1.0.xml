@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v7.1.2.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF683</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2021-03-31T07:39:01.8260463+02:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:DataStructures>
+      <structure:DataStructure id="DSD_GHG_UNDATA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_GHG_UNDATA(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Green House Gas DSD</common:Name>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:DSD_GHG_UNDATA(1.0).DimensionDescriptor">
+            <structure:Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).FREQ" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="CS_UNDATA" maintainableParentVersion="1.0" agencyID="UNSD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_FREQ" version="1.0" agencyID="UNSD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).INDICATOR" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="INDICATOR" maintainableParentID="CS_UNDATA" maintainableParentVersion="1.0" agencyID="UNSD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_INDICATOR" version="1.0" agencyID="UNSD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).REF_AREA" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="REF_AREA" maintainableParentID="CS_UNDATA" maintainableParentVersion="1.0" agencyID="UNSD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_REF_AREA" version="1.0" agencyID="UNSD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).UNIT" position="4">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT" maintainableParentID="CS_UNDATA" maintainableParentVersion="1.0" agencyID="UNSD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT" version="1.0" agencyID="UNSD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_GHG_UNDATA(1.0).TIME_PERIOD" position="5">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CS_UNDATA" maintainableParentVersion="1.0" agencyID="UNSD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="ObservationalTimePeriod" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:DSD_GHG_UNDATA(1.0).MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_GHG_UNDATA(1.0).OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CS_UNDATA" maintainableParentVersion="1.0" agencyID="UNSD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+  </message:Structures>
+</message:Structure>

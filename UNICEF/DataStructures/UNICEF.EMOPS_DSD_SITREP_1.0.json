@@ -1,0 +1,296 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF691270",
+      "Prepared": "2021-03-31T05:38:44Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "UNICEF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "UNICEF.EMOPS",
+          "-id": "DSD_SITREP",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF.EMOPS:DSD_SITREP(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF.EMOPS:DSD_SITREP(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "HAC_PILLAR",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF.EMOPS:DSD_SITREP(1.0).HAC_PILLAR",
+                  "AttributeRelationship": {
+                    "Dimension": {
+                      "Ref": {
+                        "-id": "SITREP_INDICATOR"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "HAC_PILLAR",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF.EMOPS",
+                        "-class": "Codelist",
+                        "-id": "CL_HAC_PILLAR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "DATA_SOURCE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF.EMOPS:DSD_SITREP(1.0).DATA_SOURCE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "DATA_SOURCE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TARGET",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF.EMOPS:DSD_SITREP(1.0).TARGET",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "TARGET",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Integer"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MEASURE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF.EMOPS:DSD_SITREP(1.0).UNIT_MEASURE",
+                  "AttributeRelationship": {
+                    "Dimension": {
+                      "Ref": {
+                        "-id": "SITREP_INDICATOR"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF.EMOPS:DSD_SITREP(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.1"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF.EMOPS:DSD_SITREP(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "REF_AREA",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF.EMOPS:DSD_SITREP(1.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_COUNTRY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SITREP_INDICATOR",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF.EMOPS:DSD_SITREP(1.0).SITREP_INDICATOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "SITREP_INDICATOR",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF.EMOPS",
+                        "-class": "Codelist",
+                        "-id": "CL_EMOPS_INDICATORS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "3",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF.EMOPS:DSD_SITREP(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "UNICEF",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_SDG",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF.EMOPS:DSD_SITREP(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF.EMOPS:DSD_SITREP(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SDMX",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-isSequence": "false",
+                    "-textType": "Integer"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "EMOPS Situation Report",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

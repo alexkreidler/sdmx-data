@@ -1,0 +1,425 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF679",
+      "Prepared": "2021-03-31T07:38:58.6605674+02:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "UNSD",
+          "-id": "CountryData",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:CountryData(1.4)",
+          "-version": "1.4",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:CountryData(1.4).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IAEG",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT_SDMX",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TIME_DETAIL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).TIME_DETAIL",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "TIME_DETAIL",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "NATURE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).NATURE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "NATURE",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IAEG",
+                        "-class": "Codelist",
+                        "-id": "CL_NATURE_MDG",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SOURCE_DETAIL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).SOURCE_DETAIL",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "SOURCE_DETAIL",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "FOOTNOTES",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).FOOTNOTES",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "FOOTNOTES",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:CountryData(1.4).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IAEG",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ_MDG",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SERIES",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SERIES",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "SERIES",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNSD",
+                        "-class": "Codelist",
+                        "-id": "CL_SERIES_COUNTRY_DATA",
+                        "-package": "codelist",
+                        "-version": "0.9"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).UNIT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "UNIT",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNSD",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_COUNTRY_DATA",
+                        "-package": "codelist",
+                        "-version": "0.9"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "LOCATION",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).LOCATION",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "LOCATION",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IAEG",
+                        "-class": "Codelist",
+                        "-id": "CL_LOCATION_MDG",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "AGE_GROUP",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).AGE_GROUP",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "AGE_GROUP",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNSD",
+                        "-class": "Codelist",
+                        "-id": "CL_AGE_GROUP_COUNTRY_DATA",
+                        "-package": "codelist",
+                        "-version": "0.9"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SEX",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SEX",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "SEX",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IAEG",
+                        "-class": "Codelist",
+                        "-id": "CL_SEX_MDG",
+                        "-package": "codelist",
+                        "-version": "2.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IAEG",
+                        "-class": "Codelist",
+                        "-id": "CL_REF_AREA_MDG",
+                        "-package": "codelist",
+                        "-version": "4.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SOURCE_TYPE",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SOURCE_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IAEG",
+                      "-class": "Concept",
+                      "-id": "SOURCE_TYPE",
+                      "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IAEG",
+                        "-class": "Codelist",
+                        "-id": "CL_SOURCE_TYPE_MDG",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "9",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:CountryData(1.4).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IAEG",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:CountryData(1.4).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:CountryData(1.4).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IAEG",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "MDG_DATA_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "SDMX-CountryData",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

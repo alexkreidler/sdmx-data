@@ -1,0 +1,323 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF774319",
+      "Prepared": "2021-03-30T04:10:38Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "NB"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "Dataflows": {
+        "Dataflow": [
+          {
+            "-agencyID": "NB",
+            "-id": "ANN_FX_SPU",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:ANN_FX_SPU(1.0)",
+            "-version": "1.0",
+            "Description": [
+              {
+                "#text": "Norges Banks announcements of foreign exchange transactions on behalf of the government",
+                "-lang": "en"
+              },
+              {
+                "#text": "Norges Banks annonsering av valutatransaksjoner på vegne av staten",
+                "-lang": "no"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Announcement of foreign exchange transactions on behalf of SPU",
+                "-lang": "en"
+              },
+              {
+                "#text": "Annonsering av valutatransaksjoner for SPU",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_ANN_FX_SPU",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "NB",
+            "-id": "ANN_KPRA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:ANN_KPRA(1.0)",
+            "-version": "1.0",
+            "Description": [
+              {
+                "#text": "Norges Banks announcements of key policy rate decisions",
+                "-lang": "en"
+              },
+              {
+                "#text": "Norges Banks annonseringer av rentebeslutninger",
+                "-lang": "no"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Key policy rate announcement",
+                "-lang": "en"
+              },
+              {
+                "#text": "Publisering av styringsrenten",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_ANN_KPRA",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "NB",
+            "-id": "ANN_TEST",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:ANN_TEST(1.0)",
+            "-version": "1.0",
+            "Description": [
+              {
+                "#text": "Used internally by Norges Bank for technical verification of our publishing solution",
+                "-lang": "en"
+              },
+              {
+                "#text": "Benyttes internt av Norges Bank for teknisk verifikasjon av publiseringsløsningen",
+                "-lang": "no"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Announcement of test messages",
+                "-lang": "en"
+              },
+              {
+                "#text": "Annonsering av test meldinger",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_ANN_TEST",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "NB",
+            "-id": "EXR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:EXR(1.0)",
+            "-version": "1.0",
+            "Description": [
+              {
+                "#text": "Norges Bank exchange rate statistics",
+                "-lang": "en"
+              },
+              {
+                "#text": "Norges Banks valutakurser",
+                "-lang": "no"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Exchange rates",
+                "-lang": "en"
+              },
+              {
+                "#text": "Valutakurser",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_EXR",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "NB",
+            "-id": "FAUCTION",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:FAUCTION(1.0)",
+            "-version": "1.0",
+            "Description": [
+              {
+                "#text": "Norges Banks announcements and results of F-auctions. TIME_PERIOD indicates bidding deadline in the dataset.",
+                "-lang": "en"
+              },
+              {
+                "#text": "Norges Banks auksjonsinnbydelser og resultater av F-auksjon. TIME_PERIOD indikerer budfrist i datasettet.",
+                "-lang": "no"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Announcements and results of F-auctions",
+                "-lang": "en"
+              },
+              {
+                "#text": "Auksjonsinnbydelser og resultater av F-auksjoner",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_FAUCTION",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "NB",
+            "-id": "GOVT_ZEROCOUPON",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:GOVT_ZEROCOUPON(1.0)",
+            "-version": "1.0",
+            "Description": [
+              {
+                "#text": "Zero coupon rates derived from the Nelson Siegel Svensson curve based upon government bonds and bills in trade",
+                "-lang": "en"
+              },
+              {
+                "#text": "Nullkupongrenter avledet av beregnet avkastningskurve basert på statspapirer i omløp. Metode av Nelson Siegel Svensson.",
+                "-lang": "no"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Government securities Zero coupons rates",
+                "-lang": "en"
+              },
+              {
+                "#text": "Statspapir nullkupong renter",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_GOVT_ZEROCOUPON",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "NB",
+            "-id": "IR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:IR(1.1)",
+            "-version": "1.1",
+            "Description": [
+              {
+                "#text": "Norges Bank interest rate statistics",
+                "-lang": "en"
+              },
+              {
+                "#text": "Norges Banks rentestatistikk",
+                "-lang": "no"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Interest rates",
+                "-lang": "en"
+              },
+              {
+                "#text": "Renter",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_IR",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "NB",
+            "-id": "SEC",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=NB:SEC(1.0)",
+            "-version": "1.0",
+            "Description": [
+              {
+                "#text": "Beste kjøps- og salgskurser / renter stilt av primærhandlere i norske statspapirer klokken 16:00",
+                "-lang": "no"
+              },
+              {
+                "#text": "Best bid- and ask prices / yields quoted by primary dealers in Norwegian Treasury bills and government bonds at 4 p.m",
+                "-lang": "en"
+              }
+            ],
+            "Name": [
+              {
+                "#text": "Securities",
+                "-lang": "en"
+              },
+              {
+                "#text": "Lån",
+                "-lang": "no"
+              }
+            ],
+            "Structure": {
+              "Ref": {
+                "-agencyID": "NB",
+                "-class": "DataStructure",
+                "-id": "DSD_SEC",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

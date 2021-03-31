@@ -1,0 +1,1386 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF684186",
+      "Prepared": "2021-03-31T05:26:54Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "IMF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "ESTAT",
+          "-id": "SEEAAIR",
+          "-isExternalReference": "false",
+          "-isFinal": "true",
+          "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/datastructure/ESTAT/SEEAAIR/1.1",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:SEEAAIR(1.1)",
+          "-version": "1.1",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:SEEAAIR(1.1).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DISS_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).DISS_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "DISS_ORG",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.10"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PRE_BREAK_VALUE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).PRE_BREAK_VALUE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "PRE_BREAK_VALUE",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILING_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).COMPILING_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMPILING_ORG",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.10"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "LAST_UPDATE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).LAST_UPDATE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "LAST_UPDATE",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE_COMPL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).TITLE_COMPL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TITLE_COMPL",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).TITLE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TITLE",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "200",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).DECIMALS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "EMBARGO_TIME",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).EMBARGO_TIME",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "EMBARGO_TIME",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_TS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).COMMENT_TS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DEMAND_PROD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTERACTORS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BRIDGE_ITEMS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AIRPOL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRODUCT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SECTOR"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMMENT_TS",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_OBS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).COMMENT_OBS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMMENT_OBS",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_DSET",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).COMMENT_DSET",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMMENT_DSET",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS_4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).OBS_STATUS_4",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS_4",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS_3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).OBS_STATUS_3",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS_3",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS_2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).OBS_STATUS_2",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS_2",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS_1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).OBS_STATUS_1",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS_1",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:SEEAAIR(1.1).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_CONF_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:SEEAAIR(1.1).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.13"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "DEMAND_PROD",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).DEMAND_PROD",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "DEMAND_PROD",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_DEMAND_PROD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ACCOUNTING_ENTRY",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).ACCOUNTING_ENTRY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "ACCOUNTING_ENTRY",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ACCOUNT_ENTRY",
+                        "-package": "codelist",
+                        "-version": "1.4"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTERPART_AREA",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).COUNTERPART_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COUNTERPART_AREA",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.13"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INTERACTORS",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).INTERACTORS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "INTERACTORS",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_INTERACTORS",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "BRIDGE_ITEMS",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).BRIDGE_ITEMS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "BRIDGE_ITEMS",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_BRIDGE_ITEM",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "AIRPOL",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).AIRPOL",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "AIRPOL",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_AIRPOL",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "STO",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).STO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "STO",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_SEEA_STO",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.14"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "PRODUCT",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).PRODUCT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "PRODUCT",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_PRODUCT",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SECTOR",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:SEEAAIR(1.1).SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "SECTOR",
+                      "-maintainableParentID": "CS_SEEA",
+                      "-maintainableParentVersion": "1.1",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.11"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "13",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:SEEAAIR(1.1).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ESTAT",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_SEEA",
+                    "-maintainableParentVersion": "1.1",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:SEEAAIR(1.1).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:SEEAAIR(1.1).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ESTAT",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_SEEA",
+                    "-maintainableParentVersion": "1.1",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-isSequence": "false",
+                    "-textType": "AlphaNumeric"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "SEEA Global DSD for Air Emissions",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

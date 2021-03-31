@@ -1,0 +1,526 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF1999",
+      "Prepared": "2021-03-31T07:31:38.6933183+02:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "IT1",
+          "-id": "DCIS_INFANZIA",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCIS_INFANZIA(1.0)",
+          "-validFrom": "2015-02-20T00:00:00",
+          "-validTo": "2099-12-31T00:00:00",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCIS_INFANZIA(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_CONF",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_PRE_BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).OBS_PRE_BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_PRE_BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FLAG",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BASE_PER",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).BASE_PER",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "BASE_PER",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_BASE_YEAR",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MEAS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).UNIT_MEAS",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEAS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_EN",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).METADATA_EN",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_EN",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_IT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCIS_INFANZIA(1.0).METADATA_IT",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_IT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCIS_INFANZIA(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_INFANZIA(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ITTER107",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_INFANZIA(1.0).ITTER107",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "ITTER107",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "6.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_ITTER107",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "MISURA1",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_INFANZIA(1.0).MISURA1",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "MISURA1",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_MISURA1",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "GEST_SCUOLA",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_INFANZIA(1.0).GEST_SCUOLA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "GEST_SCUOLA",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "6.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_NATGIUR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ORDINESCOL",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_INFANZIA(1.0).ORDINESCOL",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "ORDINESCOL",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "6.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_ORDINESCOL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TIPO_DATO",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCIS_INFANZIA(1.0).TIPO_DATO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TIPO_DATO",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TIPO_DATO6",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "7",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCIS_INFANZIA(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "Y_CLOS_SCH",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "3.2",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "Group": {
+              "-id": "X_MEASURE",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCIS_INFANZIA(1.0).X_MEASURE",
+              "GroupDimension": {
+                "DimensionReference": {
+                  "Ref": {
+                    "-id": "TIPO_DATO"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCIS_INFANZIA(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCIS_INFANZIA(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "3.2",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": [
+            {
+              "#text": "Scuola dell infanzia",
+              "-lang": "it"
+            },
+            {
+              "#text": "Pre-primary school",
+              "-lang": "en"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4294 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF774390",
+      "Prepared": "2021-03-30T04:10:35Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "IMF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "Dataflows": {
+        "Dataflow": [
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_BOP_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/BPM6_BOP_M/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_BOP_M(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_BOP_M dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_BOP_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/BPM6_BOP_Q/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_BOP_Q(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_BOP_Q dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_FDI_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/BPM6_FDI_A/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_FDI_A(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_FDI_A dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "OECD",
+                "-class": "DataStructure",
+                "-id": "FDI",
+                "-package": "datastructure",
+                "-version": "1.8"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_ITS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/BPM6_ITS_A/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_ITS_A(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_ITS_A dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_AP_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/HICP_AP_A/2.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_AP_A(2.0)",
+            "-version": "2.0",
+            "Name": {
+              "#text": "HICP_AP_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "HICPAP",
+                "-package": "datastructure",
+                "-version": "2.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_COW_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/HICP_COW_A/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_COW_A(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Country Weights",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_COW_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_CT_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/HICP_CT_M/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_CT_M(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Final CT",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_CT_M",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_FE_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/HICP_FE_M/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_FE_M(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Flash Estimate",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_FE_M",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_INDEX_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/HICP_INDEX_M/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_INDEX_M(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Final",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_INDEX_M",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_WEIGHT_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/HICP_WEIGHT_A/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_WEIGHT_A(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Item Weight",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_WEIGHT_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_IDC_N",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_IDC_N/1.9",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_IDC_N(1.9)",
+            "-version": "1.9",
+            "Description": {
+              "#text": "Dataflow for International Data Cooperation, version 1.9",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "NAMAIN_IDC_N",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0101_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0101_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0101_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0101_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0101_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0101_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0101_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0101_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0102_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0102_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0102_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0102_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0102_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0102_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0102_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0102_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0103_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0103_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0103_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0103_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0103_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0103_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0103_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0103_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0110_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0110_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0110_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0110_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0110_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0110_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0110_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0110_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0111_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0111_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0111_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0111_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0111_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0111_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0111_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0111_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0117_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0117_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0117_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0117_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0117_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0117_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0117_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0117_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0120_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0120_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0120_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0120_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0120_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0120_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0120_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0120_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0121_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0121_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0121_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0121_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0121_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0121_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0121_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0121_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0301_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0301_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0301_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0301_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0302_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0302_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0302_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0302_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0303_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0303_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0303_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0303_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0501_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0501_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0501_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0501_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0502_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T0502_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0502_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0502_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T2000_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T2000_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T2000_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T2000_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T2200_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAMAIN_T2200_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T2200_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T2200_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAPENS_T2900_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAPENS_T2900_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAPENS_T2900_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAPENS_T2900_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_PENS",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAPENS_T2901_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAPENS_T2901_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAPENS_T2901_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAPENS_T2901_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_PENS",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAPENS_T2902_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAPENS_T2902_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAPENS_T2902_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAPENS_T2902_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_PENS",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1001_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAREG_T1001_A/3.3",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1001_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1002_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAREG_T1002_A/3.3",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1002_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1200_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAREG_T1200_A/3.3",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1200_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1300_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NAREG_T1300_A/3.3",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1300_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCFINA_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_IDCFINA_A/1.9",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_A(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCFINA_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCFINA_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_IDCFINA_Q/1.9",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_Q(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCFINA_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCNFSA_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_IDCNFSA_A/1.9",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_A(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCNFSA_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCNFSA_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_IDCNFSA_Q/1.9",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_Q(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCNFSA_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0610_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0610_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0610_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0610_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0611_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0611_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0611_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0611_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0612_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0612_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0612_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0612_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0620_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0620_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0620_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0620_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0621_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0621_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0621_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0621_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0622_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0622_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0622_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0622_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0625_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0625_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0625_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0625_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0710_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0710_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0710_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0710_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0720_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0720_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0720_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0720_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0725_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0725_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0725_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0725_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0800_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0800_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0800_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0800_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0801SA_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0801SA_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0801SA_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0801SA_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0801_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T0801_Q/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0801_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0801_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T2600_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASEC_T2600_A/1.12",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T2600_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T2600_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_1516_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU2_1516_A/2.2",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_1516_A(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_1516_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_16ADD_5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU2_16ADD_5/2.2",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_16ADD_5(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_16ADD_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_17IN_5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU2_17IN_5/2.2",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_17IN_5(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_17IN_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_17PR_5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU2_17PR_5/2.2",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_17PR_5(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_17PR_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1516ADD_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU_1516ADD_5/2.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1516ADD_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1516ADD_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1516_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU_1516_A/2.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1516_A(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1516_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_163034_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU_163034_A/2.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_163034_A(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_163034_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_16BP_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU_16BP_5/2.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_16BP_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_16BP_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1719IN_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU_1719IN_5/2.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1719IN_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1719IN_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1719PR_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/NASU_1719PR_5/2.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1719PR_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1719PR_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "SEEA_AEA_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/ESTAT/SEEA_AEA_A/1.1",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SEEA_AEA_A(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "Air Emissions Accounts",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Air Emissions Accounts",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "SEEAAIR",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG-SDGs",
+            "-id": "DF_SDG_GLC",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/IAEG-SDGs/DF_SDG_GLC/1.3",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG-SDGs:DF_SDG_GLC(1.3)",
+            "-version": "1.3",
+            "Description": {
+              "#text": "Reporting and dissemination dataflow for non-harmonized global SDG indicators reported by countries.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Country Global Dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG-SDGs",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG-SDGs",
+            "-id": "DF_SDG_GLH",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/IAEG-SDGs/DF_SDG_GLH/1.3",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG-SDGs:DF_SDG_GLH(1.3)",
+            "-version": "1.3",
+            "Description": {
+              "#text": "Reporting and dissemination dataflow for harmonized global SDG indicators.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Harmonized Global Dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG-SDGs",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "01R",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:01R(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Exchange Rates and International Reserves (01R) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Exchange Rates and International Reserves (01R) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "1DI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:1DI(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Coordinated Direct Investment Survey (CDIS) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Coordinated Direct Investment Survey (CDIS) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "1PI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:1PI(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Coordinated Portfolio Investment Survey (CPIS) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Coordinated Portfolio Investment Survey (CPIS) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "1SR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:1SR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "M\u0026amp;B: Central Bank (1SR) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "M\u0026amp;B: Central Bank (1SR) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "2SR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:2SR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "M\u0026amp;B: Other Depository Corporations (2SR) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "M\u0026amp;B: Other Depository Corporations (2SR) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "4SR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:4SR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "M\u0026amp;B: Other Financial Corporations (4SR) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "M\u0026amp;B: Other Financial Corporations (4SR) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "5SR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:5SR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "M\u0026amp;B: Monetary Aggregates (5SR) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "M\u0026amp;B: Monetary Aggregates (5SR) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "60R",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:60R(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "RES: Prices, Production, Labor and Trade (60R) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "RES: Prices, Production, Labor and Trade (60R) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "6SR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:6SR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "M\u0026amp;B: Interest Rates and Share Prices (6SR) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "M\u0026amp;B: Interest Rates and Share Prices (6SR) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "90R",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:90R(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "RES: National Accounts (90R) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "RES: National Accounts (90R) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BCG",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BCG(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance Operations Statement Central Government",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Budgetary Central Government Operations",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BCGO_ALT_FISCAL",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BCGO_ALT_FISCAL(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance Budgetary Central Government Operations  FISCAL",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Budgetary Central Government Operations",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ALT_FISCAL_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BOP5_COLLECTION",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BOP5_COLLECTION(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Balance of Payments (BPM5) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Balance of Payments (BPM5) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BOP6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BOP6(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "Balance of Payments (BPM6) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Balance of Payments (BPM6) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BOP_BPM5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BOP_BPM5(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Balance of Payments -- BPM5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BOP_BPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BOP_BPM6(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Balance of Payments -- BPM6",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BOP_GBPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BOP_GBPM6(1.14)",
+            "-version": "1.14",
+            "Name": {
+              "#text": "Balance of Payments _Global use_BOP_BPM6",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BPM6_BOP_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BPM6_BOP_Q(1.5)",
+            "-version": "1.5",
+            "Name": {
+              "#text": "Balance of Payments --BPM6--Global DSD",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.5"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "BPM6_RA_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:BPM6_RA_M(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Template on International Reserves and Foreign Currency Liquidity--Global DSD",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CBS",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CBS(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Central Bank Survey",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central Bank Survey",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CBS_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CBS_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central Bank Survey_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance Central Government debt",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central Government debt (CGD)",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGD_ALT_FISCAL",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGD_ALT_FISCAL(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance Central Government debt FISCAL",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central Government debt (CGD) FISCAL",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ALT_FISCAL_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGD_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGD_GNA(1.5)",
+            "-version": "1.5",
+            "Name": {
+              "#text": "Central Government Debt (CGD) - Global Use NA_SEC DSD V1.5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.5"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGD_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGD_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central Government Debt_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGO",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGO(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance Operations Statement Central Government",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central Government Operations (CGO)",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGO_ALT_FISCAL",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGO_ALT_FISCAL(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance Central Government operations FISCAL",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central Government operations (CGO) FISCAL",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ALT_FISCAL_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGO_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGO_GNA(1.4)",
+            "-version": "1.4",
+            "Name": {
+              "#text": "Central Government operations (CGO) - Global Use NA_SEC DSD V1.4",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CGO_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CGO_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Central government operations_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "COF",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:COF(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "COFER: Currency Composition of Foreign Exchange Reserves",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "COFER: Currency Composition of Foreign Exchange Reserves",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CPI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CPI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Consumer Price Index",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "CPIH",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:CPIH(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Consumer Price Index Harmonized (CPIH) for collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "DCS",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:DCS(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Depository Corporations Survey",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Depository Corporations Survey",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "DCS_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:DCS_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Depository Corporations Survey_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "DOTS",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:DOTS(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Direction of Trade Statistics (DOTS) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Direction of Trade Statistics (DOTS) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "DSE",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:DSE(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Debt Securities",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Debt Securities",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "DSE_GBPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:DSE_GBPM6(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Debt Securities - Global Use BPM6 DSD V1.2",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "DSE_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:DSE_GNA(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "Debt Securities - Global Use NA_SEC DSD V1.12",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "EMP",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:EMP(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Employment",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "EXD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:EXD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "External debt",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "External debt",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "EXD_BPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:EXD_BPM6(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "External Debt (EXD_BPM6)",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "EXD_GBPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:EXD_GBPM6(1.14)",
+            "-version": "1.14",
+            "Name": {
+              "#text": "External Debt (EXD)- Global Use BOP_BPM6",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "EXR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:EXR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Exchange rates",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Exchange rates",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "FAS_COLLECTION",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:FAS_COLLECTION(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Financial Access Survey (FAS) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Financial Access Survey (FAS) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "FLI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:FLI(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Forward looking Indicators",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Forward looking Indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "FS1",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:FS1(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "FSI: Institution of Deposit Takers and OFCs (FS1) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "FSI: Institution of Deposit Takers and OFCs (FS1) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "FS2",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:FS2(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "FSI: Sectoral Financial Statements (FS2) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "FSI: Sectoral Financial Statements (FS2) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "FSD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:FSD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "FSI: Data Report Form (FSD) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "FSI: Data Report Form (FSD) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "FSD_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:FSD_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "FSI: Data Report Form_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "FSI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:FSI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Financial Soundness Indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GFB",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GFB(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Budgetary Central Govt: Operational Statement, Cash Statement, Balance Sheet (GFB) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "GFS: Budgetary Central Govt: Operational Statement, Cash Statement, Balance Sheet (GFB) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GFC",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GFC(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Consolidated Central Govt: Operational Statement, Cash Statement, Balance Sheet (GFC) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "GFS: Consolidated Central Govt: Operational Statement, Cash Statement, Balance Sheet (GFC) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GFG",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GFG(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "GFS: Consolidated General Govt: Operational Statement, Cash Statement, Balance Sheet (GFG) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "GFS: Consolidated General Govt: Operational Statement, Cash Statement, Balance Sheet (GFG) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GGD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GGD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance General Government gross debt",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "General Government gross debt (GGD)",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GGD_ALT_FISCAL",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GGD_ALT_FISCAL(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance General Government debt FISCAL",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "General Government debt (GGD) FISCAL",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ALT_FISCAL_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GGD_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GGD_GNA(1.7)",
+            "-version": "1.7",
+            "Name": {
+              "#text": "General Government debt - Global Use NA_SEC DSD V1.7",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.7"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GGO",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GGO(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance Operations Statement General Government",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "General Government Operations (GGO)",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GGO_ALT_FISCAL",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GGO_ALT_FISCAL(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Government Finance General Government operations FISCAL",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "General Government operations (GGO) FISCAL",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ALT_FISCAL_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GGO_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GGO_GNA(1.5)",
+            "-version": "1.5",
+            "Name": {
+              "#text": "General Government operations (GGO) - Global Use NA_SEC DSD V1.5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.5"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "GYQ",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:GYQ(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "GFS: Yearkbook Questionnaire (GYQ) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "GFS: Yearkbook Questionnaire (GYQ) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "IIP5_COLLECTION",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:IIP5_COLLECTION(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "International Investment Position (BPM5) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "International Investment Position (BPM5) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "IIP6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:IIP6(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "International Investment Position (BPM6) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "International Investment Position (BPM6) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "IIP_BPM5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:IIP_BPM5(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "International Investment Position -- BPM5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "IIP_BPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:IIP_BPM6(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "International Investment Position -- BPM6",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "IIP_GBPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:IIP_GBPM6(1.14)",
+            "-version": "1.14",
+            "Name": {
+              "#text": "International Investment Position (IIP) - Global Use BOP_BPM6",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "ILV1",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:ILV1(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Official reserve assets",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Official reserve assets",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "ILV1_GBPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:ILV1_GBPM6(1.14)",
+            "-version": "1.14",
+            "Name": {
+              "#text": "Official Reserve Assets (ILV1)-Global Use BOP_BPM6",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "ILV2",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:ILV2(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Template on International Reserves and Foreign Currency Liquidity",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Template on International Reserves and Foreign Currency Liquidity",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "ILV2_GBPM6",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:ILV2_GBPM6(1.14)",
+            "-version": "1.14",
+            "Name": {
+              "#text": "Reserves Template (ILV2)-Global Use BPM6",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "IND",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:IND(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Index of Industrial Production",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Index of Industrial Production",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "IND_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:IND_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Index of Industrial Production_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "INF",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:INF(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Instrument Composition of Transactions in Foreign Exchange Reserves (INFER) for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Instrument Composition of Transactions in Foreign Exchange Reserves (INFER) for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "INR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:INR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Interest rates",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Interest rates",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "INR_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:INR_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Interest rates_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "LMI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:LMI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Labor Market Indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "LMI_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:LMI_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Labor Market Indicators_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "MET",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:MET(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Merchandise trade",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Merchandise trade",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "MET_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:MET_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Merchandise Trade_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "MSG",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:MSG(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Monetary and Financial Statistics Aggregates",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "NAG",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:NAG(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "National Accounts",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "NAG_08",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:NAG_08(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "National Accounts -- 08\u0026apos;",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "NAG_93",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:NAG_93(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "National Accounts -- 93\u0026apos;",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "NAG_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:NAG_GNA(1.11)",
+            "-version": "1.11",
+            "Name": {
+              "#text": "National Accounts 2008 (NAG08) - Global Use NA_MAIN v1.11",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.11"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "NAG_NSTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:NAG_NSTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Non-Standard_ISO Codes",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "National Accounts - GDP_Non-Standard",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "OFS",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:OFS(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Other Financial Corporations (OFC) survey",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Other Financial Corporations (OFC) survey",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "OFS_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:OFS_GNA(1.5)",
+            "-version": "1.5",
+            "Name": {
+              "#text": "Other Financial Corporations (OFC) - Global Use NA_SEC v1.5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.5"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "POP",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:POP(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Population",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Population",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "PPI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:PPI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Producer Price Index",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "RTD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:RTD(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Reserves Template for Collection",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Reserves Template for Collection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "SBS",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:SBS(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Accumulation Accounts (Sectoral Balance Sheets)",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Accumulation Accounts (Sectoral Balance Sheets)",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "SBS_GNA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:SBS_GNA(1.12)",
+            "-version": "1.12",
+            "Description": {
+              "#text": "Sectoral Balance Sheets (SBS) - Global Use NA_SEC v1.12",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Sectoral Balance Sheets (SBS) - Global Use NA_SEC v1.12",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "SOC",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:SOC(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Socio-Demographic",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "SPI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:SPI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Stock Market: Share Price Index",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "UEM",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:UEM(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Unemployment",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "WOE",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:WOE(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Wages and Earnings",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "ZZZNL_TEST",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:ZZZNL_TEST(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Netherlands Test Provision Agreement EcoFin DSD",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "ZZZ_TEST_ECOFIN",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "IMF",
+            "-id": "ZZZ_TEST_ECOFIN",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IMF:ZZZ_TEST_ECOFIN(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Test Dataflow EcoFin DSD",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "ECOFIN_DSD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "SDMX",
+            "-id": "NAMAIN_IDC_N",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/SDMX/NAMAIN_IDC_N/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=SDMX:NAMAIN_IDC_N(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "NAMAIN_IDC_N",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.6"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_CLASS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UIS/EDUCAT_CLASS_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_CLASS_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_CLASS_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_DEM_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UIS/EDUCAT_DEM_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_DEM_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_DEM_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_ENRL_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UIS/EDUCAT_ENRL_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_ENRL_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "EDUCAT_ENRL_A",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "EDUCAT_ENRL_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_ENTR_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UIS/EDUCAT_ENTR_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_ENTR_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_ENTR_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_FINANCE_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UIS/EDUCAT_FINANCE_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_FINANCE_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_FINANCE_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_GRAD_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UIS/EDUCAT_GRAD_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_GRAD_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_GRAD_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_PERS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UIS/EDUCAT_PERS_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_PERS_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_PERS_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UNSD/IMTS_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Dataflow for IMTS annual data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS Annual",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_AGGEGATES_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UNSD/IMTS_AGGEGATES_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_AGGEGATES_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS annual aggregated data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS aggregates Annual",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_AGGREGATES",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_AGGREGATES_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UNSD/IMTS_AGGREGATES_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_AGGREGATES_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS annual aggregated data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS aggregates Annual",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_AGGREGATES",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_AGGREGATES_M",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UNSD/IMTS_AGGREGATES_M/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_AGGREGATES_M(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS Monthly aggregated data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS aggregates Monthly",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_AGGREGATES",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_COMPACT_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UNSD/IMTS_COMPACT_A/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_COMPACT_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS Annual compact data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS compact Annual",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_COMPACT",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_COMPACT_M",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UNSD/IMTS_COMPACT_M/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_COMPACT_M(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS monthly compact data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS compact Monthly",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_COMPACT",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_M",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-structureURL": "https://registry.sdmx.org/ws/public/sdmxapi/rest/dataflow/UNSD/IMTS_M/1.0",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_M(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS monthly data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS Monthly",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

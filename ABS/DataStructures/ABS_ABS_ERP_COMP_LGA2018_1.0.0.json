@@ -1,0 +1,260 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF50546",
+      "Prepared": "2021-03-31T16:22:58.5995502+11:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "ABS",
+          "-id": "ABS_ERP_COMP_LGA2018",
+          "-isFinal": "true",
+          "-version": "1.0.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MEASURE",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ABS",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_ATTRIBUTE",
+                      "-maintainableParentVersion": "1.0.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ABS",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.0.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ABS",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CS_ATTRIBUTE",
+                      "-maintainableParentVersion": "1.0.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ABS",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_COMMENT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ABS",
+                      "-class": "Concept",
+                      "-id": "OBS_COMMENT",
+                      "-maintainableParentID": "CS_ATTRIBUTE",
+                      "-maintainableParentVersion": "1.0.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "POP_COMP",
+                  "-position": "1",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ABS",
+                      "-class": "Concept",
+                      "-id": "POP_COMP",
+                      "-maintainableParentID": "CS_DEMOG",
+                      "-maintainableParentVersion": "1.0.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ABS",
+                        "-class": "Codelist",
+                        "-id": "CL_POP_COMP",
+                        "-package": "codelist",
+                        "-version": "1.0.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "REGIONTYPE",
+                  "-position": "2",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ABS",
+                      "-class": "Concept",
+                      "-id": "REGION_TYPE",
+                      "-maintainableParentID": "CS_GEOGRAPHY",
+                      "-maintainableParentVersion": "1.0.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ABS",
+                        "-class": "Codelist",
+                        "-id": "CL_REGION_TYPE",
+                        "-package": "codelist",
+                        "-version": "1.1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "LGA_2018",
+                  "-position": "3",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ABS",
+                      "-class": "Concept",
+                      "-id": "REGION",
+                      "-maintainableParentID": "CS_GEOGRAPHY",
+                      "-maintainableParentVersion": "1.0.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ABS",
+                        "-class": "Codelist",
+                        "-id": "CL_LGA_2018",
+                        "-package": "codelist",
+                        "-version": "1.0.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "FREQUENCY",
+                  "-position": "4",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ABS",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "1.0.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ABS",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "5",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ABS",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "1.0.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ABS",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "1.0.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "ERP and components by LGA (ASGS 2018), 2017 to 2018",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

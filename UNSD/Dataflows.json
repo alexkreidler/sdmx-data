@@ -1,0 +1,308 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF557",
+      "Prepared": "2021-03-30T06:10:44.3215056+02:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "Dataflows": {
+        "Dataflow": [
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCFINA_A",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_A(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "Annual financial accounts",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCFINA_Q",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_Q(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "Quarterly financial accounts",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCNFSA_A",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_A(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "Annual non-financial accounts",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCNFSA_Q",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_Q(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "Quarterly non-financial accounts",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NA_MAIN",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NA_MAIN(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NA Main Aggregates",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG",
+            "-id": "DF_UNDATA_MDG",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG:DF_UNDATA_MDG(1.2)",
+            "-version": "1.2",
+            "Name": {
+              "#text": "SDMX-MDGs",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG",
+                "-class": "DataStructure",
+                "-id": "MDG",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG-SDGs",
+            "-id": "DF_SDG_GLH",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG-SDGs:DF_SDG_GLH(1.3)",
+            "-version": "1.3",
+            "Description": {
+              "#text": "Reporting and dissemination dataflow for harmonized global SDG indicators.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Harmonized Global Dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG-SDGs",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "DF_UNData_UIS",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:DF_UNData_UIS(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "SDMX_UIS_UNData",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UIS_UNData",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "DF_UNDATA_COUNTRYDATA",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_COUNTRYDATA(1.4)",
+            "-version": "1.4",
+            "Name": {
+              "#text": "SDMX-CountryData",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "CountryData",
+                "-package": "datastructure",
+                "-version": "1.4"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "DF_UNDATA_SEEA_SUPPLY",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_SEEA_SUPPLY(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "SEEA SUPPLY DATA",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "SEEANRG",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "DF_UNDATA_SEEA_USE",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_SEEA_USE(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "SEEA USE DATA",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "SEEANRG",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "DF_UNData_EnergyBalance",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNData_EnergyBalance(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Energy Balance DataFlow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "DSD_ENERGY_BALANCE_UNDATA",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "DF_UNData_UNFCC",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNData_UNFCC(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "SDMX_GHG_UNDATA",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "DSD_GHG_UNDATA",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "WB",
+            "-id": "DF_UNDATA_WDI",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WB:DF_UNDATA_WDI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "WB World Development Indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "WB",
+                "-class": "DataStructure",
+                "-id": "WDI",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

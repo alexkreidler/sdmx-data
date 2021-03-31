@@ -1,0 +1,1939 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF683508",
+      "Prepared": "2021-03-31T05:25:55Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "IMF",
+          "-id": "BOP",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-uri": "/default/namespace/might/get/from/SDMXRegistry/when/available",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IMF:BOP(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IMF:BOP(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TIME_FORMAT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).TIME_FORMAT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "TIME_FORMAT",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_CONF_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PRE_BREAK_VALUE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).PRE_BREAK_VALUE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "PRE_BREAK_VALUE",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "15",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_OBS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).COMMENT_OBS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "COMMENT_OBS",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_TS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).COMMENT_TS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "COMMENT_TS",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILING_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).COMPILING_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "COMPILING_ORG",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_COMP",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).DATA_COMP",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "DATA_COMP",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).DECIMALS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "BigInteger"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DISS_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).DISS_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "DISS_ORG",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "REF_PERIOD_DETAIL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).REF_PERIOD_DETAIL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "REF_PERIOD_DETAIL",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_REF_PERIOD_DTL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TIME_PER_COLLECT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).TIME_PER_COLLECT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "TIME_PER_COLLECT",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_TIME_COLLECT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).TITLE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "TITLE",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "200",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE_COMPL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).TITLE_COMPL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "TITLE_COMPL",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IMF:BOP(1.0).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_DENOM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COMP_METHOD"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IMF:BOP(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ADJUSTMENT",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).ADJUSTMENT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "ADJUSTMENT",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ADJUSTMENT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTERPART_AREA",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).COUNTERPART_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "COUNTERPART_AREA",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_SECTOR",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).REF_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "REF_SECTOR",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTERPART_SECTOR",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).COUNTERPART_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "COUNTERPART_SECTOR",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "FLOW_STOCK_ENTRY",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).FLOW_STOCK_ENTRY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "FLOW_STOCK_ENTRY",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_FSENTRY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ACCOUNTING_ENTRY",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).ACCOUNTING_ENTRY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "ACCOUNTING_ENTRY",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ACCOUNT_ENTRY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "INT_ACC_ITEM",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).INT_ACC_ITEM",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "INT_ACC_ITEM",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ACCOUNTS_ITEM",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "8",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "FUNCTIONAL_CAT",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).FUNCTIONAL_CAT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "FUNCTIONAL_CAT",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_FUNCTIONAL_CAT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "INSTR_ASSET",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).INSTR_ASSET",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "INSTR_ASSET",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_INSTR_ASSET",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "MATURITY",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).MATURITY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "MATURITY",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_MATURITY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "13",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "15",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CURRENCY_DENOM",
+                  "-position": "14",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).CURRENCY_DENOM",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "CURRENCY_DENOM",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "15",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "VALUATION",
+                  "-position": "15",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).VALUATION",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "VALUATION",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_VALUATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COMP_METHOD",
+                  "-position": "16",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IMF:BOP(1.0).COMP_METHOD",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IMF",
+                      "-class": "Concept",
+                      "-id": "COMP_METHOD",
+                      "-maintainableParentID": "IMF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_COMP_METHOD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "17",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IMF:BOP(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IMF",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "IMF_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IMF:BOP(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IMF:BOP(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IMF",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "IMF_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-maxLength": "15",
+                    "-textType": "String"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "Balance of Payments, I.I.P. and Reserve Assets",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

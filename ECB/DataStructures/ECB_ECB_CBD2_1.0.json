@@ -1,0 +1,2465 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF682737",
+      "Prepared": "2021-03-31T05:24:38Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "ECB",
+          "-id": "ECB_CBD2",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-uri": "https://www.ecb.europa.eu/vocabulary/stats/cbd/2",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_CBD2(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_CBD2(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TIME_FORMAT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).TIME_FORMAT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TIME_FORMAT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CONF_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PRE_BREAK_VALUE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).PRE_BREAK_VALUE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PRE_BREAK_VALUE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "15",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_OBS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).COMMENT_OBS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COMMENT_OBS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BREAKS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).BREAKS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "BREAKS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "350",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "COMMENT_TS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).COMMENT_TS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COMMENT_TS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILING_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).COMPILING_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COMPILING_ORG",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COVERAGE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).COVERAGE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COVERAGE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "350",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CURRENCY",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).CURRENCY",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CURRENCY",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "13",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_COMP",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).DATA_COMP",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "DATA_COMP",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).DECIMALS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "BigInteger"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DISS_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).DISS_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "DISS_ORG",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_ECB",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).PUBL_ECB",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_ECB",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_MU",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).PUBL_MU",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_MU",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_PUBLIC",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).PUBL_PUBLIC",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_PUBLIC",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TIME_PER_COLLECT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).TIME_PER_COLLECT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TIME_PER_COLLECT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_TIME_COLLECT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).TITLE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TITLE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "200",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE_COMPL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).TITLE_COMPL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TITLE_COMPL",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CBD2(1.0).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNT_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_COUNT_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BS_NFC_ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_SECTOR_SIZE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_REP_FRAMEWRK"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_PORTFOLIO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_EXP_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CB_VAL_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MATURITY_RES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "DATA_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CURRENCY_TRANS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_CBD2(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNT_AREA",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).COUNT_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COUNT_AREA",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CB_REP_SECTOR",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CB_REP_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CB_REP_SECTOR",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CB_REP_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "BS_COUNT_SECTOR",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).BS_COUNT_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "BS_COUNT_SECTOR",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "BS_NFC_ACTIVITY",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).BS_NFC_ACTIVITY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "BS_NFC_ACTIVITY",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_ACTIVITY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "9",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CB_SECTOR_SIZE",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CB_SECTOR_SIZE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CB_SECTOR_SIZE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CB_SECTOR_SIZE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CB_REP_FRAMEWRK",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CB_REP_FRAMEWRK",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CB_REP_FRAMEWRK",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CB_REP_FRAMEWRK",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CB_ITEM",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CB_ITEM",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CB_ITEM",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CB_ITEM",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "5",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CB_PORTFOLIO",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CB_PORTFOLIO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CB_PORTFOLIO",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CB_PORTFOLIO",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CB_EXP_TYPE",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CB_EXP_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CB_EXP_TYPE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CB_EXP_TYPE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CB_VAL_METHOD",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CB_VAL_METHOD",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CB_VAL_METHOD",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CB_VAL_METHOD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "MATURITY_RES",
+                  "-position": "13",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).MATURITY_RES",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "MATURITY_RES",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_MATURITY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "DATA_TYPE",
+                  "-position": "14",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).DATA_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "DATA_TYPE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_FSENTRY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CURRENCY_TRANS",
+                  "-position": "15",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).CURRENCY_TRANS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CURRENCY_TRANS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CURRENCY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "16",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CBD2(1.0).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "13",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "17",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_CBD2(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ECB",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "ECB_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_CBD2(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_CBD2(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ECB",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "ECB_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-maxLength": "15",
+                    "-textType": "String"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "Statistics on Consolidated Banking Data",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

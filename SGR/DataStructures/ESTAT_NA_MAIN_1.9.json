@@ -1,0 +1,2414 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF689796",
+      "Prepared": "2021-03-31T05:36:12Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "SDMX"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "ESTAT",
+          "-id": "NA_MAIN",
+          "-isExternalReference": "false",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:NA_MAIN(1.9)",
+          "-version": "1.9",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:NA_MAIN(1.9).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_CONF_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_OBS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMMENT_OBS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMMENT_OBS",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "EMBARGO_DATE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).EMBARGO_DATE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "EMBARGO_DATE",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "25",
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "REF_PERIOD_DETAIL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REF_PERIOD_DETAIL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "REF_PERIOD_DETAIL",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_REF_PERIOD_DTL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "REPYEARSTART",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REPYEARSTART",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "REPYEARSTART",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "25",
+                      "-textType": "MonthDay"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "REPYEAREND",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REPYEAREND",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "REPYEAREND",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "25",
+                      "-textType": "MonthDay"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TIME_FORMAT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TIME_FORMAT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TIME_FORMAT",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_TIME_FORMAT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "4",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TIME_PER_COLLECT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TIME_PER_COLLECT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TIME_PER_COLLECT",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_TIME_COLLECT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "REF_YEAR_PRICE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REF_YEAR_PRICE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "REF_YEAR_PRICE",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4",
+                      "-minLength": "4",
+                      "-textType": "Integer"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).DECIMALS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TABLE_IDENTIFIER",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TABLE_IDENTIFIER",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TABLE_IDENTIFIER",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_NA_TABLEID",
+                        "-package": "codelist",
+                        "-version": "1.7"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "12",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TITLE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TITLE",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "200",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE_COMPL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TITLE_COMPL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TITLE_COMPL",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "LAST_UPDATE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).LAST_UPDATE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "LAST_UPDATE",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "25",
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILING_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMPILING_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMPILING_ORG",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.7"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_DSET",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMMENT_DSET",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMMENT_DSET",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_TS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMMENT_TS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COMMENT_TS",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PRE_BREAK_VALUE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).PRE_BREAK_VALUE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "PRE_BREAK_VALUE",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "15",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_COMP",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).DATA_COMP",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "DATA_COMP",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CURRENCY",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).CURRENCY",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "CURRENCY",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.9"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "15",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DISS_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).DISS_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STO"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PRICES"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TRANSFORMATION"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "DISS_ORG",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.7"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:NA_MAIN(1.9).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ADJUSTMENT",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).ADJUSTMENT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "ADJUSTMENT",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_ADJUSTMENT",
+                        "-package": "codelist",
+                        "-version": "1.4"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.8"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTERPART_AREA",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).COUNTERPART_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COUNTERPART_AREA",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.8"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_SECTOR",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).REF_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "REF_SECTOR",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTERPART_SECTOR",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).COUNTERPART_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "COUNTERPART_SECTOR",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ACCOUNTING_ENTRY",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).ACCOUNTING_ENTRY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "ACCOUNTING_ENTRY",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ACCOUNT_ENTRY",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "STO",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).STO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "STO",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_NA_STO",
+                        "-package": "codelist",
+                        "-version": "1.9"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "9",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "INSTR_ASSET",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).INSTR_ASSET",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "INSTR_ASSET",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_INSTR_ASSET",
+                        "-package": "codelist",
+                        "-version": "1.7"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ACTIVITY",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).ACTIVITY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "ACTIVITY",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_ACTIVITY",
+                        "-package": "codelist",
+                        "-version": "1.5"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "9",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "EXPENDITURE",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).EXPENDITURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "EXPENDITURE",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_COICOP",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "12",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.9"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "15",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "PRICES",
+                  "-position": "13",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).PRICES",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "PRICES",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_NA_PRICES",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "TRANSFORMATION",
+                  "-position": "14",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).TRANSFORMATION",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ESTAT",
+                      "-class": "Concept",
+                      "-id": "TRANSFORMATION",
+                      "-maintainableParentID": "CS_NA",
+                      "-maintainableParentVersion": "1.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_TRANSFORMATION",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "15",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:NA_MAIN(1.9).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ESTAT",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_NA",
+                    "-maintainableParentVersion": "1.9",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:NA_MAIN(1.9).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:NA_MAIN(1.9).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ESTAT",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_NA",
+                    "-maintainableParentVersion": "1.9",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-maxLength": "15",
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "NA Main Aggregates",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

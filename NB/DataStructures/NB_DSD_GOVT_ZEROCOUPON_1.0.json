@@ -1,0 +1,179 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF689452",
+      "Prepared": "2021-03-31T05:35:40Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "NB"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "NB",
+          "-id": "DSD_GOVT_ZEROCOUPON",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_GOVT_ZEROCOUPON(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=NB:DSD_GOVT_ZEROCOUPON(1.0).AttributeDescriptor",
+              "Attribute": {
+                "-assignmentStatus": "Conditional",
+                "-id": "DECIMALS",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=NB:DSD_GOVT_ZEROCOUPON(1.0).DECIMALS",
+                "AttributeRelationship": {
+                  "None": ""
+                },
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "NB",
+                    "-class": "Concept",
+                    "-id": "DECIMALS",
+                    "-maintainableParentID": "CS_NB",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-isSequence": "false",
+                    "-textType": "Integer"
+                  }
+                }
+              }
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_GOVT_ZEROCOUPON(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_GOVT_ZEROCOUPON(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "NB",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_NB",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "NB",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TENOR",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_GOVT_ZEROCOUPON(1.0).TENOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "NB",
+                      "-class": "Concept",
+                      "-id": "TENOR",
+                      "-maintainableParentID": "CS_NB",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "NB",
+                        "-class": "Codelist",
+                        "-id": "CL_TENOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "3",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_GOVT_ZEROCOUPON(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "NB",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_NB",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_GOVT_ZEROCOUPON(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_GOVT_ZEROCOUPON(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "NB",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_NB",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Description": [
+            {
+              "#text": "Zero coupon rates derived from the Nelson Siegel Svensson curve based upon government bonds and bills in trade",
+              "-lang": "en"
+            },
+            {
+              "#text": "Nullkupongrenter avledet av beregnet avkastningskurve basert på statspapirer i omløp. Metode av Nelson Siegel Svensson.",
+              "-lang": "no"
+            }
+          ],
+          "Name": [
+            {
+              "#text": "Government securities Zero coupons rates",
+              "-lang": "en"
+            },
+            {
+              "#text": "Statspapir nullkupong renter",
+              "-lang": "no"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

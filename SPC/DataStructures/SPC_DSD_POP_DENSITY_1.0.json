@@ -1,0 +1,256 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF1114",
+      "Prepared": "2021-03-31T05:37:23.492782+00:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "SPC",
+          "-id": "DSD_POP_DENSITY",
+          "-isFinal": "false",
+          "-version": "1.0",
+          "Annotations": {
+            "Annotation": {
+              "AnnotationTitle": "500",
+              "AnnotationType": "MAXTEXTATTRIBUTELENGTH"
+            }
+          },
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MEASURE",
+                  "AttributeRelationship": {
+                    "Dimension": {
+                      "Ref": {
+                        "-id": "INDICATOR"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "OBS_SATUS",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_COMMENT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "COMMENT",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "GEO_PICT",
+                  "-position": "2",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "GEO_PICT",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_GEO_PICT",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INDICATOR",
+                  "-position": "3",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "INDICATOR",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_POP_DENSITY_INDICATORS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "4",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SPC",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SPC",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Name": [
+            {
+              "#text": "Structure des données pour les denistés de population",
+              "-lang": "fr"
+            },
+            {
+              "#text": "Data structure for population density",
+              "-lang": "en"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1091 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF691160",
+      "Prepared": "2021-03-31T05:38:39Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "UNICEF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "UNICEF",
+          "-id": "CHILD_PROTECTION_FGM",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF:CHILD_PROTECTION_FGM(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF:CHILD_PROTECTION_FGM(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULTIPLIER",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).UNIT_MULTIPLIER",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INDICATOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_PRACTITIONER"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AGE_FGM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MTH_FGM_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEVEL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "WEALTH_QUINTILE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MARITAL_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RESIDENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RELIGIOUS_GROUP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ETHNIC_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULTIPLIER",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MEASURE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).UNIT_MEASURE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INDICATOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_PRACTITIONER"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AGE_FGM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MTH_FGM_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEVEL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "WEALTH_QUINTILE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MARITAL_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RESIDENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RELIGIOUS_GROUP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ETHNIC_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_CONF",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).OBS_CONF",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "OBS_CONF",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_CONF_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_SOURCE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).DATA_SOURCE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "DATA_SOURCE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "LOWER_BOUND",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).LOWER_BOUND",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "LOWER_BOUND",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UPPER_BOUND",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).UPPER_BOUND",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UPPER_BOUND",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNWGTD_SAMPL_SIZE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).UNWGTD_SAMPL_SIZE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UNWGTD_SAMPL_SIZE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "WGTD_SAMPL_SIZE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).WGTD_SAMPL_SIZE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "WGTD_SAMPL_SIZE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SOURCE_LINK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).SOURCE_LINK",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INDICATOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_PRACTITIONER"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AGE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AGE_FGM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MTH_FGM_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEVEL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "WEALTH_QUINTILE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MARITAL_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RESIDENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RELIGIOUS_GROUP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ETHNIC_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "SOURCE_LINK",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TIME_PERIOD_METHOD",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).TIME_PERIOD_METHOD",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "TIME_PERIOD_METHOD",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COVERAGE_TIME",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).COVERAGE_TIME",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "COVERAGE_TIME",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "FREQ_COLL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).FREQ_COLL",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "FREQ_COLL",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ_COLL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SERIES_FOOTNOTE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).SERIES_FOOTNOTE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INDICATOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_PRACTITIONER"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FGM_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AGE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AGE_FGM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MTH_FGM_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEVEL"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "WEALTH_QUINTILE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MARITAL_STATUS"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RESIDENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RELIGIOUS_GROUP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ETHNIC_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "SERIES_FOOTNOTE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_FOOTNOTE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF:CHILD_PROTECTION_FGM(1.0).OBS_FOOTNOTE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "OBS_FOOTNOTE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF:CHILD_PROTECTION_FGM(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "REF_AREA",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_COUNTRY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INDICATOR",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).INDICATOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UNICEF_INDICATOR",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNICEF_INDICATOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "FGM_PRACTITIONER",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).FGM_PRACTITIONER",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "FGM_PRACTITIONER",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_FGM_PRACTITIONER",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "FGM_TYPE",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).FGM_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "FGM_TYPE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_TYPE_FGM",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "AGE",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).AGE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "AGE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_AGE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "AGE_FGM",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).AGE_FGM",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "AGE_FGM",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_AGE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "MTH_FGM_STATUS",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).MTH_FGM_STATUS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "MTH_FGM_STATUS",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_MTH_FGM_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "EDUCATION_LEVEL",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).EDUCATION_LEVEL",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "EDUCATION_LEVEL",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_LEVEL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "WEALTH_QUINTILE",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).WEALTH_QUINTILE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "WEALTH_QUINTILE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_WEALTH_QUINTILE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "MARITAL_STATUS",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).MARITAL_STATUS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "MARITAL_STATUS",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_MARITAL_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "RESIDENCE",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).RESIDENCE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "RESIDENCE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_RESIDENCE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "RELIGIOUS_GROUP",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).RELIGIOUS_GROUP",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "RELIGIOUS_GROUP",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_RELIGIOUS_GROUP",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ETHNIC_GROUP",
+                  "-position": "13",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF:CHILD_PROTECTION_FGM(1.0).ETHNIC_GROUP",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "ETHNIC_GROUP",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_ETHNIC_GROUP",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "14",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF:CHILD_PROTECTION_FGM(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "UNICEF",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "UNICEF_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF:CHILD_PROTECTION_FGM(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF:CHILD_PROTECTION_FGM(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "UNICEF",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "UNICEF_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-isSequence": "false",
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "Child Protection, FGM",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

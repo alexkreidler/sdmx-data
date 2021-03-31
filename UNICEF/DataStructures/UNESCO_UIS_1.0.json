@@ -1,0 +1,394 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF690918",
+      "Prepared": "2021-03-31T05:38:10Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "UNICEF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "UNESCO",
+          "-id": "UIS",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNESCO:UIS(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNESCO:UIS(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_FOOTNOTE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO:UIS(1.0).OBS_FOOTNOTE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "OBS_FOOTNOTE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_SOURCE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO:UIS(1.0).DATA_SOURCE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "DATA_SOURCE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNESCO:UIS(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "REF_AREA",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_COUNTRY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INDICATOR",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).INDICATOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "INDICATOR",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "INDICATOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": ""
+                  }
+                },
+                {
+                  "-id": "SEX",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).SEX",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "SEX",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_SEX",
+                        "-package": "codelist",
+                        "-version": "2.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "RESIDENCE",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).RESIDENCE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "RESIDENCE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_RESIDENCE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "WEALTH_QUINTILE",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).WEALTH_QUINTILE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "WEALTH_QUINTILE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_WEALTH_QUINTILE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "EDUCATION_LEVEL",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).EDUCATION_LEVEL",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "EDUCATION_LEVEL",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_LEVEL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "IMM_STATUS",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).IMM_STATUS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "IMM_STATUS",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_IMM_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SOCIOECONOMIC_BACKGROUND",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).SOCIOECONOMIC_BACKGROUND",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "SOCIOECONOMIC_BACKGROUND",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_SE_BKGRD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SCHOOL_SUBJECT",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).SCHOOL_SUBJECT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "SCHOOL_SUBJECT",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_SUBJECT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO:UIS(1.0).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "11",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNESCO:UIS(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "UNICEF",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_SDG",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNESCO:UIS(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNESCO:UIS(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "UNICEF",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_SDG",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "UNESCO UIS",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+  <mes:Header>
+    <mes:ID>datastructure_STES_1617168633726</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>2021-03-31T07:30:33.726+02:00</mes:Prepared>
+    <mes:Sender id="FR1">
+      <com:Name xml:lang="fr">Institut national de la statistique et des études économiques</com:Name>
+    </mes:Sender>
+    <mes:Receiver id="unknown"/>
+    <mes:Source xml:lang="fr">Banque de données macro-économiques</mes:Source>
+  </mes:Header>
+  <mes:Structures>
+    <str:DataStructures>
+      <str:DataStructure id="STES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=OECD:STES(3.1)" agencyID="OECD" version="3.1">
+        <com:Name xml:lang="fr">OECD</com:Name>
+        <com:Name xml:lang="en">OECD</com:Name>
+        <str:DataStructureComponents>
+          <str:DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=OECD:STES(3.1).DimensionDescriptor">
+            <str:TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=OECD:STES(3.1).TIME_PERIOD" position="1">
+              <str:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:TextFormat/>
+              </str:LocalRepresentation>
+            </str:TimeDimension>
+            <str:Dimension id="ADJUSTMENT113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:STES(3.1).ADJUSTMENT113409765" position="2">
+              <str:ConceptIdentity>
+                <Ref id="ADJUSTMENT113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_ADJUSTMENT113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="UNIT_MEASURE113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:STES(3.1).UNIT_MEASURE113409765" position="3">
+              <str:ConceptIdentity>
+                <Ref id="UNIT_MEASURE113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_UNIT_MEASURE113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="REFERENCE_AREA113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:STES(3.1).REFERENCE_AREA113409765" position="4">
+              <str:ConceptIdentity>
+                <Ref id="REFERENCE_AREA113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_REFERENCE_AREA113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="ACTIVITY113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:STES(3.1).ACTIVITY113409765" position="5">
+              <str:ConceptIdentity>
+                <Ref id="ACTIVITY113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_ACTIVITY113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="SUBJECT113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:STES(3.1).SUBJECT113409765" position="6">
+              <str:ConceptIdentity>
+                <Ref id="SUBJECT113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_SUBJECT113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="EXPENDITURE113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:STES(3.1).EXPENDITURE113409765" position="7">
+              <str:ConceptIdentity>
+                <Ref id="EXPENDITURE113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_EXPENDITURE113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="FREQ113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:STES(3.1).FREQ113409765" position="8">
+              <str:ConceptIdentity>
+                <Ref id="FREQ113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_FREQ113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+          </str:DimensionList>
+          <str:AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=OECD:STES(3.1).AttributeDescriptor">
+            <str:Attribute id="UNIT_MULT113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:STES(3.1).UNIT_MULT113409765" assignmentStatus="Mandatory">
+              <str:ConceptIdentity>
+                <Ref id="UNIT_MULT113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_UNIT_MULT113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+              <str:AttributeRelationship>
+                <str:Dimension>
+                  <Ref id="ADJUSTMENT113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="UNIT_MEASURE113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REFERENCE_AREA113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="ACTIVITY113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SUBJECT113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="EXPENDITURE113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="FREQ113409765"/>
+                </str:Dimension>
+              </str:AttributeRelationship>
+            </str:Attribute>
+            <str:Attribute id="BASE_PERIOD113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:STES(3.1).BASE_PERIOD113409765" assignmentStatus="Mandatory">
+              <str:ConceptIdentity>
+                <Ref id="BASE_PERIOD113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_BASE_PERIOD113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+              <str:AttributeRelationship>
+                <str:Dimension>
+                  <Ref id="ADJUSTMENT113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="UNIT_MEASURE113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REFERENCE_AREA113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="ACTIVITY113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SUBJECT113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="EXPENDITURE113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="FREQ113409765"/>
+                </str:Dimension>
+              </str:AttributeRelationship>
+            </str:Attribute>
+            <str:Attribute id="DOMAIN113409765" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:STES(3.1).DOMAIN113409765" assignmentStatus="Mandatory">
+              <str:ConceptIdentity>
+                <Ref id="DOMAIN113409765" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_DOMAIN113409765" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+              <str:AttributeRelationship>
+                <str:Dimension>
+                  <Ref id="ADJUSTMENT113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="UNIT_MEASURE113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REFERENCE_AREA113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="ACTIVITY113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SUBJECT113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="EXPENDITURE113409765"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="FREQ113409765"/>
+                </str:Dimension>
+              </str:AttributeRelationship>
+            </str:Attribute>
+          </str:AttributeList>
+          <str:MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=OECD:STES(3.1).MeasureDescriptor">
+            <str:PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=OECD:STES(3.1).OBS_VALUE">
+              <str:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+            </str:PrimaryMeasure>
+          </str:MeasureList>
+        </str:DataStructureComponents>
+      </str:DataStructure>
+    </str:DataStructures>
+  </mes:Structures>
+</mes:Structure>

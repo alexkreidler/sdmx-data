@@ -1,0 +1,584 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF2187",
+      "Prepared": "2021-03-31T07:34:25.2544523+02:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "IT1",
+          "-id": "DCCV_TURISTI_CAPI",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCCV_TURISTI_CAPI(1.1)",
+          "-validFrom": "2016-06-07T00:00:00",
+          "-validTo": "2099-12-31T00:00:00",
+          "-version": "1.1",
+          "Annotations": {
+            "Annotation": {
+              "AnnotationTitle": "SCOPE",
+              "AnnotationType": "PUBLIC"
+            }
+          },
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCCV_TURISTI_CAPI(1.1).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_CONF",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_PRE_BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).OBS_PRE_BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_PRE_BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FLAG",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BASE_PER",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).BASE_PER",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "BASE_PER",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_BASE_YEAR",
+                        "-package": "codelist",
+                        "-version": "1.3"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MEAS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).UNIT_MEAS",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEAS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_EN",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).METADATA_EN",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_EN",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_IT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_TURISTI_CAPI(1.1).METADATA_IT",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_IT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCCV_TURISTI_CAPI(1.1).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "CONDIZIONE_PROF",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).CONDIZIONE_PROF",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "CONDIZIONE_PROF",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "8.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_CONDIZIONE_DICH2",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "CLASSE_ETA",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).CLASSE_ETA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "CLASSE_ETA",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "8.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_ETA1",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TERR_RES",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).TERR_RES",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TERR_RES",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "8.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_ITTER107",
+                        "-package": "codelist",
+                        "-version": "1.5"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TIPODATO",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).TIPODATO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TIPODATO",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.4",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TIPO_DATO_VIAGGI",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "VIAGGIO",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).VIAGGIO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "VIAGGIO",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "8.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TIPO_VIAGGIO2",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TIPO_DEST",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).TIPO_DEST",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TIPO_DEST",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "8.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_PROV_DEST_Z",
+                        "-package": "codelist",
+                        "-version": "1.4"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SESSO",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_TURISTI_CAPI(1.1).SESSO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "SESSO",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "8.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_SEXISTAT1",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "9",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCCV_TURISTI_CAPI(1.1).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "TIMEFREQ",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "3.4",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "Group": {
+              "-id": "X_MEASURE",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCCV_TURISTI_CAPI(1.1).X_MEASURE",
+              "GroupDimension": {
+                "DimensionReference": {
+                  "Ref": {
+                    "-id": "TIPODATO"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCCV_TURISTI_CAPI(1.1).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCCV_TURISTI_CAPI(1.1).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "3.4",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": [
+            {
+              "#text": "Persons who made trips",
+              "-lang": "en"
+            },
+            {
+              "#text": "Persone che hanno viaggiato",
+              "-lang": "it"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

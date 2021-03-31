@@ -1,0 +1,807 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF690919",
+      "Prepared": "2021-03-31T05:38:11Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "UNICEF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "UNESCO_ARCHIVE",
+          "-id": "EDU_NON_FINANCE",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0)",
+          "-version": "3.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "FREQ",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).FREQ",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).DECIMALS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "STAT_UNIT",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).STAT_UNIT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "STAT_UNIT",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_STAT_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "EDU_LEVEL",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).EDU_LEVEL",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "EDU_LEVEL",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_LEVEL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "EDU_CAT",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).EDU_CAT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "EDU_CAT",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_CAT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SEX",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).SEX",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "SEX",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_SEX",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "AGE",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).AGE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "AGE",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_AGE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "GRADE",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).GRADE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "GRADE",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_GRADE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SECTOR_EDU",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).SECTOR_EDU",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "SECTOR_EDU",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR_EDU",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "EDU_ATTAIN",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).EDU_ATTAIN",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "EDU_ATTAIN",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_ATTAIN",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "WEALTH_QUINTILE",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).WEALTH_QUINTILE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "WEALTH_QUINTILE",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_WEALTH_QUINTILE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "LOCATION",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).LOCATION",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "LOCATION",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_LOCATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "EDU_TYPE",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).EDU_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "EDU_TYPE",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_TYPE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "EDU_FIELD",
+                  "-position": "13",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).EDU_FIELD",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "EDU_FIELD",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_FIELD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SUBJECT",
+                  "-position": "14",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).SUBJECT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "SUBJECT",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_SUBJECT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INFRASTR",
+                  "-position": "15",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).INFRASTR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "INFRASTR",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_INFRASTR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SE_BKGRD",
+                  "-position": "16",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).SE_BKGRD",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "SE_BKGRD",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_SE_BKGRD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TEACH_EXPERIENCE",
+                  "-position": "17",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).TEACH_EXPERIENCE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "TEACH_EXPERIENCE",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_TEACH_EXPERIENCE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "CONTRACT_TYPE",
+                  "-position": "18",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).CONTRACT_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "CONTRACT_TYPE",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_CONTRACT_TYPE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTRY_ORIGIN",
+                  "-position": "19",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).COUNTRY_ORIGIN",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "COUNTRY_ORIGIN",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA2",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "REGION_DEST",
+                  "-position": "20",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).REGION_DEST",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "REGION_DEST",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA2",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "IMM_STATUS",
+                  "-position": "21",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).IMM_STATUS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNESCO",
+                      "-class": "Concept",
+                      "-id": "IMM_STATUS",
+                      "-maintainableParentID": "EDU",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO",
+                        "-class": "Codelist",
+                        "-id": "CL_IMM_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "22",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SDMX",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNESCO_ARCHIVE",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "23",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SDMX",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": ""
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SDMX",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-isSequence": "false",
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": [
+            {
+              "#text": "Education: Students and Teachers",
+              "-lang": "en"
+            },
+            {
+              "#text": "Educación: Estudiantes y docentes",
+              "-lang": "es"
+            },
+            {
+              "#text": "Education: étudiants et enseignants",
+              "-lang": "fr"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

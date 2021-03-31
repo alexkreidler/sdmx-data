@@ -1,0 +1,925 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF682730",
+      "Prepared": "2021-03-31T05:24:33Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "ECB",
+          "-id": "ECB_AME1",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-uri": "https://www.ecb.europa.eu/vocabulary/stats/ame/1",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_AME1(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_AME1(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TIME_FORMAT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).TIME_FORMAT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TIME_FORMAT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_CONF",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).OBS_CONF",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_CONF",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_CONF",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_PRE_BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).OBS_PRE_BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_PRE_BREAK",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "15",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_ECB",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).PUBL_ECB",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_ECB",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_MU",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).PUBL_MU",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_MU",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_PUBLIC",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).PUBL_PUBLIC",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_PUBLIC",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILATION",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).COMPILATION",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COMPILATION",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "EXT_TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).EXT_TITLE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "EXT_TITLE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "350",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "EXT_UNIT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).EXT_UNIT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "EXT_UNIT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "70",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE_COMPL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_AME1(1.0).TITLE_COMPL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "AME_REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_TRANSFORMATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_AGG_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_REFERENCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AME_ITEM"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TITLE_COMPL",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_AME1(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_AME1(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "AME_REF_AREA",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_AME1(1.0).AME_REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "AME_REF_AREA",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AME_AREA_EE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "4",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "AME_TRANSFORMATION",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_AME1(1.0).AME_TRANSFORMATION",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "AME_TRANSFORMATION",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AME_TRANSFORM",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "AME_AGG_METHOD",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_AME1(1.0).AME_AGG_METHOD",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "AME_AGG_METHOD",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AME_AGG_METHOD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "AME_UNIT",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_AME1(1.0).AME_UNIT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "AME_UNIT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AME_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "AME_REFERENCE",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_AME1(1.0).AME_REFERENCE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "AME_REFERENCE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AME_REFERENCE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "AME_ITEM",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_AME1(1.0).AME_ITEM",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "AME_ITEM",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AME_ITEM",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "10",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "8",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_AME1(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ECB",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "ECB_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "Group": {
+              "-id": "Group",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_AME1(1.0).Group",
+              "GroupDimension": [
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "AME_REF_AREA"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "AME_TRANSFORMATION"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "AME_AGG_METHOD"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "AME_UNIT"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "AME_REFERENCE"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "AME_ITEM"
+                    }
+                  }
+                }
+              ]
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_AME1(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_AME1(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ECB",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "ECB_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-maxLength": "15",
+                    "-textType": "String"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "AMECO",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

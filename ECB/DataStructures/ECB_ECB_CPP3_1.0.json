@@ -1,0 +1,1792 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF683291",
+      "Prepared": "2021-03-31T05:25:23Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "ECB",
+          "-id": "ECB_CPP3",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-uri": "https://www.ecb.europa.eu/vocabulary/stats/cpp/3",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ECB:ECB_CPP3(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ECB:ECB_CPP3(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TIME_FORMAT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).TIME_FORMAT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TIME_FORMAT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_CONF",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).OBS_CONF",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_CONF",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_CONF",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_PRE_BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).OBS_PRE_BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_PRE_BREAK",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "15",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_COM",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).OBS_COM",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "OBS_COM",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "ADJUST_DETAIL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).ADJUST_DETAIL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "ADJUST_DETAIL",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "350",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BREAKS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).BREAKS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "BREAKS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "350",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "COLLECTION",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).COLLECTION",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COLLECTION",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_COLLECTION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILING_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).COMPILING_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COMPILING_ORG",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DISS_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).DISS_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "DISS_ORG",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_ECB",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).PUBL_ECB",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_ECB",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_MU",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).PUBL_MU",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_MU",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PUBL_PUBLIC",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).PUBL_PUBLIC",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PUBL_PUBLIC",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_INDEX_BASE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).UNIT_INDEX_BASE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "UNIT_INDEX_BASE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "35",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILATION",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).COMPILATION",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COMPILATION",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COVERAGE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).COVERAGE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "COVERAGE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "350",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).DECIMALS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "BigInteger"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SOURCE_AGENCY",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).SOURCE_AGENCY",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "SOURCE_AGENCY",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SOURCE_PUB",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).SOURCE_PUB",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "SOURCE_PUB",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "350",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).TITLE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TITLE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "200",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TITLE_COMPL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).TITLE_COMPL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "TITLE_COMPL",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).UNIT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "UNIT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "13",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ECB:ECB_CPP3(1.0).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "CPP_METHOD"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_IND"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_CPP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "RPP_SOURCE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "PROPERTY_SUFFIX"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ECB:ECB_CPP3(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA_EE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ADJUSTMENT",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).ADJUSTMENT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "ADJUSTMENT",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_ADJUSTMENT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "CPP_METHOD",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).CPP_METHOD",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "CPP_METHOD",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_CPP_METHOD",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "PROPERTY_IND",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).PROPERTY_IND",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PROPERTY_IND",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_PROPERTY_IND",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "4",
+                      "-minLength": "4",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "PROPERTY_CPP",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).PROPERTY_CPP",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PROPERTY_CPP",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_PROPERTY_CPP",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "RPP_SOURCE",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).RPP_SOURCE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "RPP_SOURCE",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_RPP_SOURCE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "PROPERTY_SUFFIX",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ECB:ECB_CPP3(1.0).PROPERTY_SUFFIX",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "ECB",
+                      "-class": "Concept",
+                      "-id": "PROPERTY_SUFFIX",
+                      "-maintainableParentID": "ECB_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ECB",
+                        "-class": "Codelist",
+                        "-id": "CL_PROPERTY_SUFFIX",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "9",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ECB:ECB_CPP3(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ECB",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "ECB_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "Group": {
+              "-id": "Group",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=ECB:ECB_CPP3(1.0).Group",
+              "GroupDimension": [
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "REF_AREA"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "ADJUSTMENT"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "CPP_METHOD"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "PROPERTY_IND"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "PROPERTY_CPP"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "RPP_SOURCE"
+                    }
+                  }
+                },
+                {
+                  "DimensionReference": {
+                    "Ref": {
+                      "-id": "PROPERTY_SUFFIX"
+                    }
+                  }
+                }
+              ]
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ECB:ECB_CPP3(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ECB:ECB_CPP3(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "ECB",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "ECB_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-maxLength": "15",
+                    "-textType": "String"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "Commercial property price statistics",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

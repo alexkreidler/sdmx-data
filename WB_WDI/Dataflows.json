@@ -1,0 +1,72 @@
+{
+  "Structure": {
+    "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "Header": {
+      "ID": "IDREF4",
+      "Prepared": "2021-03-29T11:58:37.7529824-04:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "Dataflows": {
+        "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+        "Dataflow": [
+          {
+            "-agencyID": "UNSD",
+            "-id": "SDG",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:SDG(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Data Structure Definition for Sustainable Development Goals Indicators.",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Name": {
+              "#text": "SDG DSD",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.0",
+                "-xmlns": ""
+              }
+            }
+          },
+          {
+            "-agencyID": "WB",
+            "-id": "WDI",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WB:WDI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "World Development Indicators",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "WB",
+                "-class": "DataStructure",
+                "-id": "WDI",
+                "-package": "datastructure",
+                "-version": "1.0",
+                "-xmlns": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

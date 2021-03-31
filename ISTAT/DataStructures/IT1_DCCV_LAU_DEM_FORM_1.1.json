@@ -1,0 +1,734 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF2174",
+      "Prepared": "2021-03-31T07:34:09.3424243+02:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "IT1",
+          "-id": "DCCV_LAU_DEM_FORM",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:DCCV_LAU_DEM_FORM(1.1)",
+          "-validFrom": "2017-09-22T00:00:00",
+          "-validTo": "2099-12-31T00:00:00",
+          "-version": "1.1",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:DCCV_LAU_DEM_FORM(1.1).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_CONF",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_PRE_BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).OBS_PRE_BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_PRE_BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FLAG",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BASE_PER",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).BASE_PER",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "BASE_PER",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_BASE_YEAR",
+                        "-package": "codelist",
+                        "-version": "1.3"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MEAS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).UNIT_MEAS",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEAS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Group": {
+                      "Ref": {
+                        "-id": "X_MEASURE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_EN",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).METADATA_EN",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_EN",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_IT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:DCCV_LAU_DEM_FORM(1.1).METADATA_IT",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_IT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:DCCV_LAU_DEM_FORM(1.1).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "GRUPPO_LAUREA",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).GRUPPO_LAUREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "GRUPPO_LAUREA",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_AREADIDATTICA",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ITTER107",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).ITTER107",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "ITTER107",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_ITTER107",
+                        "-package": "codelist",
+                        "-version": "3.7"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SESSO",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).SESSO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "SESSO",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_SEXISTAT1",
+                        "-package": "codelist",
+                        "-version": "1.8"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "LAUREA_PREC",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).LAUREA_PREC",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "LAUREA_PREC",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_SI_NO",
+                        "-package": "codelist",
+                        "-version": "1.9"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "PARTECIPAZ_ERASMUS",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).PARTECIPAZ_ERASMUS",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "PARTECIPAZ_ERASMUS",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_SI_NO",
+                        "-package": "codelist",
+                        "-version": "1.9"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TIPO_DATO",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).TIPO_DATO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TIPO_DATO",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "3.6",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TIPO_DATO_LAU",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TIPO_DIPLOMA",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).TIPO_DIPLOMA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TIPO_DIPLOMA",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TIPO_SCUOLA2",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ATTUALE_ISCR_FORMAZ",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).ATTUALE_ISCR_FORMAZ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "ATTUALE_ISCR_FORMAZ",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TITOLO_STUDIO",
+                        "-package": "codelist",
+                        "-version": "2.7"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "CONCLUSA_FORMAZ",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).CONCLUSA_FORMAZ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "CONCLUSA_FORMAZ",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TITOLO_STUDIO",
+                        "-package": "codelist",
+                        "-version": "2.7"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TIPO_LAUREA",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).TIPO_LAUREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TIPO_LAUREA",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TITOLO_STUDIO",
+                        "-package": "codelist",
+                        "-version": "2.7"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TITOLO_STUDIO_PADRE",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).TITOLO_STUDIO_PADRE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TITOLO_STUDIO_PADRE",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TITOLO_STUDIO",
+                        "-package": "codelist",
+                        "-version": "2.7"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TITOLO_STUDIO_MADRE",
+                  "-position": "13",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).TITOLO_STUDIO_MADRE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TITOLO_STUDIO_MADRE",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TITOLO_STUDIO",
+                        "-package": "codelist",
+                        "-version": "2.7"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ANNO_CONSEG_LAUREA",
+                  "-position": "14",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:DCCV_LAU_DEM_FORM(1.1).ANNO_CONSEG_LAUREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "ANNO_CONSEG_LAUREA",
+                      "-maintainableParentID": "VARIAB_ALL",
+                      "-maintainableParentVersion": "12.9",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_T_BIS",
+                        "-package": "codelist",
+                        "-version": "3.7"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "15",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:DCCV_LAU_DEM_FORM(1.1).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "SELECT_TIME",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "3.6",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "Group": {
+              "-id": "X_MEASURE",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=IT1:DCCV_LAU_DEM_FORM(1.1).X_MEASURE",
+              "GroupDimension": {
+                "DimensionReference": {
+                  "Ref": {
+                    "-id": "TIPO_DATO"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:DCCV_LAU_DEM_FORM(1.1).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:DCCV_LAU_DEM_FORM(1.1).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "3.6",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": [
+            {
+              "#text": "Caratteristiche socio-demografiche e  curriculum",
+              "-lang": "it"
+            },
+            {
+              "#text": "Socio-demographic characteristics and  curriculum",
+              "-lang": "en"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

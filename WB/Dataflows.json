@@ -1,0 +1,131 @@
+{
+  "Structure": {
+    "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "Header": {
+      "ID": "IDREF270",
+      "Prepared": "2021-03-30T00:10:44.3110507-04:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "Dataflows": {
+        "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+        "Dataflow": [
+          {
+            "-agencyID": "WBG_WITS",
+            "-id": "DF_WITS_Tariff_TRAINS",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_Tariff_TRAINS(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "Data flow to access WITS - UNCTAD TRAINS Preferential and most-favored-nation (MFN) tariff rates",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Name": {
+              "#text": "WITS - UNCTAD TRAINS Tariff Data",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "WBG_WITS",
+                "-class": "DataStructure",
+                "-id": "TARIFF_TRAINS",
+                "-package": "datastructure",
+                "-version": "1.1",
+                "-xmlns": ""
+              }
+            }
+          },
+          {
+            "-agencyID": "WBG_WITS",
+            "-id": "DF_WITS_TradeStats_Development",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Development(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Development indicators such as GDP, GNI per capita, Trade Balance, Trade and Services trade as percentage of GPD is available from WDI",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Name": {
+              "#text": "WITS TradeStats Devlopment",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "WBG_WITS",
+                "-class": "DataStructure",
+                "-id": "TRADESTATS",
+                "-package": "datastructure",
+                "-version": "1.0",
+                "-xmlns": ""
+              }
+            }
+          },
+          {
+            "-agencyID": "WBG_WITS",
+            "-id": "DF_WITS_TradeStats_Tariff",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Tariff(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Tariff information like number of trade agreements, simple and weighted average tariff, duty free imports value and duty free goods share in percentage are available",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Name": {
+              "#text": "WITS TradeStats Tariff",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "WBG_WITS",
+                "-class": "DataStructure",
+                "-id": "TRADESTATS",
+                "-package": "datastructure",
+                "-version": "1.0",
+                "-xmlns": ""
+              }
+            }
+          },
+          {
+            "-agencyID": "WBG_WITS",
+            "-id": "DF_WITS_TradeStats_Trade",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Trade(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Trade data such as total exports, number or products exported, exporting and importing partner countries and exported and imported product groups are available",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Name": {
+              "#text": "WITS TradeStats Trade",
+              "-lang": "en",
+              "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "WBG_WITS",
+                "-class": "DataStructure",
+                "-id": "TRADESTATS",
+                "-package": "datastructure",
+                "-version": "1.0",
+                "-xmlns": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

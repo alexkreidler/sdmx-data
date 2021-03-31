@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v7.1.2.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF676</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2021-03-31T07:38:56.370314+02:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:DataStructures>
+      <structure:DataStructure id="MDG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEG:MDG(1.2)" agencyID="IAEG" version="1.2" isFinal="true">
+        <common:Name xml:lang="en">SDMX-MDGs</common:Name>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IAEG:MDG(1.2).DimensionDescriptor">
+            <structure:Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).FREQ" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_FREQ_MDG" version="1.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SERIES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SERIES" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="SERIES" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SERIES_MDG" version="4.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).UNIT" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT_MDG" version="2.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).LOCATION" position="4">
+              <structure:ConceptIdentity>
+                <Ref id="LOCATION" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_LOCATION_MDG" version="1.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="AGE_GROUP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).AGE_GROUP" position="5">
+              <structure:ConceptIdentity>
+                <Ref id="AGE_GROUP" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_AGE_GROUP_MDG" version="2.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SEX" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SEX" position="6">
+              <structure:ConceptIdentity>
+                <Ref id="SEX" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SEX_MDG" version="2.1" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).REF_AREA" position="7">
+              <structure:ConceptIdentity>
+                <Ref id="REF_AREA" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_REF_AREA_MDG" version="4.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SOURCE_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SOURCE_TYPE" position="8">
+              <structure:ConceptIdentity>
+                <Ref id="SOURCE_TYPE" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SOURCE_TYPE_MDG" version="2.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEG:MDG(1.2).TIME_PERIOD" position="9">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="ObservationalTimePeriod" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IAEG:MDG(1.2).AttributeDescriptor">
+            <structure:Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).UNIT_MULT" assignmentStatus="Mandatory">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT_MULT" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT_MULT_SDMX" version="1.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="TIME_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).TIME_DETAIL" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_DETAIL" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="NATURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).NATURE" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="NATURE" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_NATURE_MDG" version="1.0" agencyID="IAEG" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="SOURCE_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).SOURCE_DETAIL" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="SOURCE_DETAIL" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="FOOTNOTES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).FOOTNOTES" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="FOOTNOTES" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+          </structure:AttributeList>
+          <structure:MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IAEG:MDG(1.2).MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEG:MDG(1.2).OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="MDG_DATA_CONCEPTS" maintainableParentVersion="1.0" agencyID="IAEG" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+  </message:Structures>
+</message:Structure>

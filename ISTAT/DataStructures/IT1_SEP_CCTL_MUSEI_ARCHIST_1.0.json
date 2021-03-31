@@ -1,0 +1,718 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF2182",
+      "Prepared": "2021-03-31T07:34:19.8412428+02:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "IT1",
+          "-id": "SEP_CCTL_MUSEI_ARCHIST",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).COMMENT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "COMMENT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_CONF",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_PRE_BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).OBS_PRE_BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_PRE_BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FLAG",
+                        "-package": "codelist",
+                        "-version": "1.3"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).DECIMALS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_DECI",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "BREAK",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).BREAK",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "BREAK",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "NOTA_IT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).NOTA_IT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "NOTA_IT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "NOTA_EN",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).NOTA_EN",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "NOTA_EN",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MEAS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).UNIT_MEAS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEAS",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "STAT_POP",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).STAT_POP",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "STAT_POP",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_STATUNIT_CCTL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COLLECTION",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).COLLECTION",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "COLLECTION",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_COLLECTION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TIME_FORMAT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).TIME_FORMAT",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TIME_FORMAT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_TIME_FORMAT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).TITLE",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TITLE",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_EN",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).METADATA_EN",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_EN",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "METADATA_IT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).METADATA_IT",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "METADATA_IT",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "TERRITORIO",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).TERRITORIO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "TERRITORIO",
+                      "-maintainableParentID": "SEP_CCTL",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_REFAREA",
+                        "-package": "codelist",
+                        "-version": "1.4"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "IND_TYPE",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).IND_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "IND_TYPE",
+                      "-maintainableParentID": "CROSS_DOMAIN",
+                      "-maintainableParentVersion": "1.2",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_INDICATORI_CCTL_MUSEI",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ATTIVCULTURALE",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).ATTIVCULTURALE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "ATTIVCULTURALE",
+                      "-maintainableParentID": "SEP_CCTL",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_ATTIVCULTURALE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "LOCALE",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).LOCALE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "LOCALE",
+                      "-maintainableParentID": "SEP_CCTL",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_LOCALE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "MATERIALE_ARCHIV",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).MATERIALE_ARCHIV",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "MATERIALE_ARCHIV",
+                      "-maintainableParentID": "SEP_CCTL",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_MATERIALE_ARCHIV",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "MOTIVO_UTENZA",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).MOTIVO_UTENZA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "MOTIVO_UTENZA",
+                      "-maintainableParentID": "SEP_CCTL",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_MOTIVO_UTENZA",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "RICERCA",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).RICERCA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "RICERCA",
+                      "-maintainableParentID": "SEP_CCTL",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_RICERCA",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "RICERCAXSTUDIO",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).RICERCAXSTUDIO",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "IT1",
+                      "-class": "Concept",
+                      "-id": "RICERCAXSTUDIO",
+                      "-maintainableParentID": "SEP_CCTL",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IT1",
+                        "-class": "Codelist",
+                        "-id": "CL_SI_NO",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "10",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "1.2",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:SEP_CCTL_MUSEI_ARCHIST(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "IT1",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CROSS_DOMAIN",
+                    "-maintainableParentVersion": "1.2",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Description": [
+            {
+              "#text": "Archivi di Stato e delle Sezioni:",
+              "-lang": "it"
+            },
+            {
+              "#text": "State Archives and Sections:",
+              "-lang": "en"
+            }
+          ],
+          "Name": [
+            {
+              "#text": "Cultura, comunicazione, tempo libero - Musei, mostre, biblioteche, archivi",
+              "-lang": "it"
+            },
+            {
+              "#text": "Communication, culture and leisure - Museum, exhibitions, libraries, archives",
+              "-lang": "en"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1719 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF689455",
+      "Prepared": "2021-03-31T05:35:43Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "SDMX"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "OECD",
+          "-id": "FDI",
+          "-isExternalReference": "false",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=OECD:FDI(1.8)",
+          "-version": "1.8",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=OECD:FDI(1.8).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TIME_FORMAT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).TIME_FORMAT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "TIME_FORMAT",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_TIME_FORMAT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "4",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.2"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_CONF_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "PRE_BREAK_VALUE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).PRE_BREAK_VALUE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "PRE_BREAK_VALUE",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "15",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_OBS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).COMMENT_OBS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "COMMENT_OBS",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "4000",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_TS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).COMMENT_TS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "COMMENT_TS",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "1050",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TITLE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).TITLE",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "TITLE",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-maxLength": "200",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).DECIMALS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "REF_PERIOD_DETAIL",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).REF_PERIOD_DETAIL",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "REF_PERIOD_DETAIL",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_REF_PERIOD_DTL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILING_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).COMPILING_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "COMPILING_ORG",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.10"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DISS_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:FDI(1.8).DISS_ORG",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "MEASURE_PRINCIPLE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "LEVEL_COUNTERPART"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FLOW_STOCK_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACCOUNTING_ENTRY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INT_ACC_ITEM"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FUNCTIONAL_CAT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INSTR_ASSET"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "TYPE_ENTITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FDI_RELATIONSHIP"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "VALUATION"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY_ALLOC"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "DISS_ORG",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ORGANISATION",
+                        "-package": "codelist",
+                        "-version": "1.10"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "6",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=OECD:FDI(1.8).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "MEASURE_PRINCIPLE",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).MEASURE_PRINCIPLE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "MEASURE_PRINCIPLE",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_MEASURE_PRINCIP",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.13"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTERPART_AREA",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).COUNTERPART_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "COUNTERPART_AREA",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.13"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_SECTOR",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).REF_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "REF_SECTOR",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.11"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "LEVEL_COUNTERPART",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).LEVEL_COUNTERPART",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "LEVEL_COUNTERPART",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_LEV_COUNTERPART",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "3",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "FLOW_STOCK_ENTRY",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FLOW_STOCK_ENTRY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "FLOW_STOCK_ENTRY",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_FSENTRY",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ACCOUNTING_ENTRY",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).ACCOUNTING_ENTRY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "ACCOUNTING_ENTRY",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ACCOUNT_ENTRY",
+                        "-package": "codelist",
+                        "-version": "1.4"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "5",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "INT_ACC_ITEM",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).INT_ACC_ITEM",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "INT_ACC_ITEM",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_ACCOUNTS_ITEM",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "8",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "FUNCTIONAL_CAT",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FUNCTIONAL_CAT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "FUNCTIONAL_CAT",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_FUNCTIONAL_CAT",
+                        "-package": "codelist",
+                        "-version": "1.10"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INSTR_ASSET",
+                  "-position": "11",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).INSTR_ASSET",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "INSTR_ASSET",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_INSTR_ASSET",
+                        "-package": "codelist",
+                        "-version": "1.10"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "7",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "TYPE_ENTITY",
+                  "-position": "12",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).TYPE_ENTITY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "TYPE_ENTITY",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_TYPE_ENTITY",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "3",
+                      "-minLength": "2",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "13",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.14"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "15",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "FDI_RELATIONSHIP",
+                  "-position": "14",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).FDI_RELATIONSHIP",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "FDI_RELATIONSHIP",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_FDI_RELATION",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "1",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "VALUATION",
+                  "-position": "15",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).VALUATION",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "VALUATION",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_VALUATION",
+                        "-package": "codelist",
+                        "-version": "1.6"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "STAT_UNIT",
+                  "-position": "16",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).STAT_UNIT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "STAT_UNIT",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_STAT_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ACTIVITY",
+                  "-position": "17",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).ACTIVITY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "ACTIVITY",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "ESTAT",
+                        "-class": "Codelist",
+                        "-id": "CL_ACTIVITY",
+                        "-package": "codelist",
+                        "-version": "1.7"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "9",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ACTIVITY_ALLOC",
+                  "-position": "18",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:FDI(1.8).ACTIVITY_ALLOC",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "ACTIVITY_ALLOC",
+                      "-maintainableParentID": "CS_FDI",
+                      "-maintainableParentVersion": "1.8",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_ACTIVITY_ALLOC",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-maxLength": "2",
+                      "-minLength": "1",
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "19",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=OECD:FDI(1.8).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "OECD",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_FDI",
+                    "-maintainableParentVersion": "1.8",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=OECD:FDI(1.8).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=OECD:FDI(1.8).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "OECD",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_FDI",
+                    "-maintainableParentVersion": "1.8",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "Foreign Direct Investment",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

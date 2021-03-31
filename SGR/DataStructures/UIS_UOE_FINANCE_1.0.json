@@ -1,0 +1,951 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF689930",
+      "Prepared": "2021-03-31T05:36:35Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "SDMX"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "UIS",
+          "-id": "UOE_FINANCE",
+          "-isExternalReference": "false",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UIS:UOE_FINANCE(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UIS:UOE_FINANCE(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "TABLE_IDENTIFIER",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).TABLE_IDENTIFIER",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEV"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTENSITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BREAKDOWN_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "TABLE_IDENTIFIER",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_EDU_TABLEID",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "REPYEARSTART",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).REPYEARSTART",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "REPYEARSTART",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "REPYEAREND",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).REPYEAREND",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "REPYEAREND",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "FIN_STUD_YEARSTART",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).FIN_STUD_YEARSTART",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "FIN_STUD_YEARSTART",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "FIN_STUD_YEAREND",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).FIN_STUD_YEAREND",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "FIN_STUD_YEAREND",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TYPE_EXP_REPORTED",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).TYPE_EXP_REPORTED",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEV"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTENSITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BREAKDOWN_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "TYPE_EXP_REPORTED",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_TYPE_EXP_REPORTED",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DECIMALS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).DECIMALS",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEV"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTENSITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BREAKDOWN_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "DECIMALS",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_DECIMALS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "TIME_PER_COLLECT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).TIME_PER_COLLECT",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "TIME_PER_COLLECT",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "DateTime"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMPILING_ORG",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).COMPILING_ORG",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "COMPILING_ORG",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "EDUCATION_LEV"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "INTENSITY"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "STAT_UNIT"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "FREQ"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_AREA"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REF_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "COUNTERPART_SECTOR"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "EXPENDITURE_TYPE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE"
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "BREAKDOWN_GROUP"
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.1"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "CONF_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).CONF_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "CONF_STATUS",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_CONF_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.2"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.2"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT_OBS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UOE_FINANCE(1.0).COMMENT_OBS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "COMMENT_OBS",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UIS:UOE_FINANCE(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "EDUCATION_LEV",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).EDUCATION_LEV",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "EDUCATION_LEV",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_EDUCATION_LEVEL",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "INTENSITY",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).INTENSITY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "INTENSITY",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_INTENSITY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "STAT_UNIT",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).STAT_UNIT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "STAT_UNIT",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_STAT_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "FREQ",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_AREA",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).REF_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "REF_AREA",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REF_SECTOR",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).REF_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "REF_SECTOR",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "COUNTERPART_SECTOR",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).COUNTERPART_SECTOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "COUNTERPART_SECTOR",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_SECTOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "EXPENDITURE_TYPE",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).EXPENDITURE_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "EXPENDITURE_TYPE",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_EXPENDITURE_TYPE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "9",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "IMF",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.13"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "BREAKDOWN_GROUP",
+                  "-position": "10",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UOE_FINANCE(1.0).BREAKDOWN_GROUP",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UIS",
+                      "-class": "Concept",
+                      "-id": "BREAKDOWN_GROUP",
+                      "-maintainableParentID": "CS_EDUC_UOE",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UIS",
+                        "-class": "Codelist",
+                        "-id": "CL_BREAKDOWN_GROUP",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "11",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UIS:UOE_FINANCE(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "UIS",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_EDUC_UOE",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": ""
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UIS:UOE_FINANCE(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UIS:UOE_FINANCE(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "UIS",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_EDUC_UOE",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "UOE_FINANCE",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

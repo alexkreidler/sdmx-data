@@ -1,0 +1,266 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF1092",
+      "Prepared": "2021-03-31T05:36:51.8739872+00:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "SPC",
+          "-id": "DSD_CURRENCIES",
+          "-isFinal": "false",
+          "-version": "2.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "UNIT_MEASURE",
+                  "AttributeRelationship": {
+                    "Dimension": {
+                      "Ref": {
+                        "-id": "INDICATOR"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_CURRENCY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "COMMENT",
+                  "AttributeRelationship": {
+                    "Dimension": {
+                      "Ref": {
+                        "-id": "CURRENCY"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "COMMENT",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_SOURCE",
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "DATA_SOURCE",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "OBS_SATUS",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "CURRENCY",
+                  "-position": "2",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "CURRENCY",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_CURRENCY",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INDICATOR",
+                  "-position": "3",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "INDICATOR",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_CURRENCIES_RATE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "4",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SPC",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SPC",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "DSD for PICT currencies",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

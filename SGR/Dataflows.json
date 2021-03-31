@@ -1,0 +1,1897 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF774484",
+      "Prepared": "2021-03-30T04:10:40Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "SDMX"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "Dataflows": {
+        "Dataflow": [
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_BOP_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_BOP_M(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_BOP_M dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_BOP_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_BOP_Q(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_BOP_Q dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_FDI_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_FDI_A(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_FDI_A dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "OECD",
+                "-class": "DataStructure",
+                "-id": "FDI",
+                "-package": "datastructure",
+                "-version": "1.8"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "BPM6_ITS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:BPM6_ITS_A(1.1)",
+            "-version": "1.1",
+            "Name": {
+              "#text": "BPM6_ITS_A dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IMF",
+                "-class": "DataStructure",
+                "-id": "BOP",
+                "-package": "datastructure",
+                "-version": "1.14"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_AP_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_AP_A(2.0)",
+            "-version": "2.0",
+            "Name": {
+              "#text": "HICP_AP_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "HICPAP",
+                "-package": "datastructure",
+                "-version": "2.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_COW_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_COW_A(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Country Weights",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_COW_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_CT_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_CT_M(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Final CT",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_CT_M",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_FE_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_FE_M(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Flash Estimate",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_FE_M",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_INDEX_M",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_INDEX_M(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Final",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_INDEX_M",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "HICP_WEIGHT_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HICP_WEIGHT_A(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "HICP Item Weight",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "HICP_WEIGHT_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "CPI",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_IDC_N",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_IDC_N(1.9)",
+            "-version": "1.9",
+            "Description": {
+              "#text": "Dataflow for International Data Cooperation, version 1.9",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "NAMAIN_IDC_N",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0101_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0101_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0101_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0101_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0101_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0101_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0102_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0102_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0102_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0102_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0102_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0102_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0103_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0103_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0103_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0103_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0103_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0103_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0110_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0110_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0110_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0110_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0110_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0110_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0111_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0111_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0111_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0111_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0111_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0111_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0117_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0117_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0117_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0117_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0117_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0117_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0120_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0120_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0120_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0120_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0120_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0120_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0121_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0121_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0121_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0121_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0121_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0121_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0301_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0301_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0301_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0302_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0302_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0302_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0303_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0303_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0303_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0501_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0501_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0501_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T0502_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T0502_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T0502_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T2000_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T2000_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T2000_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAMAIN_T2200_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAMAIN_T2200_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAMAIN_T2200_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAPENS_T2900_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAPENS_T2900_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAPENS_T2900_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_PENS",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAPENS_T2901_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAPENS_T2901_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAPENS_T2901_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_PENS",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAPENS_T2902_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAPENS_T2902_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NAPENS_T2902_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_PENS",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1001_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1001_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1002_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1002_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1200_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1200_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NAREG_T1300_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NAREG_T1300_A(3.3)",
+            "-version": "3.3",
+            "Name": {
+              "#text": "NA Regional Statistics",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_REG",
+                "-package": "datastructure",
+                "-version": "3.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCFINA_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_A(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCFINA_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCFINA_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_Q(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCFINA_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCNFSA_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_A(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCNFSA_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_IDCNFSA_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_Q(1.9)",
+            "-version": "1.9",
+            "Name": {
+              "#text": "NASEC_IDCNFSA_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.9"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0610_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0610_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0610_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0611_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0611_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0611_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0612_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0612_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0612_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0620_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0620_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0620_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0621_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0621_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0621_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0622_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0622_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0622_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0625_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0625_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0625_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0710_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0710_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0710_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0720_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0720_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0720_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0725_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0725_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0725_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0800_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0800_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0800_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0801SA_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0801SA_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0801SA_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T0801_Q",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T0801_Q(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T0801_Q",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASEC_T2600_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_T2600_A(1.12)",
+            "-version": "1.12",
+            "Name": {
+              "#text": "NASEC_T2600_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SEC",
+                "-package": "datastructure",
+                "-version": "1.12"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_1516_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_1516_A(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_1516_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_16ADD_5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_16ADD_5(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_16ADD_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_17IN_5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_17IN_5(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_17IN_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU2_17PR_5",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU2_17PR_5(2.2)",
+            "-version": "2.2",
+            "Name": {
+              "#text": "NASU2_17PR_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1516ADD_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1516ADD_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1516ADD_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1516_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1516_A(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1516_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_163034_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_163034_A(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_163034_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_16BP_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_16BP_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_16BP_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1719IN_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1719IN_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1719IN_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "NASU_1719PR_5",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASU_1719PR_5(2.1)",
+            "-version": "2.1",
+            "Name": {
+              "#text": "NASU_1719PR_5",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_SU",
+                "-package": "datastructure",
+                "-version": "2.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "ESTAT",
+            "-id": "SEEA_AEA_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SEEA_AEA_A(1.1)",
+            "-version": "1.1",
+            "Description": {
+              "#text": "Air Emissions Accounts",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Air Emissions Accounts",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "SEEAAIR",
+                "-package": "datastructure",
+                "-version": "1.1"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG-SDGs",
+            "-id": "DF_SDG_GLC",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG-SDGs:DF_SDG_GLC(1.3)",
+            "-version": "1.3",
+            "Description": {
+              "#text": "Reporting and dissemination dataflow for non-harmonized global SDG indicators reported by countries.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Country Global Dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG-SDGs",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG-SDGs",
+            "-id": "DF_SDG_GLH",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG-SDGs:DF_SDG_GLH(1.3)",
+            "-version": "1.3",
+            "Description": {
+              "#text": "Reporting and dissemination dataflow for harmonized global SDG indicators.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Harmonized Global Dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG-SDGs",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "SDMX",
+            "-id": "NAMAIN_IDC_N",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=SDMX:NAMAIN_IDC_N(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "NAMAIN_IDC_N",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ESTAT",
+                "-class": "DataStructure",
+                "-id": "NA_MAIN",
+                "-package": "datastructure",
+                "-version": "1.6"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_CLASS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_CLASS_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_CLASS_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_DEM_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_DEM_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_DEM_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_ENRL_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_ENRL_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "EDUCAT_ENRL_A",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "EDUCAT_ENRL_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_ENTR_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_ENTR_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_ENTR_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_FINANCE_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_FINANCE_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_FINANCE_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_GRAD_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_GRAD_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_GRAD_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UIS",
+            "-id": "EDUCAT_PERS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:EDUCAT_PERS_A(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "EDUCAT_PERS_A",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UIS",
+                "-class": "DataStructure",
+                "-id": "UOE_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Dataflow for IMTS annual data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS Annual",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_AGGREGATES_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_AGGREGATES_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS annual aggregated data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS aggregates Annual",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_AGGREGATES",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_AGGREGATES_M",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_AGGREGATES_M(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS Monthly aggregated data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS aggregates Monthly",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_AGGREGATES",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_COMPACT_A",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_COMPACT_A(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS Annual compact data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS compact Annual",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_COMPACT",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_COMPACT_M",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_COMPACT_M(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS monthly compact data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS compact Monthly",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS_COMPACT",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNSD",
+            "-id": "IMTS_M",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:IMTS_M(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "For IMTS monthly data",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "IMTS Monthly",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNSD",
+                "-class": "DataStructure",
+                "-id": "IMTS",
+                "-package": "datastructure",
+                "-version": "1.2"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

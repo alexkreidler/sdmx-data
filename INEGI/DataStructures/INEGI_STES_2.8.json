@@ -1,0 +1,382 @@
+{
+  "Structure": {
+    "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "Header": {
+      "ID": "IDREF140",
+      "Prepared": "2021-03-30T23:27:36.6126323-06:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+        "DataStructure": {
+          "-agencyID": "INEGI",
+          "-id": "STES",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=INEGI:STES(2.8)",
+          "-version": "2.8",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=INEGI:STES(2.8).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=INEGI:STES(2.8).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "FREQ",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "REFERENCE_AREA",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SUBJECT",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "MEASURE",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT",
+                          "-xmlns": ""
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=INEGI:STES(2.8).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE",
+                        "-xmlns": ""
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.1",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=INEGI:STES(2.8).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0",
+                        "-xmlns": ""
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "REFERENCE_AREA",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).REFERENCE_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "REFERENCE_AREA",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.2",
+                        "-xmlns": ""
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "SUBJECT",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).SUBJECT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "SUBJECT",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "INEGI",
+                        "-class": "Codelist",
+                        "-id": "CL_SUBJECT",
+                        "-package": "codelist",
+                        "-version": "2.2",
+                        "-xmlns": ""
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "MEASURE",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "MEASURE",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.0",
+                        "-xmlns": ""
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "ADJUSTMENT",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).ADJUSTMENT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "ADJUSTMENT",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_ADJUSTMENT",
+                        "-package": "codelist",
+                        "-version": "1.0",
+                        "-xmlns": ""
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=INEGI:STES(2.8).UNIT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "UNIT",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "INEGI",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "1.6",
+                        "-xmlns": ""
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "7",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=INEGI:STES(2.8).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "OECD",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_STES",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme",
+                    "-xmlns": ""
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=INEGI:STES(2.8).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=INEGI:STES(2.8).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "OECD",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_STES",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme",
+                    "-xmlns": ""
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "Short-term economic statistics",
+            "-lang": "en",
+            "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+          }
+        }
+      }
+    }
+  }
+}

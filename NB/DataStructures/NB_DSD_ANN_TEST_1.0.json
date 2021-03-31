@@ -1,0 +1,108 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF689348",
+      "Prepared": "2021-03-31T05:35:37Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "NB"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "NB",
+          "-id": "DSD_ANN_TEST",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=NB:DSD_ANN_TEST(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=NB:DSD_ANN_TEST(1.0).DimensionDescriptor",
+              "Dimension": {
+                "-id": "INSTRUMENT_TYPE",
+                "-position": "1",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=NB:DSD_ANN_TEST(1.0).INSTRUMENT_TYPE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "NB",
+                    "-class": "Concept",
+                    "-id": "INSTRUMENT_TYPE",
+                    "-maintainableParentID": "CS_NB",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              },
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "2",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=NB:DSD_ANN_TEST(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "NB",
+                    "-class": "Concept",
+                    "-id": "ANNOUNCEMENT_DATE",
+                    "-maintainableParentID": "CS_NB",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=NB:DSD_ANN_TEST(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=NB:DSD_ANN_TEST(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "NB",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_NB",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-isSequence": "false",
+                    "-textType": "String"
+                  }
+                }
+              }
+            }
+          },
+          "Name": [
+            {
+              "#text": "Announcement of test messages",
+              "-lang": "en"
+            },
+            {
+              "#text": "Annonsering av testmelding",
+              "-lang": "no"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

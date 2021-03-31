@@ -1,0 +1,1535 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF774461",
+      "Prepared": "2021-03-30T04:10:43Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "UNICEF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "Dataflows": {
+        "Dataflow": [
+          {
+            "-agencyID": "CD2030",
+            "-id": "CDCOV",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=CD2030:CDCOV(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Countdown - coverage indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "CD2030",
+                "-class": "DataStructure",
+                "-id": "CDCOV",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "CD2030",
+            "-id": "CDDEM",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=CD2030:CDDEM(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Countdown - demographic indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "CD2030",
+                "-class": "DataStructure",
+                "-id": "CDDEM",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "CD2030",
+            "-id": "CDDRIVER",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=CD2030:CDDRIVER(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Countdown - drivers indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "CD2030",
+                "-class": "DataStructure",
+                "-id": "CDDRIVER",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "CD2030",
+            "-id": "CDEQUIPLOT",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=CD2030:CDEQUIPLOT(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Countdown - coverage - equiplot data",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "CD2030",
+                "-class": "DataStructure",
+                "-id": "CDEQUIPLOT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "CD2030",
+            "-id": "CDT2",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=CD2030:CDT2(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Countdown - tier 2 indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "CD2030",
+                "-class": "DataStructure",
+                "-id": "CDT2",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "CD2030_ARCHIVE",
+            "-id": "CDCOV_OLD",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=CD2030_ARCHIVE:CDCOV_OLD(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "OLD Countdown - coverage indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "CD2030",
+                "-class": "DataStructure",
+                "-id": "CDCOV",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "EAPRO",
+            "-id": "DF_EAPRO_CROSS_SECTOR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=EAPRO:DF_EAPRO_CROSS_SECTOR(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "A dataflow based on a subset of the global cross-sector indicators.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "EAPRO Cross Sector Indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_AGGREGATE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "ECARO",
+            "-id": "TRANSMONEE",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ECARO:TRANSMONEE(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "ECARO for TransMonEE",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "ECARO",
+                "-class": "DataStructure",
+                "-id": "DSD_ECARO_TRANSMONEE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG-SDGs",
+            "-id": "DF_SDG_GLC",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG-SDGs:DF_SDG_GLC(1.3)",
+            "-version": "1.3",
+            "Description": {
+              "#text": "Reporting and dissemination dataflow for non-harmonized global SDG indicators reported by countries.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Country Global Dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG-SDGs",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "IAEG-SDGs",
+            "-id": "DF_SDG_GLH",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG-SDGs:DF_SDG_GLH(1.3)",
+            "-version": "1.3",
+            "Description": {
+              "#text": "Reporting and dissemination dataflow for harmonized global SDG indicators.",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Harmonized Global Dataflow",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "IAEG-SDGs",
+                "-class": "DataStructure",
+                "-id": "SDG",
+                "-package": "datastructure",
+                "-version": "1.3"
+              }
+            }
+          },
+          {
+            "-agencyID": "PCO",
+            "-id": "PAKISTAN_TEST",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=PCO:PAKISTAN_TEST(1.0)",
+            "-version": "1.0",
+            "Annotations": {
+              "Annotation": [
+                {
+                  "-id": "PCO_DEF_PIVOT_ROWS",
+                  "AnnotationTitle": "REF_AREA,INDICATOR,SEX,RESIDENCE,WEALTH_QUINTILE,EDUCATION_LEVEL,DATA_SOURCE",
+                  "AnnotationType": "LAYOUT_ROW"
+                },
+                {
+                  "-id": "PCO_DEF_PIVOT_COLUMNS",
+                  "AnnotationTitle": "TIME_PERIOD",
+                  "AnnotationType": "LAYOUT_COLUMN"
+                }
+              ]
+            },
+            "Name": {
+              "#text": "Pakistan Survey Data",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "PCO",
+                "-class": "DataStructure",
+                "-id": "DSD_TEST_PAKISTAN",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "PFP",
+            "-id": "CRBA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=PFP:CRBA(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Children’s Rights and Business Atlas",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "PFP",
+                "-class": "DataStructure",
+                "-id": "DSD_CRB_ATLAS",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNESCO",
+            "-id": "UIS",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNESCO:UIS(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "UNESCO UIS",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNESCO",
+                "-class": "DataStructure",
+                "-id": "UIS",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNESCO_ARCHIVE",
+            "-id": "EDU_NON_FINANCE",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNESCO_ARCHIVE:EDU_NON_FINANCE(3.0)",
+            "-version": "3.0",
+            "Name": {
+              "#text": "Education: Students and Teachers",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNESCO_ARCHIVE",
+                "-class": "DataStructure",
+                "-id": "EDU_NON_FINANCE",
+                "-package": "datastructure",
+                "-version": "3.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNESCO_ARCHIVE",
+            "-id": "SDG4",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNESCO_ARCHIVE:SDG4(2.0)",
+            "-version": "2.0",
+            "Name": {
+              "#text": "Sustainable Development Goal 4",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNESCO_ARCHIVE",
+                "-class": "DataStructure",
+                "-id": "SDG4",
+                "-package": "datastructure",
+                "-version": "2.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CHILD_RELATED_SDG",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CHILD_RELATED_SDG(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Child-related SDGs 2020",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "CHILD_RELATED_SDG",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CHLD_PVTY",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CHLD_PVTY(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Child Poverty",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CHLD_POV",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Child Mortality",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_BDI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_BDI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Burundi",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_BEN",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_BEN(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Benin",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_ETH",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_ETH(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Ethiopia",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_GHA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_GHA(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Ghana",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_KEN",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_KEN(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Kenya",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_LBR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_LBR(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Liberia",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_LSO",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_LSO(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Lesotho",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_MLI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_MLI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Mali",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_MMR",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_MMR(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Myanmar",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_MWI",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_MWI(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Malawi",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_NAM",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_NAM(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Namibia",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_NGA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_NGA(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Nigeria",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_NPL",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_NPL(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Nepal",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_PAK",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_PAK(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Pakistan",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_RWA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_RWA(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Rwanda",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_SEN",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_SEN(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Senegal",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_SLE",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_SLE(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Sierra Leone",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_TGO",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_TGO(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Togo",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_TZA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_TZA(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Tanzania",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_UGA",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_UGA(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Uganda",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_ZMB",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_ZMB(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Zambia",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020_ZWE",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020_ZWE(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates Zimbabwe",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020_SUBNAT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2020a",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2020a(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "CME_DF_2021_WQ",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:CME_DF_2021_WQ(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "IGME Child Mortality Estimates wq",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2021_WQ",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "COVID",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:COVID(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "COVID-19 Baseline Indicators April 2020",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "COVID",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "DM",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:DM(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Demography",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DEMOGRAPHY",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "ECD",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:ECD(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Early Childhood Development",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "EARLY_CHILD_DEV",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "EDUCATION",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:EDUCATION(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Education",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "EDUCATION",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "GENDER",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:GENDER(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Gender",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "GENDER",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "GLOBAL_DATAFLOW",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:GLOBAL_DATAFLOW(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Cross-sector indicators",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_AGGREGATE",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "HIV_AIDS",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:HIV_AIDS(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "HIV/AIDS",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "HIV_AIDS",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "IMMUNISATION",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:IMMUNISATION(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Immunisation",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "IMMUNISATION",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "MG",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:MG(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Migration",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "MIGRATION",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "MNCH",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:MNCH(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Maternal, child and newborn health",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "MATERNAL_NEWBORN_CHILD_HEALTH",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "NUTRITION",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:NUTRITION(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Nutrition",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_NUTRITION",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "PT",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:PT(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Child Protection",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "CHILD_PROTECTION",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "PT_FGM",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:PT_FGM(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Child Protection FGM",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "CHILD_PROTECTION_FGM",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "SDG_PROG_ASSESSMENT",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:SDG_PROG_ASSESSMENT(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "SDG progress assessment dashboard",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "SDG Progress assessment 2020",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "SDG_PROGRESS_ASSESSMENT",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "WASH_HEALTHCARE_FACILITY",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:WASH_HEALTHCARE_FACILITY(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "WASH Healthcare Facility",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "WASH_HEALTHCARE_FACILITY",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "WASH_HOUSEHOLDS",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:WASH_HOUSEHOLDS(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "WASH Households",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "WASH_HOUSEHOLD",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "WASH_SCHOOLS",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:WASH_SCHOOLS(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "WASH Schools",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "WASH_SCHOOLS",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF",
+            "-id": "WT",
+            "-isExternalReference": "false",
+            "-isFinal": "true",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:WT(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Transition to Work",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "CHILD_PROTECTION",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF.EMOPS",
+            "-id": "DF_EMOPS_SAM",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF.EMOPS:DF_EMOPS_SAM(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Number of children 6-59 months admitted for TREATMENT OF SEVERE ACUTE MALNUTRITION (SAM)",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "Severe acute malnutrition",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF.EMOPS",
+                "-class": "DataStructure",
+                "-id": "DSD_SAM",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF.EMOPS",
+            "-id": "DF_SITREP_COVID19",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF.EMOPS:DF_SITREP_COVID19(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "UNICEF Situation Reports for COVID19",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF.EMOPS",
+                "-class": "DataStructure",
+                "-id": "DSD_SITREP",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF_ARCHIVE",
+            "-id": "CME_HISTORICAL",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF_ARCHIVE:CME_HISTORICAL(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "CME historical values",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF_DRAFT",
+            "-id": "CRAVE_2020_1",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF_DRAFT:CRAVE_2020_1(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "CRAVE Consultation 2020",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF_DRAFT",
+                "-class": "DataStructure",
+                "-id": "CRAVE_2020_1",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF_DRAFT",
+            "-id": "DRAFT_POV",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF_DRAFT:DRAFT_POV(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "Draft poverty",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "CHLD_POV",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF_DRAFT",
+            "-id": "SDG_CONSULT_2020_1",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF_DRAFT:SDG_CONSULT_2020_1(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "SDG consultation 2020",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF_DRAFT",
+                "-class": "DataStructure",
+                "-id": "SDG_CONS_2020_1",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF_TEST",
+            "-id": "CME_DF_2020_DEV",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF_TEST:CME_DF_2020_DEV(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "CME Development/test data",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF",
+                "-class": "DataStructure",
+                "-id": "DSD_CME_2020",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF_TEST",
+            "-id": "DHIS_SAMPLE_DATASET",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF_TEST:DHIS_SAMPLE_DATASET(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "DHIS Sample Dataset",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF_TEST",
+                "-class": "DataStructure",
+                "-id": "DHIS_SAMPLE_DATASET",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNICEF_TEST",
+            "-id": "DHIS_SAMPLE_DATASET_2",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF_TEST:DHIS_SAMPLE_DATASET_2(1.0)",
+            "-version": "1.0",
+            "Name": {
+              "#text": "DHIS Sample Dataset 2",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNICEF_TEST",
+                "-class": "DataStructure",
+                "-id": "DSD_DHIS_SAMPLE_2",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          },
+          {
+            "-agencyID": "UNPD",
+            "-id": "UNPD_DEMOGRAPHY",
+            "-isExternalReference": "false",
+            "-isFinal": "false",
+            "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNPD:UNPD_DEMOGRAPHY(1.0)",
+            "-version": "1.0",
+            "Description": {
+              "#text": "Demography data mirrored from UNPD",
+              "-lang": "en"
+            },
+            "Name": {
+              "#text": "UNPD Demography",
+              "-lang": "en"
+            },
+            "Structure": {
+              "Ref": {
+                "-agencyID": "UNPD",
+                "-class": "DataStructure",
+                "-id": "UNPD_DEMO",
+                "-package": "datastructure",
+                "-version": "1.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

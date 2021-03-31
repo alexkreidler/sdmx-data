@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+  <mes:Header>
+    <mes:ID>datastructure_SDG_1617168621023</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>2021-03-31T07:30:21.024+02:00</mes:Prepared>
+    <mes:Sender id="FR1">
+      <com:Name xml:lang="fr">Institut national de la statistique et des études économiques</com:Name>
+    </mes:Sender>
+    <mes:Receiver id="unknown"/>
+    <mes:Source xml:lang="fr">Banque de données macro-économiques</mes:Source>
+  </mes:Header>
+  <mes:Structures>
+    <str:DataStructures>
+      <str:DataStructure id="SDG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEG-SDGs:SDG(1.0)" agencyID="IAEG-SDGs" version="1.0">
+        <com:Name xml:lang="fr">IAEG-SDGs</com:Name>
+        <com:Name xml:lang="en">IAEG-SDGs</com:Name>
+        <str:DataStructureComponents>
+          <str:DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IAEG-SDGs:SDG(1.0).DimensionDescriptor">
+            <str:TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEG-SDGs:SDG(1.0).TIME_PERIOD" position="1">
+              <str:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:TextFormat/>
+              </str:LocalRepresentation>
+            </str:TimeDimension>
+            <str:Dimension id="CUST_BREAKDOWN114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).CUST_BREAKDOWN114187809" position="2">
+              <str:ConceptIdentity>
+                <Ref id="CUST_BREAKDOWN114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_CUST_BREAKDOWN114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="EDUCATION_LEV114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).EDUCATION_LEV114187809" position="3">
+              <str:ConceptIdentity>
+                <Ref id="EDUCATION_LEV114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_EDUCATION_LEV114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="ACTIVITY114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).ACTIVITY114187809" position="4">
+              <str:ConceptIdentity>
+                <Ref id="ACTIVITY114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_ACTIVITY114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="SEX114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).SEX114187809" position="5">
+              <str:ConceptIdentity>
+                <Ref id="SEX114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_SEX114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="COMPOSITE_BREAKDOWN114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).COMPOSITE_BREAKDOWN114187809" position="6">
+              <str:ConceptIdentity>
+                <Ref id="COMPOSITE_BREAKDOWN114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_COMPOSITE_BREAKDOWN114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="FREQ114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).FREQ114187809" position="7">
+              <str:ConceptIdentity>
+                <Ref id="FREQ114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_FREQ114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="REF_AREA114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).REF_AREA114187809" position="8">
+              <str:ConceptIdentity>
+                <Ref id="REF_AREA114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_REF_AREA114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="AGE114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).AGE114187809" position="9">
+              <str:ConceptIdentity>
+                <Ref id="AGE114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_AGE114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="URBANISATION114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).URBANISATION114187809" position="10">
+              <str:ConceptIdentity>
+                <Ref id="URBANISATION114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_URBANISATION114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="INCOME_WEALTH_QUANTILE114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).INCOME_WEALTH_QUANTILE114187809" position="11">
+              <str:ConceptIdentity>
+                <Ref id="INCOME_WEALTH_QUANTILE114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_INCOME_WEALTH_QUANTILE114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="PRODUCT114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).PRODUCT114187809" position="12">
+              <str:ConceptIdentity>
+                <Ref id="PRODUCT114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_PRODUCT114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="REPORTING_TYPE114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).REPORTING_TYPE114187809" position="13">
+              <str:ConceptIdentity>
+                <Ref id="REPORTING_TYPE114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_REPORTING_TYPE114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="OCCUPATION114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).OCCUPATION114187809" position="14">
+              <str:ConceptIdentity>
+                <Ref id="OCCUPATION114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_OCCUPATION114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="DISABILITY_STATUS114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).DISABILITY_STATUS114187809" position="15">
+              <str:ConceptIdentity>
+                <Ref id="DISABILITY_STATUS114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_DISABILITY_STATUS114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+            <str:Dimension id="SERIES114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG-SDGs:SDG(1.0).SERIES114187809" position="16">
+              <str:ConceptIdentity>
+                <Ref id="SERIES114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_SERIES114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+            </str:Dimension>
+          </str:DimensionList>
+          <str:AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IAEG-SDGs:SDG(1.0).AttributeDescriptor">
+            <str:Attribute id="GEO_INFO_TYPE114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.0).GEO_INFO_TYPE114187809" assignmentStatus="Mandatory">
+              <str:ConceptIdentity>
+                <Ref id="GEO_INFO_TYPE114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_GEO_INFO_TYPE114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+              <str:AttributeRelationship>
+                <str:Dimension>
+                  <Ref id="CUST_BREAKDOWN114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="EDUCATION_LEV114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="ACTIVITY114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SEX114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="COMPOSITE_BREAKDOWN114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="FREQ114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REF_AREA114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="AGE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="URBANISATION114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="INCOME_WEALTH_QUANTILE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="PRODUCT114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REPORTING_TYPE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="OCCUPATION114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="DISABILITY_STATUS114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SERIES114187809"/>
+                </str:Dimension>
+              </str:AttributeRelationship>
+            </str:Attribute>
+            <str:Attribute id="UNIT_MULT114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.0).UNIT_MULT114187809" assignmentStatus="Mandatory">
+              <str:ConceptIdentity>
+                <Ref id="UNIT_MULT114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_UNIT_MULT114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+              <str:AttributeRelationship>
+                <str:Dimension>
+                  <Ref id="CUST_BREAKDOWN114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="EDUCATION_LEV114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="ACTIVITY114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SEX114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="COMPOSITE_BREAKDOWN114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="FREQ114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REF_AREA114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="AGE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="URBANISATION114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="INCOME_WEALTH_QUANTILE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="PRODUCT114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REPORTING_TYPE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="OCCUPATION114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="DISABILITY_STATUS114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SERIES114187809"/>
+                </str:Dimension>
+              </str:AttributeRelationship>
+            </str:Attribute>
+            <str:Attribute id="UNIT_MEASURE114187809" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG-SDGs:SDG(1.0).UNIT_MEASURE114187809" assignmentStatus="Mandatory">
+              <str:ConceptIdentity>
+                <Ref id="UNIT_MEASURE114187809" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+              <str:LocalRepresentation>
+                <str:Enumeration>
+                  <Ref id="CL_UNIT_MEASURE114187809" version="1.0" agencyID="FR1" package="codelist" class="Codelist"/>
+                </str:Enumeration>
+              </str:LocalRepresentation>
+              <str:AttributeRelationship>
+                <str:Dimension>
+                  <Ref id="CUST_BREAKDOWN114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="EDUCATION_LEV114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="ACTIVITY114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SEX114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="COMPOSITE_BREAKDOWN114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="FREQ114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REF_AREA114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="AGE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="URBANISATION114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="INCOME_WEALTH_QUANTILE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="PRODUCT114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="REPORTING_TYPE114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="OCCUPATION114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="DISABILITY_STATUS114187809"/>
+                </str:Dimension>
+                <str:Dimension>
+                  <Ref id="SERIES114187809"/>
+                </str:Dimension>
+              </str:AttributeRelationship>
+            </str:Attribute>
+          </str:AttributeList>
+          <str:MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IAEG-SDGs:SDG(1.0).MeasureDescriptor">
+            <str:PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEG-SDGs:SDG(1.0).OBS_VALUE">
+              <str:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CONCEPTS_INSEE" maintainableParentVersion="1.0" agencyID="FR1" package="conceptscheme" class="Concept"/>
+              </str:ConceptIdentity>
+            </str:PrimaryMeasure>
+          </str:MeasureList>
+        </str:DataStructureComponents>
+      </str:DataStructure>
+    </str:DataStructures>
+  </mes:Structures>
+</mes:Structure>

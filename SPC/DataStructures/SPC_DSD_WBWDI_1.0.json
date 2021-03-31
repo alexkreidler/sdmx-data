@@ -1,0 +1,308 @@
+{
+  "Structure": {
+    "-common": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-message": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-structure": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "Header": {
+      "ID": "IDREF1138",
+      "Prepared": "2021-03-31T05:38:01.4436532+00:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "SPC",
+          "-id": "DSD_WBWDI",
+          "-isFinal": "false",
+          "-version": "1.0",
+          "Annotations": {
+            "Annotation": {
+              "AnnotationTitle": "500",
+              "AnnotationType": "MAXTEXTATTRIBUTELENGTH"
+            }
+          },
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MEASURE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_UNIT_MEASURE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "OBS_SATUS",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_SOURCE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "DATA_SOURCE",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_COMMENT",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "COMMENT",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "FREQ",
+                  "-position": "1",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_FREQ",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "GEO_PICT",
+                  "-position": "3",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "GEO_PICT",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_COM_GEO_PICT",
+                        "-package": "codelist",
+                        "-version": "2.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "INDICATOR",
+                  "-position": "4",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "SPC",
+                      "-class": "Concept",
+                      "-id": "INDICATOR",
+                      "-maintainableParentID": "CS_COMMON",
+                      "-maintainableParentVersion": "2.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SPC",
+                        "-class": "Codelist",
+                        "-id": "CL_WBWDI_INDICATORS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "2",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SPC",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SPC",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_COMMON",
+                    "-maintainableParentVersion": "2.0",
+                    "-package": "conceptscheme"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "DSD for WBWDI",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

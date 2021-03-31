@@ -1,0 +1,465 @@
+{
+  "Structure": {
+    "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "Header": {
+      "ID": "IDREF128",
+      "Prepared": "2021-03-30T23:27:34.9308131-06:00",
+      "Receiver": {
+        "-id": "Unknown"
+      },
+      "Sender": {
+        "-id": "Unknown"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+        "DataStructure": {
+          "-agencyID": "OECD",
+          "-id": "INFRA_ANNUAL_LABOUR",
+          "-isFinal": "true",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=OECD:INFRA_ANNUAL_LABOUR(3.1)",
+          "-version": "3.1",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=OECD:INFRA_ANNUAL_LABOUR(3.1).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Mandatory",
+                  "-id": "DOMAIN",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:INFRA_ANNUAL_LABOUR(3.1).DOMAIN",
+                  "AttributeRelationship": {
+                    "Dimension": {
+                      "Ref": {
+                        "-id": "SUBJECT",
+                        "-xmlns": ""
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "DOMAIN",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_DOMAIN",
+                        "-package": "codelist",
+                        "-version": "1.0",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "OBS_STATUS",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:INFRA_ANNUAL_LABOUR(3.1).OBS_STATUS",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE",
+                        "-xmlns": ""
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "OBS_STATUS",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_OBS_STATUS",
+                        "-package": "codelist",
+                        "-version": "2.0",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UNIT_MULT",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=OECD:INFRA_ANNUAL_LABOUR(3.1).UNIT_MULT",
+                  "AttributeRelationship": {
+                    "Dimension": [
+                      {
+                        "Ref": {
+                          "-id": "REFERENCE_AREA",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SUBJECT",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "AGE",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "SEX",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ACTIVITY",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "ADJUSTMENT",
+                          "-xmlns": ""
+                        }
+                      },
+                      {
+                        "Ref": {
+                          "-id": "UNIT_MEASURE",
+                          "-xmlns": ""
+                        }
+                      }
+                    ]
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "UNIT_MULT",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT_MULT",
+                        "-package": "codelist",
+                        "-version": "1.0",
+                        "-xmlns": ""
+                      }
+                    },
+                    "EnumerationFormat": {
+                      "-textType": "String"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=OECD:INFRA_ANNUAL_LABOUR(3.1).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "REFERENCE_AREA",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).REFERENCE_AREA",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "REFERENCE_AREA",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA",
+                        "-package": "codelist",
+                        "-version": "1.3",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SUBJECT",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).SUBJECT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "ACTIVITY",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_SUBJECT",
+                        "-package": "codelist",
+                        "-version": "3.1",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "AGE",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).AGE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "AGE",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_AGE",
+                        "-package": "codelist",
+                        "-version": "2.0",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SEX",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).SEX",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "SEX",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_SEX",
+                        "-package": "codelist",
+                        "-version": "2.0",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ACTIVITY",
+                  "-position": "5",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).ACTIVITY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "ACTIVITY",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_ACTIVITY",
+                        "-package": "codelist",
+                        "-version": "1.1",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "ADJUSTMENT",
+                  "-position": "6",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).ADJUSTMENT",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "ADJUSTMENT",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_ADJUSTMENT",
+                        "-package": "codelist",
+                        "-version": "2.0",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "UNIT_MEASURE",
+                  "-position": "7",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).UNIT_MEASURE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "UNIT_MEASURE",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "OECD",
+                        "-class": "Codelist",
+                        "-id": "CL_UNIT",
+                        "-package": "codelist",
+                        "-version": "2.1",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "FREQ",
+                  "-position": "8",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=OECD:INFRA_ANNUAL_LABOUR(3.1).FREQ",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "OECD",
+                      "-class": "Concept",
+                      "-id": "FREQ",
+                      "-maintainableParentID": "CS_STES",
+                      "-maintainableParentVersion": "3.1",
+                      "-package": "conceptscheme",
+                      "-xmlns": ""
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_FREQ",
+                        "-package": "codelist",
+                        "-version": "2.0",
+                        "-xmlns": ""
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "9",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=OECD:INFRA_ANNUAL_LABOUR(3.1).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "OECD",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CS_STES",
+                    "-maintainableParentVersion": "3.1",
+                    "-package": "conceptscheme",
+                    "-xmlns": ""
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ReportingTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=OECD:INFRA_ANNUAL_LABOUR(3.1).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=OECD:INFRA_ANNUAL_LABOUR(3.1).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "OECD",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CS_STES",
+                    "-maintainableParentVersion": "3.1",
+                    "-package": "conceptscheme",
+                    "-xmlns": ""
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "Decimal"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "Infra-annual Labour",
+            "-lang": "en",
+            "-xmlns": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+          }
+        }
+      }
+    }
+  }
+}

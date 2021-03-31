@@ -1,0 +1,439 @@
+{
+  "Structure": {
+    "-com": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common",
+    "-mes": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message",
+    "-schemaLocation": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message https://registry.sdmx.org/schemas/v2_1/SDMXMessage.xsd",
+    "-str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure",
+    "-xml": "http://www.w3.org/XML/1998/namespace",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Header": {
+      "ID": "IREF691281",
+      "Prepared": "2021-03-31T05:38:49Z",
+      "Receiver": {
+        "-id": "not_supplied"
+      },
+      "Sender": {
+        "-id": "UNICEF"
+      },
+      "Test": "false"
+    },
+    "Structures": {
+      "DataStructures": {
+        "DataStructure": {
+          "-agencyID": "UNICEF_TEST",
+          "-id": "DSD_DHIS_SAMPLE_2",
+          "-isExternalReference": "false",
+          "-isFinal": "false",
+          "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0)",
+          "-version": "1.0",
+          "DataStructureComponents": {
+            "AttributeList": {
+              "-id": "AttributeDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).AttributeDescriptor",
+              "Attribute": [
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "LOWER_BOUND",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).LOWER_BOUND",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "LOWER_BOUND",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "UPPER_BOUND",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).UPPER_BOUND",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UPPER_BOUND",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Double"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SURVEY_YEAR_0",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).SURVEY_YEAR_0",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF_TEST",
+                      "-class": "Concept",
+                      "-id": "SURVEY_YEAR",
+                      "-maintainableParentID": "UNICEF_TEST_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "GregorianYear"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SURVEY_TYPE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).SURVEY_TYPE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF_TEST",
+                      "-class": "Concept",
+                      "-id": "SURVEY_TYPE",
+                      "-maintainableParentID": "UNICEF_TEST_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF_TEST",
+                        "-class": "Codelist",
+                        "-id": "CL_SURVEY_TYPE_DHIS",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "DATA_SOURCE_TYPE",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).DATA_SOURCE_TYPE",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "DATA_SOURCE_TYPE",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SURVEY_YEAR_1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).SURVEY_YEAR_1",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF_TEST",
+                      "-class": "Concept",
+                      "-id": "SURVEY_YEAR",
+                      "-maintainableParentID": "UNICEF_TEST_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "GregorianYear"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "REF_PERIOD",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).REF_PERIOD",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "REF_PERIOD",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "TextFormat": {
+                      "-isSequence": "false",
+                      "-textType": "Integer"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SOURCE_REGIONAL_ID",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).SOURCE_REGIONAL_ID",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF_TEST",
+                      "-class": "Concept",
+                      "-id": "SOURCE_REGIONAL_ID",
+                      "-maintainableParentID": "UNICEF_TEST_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                },
+                {
+                  "-assignmentStatus": "Conditional",
+                  "-id": "SURVEY_NAME",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).SURVEY_NAME",
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "-id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF_TEST",
+                      "-class": "Concept",
+                      "-id": "SURVEY_NAME",
+                      "-maintainableParentID": "UNICEF_TEST_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  }
+                }
+              ]
+            },
+            "DimensionList": {
+              "-id": "DimensionDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).DimensionDescriptor",
+              "Dimension": [
+                {
+                  "-id": "COUNTRY",
+                  "-position": "1",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).COUNTRY",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "COUNTRY",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF_TEST",
+                        "-class": "Codelist",
+                        "-id": "CL_AREA_ISO3166_2",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "UNICEF_INDICATOR",
+                  "-position": "2",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).UNICEF_INDICATOR",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "UNICEF_INDICATOR",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF_TEST",
+                        "-class": "Codelist",
+                        "-id": "CL_UNICEF_TEST_INDICATOR",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "-id": "SEX",
+                  "-position": "3",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).SEX",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF",
+                      "-class": "Concept",
+                      "-id": "SEX",
+                      "-maintainableParentID": "UNICEF_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "SDMX",
+                        "-class": "Codelist",
+                        "-id": "CL_SEX",
+                        "-package": "codelist",
+                        "-version": "2.1"
+                      }
+                    },
+                    "EnumerationFormat": ""
+                  }
+                },
+                {
+                  "-id": "UNICEF_TEST_FACILITY_TYPE",
+                  "-position": "4",
+                  "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).UNICEF_TEST_FACILITY_TYPE",
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "-agencyID": "UNICEF_TEST",
+                      "-class": "Concept",
+                      "-id": "UNICEF_TEST_FACILITY_TYPE",
+                      "-maintainableParentID": "UNICEF_TEST_CONCEPTS",
+                      "-maintainableParentVersion": "1.0",
+                      "-package": "conceptscheme"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "-agencyID": "UNICEF_TEST",
+                        "-class": "Codelist",
+                        "-id": "CL_UNICEF_TEST_FACILITY_TYPE",
+                        "-package": "codelist",
+                        "-version": "1.0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "TimeDimension": {
+                "-id": "TIME_PERIOD",
+                "-position": "5",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).TIME_PERIOD",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SDMX",
+                    "-class": "Concept",
+                    "-id": "TIME_PERIOD",
+                    "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-textType": "ObservationalTimePeriod"
+                  }
+                }
+              }
+            },
+            "MeasureList": {
+              "-id": "MeasureDescriptor",
+              "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).MeasureDescriptor",
+              "PrimaryMeasure": {
+                "-id": "OBS_VALUE",
+                "-urn": "urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNICEF_TEST:DSD_DHIS_SAMPLE_2(1.0).OBS_VALUE",
+                "ConceptIdentity": {
+                  "Ref": {
+                    "-agencyID": "SDMX",
+                    "-class": "Concept",
+                    "-id": "OBS_VALUE",
+                    "-maintainableParentID": "CROSS_DOMAIN_CONCEPTS",
+                    "-maintainableParentVersion": "1.0",
+                    "-package": "conceptscheme"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "-isSequence": "false",
+                    "-textType": "Double"
+                  }
+                }
+              }
+            }
+          },
+          "Name": {
+            "#text": "DHIS sample dsd",
+            "-lang": "en"
+          }
+        }
+      }
+    }
+  }
+}

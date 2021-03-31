@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v6.16.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF2087</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2021-03-31T07:31:40.6897632+02:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:DataStructures>
+      <structure:DataStructure id="SEP_ISTFORM_SCUOLA_SEC_II" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0)" agencyID="IT1" version="1.0" isFinal="true">
+        <common:Name xml:lang="it">Istruzione e formazione - Scuola</common:Name>
+        <common:Name xml:lang="en">Education and training - School</common:Name>
+        <common:Description xml:lang="it">Scuola secondaria di secondo grado:
+- Scuole, classi e alunni
+- Insegnani delle scuole statali</common:Description>
+        <common:Description xml:lang="en">Upper secondary school:
+- Schools, classes and children
+- State school teachers</common:Description>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).DimensionDescriptor">
+            <structure:Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).FREQ" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_FREQ" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="TERRITORIO" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).TERRITORIO" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="TERRITORIO" maintainableParentID="SEP_ISTFORM" maintainableParentVersion="1.0" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_REFAREA" version="1.4" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="IND_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).IND_TYPE" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="IND_TYPE" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_INDICATORI_ISTFORM" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="MEASURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).MEASURE" position="4">
+              <structure:ConceptIdentity>
+                <Ref id="MEASURE" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_MEASURE" version="1.2" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="ORDINESCOL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).ORDINESCOL" position="5">
+              <structure:ConceptIdentity>
+                <Ref id="ORDINESCOL" maintainableParentID="SEP_ISTFORM" maintainableParentVersion="1.0" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_ORDINESCOL" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="TIPO_SCUOLASUP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).TIPO_SCUOLASUP" position="6">
+              <structure:ConceptIdentity>
+                <Ref id="TIPO_SCUOLASUP" maintainableParentID="SEP_ISTFORM" maintainableParentVersion="1.0" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_TIPO_SCUOLA" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="GEST_SCUOLA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).GEST_SCUOLA" position="7">
+              <structure:ConceptIdentity>
+                <Ref id="GEST_SCUOLA" maintainableParentID="SEP_ISTFORM" maintainableParentVersion="1.0" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_NATGIUR" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).TIME_PERIOD" position="8">
+              <structure:ConceptIdentity>
+                <Ref id="Y_CLOS_SCH" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="ObservationalTimePeriod" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).AttributeDescriptor">
+            <structure:Attribute id="COMMENT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).COMMENT" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="COMMENT" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="CONF_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).CONF_STATUS" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="CONF_STATUS" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_OBS_CONF" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="OBS_PRE_BREAK" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).OBS_PRE_BREAK" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_PRE_BREAK" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="OBS_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).OBS_STATUS" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_STATUS" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_FLAG" version="1.3" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="BREAK" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).BREAK" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="BREAK" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="NOTA_IT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).NOTA_IT" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="NOTA_IT" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="NOTA_EN" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).NOTA_EN" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="NOTA_EN" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="STAT_POP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).STAT_POP" assignmentStatus="Mandatory">
+              <structure:ConceptIdentity>
+                <Ref id="STAT_POP" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_STATUNIT_ISTFORM" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="COLLECTION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).COLLECTION" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="COLLECTION" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_COLLECTION" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="TIME_FORMAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).TIME_FORMAT" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_FORMAT" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_TIME_FORMAT" version="1.0" agencyID="IT1" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="TITLE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).TITLE" assignmentStatus="Mandatory">
+              <structure:ConceptIdentity>
+                <Ref id="TITLE" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="METADATA_EN" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).METADATA_EN" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="METADATA_EN" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="METADATA_IT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).METADATA_IT" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="METADATA_IT" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+          </structure:AttributeList>
+          <structure:MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IT1:SEP_ISTFORM_SCUOLA_SEC_II(1.0).OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CROSS_DOMAIN" maintainableParentVersion="1.4" agencyID="IT1" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+  </message:Structures>
+</message:Structure>
